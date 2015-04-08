@@ -1,0 +1,13 @@
+Tue Apr  7 16:01:47 2015 [12080][-none-][FATAL] Could not connect to DB server localhost as jeffcao. port : Access denied for user 'jeffcao'@'localhost' (using password: YES)
+Tue Apr  7 16:01:47 2015 [12080][-none-][FATAL] Could Not Connect: Database Is Not Connected
+Tue Apr  7 16:01:47 2015 [12080][-none-][FATAL]  Query Failed: SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = '' LIMIT 0,1: Database Is Not Connected
+Tue Apr  7 16:01:47 2015 [12080][-none-][FATAL]  Get One Failed:SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = '': Database Is Not Connected
+Tue Apr  7 16:01:47 2015 [12080][-none-][FATAL]  Query Failed: SELECT version() version LIMIT 0,1: Database Is Not Connected
+Tue Apr  7 16:01:47 2015 [12080][-none-][FATAL]  Get One Failed:SELECT version() version: Database Is Not Connected
+Tue Apr  7 16:10:34 2015 [9706][-none-][FATAL] SECURITY: User authentication for jeffcao failed
+Tue Apr  7 16:10:34 2015 [9706][-none-][FATAL] FAILED LOGIN:attempts[1] - jeffcao
+Tue Apr  7 16:38:39 2015 [12080][1][FATAL] IP Address mismatch: SESSION IP: 127.0.0.1 CLIENT IP: ::1
+Tue Apr  7 16:38:47 2015 [13959][-none-][FATAL] SECURITY: User authentication for jeffcao failed
+Tue Apr  7 16:38:47 2015 [13959][-none-][FATAL] FAILED LOGIN:attempts[1] - jeffcao
+Tue Apr  7 16:38:54 2015 [15484][-none-][FATAL] SECURITY: User authentication for jeffcao failed
+Tue Apr  7 16:38:54 2015 [15484][-none-][FATAL] FAILED LOGIN:attempts[2] - jeffcao
