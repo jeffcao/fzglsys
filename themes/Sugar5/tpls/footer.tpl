@@ -45,7 +45,7 @@
 {$BOTTOMLINKS}
 {/if}
 </div>
-<div id="footer">
+<div id="footer" style="display: none;">
 	<div id="responseTime">
     	{$STATISTICS}
     </div>

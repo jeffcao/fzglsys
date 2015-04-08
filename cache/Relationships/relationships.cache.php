@@ -4442,6 +4442,172 @@
     'join_key_lhs' => 'document_id',
     'join_key_rhs' => 'bug_id',
   ),
+  'user_direct_reports' => 
+  array (
+    'name' => 'user_direct_reports',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Users',
+    'rhs_table' => 'users',
+    'rhs_key' => 'reports_to_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'users_users_signatures' => 
+  array (
+    'name' => 'users_users_signatures',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'UserSignature',
+    'rhs_table' => 'users_signatures',
+    'rhs_key' => 'user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'users_email_addresses' => 
+  array (
+    'name' => 'users_email_addresses',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'EmailAddresses',
+    'rhs_table' => 'email_addresses',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'email_addr_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'email_address_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'Users',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      1 => 
+      array (
+        'name' => 'email_address_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      2 => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      3 => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => true,
+      ),
+      4 => 
+      array (
+        'name' => 'primary_address',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+      5 => 
+      array (
+        'name' => 'reply_to_address',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+      6 => 
+      array (
+        'name' => 'date_created',
+        'type' => 'datetime',
+      ),
+      7 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      8 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => 0,
+      ),
+    ),
+  ),
+  'users_email_addresses_primary' => 
+  array (
+    'name' => 'users_email_addresses_primary',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'EmailAddresses',
+    'rhs_table' => 'email_addresses',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'email_addr_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'email_address_id',
+    'relationship_role_column' => 'primary_address',
+    'relationship_role_column_value' => '1',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      1 => 
+      array (
+        'name' => 'email_address_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      2 => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      3 => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => true,
+      ),
+      4 => 
+      array (
+        'name' => 'primary_address',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+      5 => 
+      array (
+        'name' => 'reply_to_address',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+      6 => 
+      array (
+        'name' => 'date_created',
+        'type' => 'datetime',
+      ),
+      7 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      8 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => 0,
+      ),
+    ),
+  ),
   'leads_modified_user' => 
   array (
     'name' => 'leads_modified_user',
@@ -4926,33 +5092,55 @@
     'rhs_key' => 'fixed_in_release',
     'relationship_type' => 'one-to-many',
   ),
-  'user_direct_reports' => 
+  'prospectlists_assigned_user' => 
   array (
-    'name' => 'user_direct_reports',
+    'name' => 'prospectlists_assigned_user',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'Users',
-    'rhs_table' => 'users',
-    'rhs_key' => 'reports_to_id',
+    'rhs_module' => 'prospectlists',
+    'rhs_table' => 'prospect_lists',
+    'rhs_key' => 'assigned_user_id',
     'relationship_type' => 'one-to-many',
   ),
-  'users_users_signatures' => 
+  'prospects_modified_user' => 
   array (
-    'name' => 'users_users_signatures',
+    'name' => 'prospects_modified_user',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'UserSignature',
-    'rhs_table' => 'users_signatures',
-    'rhs_key' => 'user_id',
+    'rhs_module' => 'Prospects',
+    'rhs_table' => 'prospects',
+    'rhs_key' => 'modified_user_id',
     'relationship_type' => 'one-to-many',
   ),
-  'users_email_addresses' => 
+  'prospects_created_by' => 
   array (
-    'name' => 'users_email_addresses',
+    'name' => 'prospects_created_by',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Prospects',
+    'rhs_table' => 'prospects',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'prospects_assigned_user' => 
+  array (
+    'name' => 'prospects_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Prospects',
+    'rhs_table' => 'prospects',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'prospects_email_addresses' => 
+  array (
+    'name' => 'prospects_email_addresses',
+    'lhs_module' => 'Prospects',
+    'lhs_table' => 'prospects',
     'lhs_key' => 'id',
     'rhs_module' => 'EmailAddresses',
     'rhs_table' => 'email_addresses',
@@ -4962,7 +5150,7 @@
     'join_key_lhs' => 'bean_id',
     'join_key_rhs' => 'email_address_id',
     'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'Users',
+    'relationship_role_column_value' => 'Prospects',
     'fields' => 
     array (
       0 => 
@@ -5020,11 +5208,11 @@
       ),
     ),
   ),
-  'users_email_addresses_primary' => 
+  'prospects_email_addresses_primary' => 
   array (
-    'name' => 'users_email_addresses_primary',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
+    'name' => 'prospects_email_addresses_primary',
+    'lhs_module' => 'Prospects',
+    'lhs_table' => 'prospects',
     'lhs_key' => 'id',
     'rhs_module' => 'EmailAddresses',
     'rhs_table' => 'email_addresses',
@@ -5092,60 +5280,83 @@
       ),
     ),
   ),
-  'campaignlog_contact' => 
+  'prospect_tasks' => 
   array (
-    'name' => 'campaignlog_contact',
-    'lhs_module' => 'CampaignLog',
-    'lhs_table' => 'campaign_log',
-    'lhs_key' => 'related_id',
-    'rhs_module' => 'Contacts',
-    'rhs_table' => 'contacts',
-    'rhs_key' => 'id',
+    'name' => 'prospect_tasks',
+    'lhs_module' => 'Prospects',
+    'lhs_table' => 'prospects',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tasks',
+    'rhs_table' => 'tasks',
+    'rhs_key' => 'parent_id',
     'relationship_type' => 'one-to-many',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'Prospects',
   ),
-  'campaignlog_lead' => 
+  'prospect_notes' => 
   array (
-    'name' => 'campaignlog_lead',
-    'lhs_module' => 'CampaignLog',
-    'lhs_table' => 'campaign_log',
-    'lhs_key' => 'related_id',
-    'rhs_module' => 'Leads',
-    'rhs_table' => 'leads',
-    'rhs_key' => 'id',
+    'name' => 'prospect_notes',
+    'lhs_module' => 'Prospects',
+    'lhs_table' => 'prospects',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Notes',
+    'rhs_table' => 'notes',
+    'rhs_key' => 'parent_id',
     'relationship_type' => 'one-to-many',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'Prospects',
   ),
-  'campaignlog_created_opportunities' => 
+  'prospect_meetings' => 
   array (
-    'name' => 'campaignlog_created_opportunities',
-    'lhs_module' => 'CampaignLog',
-    'lhs_table' => 'campaign_log',
-    'lhs_key' => 'related_id',
-    'rhs_module' => 'Opportunities',
-    'rhs_table' => 'opportunities',
-    'rhs_key' => 'id',
+    'name' => 'prospect_meetings',
+    'lhs_module' => 'Prospects',
+    'lhs_table' => 'prospects',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Meetings',
+    'rhs_table' => 'meetings',
+    'rhs_key' => 'parent_id',
     'relationship_type' => 'one-to-many',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'Prospects',
   ),
-  'campaignlog_targeted_users' => 
+  'prospect_calls' => 
   array (
-    'name' => 'campaignlog_targeted_users',
-    'lhs_module' => 'CampaignLog',
-    'lhs_table' => 'campaign_log',
-    'lhs_key' => 'target_id',
-    'rhs_module' => 'Users',
-    'rhs_table' => 'users',
-    'rhs_key' => 'id',
+    'name' => 'prospect_calls',
+    'lhs_module' => 'Prospects',
+    'lhs_table' => 'prospects',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Calls',
+    'rhs_table' => 'calls',
+    'rhs_key' => 'parent_id',
     'relationship_type' => 'one-to-many',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'Prospects',
   ),
-  'campaignlog_sent_emails' => 
+  'prospect_emails' => 
   array (
-    'name' => 'campaignlog_sent_emails',
-    'lhs_module' => 'CampaignLog',
-    'lhs_table' => 'campaign_log',
-    'lhs_key' => 'related_id',
+    'name' => 'prospect_emails',
+    'lhs_module' => 'Prospects',
+    'lhs_table' => 'prospects',
+    'lhs_key' => 'id',
     'rhs_module' => 'Emails',
     'rhs_table' => 'emails',
-    'rhs_key' => 'id',
+    'rhs_key' => 'parent_id',
     'relationship_type' => 'one-to-many',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'Prospects',
+  ),
+  'prospect_campaign_log' => 
+  array (
+    'name' => 'prospect_campaign_log',
+    'lhs_module' => 'Prospects',
+    'lhs_table' => 'prospects',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CampaignLog',
+    'rhs_table' => 'campaign_log',
+    'rhs_key' => 'target_id',
+    'relationship_type' => 'one-to-many',
+    'relationship_role_column' => 'target_type',
+    'relationship_role_column_value' => 'Prospects',
   ),
   'projects_notes' => 
   array (
@@ -5497,272 +5708,6 @@
     'rhs_key' => 'modified_user_id',
     'relationship_type' => 'one-to-many',
   ),
-  'prospectlists_assigned_user' => 
-  array (
-    'name' => 'prospectlists_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'prospectlists',
-    'rhs_table' => 'prospect_lists',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'prospects_modified_user' => 
-  array (
-    'name' => 'prospects_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Prospects',
-    'rhs_table' => 'prospects',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'prospects_created_by' => 
-  array (
-    'name' => 'prospects_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Prospects',
-    'rhs_table' => 'prospects',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'prospects_assigned_user' => 
-  array (
-    'name' => 'prospects_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Prospects',
-    'rhs_table' => 'prospects',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'prospects_email_addresses' => 
-  array (
-    'name' => 'prospects_email_addresses',
-    'lhs_module' => 'Prospects',
-    'lhs_table' => 'prospects',
-    'lhs_key' => 'id',
-    'rhs_module' => 'EmailAddresses',
-    'rhs_table' => 'email_addresses',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'email_addr_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'email_address_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'Prospects',
-    'fields' => 
-    array (
-      0 => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      1 => 
-      array (
-        'name' => 'email_address_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      2 => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      3 => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-        'required' => true,
-      ),
-      4 => 
-      array (
-        'name' => 'primary_address',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-      5 => 
-      array (
-        'name' => 'reply_to_address',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-      6 => 
-      array (
-        'name' => 'date_created',
-        'type' => 'datetime',
-      ),
-      7 => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      8 => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => 0,
-      ),
-    ),
-  ),
-  'prospects_email_addresses_primary' => 
-  array (
-    'name' => 'prospects_email_addresses_primary',
-    'lhs_module' => 'Prospects',
-    'lhs_table' => 'prospects',
-    'lhs_key' => 'id',
-    'rhs_module' => 'EmailAddresses',
-    'rhs_table' => 'email_addresses',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'email_addr_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'email_address_id',
-    'relationship_role_column' => 'primary_address',
-    'relationship_role_column_value' => '1',
-    'fields' => 
-    array (
-      0 => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      1 => 
-      array (
-        'name' => 'email_address_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      2 => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      3 => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-        'required' => true,
-      ),
-      4 => 
-      array (
-        'name' => 'primary_address',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-      5 => 
-      array (
-        'name' => 'reply_to_address',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-      6 => 
-      array (
-        'name' => 'date_created',
-        'type' => 'datetime',
-      ),
-      7 => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      8 => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => 0,
-      ),
-    ),
-  ),
-  'prospect_tasks' => 
-  array (
-    'name' => 'prospect_tasks',
-    'lhs_module' => 'Prospects',
-    'lhs_table' => 'prospects',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Tasks',
-    'rhs_table' => 'tasks',
-    'rhs_key' => 'parent_id',
-    'relationship_type' => 'one-to-many',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'Prospects',
-  ),
-  'prospect_notes' => 
-  array (
-    'name' => 'prospect_notes',
-    'lhs_module' => 'Prospects',
-    'lhs_table' => 'prospects',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Notes',
-    'rhs_table' => 'notes',
-    'rhs_key' => 'parent_id',
-    'relationship_type' => 'one-to-many',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'Prospects',
-  ),
-  'prospect_meetings' => 
-  array (
-    'name' => 'prospect_meetings',
-    'lhs_module' => 'Prospects',
-    'lhs_table' => 'prospects',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Meetings',
-    'rhs_table' => 'meetings',
-    'rhs_key' => 'parent_id',
-    'relationship_type' => 'one-to-many',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'Prospects',
-  ),
-  'prospect_calls' => 
-  array (
-    'name' => 'prospect_calls',
-    'lhs_module' => 'Prospects',
-    'lhs_table' => 'prospects',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Calls',
-    'rhs_table' => 'calls',
-    'rhs_key' => 'parent_id',
-    'relationship_type' => 'one-to-many',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'Prospects',
-  ),
-  'prospect_emails' => 
-  array (
-    'name' => 'prospect_emails',
-    'lhs_module' => 'Prospects',
-    'lhs_table' => 'prospects',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Emails',
-    'rhs_table' => 'emails',
-    'rhs_key' => 'parent_id',
-    'relationship_type' => 'one-to-many',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'Prospects',
-  ),
-  'prospect_campaign_log' => 
-  array (
-    'name' => 'prospect_campaign_log',
-    'lhs_module' => 'Prospects',
-    'lhs_table' => 'prospects',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CampaignLog',
-    'rhs_table' => 'campaign_log',
-    'rhs_key' => 'target_id',
-    'relationship_type' => 'one-to-many',
-    'relationship_role_column' => 'target_type',
-    'relationship_role_column_value' => 'Prospects',
-  ),
   'email_template_email_marketings' => 
   array (
     'name' => 'email_template_email_marketings',
@@ -5772,6 +5717,61 @@
     'rhs_module' => 'EmailMarketing',
     'rhs_table' => 'email_marketing',
     'rhs_key' => 'template_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'campaignlog_contact' => 
+  array (
+    'name' => 'campaignlog_contact',
+    'lhs_module' => 'CampaignLog',
+    'lhs_table' => 'campaign_log',
+    'lhs_key' => 'related_id',
+    'rhs_module' => 'Contacts',
+    'rhs_table' => 'contacts',
+    'rhs_key' => 'id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'campaignlog_lead' => 
+  array (
+    'name' => 'campaignlog_lead',
+    'lhs_module' => 'CampaignLog',
+    'lhs_table' => 'campaign_log',
+    'lhs_key' => 'related_id',
+    'rhs_module' => 'Leads',
+    'rhs_table' => 'leads',
+    'rhs_key' => 'id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'campaignlog_created_opportunities' => 
+  array (
+    'name' => 'campaignlog_created_opportunities',
+    'lhs_module' => 'CampaignLog',
+    'lhs_table' => 'campaign_log',
+    'lhs_key' => 'related_id',
+    'rhs_module' => 'Opportunities',
+    'rhs_table' => 'opportunities',
+    'rhs_key' => 'id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'campaignlog_targeted_users' => 
+  array (
+    'name' => 'campaignlog_targeted_users',
+    'lhs_module' => 'CampaignLog',
+    'lhs_table' => 'campaign_log',
+    'lhs_key' => 'target_id',
+    'rhs_module' => 'Users',
+    'rhs_table' => 'users',
+    'rhs_key' => 'id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'campaignlog_sent_emails' => 
+  array (
+    'name' => 'campaignlog_sent_emails',
+    'lhs_module' => 'CampaignLog',
+    'lhs_table' => 'campaign_log',
+    'lhs_key' => 'related_id',
+    'rhs_module' => 'Emails',
+    'rhs_table' => 'emails',
+    'rhs_key' => 'id',
     'relationship_type' => 'one-to-many',
   ),
   'campaign_campaigntrakers' => 

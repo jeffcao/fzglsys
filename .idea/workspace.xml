@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2a371567-13ff-4b42-88b9-a96044379536" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cache/jsLanguage/Accounts/en_us.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cache/jsLanguage/Configurator/en_us.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cache/jsLanguage/Home/en_us.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cache/jsLanguage/Users/en_us.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cache/jsLanguage/en_us.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cache/modules/Accounts/SearchForm_advanced.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cache/modules/Configurator/language/en_us.lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cache/modules/EAPM/language/en_us.lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cache/modules/EmailTemplates/language/en_us.lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cache/modules/InboundEmail/language/en_us.lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cache/modules/OAuthKeys/language/en_us.lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cache/modules/ProjectTask/language/en_us.lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cache/modules/Schedulers/language/en_us.lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cache/modules/SchedulersJobs/language/en_us.lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cache/modules/SugarFeed/language/en_us.lang.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%02^028^028621F5%%_head.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%02^028^028621F5%%_head.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%04^045^0453F55B%%ListView.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%04^045^0453F55B%%ListView.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%0E^0E5^0E553FD7%%SearchForm_basic.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%0E^0E5^0E553FD7%%SearchForm_basic.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%0E^0EB^0EB45D3B%%SavedSearchSelects.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%0E^0EB^0EB45D3B%%SavedSearchSelects.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%11^11D^11D01271%%_headerLastViewed.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%11^11D^11D01271%%_headerLastViewed.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%14^148^14804A90%%DashletGenericDisplay.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%14^148^14804A90%%DashletGenericDisplay.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%17^17F^17F4E021%%footer.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%17^17F^17F4E021%%footer.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%23^232^23224CF6%%EditView.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%23^232^23224CF6%%EditView.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%27^277^277D1486%%SearchFormHeader.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%27^277^277D1486%%SearchFormHeader.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%32^326^32652D0B%%_headerModuleList.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%32^326^32652D0B%%_headerModuleList.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%35^359^359DFA93%%MySugar.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%35^359^359DFA93%%MySugar.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%41^41B^41B80544%%_companyLogo.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%41^41B^41B80544%%_companyLogo.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%47^472^472B27CC%%forEditView.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%47^472^472B27CC%%forEditView.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%4D^4D7^4D7DB25E%%ListViewPagination.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%4D^4D7^4D7DB25E%%ListViewPagination.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%62^62E^62E293EC%%EditView.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%62^62E^62E293EC%%EditView.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%65^65F^65F5B44D%%_welcome.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%65^65F^65F5B44D%%_welcome.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%66^663^663462F8%%login.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%66^663^663462F8%%login.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%74^74F^74FBB9DE%%DashletGenericAutoRefresh.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%74^74F^74FBB9DE%%DashletGenericAutoRefresh.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%78^786^7862BF8C%%ListViewGeneric.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%78^786^7862BF8C%%ListViewGeneric.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%7C^7C0^7C03C2FE%%footer.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%7C^7C0^7C03C2FE%%footer.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%85^85B^85B0F62F%%header.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%85^85B^85B0F62F%%header.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%90^907^907DE8A4%%_headerSearch.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%90^907^907DE8A4%%_headerSearch.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%92^92B^92BA0B0A%%_globalLinks.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%92^92B^92BA0B0A%%_globalLinks.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%AE^AE9^AE9373ED%%SugarFeedScript.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%AE^AE9^AE9373ED%%SugarFeedScript.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%AF^AF9^AF9D827F%%_headerShortcuts.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%AF^AF9^AF9D827F%%_headerShortcuts.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%B0^B0C^B0C26FA2%%UserPostForm.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%B0^B0C^B0C26FA2%%UserPostForm.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%B8^B8B^B8B2C450%%ListView.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%B8^B8B^B8B2C450%%ListView.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%CD^CD7^CD77D0D3%%SearchFormGenericAdvanced.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%CD^CD7^CD77D0D3%%SearchFormGenericAdvanced.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%D1^D18^D18B02E6%%SavedSearchForm.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%D1^D18^D18B02E6%%SavedSearchForm.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%DE^DEC^DECE2057%%SearchFormFooter.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%DE^DEC^DECE2057%%SearchFormFooter.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%E6^E6C^E6CB51D1%%SearchFormGeneric.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%E6^E6C^E6CB51D1%%SearchFormGeneric.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%ED^EDA^EDA1ACAC%%EditView.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%ED^EDA^EDA1ACAC%%EditView.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/smarty/templates_c/%%EE^EE4^EE47D4F0%%header.tpl.php" afterPath="$PROJECT_DIR$/cache/smarty/templates_c/%%EE^EE4^EE47D4F0%%header.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/ACLActions/ACLActionvardefs.php" afterPath="$PROJECT_DIR$/cache/modules/ACLActions/ACLActionvardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/ACLRoles/ACLRolevardefs.php" afterPath="$PROJECT_DIR$/cache/modules/ACLRoles/ACLRolevardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Bugs/Bugvardefs.php" afterPath="$PROJECT_DIR$/cache/modules/Bugs/Bugvardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/CampaignLog/CampaignLogvardefs.php" afterPath="$PROJECT_DIR$/cache/modules/CampaignLog/CampaignLogvardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/CampaignTrackers/CampaignTrackervardefs.php" afterPath="$PROJECT_DIR$/cache/modules/CampaignTrackers/CampaignTrackervardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Campaigns/Campaignvardefs.php" afterPath="$PROJECT_DIR$/cache/modules/Campaigns/Campaignvardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/DocumentRevisions/DocumentRevisionvardefs.php" afterPath="$PROJECT_DIR$/cache/modules/DocumentRevisions/DocumentRevisionvardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Documents/Documentvardefs.php" afterPath="$PROJECT_DIR$/cache/modules/Documents/Documentvardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/EAPM/EAPMvardefs.php" afterPath="$PROJECT_DIR$/cache/modules/EAPM/EAPMvardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/EmailMan/EmailManvardefs.php" afterPath="$PROJECT_DIR$/cache/modules/EmailMan/EmailManvardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/EmailMarketing/EmailMarketingvardefs.php" afterPath="$PROJECT_DIR$/cache/modules/EmailMarketing/EmailMarketingvardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/EmailTemplates/EmailTemplatevardefs.php" afterPath="$PROJECT_DIR$/cache/modules/EmailTemplates/EmailTemplatevardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/EmailText/EmailTextvardefs.php" afterPath="$PROJECT_DIR$/cache/modules/EmailText/EmailTextvardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/InboundEmail/InboundEmailvardefs.php" afterPath="$PROJECT_DIR$/cache/modules/InboundEmail/InboundEmailvardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE.txt" afterPath="$PROJECT_DIR$/LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Notes/Notevardefs.php" afterPath="$PROJECT_DIR$/cache/modules/Notes/Notevardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/OAuthKeys/OAuthKeyvardefs.php" afterPath="$PROJECT_DIR$/cache/modules/OAuthKeys/OAuthKeyvardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/OAuthTokens/OAuthTokenvardefs.php" afterPath="$PROJECT_DIR$/cache/modules/OAuthTokens/OAuthTokenvardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/ProjectTask/ProjectTaskvardefs.php" afterPath="$PROJECT_DIR$/cache/modules/ProjectTask/ProjectTaskvardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Project/Projectvardefs.php" afterPath="$PROJECT_DIR$/cache/modules/Project/Projectvardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/ProspectLists/ProspectListvardefs.php" afterPath="$PROJECT_DIR$/cache/modules/ProspectLists/ProspectListvardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Prospects/Prospectvardefs.php" afterPath="$PROJECT_DIR$/cache/modules/Prospects/Prospectvardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Relationships/Relationshipvardefs.php" afterPath="$PROJECT_DIR$/cache/modules/Relationships/Relationshipvardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Releases/Releasevardefs.php" afterPath="$PROJECT_DIR$/cache/modules/Releases/Releasevardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Roles/Rolevardefs.php" afterPath="$PROJECT_DIR$/cache/modules/Roles/Rolevardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/SchedulersJobs/SchedulersJobvardefs.php" afterPath="$PROJECT_DIR$/cache/modules/SchedulersJobs/SchedulersJobvardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Schedulers/Schedulervardefs.php" afterPath="$PROJECT_DIR$/cache/modules/Schedulers/Schedulervardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Tasks/Taskvardefs.php" afterPath="$PROJECT_DIR$/cache/modules/Tasks/Taskvardefs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.php" afterPath="$PROJECT_DIR$/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config_override.php" afterPath="$PROJECT_DIR$/config_override.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/dashlets/dashlets.php" afterPath="$PROJECT_DIR$/cache/dashlets/dashlets.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Accounts/language/en_us.lang.php" afterPath="$PROJECT_DIR$/cache/modules/Accounts/language/en_us.lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Administration/language/en_us.lang.php" afterPath="$PROJECT_DIR$/cache/modules/Administration/language/en_us.lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Bugs/language/en_us.lang.php" afterPath="$PROJECT_DIR$/cache/modules/Bugs/language/en_us.lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Calendar/language/en_us.lang.php" afterPath="$PROJECT_DIR$/cache/modules/Calendar/language/en_us.lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Calls/language/en_us.lang.php" afterPath="$PROJECT_DIR$/cache/modules/Calls/language/en_us.lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Campaigns/language/en_us.lang.php" afterPath="$PROJECT_DIR$/cache/modules/Campaigns/language/en_us.lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Cases/language/en_us.lang.php" afterPath="$PROJECT_DIR$/cache/modules/Cases/language/en_us.lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Contacts/language/en_us.lang.php" afterPath="$PROJECT_DIR$/cache/modules/Contacts/language/en_us.lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Documents/language/en_us.lang.php" afterPath="$PROJECT_DIR$/cache/modules/Documents/language/en_us.lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Emails/language/en_us.lang.php" afterPath="$PROJECT_DIR$/cache/modules/Emails/language/en_us.lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Home/language/en_us.lang.php" afterPath="$PROJECT_DIR$/cache/modules/Home/language/en_us.lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Leads/language/en_us.lang.php" afterPath="$PROJECT_DIR$/cache/modules/Leads/language/en_us.lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Meetings/language/en_us.lang.php" afterPath="$PROJECT_DIR$/cache/modules/Meetings/language/en_us.lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Notes/language/en_us.lang.php" afterPath="$PROJECT_DIR$/cache/modules/Notes/language/en_us.lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Opportunities/language/en_us.lang.php" afterPath="$PROJECT_DIR$/cache/modules/Opportunities/language/en_us.lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Project/language/en_us.lang.php" afterPath="$PROJECT_DIR$/cache/modules/Project/language/en_us.lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/ProspectLists/language/en_us.lang.php" afterPath="$PROJECT_DIR$/cache/modules/ProspectLists/language/en_us.lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Prospects/language/en_us.lang.php" afterPath="$PROJECT_DIR$/cache/modules/Prospects/language/en_us.lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/SavedSearch/language/en_us.lang.php" afterPath="$PROJECT_DIR$/cache/modules/SavedSearch/language/en_us.lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Tasks/language/en_us.lang.php" afterPath="$PROJECT_DIR$/cache/modules/Tasks/language/en_us.lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/Users/language/en_us.lang.php" afterPath="$PROJECT_DIR$/cache/modules/Users/language/en_us.lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/Sugar5/tpls/footer.tpl" afterPath="$PROJECT_DIR$/themes/Sugar5/tpls/footer.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom/application/Ext/LogicHooks/logichooks.ext.php" afterPath="$PROJECT_DIR$/custom/application/Ext/LogicHooks/logichooks.ext.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/themes/Sugar5/pathCache.php" afterPath="$PROJECT_DIR$/cache/themes/Sugar5/pathCache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/Relationships/relationships.cache.php" afterPath="$PROJECT_DIR$/cache/Relationships/relationships.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/modules/vCals/vCalvardefs.php" afterPath="$PROJECT_DIR$/cache/modules/vCals/vCalvardefs.php" />
+    </list>
+    <ignored path="fzglsys.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="fzglsys" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.55288464" vertical-offset="2310" max-vertical-offset="5415">
+              <caret line="177" column="30" selection-start-line="177" selection-start-column="30" selection-end-line="177" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/themes/Sugar5/tpls/footer.tpl" />
+        <option value="$PROJECT_DIR$/config.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBowerSettings">
+    <exe-path />
+    <config-path />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="29" />
+    <option name="y" value="23" />
+    <option name="width" value="1337" />
+    <option name="height" value="745" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fzglsys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fzglsys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fzglsys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="Settings.JavaScript.Bower" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a371567-13ff-4b42-88b9-a96044379536" name="Default" comment="" />
+      <created>1428495425012</created>
+      <option name="number" value="Default" />
+      <updated>1428495425012</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="29" y="23" width="1337" height="745" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24457741" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/themes/Sugar5/tpls/footer.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09165303" vertical-offset="559" max-vertical-offset="1800">
+          <caret line="41" column="6" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Calls/language/en_us.lang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3371522" vertical-offset="1009" max-vertical-offset="2580">
+          <caret line="81" column="36" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/language/en_us.lang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.7806873" vertical-offset="2310" max-vertical-offset="49515">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1428495146000" expanded="true" signature="-1:-1" placeholder="Select from Reports..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/language/en_us.notify_template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4471154" vertical-offset="5016" max-vertical-offset="5640">
+          <caret line="353" column="36" selection-start-line="353" selection-start-column="36" selection-end-line="353" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55288464" vertical-offset="2310" max-vertical-offset="5415">
+          <caret line="177" column="30" selection-start-line="177" selection-start-column="30" selection-end-line="177" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

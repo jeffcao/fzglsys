@@ -1,5 +1,5 @@
 <?php
-// created: 2015-04-07 16:06:12
+// created: 2015-04-08 17:54:17
 $sugar_config = array (
   'admin_access_control' => false,
   'admin_export_only' => false,
@@ -30,6 +30,7 @@ $sugar_config = array (
     'min_cron_interval' => 30,
   ),
   'currency' => '',
+  'dashlet_auto_refresh_min' => '30',
   'dashlet_display_row_options' => 
   array (
     0 => '1',
@@ -174,10 +175,11 @@ $sugar_config = array (
   'default_email_client' => 'sugar',
   'default_email_editor' => 'html',
   'default_export_charset' => 'UTF-8',
-  'default_language' => 'en_us',
+  'default_language' => 'zh_cn',
   'default_locale_name_format' => 's f l',
   'default_max_tabs' => '7',
   'default_module' => 'Home',
+  'default_module_favicon' => false,
   'default_navigation_paradigm' => 'gm',
   'default_number_grouping_seperator' => ',',
   'default_password' => '',
@@ -197,6 +199,7 @@ $sugar_config = array (
   'default_user_is_admin' => false,
   'default_user_name' => '',
   'demoData' => 'yes',
+  'developerMode' => false,
   'disable_convert_lead' => false,
   'disable_export' => false,
   'disable_persistent_connections' => 'false',
@@ -207,6 +210,7 @@ $sugar_config = array (
   'email_default_client' => 'sugar',
   'email_default_delete_attachments' => true,
   'email_default_editor' => 'html',
+  'enable_action_menu' => true,
   'export_delimiter' => ',',
   'export_excel_compatible' => false,
   'history_max_viewed' => 50,
@@ -221,10 +225,11 @@ $sugar_config = array (
     'max_retries' => 5,
     'timeout' => 86400,
   ),
-  'js_custom_version' => '',
-  'js_lang_version' => 1,
+  'js_custom_version' => 1,
+  'js_lang_version' => 14,
   'languages' => 
   array (
+    'zh_cn' => '简体中文',
     'en_us' => 'English (US)',
   ),
   'large_scale_test' => false,
@@ -243,7 +248,7 @@ $sugar_config = array (
     'file' => 
     array (
       'ext' => '.log',
-      'name' => 'sugarcrm',
+      'name' => 'fzglsys',
       'dateFormat' => '%c',
       'maxSize' => '10MB',
       'maxLogs' => 10,
@@ -304,6 +309,7 @@ $sugar_config = array (
   'showThemePicker' => true,
   'site_url' => 'http://localhost/sugarcrm6520',
   'slow_query_time_msec' => '100',
+  'stack_trace_errors' => false,
   'sugar_version' => '6.5.20',
   'sugarbeet' => 0,
   'time_formats' => 
@@ -346,4 +352,5 @@ $sugar_config = array (
   'use_real_names' => true,
   'vcal_time' => '2',
   'verify_client_ip' => true,
+  'disabled_languages' => '',
 );

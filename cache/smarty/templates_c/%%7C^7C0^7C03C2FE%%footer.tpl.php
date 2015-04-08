@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.11, created on 2015-04-07 16:10:30
+<?php /* Smarty version 2.6.11, created on 2015-04-08 15:05:37
          compiled from themes/Sugar5/tpls/footer.tpl */ ?>
 <!--end body panes-->
         </td></tr></table>
@@ -10,7 +10,7 @@
 
 <?php endif; ?>
 </div>
-<div id="footer">
+<div id="footer" style="display: none;">
 	<div id="responseTime">
     	<?php echo $this->_tpl_vars['STATISTICS']; ?>
 

@@ -1,5 +1,5 @@
 <?php
-// created: 2015-04-07 16:39:46
+// created: 2015-04-08 17:04:57
 $dashletsFiles = array (
   'MyAccountsDashlet' => 
   array (
@@ -104,6 +104,13 @@ $dashletsFiles = array (
     'class' => 'MyEmailsDashlet',
     'meta' => 'modules/Emails/Dashlets/MyEmailsDashlet/MyEmailsDashlet.meta.php',
     'module' => 'Emails',
+  ),
+  'f_b_m_f_base_infoDashlet' => 
+  array (
+    'file' => 'modules/f_b_m_f_base_info/Dashlets/f_b_m_f_base_infoDashlet/f_b_m_f_base_infoDashlet.php',
+    'class' => 'f_b_m_f_base_infoDashlet',
+    'meta' => 'modules/f_b_m_f_base_info/Dashlets/f_b_m_f_base_infoDashlet/f_b_m_f_base_infoDashlet.meta.php',
+    'module' => 'f_b_m_f_base_info',
   ),
   'ChartsDashlet' => 
   array (

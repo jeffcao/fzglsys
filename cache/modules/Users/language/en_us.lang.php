@@ -1,5 +1,5 @@
 <?php
-// created: 2015-04-07 16:10:30
+// created: 2015-04-08 17:54:17
 $mod_strings = array (
   'LBL_DELETE_USER_CONFIRM' => 'When the User record is deleted, the corresponding Employee record will also be deleted.<br/><br/>Click OK to delete the User record.',
   'LBL_DELETE_GROUP_CONFIRM' => 'Are you sure you want to delete this Group User? Click OK to delete the User record.<br/>After clicking OK, you will be given the ability to reassign records assigned to the Group User to another user.',

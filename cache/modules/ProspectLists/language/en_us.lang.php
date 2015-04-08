@@ -1,8 +1,6 @@
 <?php
-// created: 2015-04-07 16:04:25
+// created: 2015-04-08 17:54:19
 $mod_strings = array (
-  'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
-  'LBL_ASSIGNED_TO_NAME' => 'Assigned to',
   'LBL_MODULE_NAME' => 'Target Lists',
   'LBL_MODULE_ID' => 'Target Lists',
   'LBL_MODULE_TITLE' => 'Target Lists: Home',
