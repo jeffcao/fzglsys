@@ -263,8 +263,8 @@ $sugar_config = array (
   'js_lang_version' => 3,
   'languages' => 
   array (
-    //'en_us' => 'English (US)',
-    'zh_cn' => '简体中文',
+      'zh_cn' => '简体中文',
+      'en_us' => 'English (US)',
   ),
   'large_scale_test' => false,
   'lead_conv_activity_opt' => 'donothing',
