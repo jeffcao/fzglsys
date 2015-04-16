@@ -100,8 +100,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'yuangong_name_c',
-            'label' => 'LBL_FZGLS_YUANGONG_NAME',
+            'name' => 'full_name',
+            'studio' => 
+            array (
+              'formula' => false,
+            ),
+            'label' => 'LBL_NAME',
           ),
           1 => 
           array (
@@ -125,13 +129,13 @@ array (
         ),
         2 => 
         array (
-          0 => 'phone_mobile',
-          1 => 
+          0 => 
           array (
             'name' => 'duty_type_c',
             'studio' => 'visible',
             'label' => 'LBL_FZGLS_DUTY_TYPE',
           ),
+          1 => 'phone_mobile',
         ),
         3 => 
         array (
@@ -141,49 +145,80 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_FZGLS_SUOSHU_BUMENG',
           ),
-        ),
-        4 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'suoshu_fengongsi_c',
             'studio' => 'visible',
             'label' => 'LBL_FZGLS_SUOSHU_FENGONGSI',
           ),
         ),
-        5 => 
+        4 => 
         array (
-          0 => 
+          0 => '',
+          1 => 
           array (
             'name' => 'guding_gongzi_c',
             'label' => 'LBL_FZGLS_GUDING_GONGZI',
           ),
-          1 => 
+        ),
+        5 => 
+        array (
+          0 => 
           array (
             'name' => 'gongzi_butie_c',
             'label' => 'LBL_FZGLS_GONGZI_BUTIE',
+          ),
+          1 => 
+          array (
+            'name' => 'gongzi_jixiao_c',
+            'label' => 'LBL_FZGLS_GONGZI_JIXIAO',
           ),
         ),
         6 => 
         array (
           0 => 
           array (
-            'name' => 'gongzi_jixiao_c',
-            'label' => 'LBL_FZGLS_GONGZI_JIXIAO',
+            'name' => 'yuangong_status_c',
+            'studio' => 'visible',
+            'label' => 'LBL_YUANGONG_STATUS',
           ),
-          1 => '',
+          1 => 'description',
         ),
         7 => 
         array (
-          0 => 'employee_status',
+          0 => 'email1',
         ),
         8 => 
         array (
-          0 => 'description',
+          0 => 
+          array (
+            'name' => 'created_by_name',
+            'label' => 'LBL_CREATED_BY_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'date_entered',
+            'studio' => 
+            array (
+              'editview' => false,
+              'quickcreate' => false,
+            ),
+            'label' => 'LBL_DATE_ENTERED',
+          ),
         ),
         9 => 
         array (
-          0 => 'email1',
+          0 => 
+          array (
+            'name' => 'date_modified',
+            'studio' => 
+            array (
+              'editview' => false,
+              'quickcreate' => false,
+            ),
+            'label' => 'LBL_DATE_MODIFIED',
+          ),
+          1 => '',
         ),
       ),
     ),

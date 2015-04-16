@@ -1,0 +1,103 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'Employees',
+    'varName' => 'Employee',
+    'orderBy' => 'employees.first_name, employees.last_name',
+    'whereClauses' => array (
+  'first_name' => 'employees.first_name',
+  'last_name' => 'employees.last_name',
+),
+    'searchInputs' => array (
+  0 => 'first_name',
+  1 => 'last_name',
+),
+    'listviewdefs' => array (
+  'FIRST_NAME' => 
+  array (
+    'type' => 'name',
+    'label' => 'LBL_FIRST_NAME',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'GONG_HAO_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_FZGLS_GONG_HAO',
+    'width' => '10%',
+  ),
+  'XINBIE_TYPE_C' => 
+  array (
+    'type' => 'radioenum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_FZGLS_XINBIE_TYPE',
+    'width' => '10%',
+    'name' => 'xinbie_type_c',
+  ),
+  'SUOSHU_BUMENG_C' => 
+  array (
+    'type' => 'relate',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_FZGLS_SUOSHU_BUMENG',
+    'id' => 'FZGLS_BUMENG_MATAINE_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'name' => 'suoshu_bumeng_c',
+  ),
+  'SUOSHU_FENGONGSI_C' => 
+  array (
+    'type' => 'relate',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_FZGLS_SUOSHU_FENGONGSI',
+    'id' => 'FZGLS_FENGGONGSI_INFO_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'name' => 'suoshu_fengongsi_c',
+  ),
+  'EMAIL1' => 
+  array (
+    'width' => '15%',
+    'label' => 'LBL_LIST_EMAIL',
+    'link' => true,
+    'customCode' => '{$EMAIL1_LINK}{$EMAIL1}</a>',
+    'default' => true,
+    'sortable' => false,
+    'name' => 'email1',
+  ),
+  'PHONE_WORK' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_LIST_PHONE',
+    'link' => true,
+    'default' => true,
+    'name' => 'phone_work',
+  ),
+  'YUANGONG_STATUS_C' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_YUANGONG_STATUS',
+    'width' => '10%',
+    'name' => 'yuangong_status_c',
+  ),
+  'EMPLOYEE_STATUS' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_LIST_EMPLOYEE_STATUS',
+    'link' => false,
+    'default' => true,
+    'name' => 'employee_status',
+  ),
+  'DATE_ENTERED' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_DATE_ENTERED',
+    'default' => true,
+    'name' => 'date_entered',
+  ),
+),
+);

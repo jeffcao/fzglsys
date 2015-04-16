@@ -17,11 +17,6 @@ $dictionary['fzgls_fenggongsi_info']['fields']['gongsi_dizhi_c']['labelValue']='
 
  
 
- // created: 2015-04-16 08:13:06
-$dictionary['fzgls_fenggongsi_info']['fields']['gongsi_name_c']['labelValue']='公司名称';
-
- 
-
  // created: 2015-04-16 08:13:33
 $dictionary['fzgls_fenggongsi_info']['fields']['gongsi_num_c']['labelValue']='公司编号';
 
@@ -37,8 +32,8 @@ $dictionary['fzgls_fenggongsi_info']['fields']['gongsi_youbian_c']['labelValue']
 
  
 
- // created: 2015-04-16 08:27:34
-$dictionary['fzgls_fenggongsi_info']['fields']['name']['required']=false;
+ // created: 2015-04-16 16:00:09
+$dictionary['fzgls_fenggongsi_info']['fields']['name']['required']=true;
 $dictionary['fzgls_fenggongsi_info']['fields']['name']['audited']=false;
 $dictionary['fzgls_fenggongsi_info']['fields']['name']['comments']='Name of the Company';
 $dictionary['fzgls_fenggongsi_info']['fields']['name']['merge_filter']='disabled';

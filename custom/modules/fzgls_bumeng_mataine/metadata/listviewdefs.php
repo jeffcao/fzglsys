@@ -2,12 +2,12 @@
 $module_name = 'fzgls_bumeng_mataine';
 $listViewDefs [$module_name] = 
 array (
-  'BUMENG_NAME_C' => 
+  'NAME' => 
   array (
-    'type' => 'varchar',
+    'width' => '32%',
+    'label' => 'LBL_NAME',
     'default' => true,
-    'label' => 'LBL_FZGLS_BUMENG_NAME',
-    'width' => '10%',
+    'link' => true,
   ),
   'BUMENG_NUM_C' => 
   array (

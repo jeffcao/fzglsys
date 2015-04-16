@@ -6,14 +6,6 @@ array (
   array (
     'basic_search' => 
     array (
-      'bumeng_name_c' => 
-      array (
-        'type' => 'varchar',
-        'default' => true,
-        'label' => 'LBL_FZGLS_BUMENG_NAME',
-        'width' => '10%',
-        'name' => 'bumeng_name_c',
-      ),
       'bumeng_num_c' => 
       array (
         'type' => 'varchar',

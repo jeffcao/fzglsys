@@ -35,18 +35,26 @@ array (
       array (
         0 => 
         array (
-          0 => 
-          array (
-            'name' => 'yuangong_name_c',
-            'label' => 'LBL_FZGLS_YUANGONG_NAME',
-          ),
+          0 => 'first_name',
           1 => 
+          array (
+            'name' => 'last_name',
+            'displayParams' => 
+            array (
+              'required' => true,
+            ),
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
           array (
             'name' => 'gong_hao_c',
             'label' => 'LBL_FZGLS_GONG_HAO',
           ),
+          1 => '',
         ),
-        1 => 
+        2 => 
         array (
           0 => 
           array (
@@ -60,7 +68,7 @@ array (
             'label' => 'LBL_FZGLS_SHENFEN_ZHENG',
           ),
         ),
-        2 => 
+        3 => 
         array (
           0 => 
           array (
@@ -70,7 +78,7 @@ array (
           ),
           1 => 'phone_mobile',
         ),
-        3 => 
+        4 => 
         array (
           0 => 
           array (
@@ -85,7 +93,7 @@ array (
             'label' => 'LBL_FZGLS_SUOSHU_FENGONGSI',
           ),
         ),
-        4 => 
+        5 => 
         array (
           0 => '',
           1 => 
@@ -94,7 +102,7 @@ array (
             'label' => 'LBL_FZGLS_GUDING_GONGZI',
           ),
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (
@@ -107,7 +115,7 @@ array (
             'label' => 'LBL_FZGLS_GONGZI_JIXIAO',
           ),
         ),
-        6 => 
+        7 => 
         array (
           0 => 
           array (
@@ -121,7 +129,7 @@ array (
             'label' => 'LBL_NOTES',
           ),
         ),
-        7 => 
+        8 => 
         array (
           0 => 
           array (

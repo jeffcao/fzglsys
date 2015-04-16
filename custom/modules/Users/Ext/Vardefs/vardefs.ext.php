@@ -11,6 +11,14 @@ $dictionary['User']['fields']['duty_type_c']['labelValue']='岗位';
 
  
 
+ // created: 2015-04-16 16:23:22
+$dictionary['User']['fields']['first_name']['len']='255';
+$dictionary['User']['fields']['first_name']['required']=true;
+$dictionary['User']['fields']['first_name']['merge_filter']='disabled';
+$dictionary['User']['fields']['first_name']['importable']='required';
+
+ 
+
  // created: 2015-04-16 09:12:22
 
  
@@ -39,10 +47,10 @@ $dictionary['User']['fields']['guding_gongzi_c']['labelValue']='固定工资';
 
  
 
- // created: 2015-04-16 09:19:18
+ // created: 2015-04-16 16:23:13
 $dictionary['User']['fields']['last_name']['len']='60';
 $dictionary['User']['fields']['last_name']['merge_filter']='disabled';
-$dictionary['User']['fields']['last_name']['required']=false;
+$dictionary['User']['fields']['last_name']['required']=true;
 
  
 
@@ -63,11 +71,6 @@ $dictionary['User']['fields']['suoshu_fengongsi_c']['labelValue']='所属分公�
 
  // created: 2015-04-16 09:26:05
 $dictionary['User']['fields']['xinbie_type_c']['labelValue']='性别';
-
- 
-
- // created: 2015-04-16 09:28:17
-$dictionary['User']['fields']['yuangong_name_c']['labelValue']='姓名';
 
  
 

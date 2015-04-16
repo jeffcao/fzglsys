@@ -2,11 +2,6 @@
  //WARNING: The contents of this file are auto-generated
 
 
- // created: 2015-04-16 04:48:50
-$dictionary['fzgls_bumeng_mataine']['fields']['bumeng_name_c']['labelValue']='部门名称';
-
- 
-
  // created: 2015-04-16 04:49:26
 $dictionary['fzgls_bumeng_mataine']['fields']['bumeng_num_c']['labelValue']='部门编号';
 
@@ -27,8 +22,8 @@ $dictionary['fzgls_bumeng_mataine']['fields']['fuzeren_phone_c']['labelValue']='
 
  
 
- // created: 2015-04-16 10:17:44
-$dictionary['fzgls_bumeng_mataine']['fields']['name']['required']=false;
+ // created: 2015-04-16 15:57:07
+$dictionary['fzgls_bumeng_mataine']['fields']['name']['required']=true;
 $dictionary['fzgls_bumeng_mataine']['fields']['name']['unified_search']=false;
 
  

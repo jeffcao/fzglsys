@@ -3,12 +3,12 @@ $module_name = 'fzgls_fenggongsi_info';
 $OBJECT_NAME = 'FZGLS_FENGGONGSI_INFO';
 $listViewDefs [$module_name] = 
 array (
-  'GONGSI_NAME_C' => 
+  'NAME' => 
   array (
-    'type' => 'varchar',
+    'width' => '40%',
+    'label' => 'LBL_ACCOUNT_NAME',
+    'link' => true,
     'default' => true,
-    'label' => 'LBL_FZGLS_GONGSI_NAME',
-    'width' => '10%',
   ),
   'GONGSI_NUM_C' => 
   array (

@@ -52,11 +52,7 @@ array (
       array (
         0 => 
         array (
-          0 => 
-          array (
-            'name' => 'gongsi_name_c',
-            'label' => 'LBL_FZGLS_GONGSI_NAME',
-          ),
+          0 => 'name',
           1 => 
           array (
             'name' => 'gongsi_num_c',

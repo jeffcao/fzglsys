@@ -4,23 +4,14 @@ $popupMeta = array (
     'varName' => 'fzgls_bumeng_mataine',
     'orderBy' => 'fzgls_bumeng_mataine.name',
     'whereClauses' => array (
-  'bumeng_name_c' => 'fzgls_bumeng_mataine_cstm.bumeng_name_c',
   'bumeng_num_c' => 'fzgls_bumeng_mataine_cstm.bumeng_num_c',
   'fuzeren_name_c' => 'fzgls_bumeng_mataine_cstm.fuzeren_name_c',
 ),
     'searchInputs' => array (
-  4 => 'bumeng_name_c',
   5 => 'bumeng_num_c',
   6 => 'fuzeren_name_c',
 ),
     'searchdefs' => array (
-  'bumeng_name_c' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_FZGLS_BUMENG_NAME',
-    'width' => '10%',
-    'name' => 'bumeng_name_c',
-  ),
   'bumeng_num_c' => 
   array (
     'type' => 'varchar',
@@ -37,13 +28,13 @@ $popupMeta = array (
   ),
 ),
     'listviewdefs' => array (
-  'BUMENG_NAME_C' => 
+  'NAME' => 
   array (
-    'type' => 'varchar',
+    'width' => '32%',
+    'label' => 'LBL_NAME',
     'default' => true,
-    'label' => 'LBL_FZGLS_BUMENG_NAME',
-    'width' => '10%',
-    'name' => 'bumeng_name_c',
+    'link' => true,
+    'name' => 'name',
   ),
   'BUMENG_NUM_C' => 
   array (

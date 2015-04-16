@@ -36,11 +36,7 @@ array (
       array (
         0 => 
         array (
-          0 => 
-          array (
-            'name' => 'bumeng_name_c',
-            'label' => 'LBL_FZGLS_BUMENG_NAME',
-          ),
+          0 => 'name',
           1 => 
           array (
             'name' => 'bumeng_num_c',
@@ -54,7 +50,6 @@ array (
             'name' => 'suoshu_fengongsi_c',
             'label' => 'LBL_FZGLS_SUOSHU_FENGONGSI',
           ),
-          1 => '',
         ),
         2 => 
         array (
@@ -89,7 +84,6 @@ array (
             'name' => 'dizhi_c',
             'label' => 'LBL_FZGLS_DIZHI',
           ),
-          1 => '',
         ),
         5 => 
         array (

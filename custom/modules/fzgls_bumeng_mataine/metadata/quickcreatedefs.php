@@ -36,11 +36,6 @@ array (
       array (
         0 => 
         array (
-          0 => 
-          array (
-            'name' => 'bumeng_name_c',
-            'label' => 'LBL_FZGLS_BUMENG_NAME',
-          ),
           1 => 
           array (
             'name' => 'bumeng_num_c',

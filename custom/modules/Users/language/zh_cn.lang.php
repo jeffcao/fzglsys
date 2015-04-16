@@ -1,7 +1,7 @@
 <?php
-// created: 2015-04-16 11:21:23
+// created: 2015-04-16 16:54:19
 $mod_strings = array (
-  'LBL_LAST_NAME' => '姓:',
+  'LBL_LAST_NAME' => '名',
   'LBL_FZGLS_GONG_HAO' => '工号',
   'LBL_YUANGONG_STATUS' => '在职状态',
   'LBL_FZGLS_DUTY_TYPE' => '岗位',
@@ -17,4 +17,6 @@ $mod_strings = array (
   'LBL_FZGLS_SUOSHU_FENGONGSI' => '所属分公司',
   'LBL_FZGLS_YUANGONG_NAME' => '姓名',
   'LBL_TASK' => 'task',
+  'LBL_FIRST_NAME' => '姓',
+  'LBL_NAME' => '姓名',
 );
