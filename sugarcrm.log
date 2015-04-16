@@ -46,3 +46,13 @@ Tue Apr 14 08:04:53 2015 [17699][1][FATAL]  Query Failed: SELECT id, name FROM a
 Tue Apr 14 08:05:04 2015 [17700][1][FATAL]  Query Failed: SELECT id, name FROM asol_notificationemails WHERE deleted=0 AND status='active' ORDER BY name: MySQL error 1146: Table 'fzglsys.asol_notificationemails' doesn't exist
 Tue Apr 14 08:06:14 2015 [17701][1][FATAL]  Query Failed: SELECT id, name FROM asol_notificationemails WHERE deleted=0 AND status='active' ORDER BY name: MySQL error 1146: Table 'fzglsys.asol_notificationemails' doesn't exist
 Tue Apr 14 08:06:19 2015 [17701][1][FATAL]  Query Failed: SELECT id, name FROM asol_notificationemails WHERE deleted=0 AND status='active' ORDER BY name: MySQL error 1146: Table 'fzglsys.asol_notificationemails' doesn't exist
+Thu Apr 16 08:48:23 2015 [41445][1][FATAL] Failed to load original or custom subpanel data for kbdocuments in modules/KBDocuments/metadata/subpanels/default.php
+Thu Apr 16 08:56:18 2015 [43206][1][FATAL] Failed to load original or custom subpanel data for kbdocuments in modules/KBDocuments/metadata/subpanels/default.php
+Thu Apr 16 09:01:07 2015 [41445][1][FATAL] Failed to load original or custom subpanel data for kbdocuments in modules/KBDocuments/metadata/subpanels/default.php
+Thu Apr 16 09:08:14 2015 [12181][1][FATAL] Failed to load original or custom subpanel data for kbdocuments in modules/KBDocuments/metadata/subpanels/default.php
+Thu Apr 16 09:14:31 2015 [43206][1][FATAL] Failed to load original or custom subpanel data for kbdocuments in modules/KBDocuments/metadata/subpanels/default.php
+Thu Apr 16 09:26:53 2015 [43206][1][FATAL]  Query Failed: ALTER TABLE users_cstm drop COLUMN parent_name: MySQL error 1091: Can't DROP 'parent_name'; check that column/key exists
+Thu Apr 16 10:35:04 2015 [51014][1][FATAL] Failed to load original or custom subpanel data for kbdocuments in modules/KBDocuments/metadata/subpanels/default.php
+Thu Apr 16 11:02:30 2015 [12181][1][FATAL] Failed to load original or custom subpanel data for kbdocuments in modules/KBDocuments/metadata/subpanels/default.php
+Thu Apr 16 11:04:04 2015 [51014][1][FATAL] Failed to load original or custom subpanel data for kbdocuments in modules/KBDocuments/metadata/subpanels/default.php
+Thu Apr 16 11:23:41 2015 [54472][1][FATAL] Failed to load original or custom subpanel data for kbdocuments in modules/KBDocuments/metadata/subpanels/default.php
