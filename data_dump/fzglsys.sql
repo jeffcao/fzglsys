@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2015-04-17 11:35:45
+-- Generation Time: 2015-04-17 18:01:18
 -- 服务器版本： 5.6.21
 -- PHP Version: 5.6.3
 
@@ -2471,9 +2471,13 @@ CREATE TABLE IF NOT EXISTS `fzgls_jiekuangren_dangan` (
 --
 
 INSERT INTO `fzgls_jiekuangren_dangan` (`id`, `date_entered`, `date_modified`, `modified_user_id`, `created_by`, `description`, `deleted`, `assigned_user_id`, `salutation`, `first_name`, `last_name`, `title`, `department`, `do_not_call`, `phone_home`, `phone_mobile`, `phone_work`, `phone_other`, `phone_fax`, `primary_address_street`, `primary_address_city`, `primary_address_state`, `primary_address_postalcode`, `primary_address_country`, `alt_address_street`, `alt_address_city`, `alt_address_state`, `alt_address_postalcode`, `alt_address_country`, `assistant`, `assistant_phone`) VALUES
-('76faa869-0129-1da4-7626-5530c9778e1d', '2015-04-17 08:50:17', '2015-04-17 08:50:53', '1', '1', '', 1, '1', 'Ms.', 'adf', 'asdf', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, NULL),
-('779e8342-7025-906b-ddd8-5530c6ca7276', '2015-04-17 08:36:17', '2015-04-17 08:36:39', '1', '1', '', 1, '1', 'Ms.', 'ddf', 'adsf', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, NULL),
-('c025d754-325a-1bba-b210-5530c9485e48', '2015-04-17 08:53:03', '2015-04-17 08:53:35', '1', '1', '', 1, '1', 'Ms.', 'fasd', 'asdfasf', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, NULL);
+('2b0ab487-8e59-11f8-fd22-5531288dd936', '2015-04-17 15:38:20', '2015-04-17 15:57:04', '1', '1', '', 1, '1', 'Dr.', 'werwer', '6456', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, NULL),
+('30ed8e4d-c4f3-90e6-0f79-553126dbd0d9', '2015-04-17 15:26:13', '2015-04-17 15:27:34', '1', '1', '', 1, '1', 'Ms.', '2323', '3123', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, NULL),
+('71893b41-7755-7141-8f11-5531264f1855', '2015-04-17 15:27:07', '2015-04-17 15:27:34', '1', '1', '', 1, '1', 'Dr.', '5757', '5675', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, NULL),
+('86c77ef7-e022-2b69-56b8-55312a1cdf65', '2015-04-17 15:43:59', '2015-04-17 15:57:04', '1', '1', '', 1, '1', 'Mrs.', '34532', '23424', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, NULL),
+('b3de828c-4d48-6c38-d805-55312b209567', '2015-04-17 15:47:52', '2015-04-17 15:57:04', '1', '1', '', 1, '1', 'Ms.', 'w23', '3424', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, NULL),
+('da470de7-3214-f08e-e5fb-553128c98984', '2015-04-17 15:34:24', '2015-04-17 15:57:04', '1', '1', '', 1, '1', 'Ms.', 'asdf', 'asdf', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, NULL),
+('ee2af3c9-e15d-f7ee-2cff-55312d7ac513', '2015-04-17 15:56:31', '2015-04-17 15:57:04', '1', '1', '', 1, '1', 'Dr.', '35', '345', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -2512,9 +2516,13 @@ CREATE TABLE IF NOT EXISTS `fzgls_jiekuangren_dangan_cstm` (
 --
 
 INSERT INTO `fzgls_jiekuangren_dangan_cstm` (`id_c`, `dangan_num_c`) VALUES
-('76faa869-0129-1da4-7626-5530c9778e1d', ''),
-('779e8342-7025-906b-ddd8-5530c6ca7276', ''),
-('c025d754-325a-1bba-b210-5530c9485e48', '201504');
+('2b0ab487-8e59-11f8-fd22-5531288dd936', '201504000001'),
+('30ed8e4d-c4f3-90e6-0f79-553126dbd0d9', '201504000001'),
+('71893b41-7755-7141-8f11-5531264f1855', '201504000001'),
+('86c77ef7-e022-2b69-56b8-55312a1cdf65', '201504000001'),
+('b3de828c-4d48-6c38-d805-55312b209567', '201504000006'),
+('da470de7-3214-f08e-e5fb-553128c98984', '201504000001'),
+('ee2af3c9-e15d-f7ee-2cff-55312d7ac513', '201504000005');
 
 -- --------------------------------------------------------
 
@@ -3891,7 +3899,7 @@ CREATE TABLE IF NOT EXISTS `tracker` (
   `session_id` varchar(36) DEFAULT NULL,
   `visible` tinyint(1) DEFAULT '0',
   `deleted` tinyint(1) DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=166 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=178 DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `tracker`
@@ -3911,25 +3919,25 @@ INSERT INTO `tracker` (`id`, `monitor_id`, `user_id`, `module_name`, `item_id`, 
 (80, '70eee013-fe37-7b96-a88c-552ddb105680', '23d39e87-2c70-3cc2-270c-552b2baee075', 'Employees', '23d39e87-2c70-3cc2-270c-552b2baee075', 'Meng Jun', '2015-04-15 03:31:31', 'detailview', 'q25c4bb8tdtao4s6hv57qp7pk1', 1, 0),
 (82, '531a11e8-b958-c3e8-a95d-552ddc0031af', '1', 'fzgls_employer_info', '1eb1aa75-c25e-3e51-8911-552ddade7ecd', '先生 小军 曹', '2015-04-15 03:34:41', 'detailview', 'rr3qslptvgvjtdnctc0t9qgiq1', 0, 0),
 (92, '3519caa3-b6a2-4c32-3e1c-552f79368674', '1', 'Project', '1016d779-1c6f-8925-e5ff-552b8319a11b', 'test', '2015-04-16 08:59:41', 'detailview', 'bton1utit39v1n2lodgfulr295', 1, 0),
-(104, '2340d4a5-853f-55f6-fe71-552fc1d98ffd', '1', 'fzgls_bumeng_mataine', '23ef85c4-2c84-ed6d-90b9-552f7273dd02', '开发一部', '2015-04-16 14:05:02', 'detailview', 'b2dso63sttp742e3oj2dgh56f2', 1, 0),
-(106, '84891ce2-e25a-74af-48a0-552fc1373001', '1', 'fzgls_fenggongsi_info', '8b4afdce-d416-d9c4-904e-552f7132e06e', '南京第一分公司', '2015-04-16 14:05:25', 'detailview', 'b2dso63sttp742e3oj2dgh56f2', 1, 0),
-(108, '40f9098e-7dcf-4815-43b8-552fc1ca98bd', '1', 'Employees', 'dcc5fa9d-a761-2542-e599-552b2bd91094', 'Liu Jack', '2015-04-16 14:06:50', 'save', 'b2dso63sttp742e3oj2dgh56f2', 1, 0),
-(111, '311f9340-db3b-d8d3-deb1-552fc2969fc3', '1', 'Employees', '23d39e87-2c70-3cc2-270c-552b2baee075', 'Meng Jun', '2015-04-16 14:07:28', 'save', 'b2dso63sttp742e3oj2dgh56f2', 1, 0),
-(114, 'bd4e7c09-d6e2-cf5e-7237-552fc25c35ed', '1', 'Employees', '1', 'Cao Jeff', '2015-04-16 14:08:28', 'save', 'b2dso63sttp742e3oj2dgh56f2', 1, 0),
-(117, '9f0369db-4e9b-0b1f-b46d-552fc520896d', '1', 'Employees', 'dcc5fa9d-a761-2542-e599-552b2bd91094', '刘海 Jack', '2015-04-16 14:22:13', 'save', 'b2dso63sttp742e3oj2dgh56f2', 1, 0),
-(125, 'bb1ff722-1c8e-31a1-111a-552fc98c7446', '1', 'Employees', 'dcc5fa9d-a761-2542-e599-552b2bd91094', '海 刘', '2015-04-16 14:40:15', 'save', 'b2dso63sttp742e3oj2dgh56f2', 1, 0),
-(133, '6b840746-46ae-1ced-96fc-552fca00dacd', '1', 'Employees', 'dcc5fa9d-a761-2542-e599-552b2bd91094', '刘 海', '2015-04-16 14:42:10', 'save', 'b2dso63sttp742e3oj2dgh56f2', 1, 0),
-(137, '2312bc78-a841-b998-e0d5-552fca50ec8b', '1', 'Employees', '23d39e87-2c70-3cc2-270c-552b2baee075', '孟 军', '2015-04-16 14:42:37', 'save', 'b2dso63sttp742e3oj2dgh56f2', 1, 0),
 (141, 'e9e6020b-9a87-6933-8ee9-552fcb353b1d', '1', 'Employees', '23d39e87-2c70-3cc2-270c-552b2baee075', '孟 军', '2015-04-16 14:45:34', 'detailview', 'b2dso63sttp742e3oj2dgh56f2', 1, 0),
 (147, '1e078f7c-f575-655c-ddc4-552fcbe8ba5b', '1', 'Users', '1', 'Cao Jeff', '2015-04-16 14:46:33', 'detailview', 'b2dso63sttp742e3oj2dgh56f2', 1, 0),
-(154, 'db7a20c3-44f7-c3fa-3f33-552fcdd15831', '1', 'Users', 'dcc5fa9d-a761-2542-e599-552b2bd91094', '刘 海', '2015-04-16 14:55:25', 'editview', 'b2dso63sttp742e3oj2dgh56f2', 1, 0),
 (155, '42726950-39e8-4038-d754-552fcd1966bf', '1', 'Tasks', 'f02e52fd-d3b3-6173-9d79-552bbdc986f3', 'test task', '2015-04-16 14:56:05', 'detailview', 'b2dso63sttp742e3oj2dgh56f2', 1, 0),
 (158, '651abae8-a656-0c68-c796-55306c3ead07', '1', 'fzgls_bumeng_mataine', '23ef85c4-2c84-ed6d-90b9-552f7273dd02', '开发一部', '2015-04-17 02:14:22', 'detailview', 'bton1utit39v1n2lodgfulr295', 1, 0),
 (159, '68f5e597-3b9d-7d19-51ed-55306cea75dd', '1', 'Users', 'dcc5fa9d-a761-2542-e599-552b2bd91094', '刘 海', '2015-04-17 02:14:28', 'detailview', 'bton1utit39v1n2lodgfulr295', 1, 0),
 (160, '58b581f2-7415-1159-a9d9-55306c122dfd', '1', 'fzgls_fenggongsi_info', '8b4afdce-d416-d9c4-904e-552f7132e06e', '南京第一分公司', '2015-04-17 02:14:30', 'detailview', 'bton1utit39v1n2lodgfulr295', 1, 0),
 (161, '9cc17d2e-2ce2-f18c-772a-5530c6865697', '1', 'fzgls_jiekuangren_dangan', '779e8342-7025-906b-ddd8-5530c6ca7276', '小姐 ddf adsf', '2015-04-17 08:36:17', 'detailview', 'bton1utit39v1n2lodgfulr295', 0, 0),
 (164, '3c8dd477-cc1a-939d-11c4-5530c915e74c', '1', 'fzgls_jiekuangren_dangan', '76faa869-0129-1da4-7626-5530c9778e1d', '小姐 adf asdf', '2015-04-17 08:50:34', 'detailview', 'bton1utit39v1n2lodgfulr295', 0, 0),
-(165, 'e560e662-b555-20ae-c5c0-5530c94fcfb3', '1', 'fzgls_jiekuangren_dangan', 'c025d754-325a-1bba-b210-5530c9485e48', '小姐 fasd asdfasf', '2015-04-17 08:53:03', 'detailview', 'bton1utit39v1n2lodgfulr295', 0, 0);
+(165, 'e560e662-b555-20ae-c5c0-5530c94fcfb3', '1', 'fzgls_jiekuangren_dangan', 'c025d754-325a-1bba-b210-5530c9485e48', '小姐 fasd asdfasf', '2015-04-17 08:53:03', 'detailview', 'bton1utit39v1n2lodgfulr295', 0, 0),
+(167, '720365a4-2240-eb15-b9c3-553125b4df99', '1', 'fzgls_jiekuangren_dangan', 'e4dfbf56-910d-f8e1-b4c0-553122657e96', '博士 5345 sdgf', '2015-04-17 15:21:46', 'detailview', 'o4iqic7ng91outa7nacsvu1bd3', 0, 0),
+(169, 'cead63f1-29a4-99ef-a30d-553125e61013', '1', 'fzgls_jiekuangren_dangan', 'ef875075-ac3b-f123-833b-553125e983f9', '女士 2342 234', '2015-04-17 15:22:09', 'detailview', 'o4iqic7ng91outa7nacsvu1bd3', 0, 0),
+(170, '32ad90e1-f778-bdf6-0477-55312518b36c', '1', 'fzgls_jiekuangren_dangan', 'ec3e2c4e-e5aa-7668-3119-55312570ad26', '博士 34234 23424', '2015-04-17 15:22:19', 'detailview', 'o4iqic7ng91outa7nacsvu1bd3', 0, 0),
+(171, '69d24a47-015d-ea5b-6d67-5531269be2aa', '1', 'fzgls_jiekuangren_dangan', '30ed8e4d-c4f3-90e6-0f79-553126dbd0d9', '小姐 2323 3123', '2015-04-17 15:26:13', 'detailview', 'o4iqic7ng91outa7nacsvu1bd3', 0, 0),
+(172, 'e4f8153e-5f11-2fa4-ad38-55312634f89c', '1', 'fzgls_jiekuangren_dangan', '71893b41-7755-7141-8f11-5531264f1855', '博士 5757 5675', '2015-04-17 15:27:07', 'detailview', 'o4iqic7ng91outa7nacsvu1bd3', 0, 0),
+(173, '4cc77da1-be64-79f2-2b78-553128c2adca', '1', 'fzgls_jiekuangren_dangan', 'da470de7-3214-f08e-e5fb-553128c98984', '小姐 asdf asdf', '2015-04-17 15:34:25', 'detailview', 'e48a4umi4a1utef79lj96tfs65', 0, 0),
+(174, '6bfee509-6e4f-3618-277a-5531282803b9', '1', 'fzgls_jiekuangren_dangan', '2b0ab487-8e59-11f8-fd22-5531288dd936', '博士 werwer 6456', '2015-04-17 15:38:20', 'detailview', 'e48a4umi4a1utef79lj96tfs65', 0, 0),
+(175, 'ee441b5e-a657-a6e8-8e35-55312a84c267', '1', 'fzgls_jiekuangren_dangan', '86c77ef7-e022-2b69-56b8-55312a1cdf65', '女士 34532 23424', '2015-04-17 15:43:59', 'detailview', 'e48a4umi4a1utef79lj96tfs65', 0, 0),
+(176, '132456c2-dc31-a1ff-5d9b-55312b8e4f59', '1', 'fzgls_jiekuangren_dangan', 'b3de828c-4d48-6c38-d805-55312b209567', '小姐 w23 3424', '2015-04-17 15:47:52', 'detailview', 'e48a4umi4a1utef79lj96tfs65', 0, 0),
+(177, '43d29917-a006-fb9b-f679-55312dc970e9', '1', 'fzgls_jiekuangren_dangan', 'ee2af3c9-e15d-f7ee-2cff-55312d7ac513', '博士 35 345', '2015-04-17 15:56:32', 'detailview', 'e48a4umi4a1utef79lj96tfs65', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -5197,7 +5205,7 @@ MODIFY `tracker_key` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `tracker`
 --
 ALTER TABLE `tracker`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=166;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=178;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
