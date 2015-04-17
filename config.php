@@ -274,15 +274,15 @@ $sugar_config = array (
   'lock_homepage' => false,
   'lock_subpanels' => false,
   'log_dir' => '.',
-  'log_file' => 'sugarcrm.log',
+  'log_file' => 'fzglsys.log',
   'log_memory_usage' => false,
   'logger' => 
   array (
-    'level' => 'fatal',
+    'level' => 'info',
     'file' => 
     array (
       'ext' => '.log',
-      'name' => 'sugarcrm',
+      'name' => 'fzglsys',
       'dateFormat' => '%c',
       'maxSize' => '10MB',
       'maxLogs' => 10,

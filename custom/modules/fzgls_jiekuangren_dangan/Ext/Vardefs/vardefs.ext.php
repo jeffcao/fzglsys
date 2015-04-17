@@ -2,7 +2,7 @@
  //WARNING: The contents of this file are auto-generated
 
 
- // created: 2015-04-17 10:28:14
+ // created: 2015-04-17 15:27:55
 $dictionary['fzgls_jiekuangren_dangan']['fields']['dangan_num_c']['labelValue']='档案编号';
 
  
