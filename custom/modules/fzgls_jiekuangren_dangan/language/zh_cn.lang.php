@@ -1,7 +1,27 @@
 <?php
-// created: 2015-04-17 07:33:46
+// created: 2015-04-20 05:23:53
 $mod_strings = array (
   'LBL_FIRST_NAME' => '名',
   'LBL_LAST_NAME' => '姓',
-    'LBL_FZGLS_DANGAN_NUM' => '档案编号',
+  'LBL_FZGLS_DANGAN_NUM' => '档案编号',
+  'LBL_FZGLS_ZHENGJIAN_TYPE' => '证件类型',
+  'LBL_ZHENGJIAN_NUM' => '证件号码',
+  'LBL_HUNYIN_STATUS' => '婚姻状况',
+  'LBL_JIATING_ADDRESS' => '家庭住址',
+  'LBL_GONGZUO_DANWEI' => '工作单位',
+  'LBL_ZHIWU' => '职务',
+  'LBL_LIANXI_PHONE' => '联系电话',
+  'LBL_BEIYONG_LIANXIREN_NAME' => '备用联系人姓名',
+  'LBL_BEIYONG_LIANXIREN_PHONE' => '备用联系人电话',
+  'LBL_BEIYONG_LIANXIREN_GUANXI' => '和备用联系人关系',
+  'LBL_PEIOU_NAME' => '配偶姓名',
+  'LBL_PEIOU_ZHENGJIAN_TYPE' => '配偶证件类型',
+  'LBL_PEIOU_ZHENGJIAN_NUM' => '配偶证件号码',
+  'LBL_PEIOU_GONGZUO_DANWEI' => '配偶工作单位',
+  'LBL_PEIOU_GONGZUO_DUTY' => '配偶职务',
+  'LBL_XINDAI_GUWEN_NAME_USER_ID' => '信贷顾问姓名 (related 用户 ID)',
+  'LBL_XINDAI_GUWEN_NAME' => '信贷顾问姓名',
+  'LBL_EMAIL_ADDRESSES' => '备用联系人信息',
+  'LBL_ADDRESS_INFORMATION' => '配偶信息',
+  'LBL_XINBIE_TYPE' => '性别',
 );
