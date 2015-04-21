@@ -2,20 +2,10 @@
 $module_name = 'fzgls_jiekuangren_dangan';
 $viewdefs [$module_name] = 
 array (
-  'DetailView' => 
+  'EditView' => 
   array (
     'templateMeta' => 
     array (
-      'form' => 
-      array (
-        'buttons' => 
-        array (
-          0 => 'EDIT',
-          1 => 'DUPLICATE',
-          2 => 'DELETE',
-          3 => 'FIND_DUPLICATES',
-        ),
-      ),
       'maxColumns' => '2',
       'widths' => 
       array (
@@ -49,7 +39,6 @@ array (
           'panelDefault' => 'expanded',
         ),
       ),
-      'syncDetailEditViews' => true,
     ),
     'panels' => 
     array (
@@ -57,24 +46,14 @@ array (
       array (
         0 => 
         array (
-          0 => 'full_name',
-          1 => '',
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            'name' => 'xinbie_type_c',
-            'studio' => 'visible',
-            'label' => 'LBL_XINBIE_TYPE',
-          ),
+          0 => 'last_name',
           1 => 
           array (
-            'name' => 'dangan_num_c',
-            'label' => 'LBL_FZGLS_DANGAN_NUM',
+            'name' => 'first_name',
+            'customCode' => '{html_options name="salutation" id="salutation" options=$fields.salutation.options selected=$fields.salutation.value}&nbsp;<input name="first_name"  id="first_name" size="25" maxlength="25" type="text" value="{$fields.first_name.value}">',
           ),
         ),
-        2 => 
+        1 => 
         array (
           0 => 
           array (
@@ -88,14 +67,32 @@ array (
             'label' => 'LBL_ZHENGJIAN_NUM',
           ),
         ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'xinbie_type_c',
+            'studio' => 'visible',
+            'label' => 'LBL_XINBIE_TYPE',
+          ),
+          1 => 
+          array (
+            'name' => 'lianxi_phone_c',
+            'label' => 'LBL_LIANXI_PHONE',
+          ),
+        ),
         3 => 
         array (
           0 => 
           array (
+            'name' => 'zhiwu_c',
+            'label' => 'LBL_ZHIWU',
+          ),
+          1 => 
+          array (
             'name' => 'hunyin_status_c',
             'label' => 'LBL_HUNYIN_STATUS',
           ),
-          1 => '',
         ),
         4 => 
         array (
@@ -119,35 +116,13 @@ array (
         array (
           0 => 
           array (
-            'name' => 'zhiwu_c',
-            'label' => 'LBL_ZHIWU',
-          ),
-          1 => 
-          array (
-            'name' => 'lianxi_phone_c',
-            'label' => 'LBL_LIANXI_PHONE',
-          ),
-        ),
-        7 => 
-        array (
-          0 => 
-          array (
             'name' => 'xindai_guwen_name_c',
             'studio' => 'visible',
             'label' => 'LBL_XINDAI_GUWEN_NAME',
           ),
           1 => '',
         ),
-        8 => 
-        array (
-          0 => 
-          array (
-            'name' => 'modified_by_name',
-            'label' => 'LBL_MODIFIED_NAME',
-          ),
-          1 => 'date_modified',
-        ),
-        9 => 
+        7 => 
         array (
           0 => 'description',
         ),
@@ -174,6 +149,7 @@ array (
             'name' => 'beiyong_lianxiren_guanxi_c',
             'label' => 'LBL_BEIYONG_LIANXIREN_GUANXI',
           ),
+          1 => '',
         ),
       ),
       'lbl_address_information' => 
@@ -185,24 +161,20 @@ array (
             'name' => 'peiou_name_c',
             'label' => 'LBL_PEIOU_NAME',
           ),
-          1 => 
-          array (
-            'name' => 'peiou_zhengjian_type_c',
-            'studio' => 'visible',
-            'label' => 'LBL_PEIOU_ZHENGJIAN_TYPE',
-          ),
+          1 => '',
         ),
         1 => 
         array (
           0 => 
           array (
-            'name' => 'peiou_zhengjian_num_c',
-            'label' => 'LBL_PEIOU_ZHENGJIAN_NUM',
+            'name' => 'peiou_zhengjian_type_c',
+            'studio' => 'visible',
+            'label' => 'LBL_PEIOU_ZHENGJIAN_TYPE',
           ),
           1 => 
           array (
-            'name' => 'peiou_gongzuo_duty_c',
-            'label' => 'LBL_PEIOU_GONGZUO_DUTY',
+            'name' => 'peiou_zhengjian_num_c',
+            'label' => 'LBL_PEIOU_ZHENGJIAN_NUM',
           ),
         ),
         2 => 
@@ -211,6 +183,15 @@ array (
           array (
             'name' => 'peiou_gongzuo_danwei_c',
             'label' => 'LBL_PEIOU_GONGZUO_DANWEI',
+          ),
+          1 => '',
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'peiou_gongzuo_duty_c',
+            'label' => 'LBL_PEIOU_GONGZUO_DUTY',
           ),
           1 => '',
         ),
