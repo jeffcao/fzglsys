@@ -278,7 +278,7 @@ $sugar_config = array (
   'log_memory_usage' => false,
   'logger' => 
   array (
-    'level' => 'info',
+    'level' => 'debug',
     'file' => 
     array (
       'ext' => '.log',

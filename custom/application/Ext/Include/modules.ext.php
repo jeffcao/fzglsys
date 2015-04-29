@@ -47,6 +47,16 @@ $modInvisList[] = 'asol_WorkFlowManagerCommon';
  //WARNING: The contents of this file are auto-generated
 
 
+
+/**
+ * Created by PhpStorm.
+ * User: jeffcao
+ * Date: 15/4/27
+ * Time: 下午10:53
+ */
+$beanList['fzgls_fzgl_sys_jiekuangren_dangang'] = 'JieKuangRenCustom';
+$beanFiles['fzgls_fzgl_sys_jiekuangren_dangang'] = 'custom/modules/fzgls_fzgl_sys_jiekuangren_dangang/JieKuangRenCustom.php';
+
  
  //WARNING: The contents of this file are auto-generated
 $beanList['fzgls_bumeng_mataine'] = 'fzgls_bumeng_mataine';
@@ -70,6 +80,16 @@ $moduleList[] = 'fzgls_jsjg_base_info';
 $beanList['fzgls_kefu_liucheng'] = 'fzgls_kefu_liucheng';
 $beanFiles['fzgls_kefu_liucheng'] = 'modules/fzgls_kefu_liucheng/fzgls_kefu_liucheng.php';
 $moduleList[] = 'fzgls_kefu_liucheng';
+
+
+ 
+ //WARNING: The contents of this file are auto-generated
+$beanList['fzgls_fzgl_sys_jiekuangren_dangang'] = 'fzgls_fzgl_sys_jiekuangren_dangang';
+$beanFiles['fzgls_fzgl_sys_jiekuangren_dangang'] = 'modules/fzgls_fzgl_sys_jiekuangren_dangang/fzgls_fzgl_sys_jiekuangren_dangang.php';
+$moduleList[] = 'fzgls_fzgl_sys_jiekuangren_dangang';
+$beanList['fzgls_fzgl_sys_wendang'] = 'fzgls_fzgl_sys_wendang';
+$beanFiles['fzgls_fzgl_sys_wendang'] = 'modules/fzgls_fzgl_sys_wendang/fzgls_fzgl_sys_wendang.php';
+$moduleList[] = 'fzgls_fzgl_sys_wendang';
 
 
 
