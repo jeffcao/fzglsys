@@ -45,32 +45,32 @@ class fzgls_fzgl_sys_jiekuangren_dangang extends fzgls_fzgl_sys_jiekuangren_dang
 	function fzgls_fzgl_sys_jiekuangren_dangang(){	
 		parent::fzgls_fzgl_sys_jiekuangren_dangang_sugar();
 	}
-    function deleteAttachment($isduplicate="false"){
-        if($this->ACLAccess('edit')){
-            if($isduplicate=="true"){
-                return true;
-            }
-            $removeFile = "upload://{$this->id}";
-        }
-
-        if(file_exists($removeFile)) {
-            if(!unlink($removeFile)) {
-                $GLOBALS['log']->error("*** Could not unlink() file: [ {$removeFile} ]");
-            }else{
-                $this->filename = '';
-                $this->file_mime_type = '';
-                $this->file = '';
-                $this->save();
-                return true;
-            }
-        } else {
-            $this->filename = '';
-            $this->file_mime_type = '';
-            $this->file = '';
-            $this->save();
-            return true;
-        }
-        return false;
-    }
+//    function deleteAttachment($isduplicate="false"){
+//        if($this->ACLAccess('edit')){
+//            if($isduplicate=="true"){
+//                return true;
+//            }
+//            $removeFile = "upload://{$this->id}";
+//        }
+//
+//        if(file_exists($removeFile)) {
+//            if(!unlink($removeFile)) {
+//                $GLOBALS['log']->error("*** Could not unlink() file: [ {$removeFile} ]");
+//            }else{
+//                $this->filename = '';
+//                $this->file_mime_type = '';
+//                $this->file = '';
+//                $this->save();
+//                return true;
+//            }
+//        } else {
+//            $this->filename = '';
+//            $this->file_mime_type = '';
+//            $this->file = '';
+//            $this->save();
+//            return true;
+//        }
+//        return false;
+//    }
 }
 ?>

@@ -1,5 +1,5 @@
 <?php
-if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
+
 /**
  * Created by PhpStorm.
  * User: jeffcao
@@ -7,11 +7,12 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * Time: 下午10:46
  */
 
+require_once('include/upload_file.php');
 require_once('modules/fzgls_fzgl_sys_jiekuangren_dangang/fzgls_fzgl_sys_jiekuangren_dangang.php');
 
-class JieKuangRenCustom extends fzgls_fzgl_sys_jiekuangren_dangang
+class fzgls_fzgl_sys_jiekuangren_dangangCustom extends fzgls_fzgl_sys_jiekuangren_dangang
 {
-    public function deleteAttachment($isduplicate="false"){
+    function deleteAttachment($isduplicate="false"){
         if($this->ACLAccess('edit')){
             if($isduplicate=="true"){
                 return true;

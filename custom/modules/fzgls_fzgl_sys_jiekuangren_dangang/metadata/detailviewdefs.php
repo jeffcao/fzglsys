@@ -57,7 +57,11 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_XINDAI_GUWEN',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'filename',
+            'label' => 'LBL_FILENAME',
+          ),
         ),
         2 => 
         array (

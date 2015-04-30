@@ -81,24 +81,12 @@ $popupMeta = array (
   ),
 ),
     'listviewdefs' => array (
-  'FULL_NAME' => 
-  array (
-    'type' => 'name',
-    'studio' => 
-    array (
-      'formula' => false,
-    ),
-    'label' => 'LBL_NAME',
-    'width' => '10%',
-    'default' => true,
-  ),
   'NAME' => 
   array (
     'type' => 'varchar',
     'label' => 'LBL_NAME',
     'width' => '10%',
     'default' => true,
-    'name' => 'name',
   ),
   'GONG_HAO_C' => 
   array (

@@ -2,10 +2,20 @@
 $module_name = 'fzgls_fzgl_sys_jiekuangren_dangang';
 $viewdefs [$module_name] = 
 array (
-  'EditView' => 
+  'DetailView' => 
   array (
     'templateMeta' => 
     array (
+      'form' => 
+      array (
+        'buttons' => 
+        array (
+          0 => 'EDIT',
+          1 => 'DUPLICATE',
+          2 => 'DELETE',
+          3 => 'FIND_DUPLICATES',
+        ),
+      ),
       'maxColumns' => '2',
       'widths' => 
       array (
@@ -29,15 +39,6 @@ array (
           'panelDefault' => 'expanded',
         ),
       ),
-      'form' => 
-      array (
-        'enctype' => 'multipart/form-data',
-        'buttons' => 
-        array (
-          0 => 'SAVE',
-          1 => 'CANCEL',
-        ),
-      ),
     ),
     'panels' => 
     array (
@@ -52,29 +53,16 @@ array (
         array (
           0 => 
           array (
-            'name' => 'filename',
-            'label' => 'LBL_FILENAME',
-          ),
-          1 => 
-          array (
-            'name' => 'file_mime_type',
-            'label' => 'LBL_FILE_MIME_TYPE',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
             'name' => 'xindai_guwen_c',
             'studio' => 'visible',
             'label' => 'LBL_XINDAI_GUWEN',
           ),
-          1 => 
-          array (
-            'name' => 'assigned_employee_c',
-            'studio' => 'visible',
-            'label' => 'Employee',
-          ),
+          1 => '',
+        ),
+        2 => 
+        array (
+          0 => 'date_entered',
+          1 => 'date_modified',
         ),
         3 => 
         array (
