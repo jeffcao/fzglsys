@@ -1,0 +1,8 @@
+*~
+*.DS*
+logs/
+.idea/
+cache/
+sugarcrm.log
+fzglsys*.log
+

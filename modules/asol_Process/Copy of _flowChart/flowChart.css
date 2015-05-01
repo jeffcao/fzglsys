@@ -1,0 +1,423 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	white-space: nowrap;
+}
+
+/********custom scrollbar*********/
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+/********************/
+
+/*****qTip******/
+.ui-tooltip {
+	padding: 0; /* Fix jquery-ui and qtip css conflict. */
+}
+
+.myTooltip {
+	max-width: 1000px; /*Tooltips have a max-width of 280px by default*/
+}
+
+.asol_table_tooltip {
+
+}
+
+/*
+ td, th{
+ border: 1px inset Silver;
+ width: auto;
+ }
+ */
+.gradient-style {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 2px;
+	width: auto;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+.gradient-style th {
+	font-size: 10px;
+	font-weight: normal;
+	padding: 1px;
+	background: #b9c9fe url('./images/gradhead.png') repeat-x;
+	border-top: 2px solid #d3ddff;
+	border-bottom: 1px solid #fff;
+	color: #039;
+}
+
+.gradient-style td {
+	padding: 1px;
+	border-bottom: 1px solid #fff;
+	color: #669;
+	border-top: 1px solid #fff;
+	background: #e8edff url('./images/gradback.png') repeat-x;
+}
+
+.gradient-style tfoot tr td {
+	background: #e8edff;
+	font-size: 12px;
+	color: #99c;
+}
+
+.gradient-style tbody tr:hover td {
+	background: #d0dafd url('./images/gradhover.png') repeat-x;
+	color: #339;
+}
+
+/****************/
+a {
+	cursor: alias;
+}
+
+/***************/
+.delay_icon {/*for activity*/
+	position: absolute;
+	top: -13px;
+	left: -9px;
+	opacity: 1;
+	z-index: 40;
+	cursor: copy;
+}
+
+.delay_icon_for_task {
+	position: absolute;
+	top: 14px;
+	left: -5px;
+	opacity: 1;
+	z-index: 40;
+	cursor: copy;
+}
+
+.condition_icon {/*for activity*/
+	position: absolute;
+	top: 44px;
+	left: -9px;
+	opacity: 1;
+	z-index: 40;
+	cursor: help;
+}
+
+.condition_icon_for_events {
+	position: absolute;
+	top: 39px;
+	left: -13px;
+	opacity: 1;
+	z-index: 40;
+	cursor: help;
+}
+
+.trigger_event {
+	position: absolute;
+	top: 3px;
+	left: 89px;
+	opacity: 1;
+	z-index: 40;
+	cursor: pointer;
+}
+
+.task_call_process_open_subprocess_icon {
+	position: absolute;
+	top: 27px;
+	left: 27px;
+	opacity: 1;
+	z-index: 40;
+	cursor: alias;
+}
+/****************/
+._jsPlumb_endpoint, .endpointTargetLabel, .endpointSourceLabel {
+
+}
+
+._jsPlumb_connector {
+	z-index: 10;
+}
+
+._jsPlumb_endpoint {
+	z-index: 11;
+}
+
+._jsPlumb_overlay {
+	z-index: 12;
+}
+
+.aux_name_overflow {
+
+}
+
+.overflow_ellipsis_disabled {
+	overflow: visible;
+	text-overflow: ellipsis;
+}
+
+.overflow_ellipsis_enabled {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.control_panel {
+	margin: 0;
+	padding: 5px;
+	position: fixed;
+	z-index: 100000;
+	width: 100%;
+	height: 30px top : 0px;
+	background: #DDDDDD;
+	border-bottom: solid 2px #AAAAAA;
+	border-right: solid 2px #AAAAAA;
+	width: 100px;
+}
+
+.control_panel li {
+	display: inline-block;
+	margin: 5px;
+}
+
+.control_panel .control_panel_icon {
+	width: 20px;
+	height: 20px;
+}
+
+.control_panel .control_panel_action {
+	cursor: pointer;
+	height: 20px;
+}
+
+.process_name {
+	position: absolute;
+	top: 70px;
+	left: 5px;
+	white-space: nowrap;
+	font-family: arial;
+	font-size: 30px;
+	width: auto;
+	cursor: pointer;
+	color: blue;
+	text-decoration: none;
+}
+
+.process_name:hover {
+	text-decoration: underline;
+}
+
+.process_name a {
+
+}
+
+.event {
+	position: absolute;
+}
+
+.event_symbol {
+	border: 1px solid #346789;
+	box-shadow: 2px 2px 19px #aaa;
+	-o-box-shadow: 2px 2px 19px #aaa;
+	-webkit-box-shadow: 2px 2px 19px #aaa;
+	-moz-box-shadow: 2px 2px 19px #aaa;
+	-moz-border-radius: 0.5em;
+	border-radius: 0.5em;
+	opacity: 1;
+	filter: alpha(opacity =                       80);
+	background-color: #eeeeef;
+	padding: 0.5em;
+	font-size: 0.9em;
+	cursor: pointer;
+	z-index: 20;
+	position: absolute;
+	width: auto;
+	height: auto;
+}
+
+.event_symbol:hover {
+	box-shadow: 2px 2px 19px #444;
+	-o-box-shadow: 2px 2px 19px #444;
+	-webkit-box-shadow: 2px 2px 19px #444;
+	-moz-box-shadow: 2px 2px 19px #444;
+	opacity: 1;
+	filter: alpha(opacity =                       60);
+}
+
+.event_name {
+	font-family: arial;
+	font-size: 13px;
+	white-space: nowrap;
+	position: absolute;
+	top: 104px;
+	width: 106px;
+	color: blue;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.event_name:hover {
+	text-decoration: underline;
+}
+
+.event_name a {
+	width: auto;
+}
+
+/**********************/
+.activity {
+	width: auto;
+	height: auto;
+	position: absolute;
+}
+
+.activity_symbol {
+	border: 1px solid #346789;
+	box-shadow: 2px 2px 19px #aaa;
+	-o-box-shadow: 2px 2px 19px #aaa;
+	-webkit-box-shadow: 2px 2px 19px #aaa;
+	-moz-box-shadow: 2px 2px 19px #aaa;
+	-moz-border-radius: 0.5em;
+	border-radius: 0.5em;
+	opacity: 1;
+	filter: alpha(opacity =                       80);
+	width: 668px;
+	height: 90px;
+	z-index: 20;
+	position: absolute;
+	background-color: #eeeeef;
+	padding: 0.5em;
+	font-size: 0.9em;
+	cursor: pointer;
+}
+
+.activity_symbol img {
+	z-index: 40;
+}
+
+.activity_symbol:hover {
+	box-shadow: 2px 2px 19px #444;
+	-o-box-shadow: 2px 2px 19px #444;
+	-webkit-box-shadow: 2px 2px 19px #444;
+	-moz-box-shadow: 2px 2px 19px #444;
+	opacity: 1;
+	filter: alpha(opacity =                       60);
+}
+
+.activity_name {
+	font-family: arial;
+	font-size: 13px;
+	white-space: nowrap;
+	width: auto;
+	height: auto;
+	position: absolute;
+	left: 5px/*45px*/;
+	top: 12px;
+	color: blue;
+	text-decoration: none;
+}
+
+.activity_name:hover {
+	text-decoration: underline;
+}
+
+.activity_name a {
+	width: auto;
+}
+/**********************/
+.task {
+	width: auto;
+	height: auto;
+	position: absolute;
+}
+
+.task_symbol {
+	border: 1px solid #346789;
+	box-shadow: 2px 2px 19px #aaa;
+	-o-box-shadow: 2px 2px 19px #aaa;
+	-webkit-box-shadow: 2px 2px 19px #aaa;
+	-moz-box-shadow: 2px 2px 19px #aaa;
+	-moz-border-radius: 0.5em;
+	border-radius: 0.5em;
+	opacity: 0.8;
+	filter: alpha(opacity =                       80);
+	/* FIXME - New flowChart layout has thrown a css problem with font-size em */
+	/*
+	width: auto;
+	height: auto;
+	padding: 0.5em;
+	*/
+	width: 32px;
+	height: 32px;
+	padding: 5px;
+	z-index: 20;
+	position: absolute;
+	background-color: #eeeeef;
+	font-size: 0.9em;
+	cursor: pointer;
+}
+
+.task_symbol:hover {
+	box-shadow: 2px 2px 19px #444;
+	-o-box-shadow: 2px 2px 19px #444;
+	-webkit-box-shadow: 2px 2px 19px #444;
+	-moz-box-shadow: 2px 2px 19px #444;
+	opacity: 0.6;
+	filter: alpha(opacity =                       60);
+}
+
+.task_name {/*overflow: hidden;
+	 text-overflow: ellipsis;*/
+	font-family: arial;
+	font-size: 13px;
+	white-space: nowrap;
+	width: 46px;
+	height: auto;
+	color: blue;
+	text-decoration: none;
+}
+
+.task_name:hover {
+	text-decoration: underline;
+}
+
+.task_name a {
+	width: auto;
+	font-size: 10px;
+}
+
+.connection_clicked {
+	border-color: red;
+	border-width: thin;
+	border-style: solid;
+}
+
+.scrollToTop {
+	width: 48px;
+	height: 48px;
+	padding-bottom: 40px;
+	padding-right:20px;
+	text-align: center;
+	background: whiteSmoke;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position: absolute;
+	bottom: 24px;
+	right: 0px;
+	display: none;
+	background: url('./images/scrollToTop_48.png') no-repeat 0px 20px;
+	cursor: pointer;
+}
+
+.scrollToTop:hover {
+	text-decoration: none;
+}
