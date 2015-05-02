@@ -92,4 +92,6 @@ $mod_strings = array (
   'LBL_KEFU_ZILIAO_GUIDANG' => '资料归档',
   'LBL_KEFU_BEIZHU' => '客服备注',
   'LBL_KEFU_CHULI_DATE' => '客服处理日期',
+  'LNK_IMPORT_LIUCH_FZGL_FANGKUANG_LIUCHENG' => '导入 fangkuang_liucheng',
+  'LBL_LIUCH_FZGL_FANGKUANG_LIUCHENG_SUBPANEL_TITLE' => 'fangkuang_liucheng',
 );

@@ -1,0 +1,68 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'Employees',
+    'varName' => 'Employee',
+    'orderBy' => 'employees.first_name, employees.last_name',
+    'whereClauses' => array (
+  'first_name' => 'employees.first_name',
+  'last_name' => 'employees.last_name',
+  'gonghao_c' => 'employees_cstm.gonghao_c',
+  'bumen_c' => 'employees.bumen_c',
+  'fengongsi_c' => 'employees.fengongsi_c',
+  'phone' => 'employees.phone',
+),
+    'searchInputs' => array (
+  0 => 'first_name',
+  1 => 'last_name',
+  2 => 'gonghao_c',
+  3 => 'bumen_c',
+  4 => 'fengongsi_c',
+  5 => 'phone',
+),
+    'searchdefs' => array (
+  'first_name' => 
+  array (
+    'name' => 'first_name',
+    'width' => '10%',
+  ),
+  'last_name' => 
+  array (
+    'name' => 'last_name',
+    'width' => '10%',
+  ),
+  'gonghao_c' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_GONGHAO',
+    'width' => '10%',
+    'name' => 'gonghao_c',
+  ),
+  'bumen_c' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_BUMEN',
+    'id' => 'YUANG_BUMEN_INFO_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'name' => 'bumen_c',
+  ),
+  'fengongsi_c' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_FENGONGSI',
+    'id' => 'YUANG_FENGONGSI_INFO_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'name' => 'fengongsi_c',
+  ),
+  'phone' => 
+  array (
+    'name' => 'phone',
+    'label' => 'LBL_ANY_PHONE',
+    'type' => 'name',
+    'width' => '10%',
+  ),
+),
+);

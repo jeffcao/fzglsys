@@ -60,9 +60,9 @@ $manifest = array (
   'icon' => '',
   'is_uninstallable' => true,
   'name' => 'fzglsys_fangkuang_liucheng_module',
-  'published_date' => '2015-05-01 09:32:53',
+  'published_date' => '2015-05-01 11:33:20',
   'type' => 'module',
-  'version' => 1430472773,
+  'version' => 1430480000,
   'remove_tables' => 'prompt',
 );
 

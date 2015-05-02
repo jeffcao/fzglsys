@@ -33,6 +33,7 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
+error_reporting(E_ERROR);
 
 require_once('modules/ModuleBuilder/MB/AjaxCompose.php');
 require_once('modules/DynamicFields/FieldViewer.php');
