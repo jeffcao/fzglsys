@@ -9,7 +9,7 @@ if(!defined('sugarEntry'))define('sugarEntry', true);
 
 
 
-class calculate_field_class {
+class jiekuangren_calculate_field_class {
     public function get_dangan_num($bean, $event, $arguments) {
         require_once('include/entryPoint.php');
         require_once('modules/Campaigns/utils.php');

@@ -22,6 +22,7 @@ if (($sel_altDb >= 0) && ($sel_altDbTable != '')) {
 } else if (($bean_module != '')) {
 
 	$class_name = $beanList[$bean_module];
+    $GLOBALS['log']->info("work flow: beanfile_path:".$beanFiles[$class_name]);
 	require_once($beanFiles[$class_name]);
 	$bean = new $class_name();
 

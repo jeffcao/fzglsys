@@ -116,7 +116,6 @@ array (
             'name' => 'jiating_zhizhu',
             'label' => 'LBL_JIATING_ZHIZHU',
           ),
-          1 => '',
         ),
         5 => 
         array (
@@ -125,7 +124,6 @@ array (
             'name' => 'gongzuo_danwei',
             'label' => 'LBL_GONGZUO_DANWEI',
           ),
-          1 => '',
         ),
         6 => 
         array (
@@ -175,7 +173,6 @@ array (
             'name' => 'qita_lianren_guanxi',
             'label' => 'LBL_QITA_LIANREN_GUANXI',
           ),
-          1 => '',
         ),
       ),
       'lbl_editview_panel2' => 
@@ -214,7 +211,6 @@ array (
             'name' => 'peiou_gongzuo_danwei',
             'label' => 'LBL_PEIOU_GONGZUO_DANWEI',
           ),
-          1 => '',
         ),
       ),
     ),

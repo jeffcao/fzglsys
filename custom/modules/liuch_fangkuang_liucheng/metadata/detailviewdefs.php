@@ -77,6 +77,36 @@ array (
         array (
           0 => 
           array (
+            'name' => 'jiekuangren_c',
+            'studio' => 'visible',
+            'label' => 'LBL_JIEKUANGREN',
+          ),
+          1 => 
+          array (
+            'name' => 'jiekuangren_bianhao_c',
+            'studio' => 'visible',
+            'label' => '借款人编号',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'jiekuangren_zhengjian_leixin_c',
+            'studio' => 'visible',
+            'label' => '借款人证件类型',
+          ),
+          1 => 
+          array (
+            'name' => 'jiekuangren_zhengjian_haoma_c',
+            'studio' => 'visible',
+            'label' => '借款人证件号码',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
             'name' => 'shenqing_jine',
             'label' => 'LBL_SHENQING_JINE',
           ),
@@ -86,7 +116,7 @@ array (
             'label' => 'LBL_HUANKUANG_ZHOUQI',
           ),
         ),
-        2 => 
+        4 => 
         array (
           0 => 
           array (
@@ -94,9 +124,8 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_DAIKUANG_LEIXIN',
           ),
-          1 => '',
         ),
-        3 => 
+        5 => 
         array (
           0 => 
           array (
@@ -109,7 +138,7 @@ array (
             'label' => 'LBL_YUQI_YONGJIN_BILI',
           ),
         ),
-        4 => 
+        6 => 
         array (
           0 => 
           array (
@@ -117,9 +146,8 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_YUQI_SHOUKUANG_TYPE',
           ),
-          1 => '',
         ),
-        5 => 
+        7 => 
         array (
           0 => 
           array (
@@ -127,9 +155,8 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_DANJU_ZHUANGTAI',
           ),
-          1 => '',
         ),
-        6 => 
+        8 => 
         array (
           0 => 
           array (
@@ -138,7 +165,7 @@ array (
           ),
           1 => 'date_entered',
         ),
-        7 => 
+        9 => 
         array (
           0 => 'description',
         ),
@@ -167,7 +194,6 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_FENKONG_BEIZHU',
           ),
-          1 => '',
         ),
       ),
       'lbl_editview_panel2' => 
@@ -194,7 +220,6 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_BUMEN_BEIZHU',
           ),
-          1 => '',
         ),
       ),
       'lbl_editview_panel3' => 
@@ -254,7 +279,6 @@ array (
             'name' => 'daikuang_daoqiri',
             'label' => 'LBL_DAIKUANG_DAOQIRI',
           ),
-          1 => '',
         ),
         5 => 
         array (
@@ -264,7 +288,6 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_CHANPIN_SHOUKUANG_TYPE',
           ),
-          1 => '',
         ),
         6 => 
         array (
@@ -274,12 +297,6 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_CHANPIN_BEIZHU',
           ),
-          1 => '',
-        ),
-        7 => 
-        array (
-          0 => '',
-          1 => '',
         ),
       ),
       'lbl_editview_panel4' => 
@@ -306,7 +323,6 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_KEFU_BEIZHU',
           ),
-          1 => '',
         ),
       ),
     ),

@@ -8,6 +8,6 @@
 $hook_version = 1;
 $hook_array = Array();
 $hook_array['before_save'] = Array();
-$hook_array['before_save'][] = Array(1, 'get dangan number', 'custom/modules/daik_jiekuangren_info/daik_jiekuangren_custom.php', 'calculate_field_class', 'get_dangan_num');
+$hook_array['before_save'][] = Array(1, 'get dangan number', 'custom/modules/daik_jiekuangren_info/daik_jiekuangren_custom.php', 'jiekuangren_calculate_field_class', 'get_dangan_num');
 
 ?>

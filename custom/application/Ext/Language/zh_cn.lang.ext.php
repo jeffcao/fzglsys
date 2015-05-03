@@ -87,8 +87,7 @@ $app_list_strings['fzglsys_zhengjian_type_list']['junguangzheng'] = '军官证';
  ********************************************************************************/
 
 
-$app_list_strings['moduleList']['liuch_fangkuang_liucheng'] = 'fangkuang_liucheng';
-$app_list_strings['moduleList']['liuch_fzgl_fangkuang_liucheng'] = 'fangkuang_liucheng';
+$app_list_strings['moduleList']['liuch_fangkuang_liucheng'] = '放款流程';
 $app_list_strings['fzglsys_daikuang_shenqing_status_list']['zhidanzhong'] = '制单中';
 $app_list_strings['fzglsys_daikuang_shenqing_status_list']['dai_fengkong_shenhe'] = '待风控经理审核';
 $app_list_strings['fzglsys_daikuang_shenqing_status_list']['dai_bumen_shenhe'] = '待部门经理审核';
