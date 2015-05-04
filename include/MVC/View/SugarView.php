@@ -357,7 +357,7 @@ class SugarView
         }
 
         // handle resizing of the company logo correctly on the fly
-        $companyLogoURL = $themeObject->getImageURL('company_logo.png');
+//        $companyLogoURL = $themeObject->getImageURL('company_logo.png');
         $companyLogoURL_arr = explode('?', $companyLogoURL);
         $companyLogoURL = $companyLogoURL_arr[0];
 

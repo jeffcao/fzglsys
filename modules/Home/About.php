@@ -48,7 +48,7 @@ list-style-type: square;
 </style>
 <?php echo getVersionedScript("modules/Home/about.js"); ?>
 <span>
-<div class="about" style="padding: 10px 15px 20px 15px;">
+<div class="about" style="padding: 10px 15px 20px 15px;"></div>
 <p>
 <h1><IMG src="include/images/sugar_md_open.png" alt="SugarCRM" width="425" height="30" ondblclick='abouter.display();'></h1>
 <br>

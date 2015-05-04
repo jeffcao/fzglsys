@@ -62,12 +62,12 @@ global $app_language, $sugar_config;
 global $current_language;
 
 // Get the login page image
-if ( sugar_is_file('custom/include/images/sugar_md.png') ) {
-    $login_image = '<IMG src="custom/include/images/sugar_md.png" alt="Sugar" width="340" height="25">';
-}
-else {
-    $login_image = '<IMG src="include/images/sugar_md_open.png" alt="Sugar" width="340" height="25" style="margin: 5px 0;">';
-}
+//if ( sugar_is_file('custom/include/images/sugar_md.png') ) {
+//    $login_image = '<IMG src="custom/include/images/sugar_md.png" alt="Sugar" width="340" height="25">';
+//}
+//else {
+//    $login_image = '<IMG src="include/images/sugar_md_open.png" alt="Sugar" width="340" height="25" style="margin: 5px 0;">';
+//}
 $sugar_smarty->assign('LOGIN_IMAGE',$login_image);
 
 // See if any messages were passed along to display to the user.
