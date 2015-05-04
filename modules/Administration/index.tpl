@@ -45,7 +45,7 @@
 
 		<div class="screen">
 		
-{$MY_FRAME}
+{*{$MY_FRAME}*}
 {foreach  from=$ADMIN_GROUP_HEADER key=j item=val1}
    
    {if isset($GROUP_HEADER[$j][1])}
