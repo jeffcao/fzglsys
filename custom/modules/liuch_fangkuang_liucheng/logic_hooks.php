@@ -20,9 +20,9 @@ $hook_array['before_save'][] = Array(1, 'get liucheng number', 'custom/modules/l
 //    'custom/modules/liuch_fangkuang_liucheng/liuch_fangkuang_liucheng_custom.php',
 //    'fangkuang_liucheng_custom_class',
 //    'show_other_fields');
-$hook_array['after_retrieve'][] = Array(1,
-    'show_other_fields',
-    'custom/modules/liuch_fangkuang_liucheng/liuch_fangkuang_liucheng_custom.php',
-    'fangkuang_liucheng_custom_class',
-    'show_other_fields');
+//$hook_array['after_retrieve'][] = Array(1,
+//    'show_other_fields',
+//    'custom/modules/liuch_fangkuang_liucheng/liuch_fangkuang_liucheng_custom.php',
+//    'fangkuang_liucheng_custom_class',
+//    'show_other_fields');
 ?>

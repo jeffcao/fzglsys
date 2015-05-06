@@ -12,6 +12,7 @@ class fangkuang_liucheng_custom_class {
         require_once('include/entryPoint.php');
         require_once('modules/Campaigns/utils.php');
 //        global $db;
+        if(!empty($bean->id)){ return; }
         $d_t = date("Ym");
         $query = "
                 select count('x') as r_count from liuch_fangkuang_liucheng where name like '$d_t%'
@@ -34,10 +35,13 @@ class fangkuang_liucheng_custom_class {
     public function show_other_fields($bean, $event, $arguments){
         require_once('include/entryPoint.php');
         require_once('modules/Campaigns/utils.php');
-        $a = new daik_jiekuangren_info();
-        $a->retrieve($bean->daik_jiekuangren_info_id_c); //check but I believe that's the account id relate field in the case
-        $jiekuangren_bianhao_value = $a->danang_bianhao;
-        $bean->jiekuangren_bianhao_c = $jiekuangren_bianhao_value;
+//        $a = new daik_jiekuangren_info();
+//        $a->retrieve($bean->daik_jiekuangren_info_id_c); //check but I believe that's the account id relate field in the case
+//        $jiekuangren_bianhao_value = $a->danang_bianhao;
+//        $bean->jiekuangren_bianhao_c = $jiekuangren_bianhao_value;
+
+        $GLOBALS['log']->info("fangkuang_liucheng_calculate_field_class.show_other_fields, bean->parent_type:{$bean->parent_type}.");
+
     }
 }
 ?>
