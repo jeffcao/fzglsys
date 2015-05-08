@@ -14,6 +14,7 @@ class jiekuangren_calculate_field_class {
         require_once('include/entryPoint.php');
         require_once('modules/Campaigns/utils.php');
 //        global $db;
+        if(!empty($bean->created_by_name)){ return; }
         $d_t = date("Ym");
         $query = "
                 select count('x') as r_count from daik_jiekuangren_info where danang_bianhao like '$d_t%'

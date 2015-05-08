@@ -12,7 +12,7 @@ class fangkuang_liucheng_custom_class {
         require_once('include/entryPoint.php');
         require_once('modules/Campaigns/utils.php');
 //        global $db;
-        if(!empty($bean->id)){ return; }
+        if(!empty($bean->created_by_name)){ return; }
         $d_t = date("Ym");
         $query = "
                 select count('x') as r_count from liuch_fangkuang_liucheng where name like '$d_t%'

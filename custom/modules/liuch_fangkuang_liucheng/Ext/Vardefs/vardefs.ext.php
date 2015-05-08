@@ -16,6 +16,16 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['jiekuangren_c']['labelValue']
 
  
 
+ // created: 2015-05-08 16:01:13
+$dictionary['liuch_fangkuang_liucheng']['fields']['jiekuangren_zhengjian_haoma_c']['merge_filter']='disabled';
+
+ 
+
+ // created: 2015-05-08 16:00:50
+$dictionary['liuch_fangkuang_liucheng']['fields']['jiekuangren_zhengjian_leixin_c']['merge_filter']='disabled';
+
+ 
+
 /**
  * Created by PhpStorm.
  * User: jeffcao
@@ -36,19 +46,27 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['jiekuangren_bianhao_c']= arra
 );
 $dictionary['liuch_fangkuang_liucheng']['fields']['jiekuangren_zhengjian_leixin_c']= array(
     'name' => 'jiekuangren_zhengjian_leixin_c',
-    'vname' => '借款人证件类型',
-    'type' => 'varchar',
-    'len' => '255',
+    'vname' => 'LBL_JIEKUANGREN_ZHENGJIAN_LEIXIN',
+    'type' => 'relate',
+    'rname' => 'zhengjian_leixin',
+    'id_name' => 'daik_jiekuangren_info_id_c',
+    'link' => 'daik_jiekuangren_info',
+    'module' => 'daik_jiekuangren_info',
     'source' => 'non-db',
+    'dbType' => 'non-db',
     'studio' => 'visible',
 );
 
 $dictionary['liuch_fangkuang_liucheng']['fields']['jiekuangren_zhengjian_haoma_c']= array(
     'name' => 'jiekuangren_zhengjian_haoma_c',
-    'vname' => '借款人证件号码',
-    'type' => 'varchar',
-    'len' => '255',
+    'vname' => 'LBL_JIEKUANGREN_ZHENGJIANHAOMA',
+    'type' => 'relate',
+    'rname' => 'zhengjian_haoma',
+    'id_name' => 'daik_jiekuangren_info_id_c',
+    'link' => 'daik_jiekuangren_info',
+    'module' => 'daik_jiekuangren_info',
     'source' => 'non-db',
+    'dbType' => 'non-db',
     'studio' => 'visible',
 );
 
