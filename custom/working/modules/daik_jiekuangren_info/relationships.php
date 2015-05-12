@@ -35,15 +35,15 @@
  ********************************************************************************/
 
 $relationships = array (
-  'liuch_fangkuang_liucheng_modified_user' => 
+  'daik_jiekuangren_info_modified_user' => 
   array (
-    'id' => '1b4c320f-792a-b15d-e9cf-5551963fd808',
-    'relationship_name' => 'liuch_fangkuang_liucheng_modified_user',
+    'id' => 'eb0b0e23-c370-3d56-2ba9-555165f28e8e',
+    'relationship_name' => 'daik_jiekuangren_info_modified_user',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'liuch_fangkuang_liucheng',
-    'rhs_table' => 'liuch_fangkuang_liucheng',
+    'rhs_module' => 'daik_jiekuangren_info',
+    'rhs_table' => 'daik_jiekuangren_info',
     'rhs_key' => 'modified_user_id',
     'join_table' => NULL,
     'join_key_lhs' => NULL,
@@ -61,15 +61,15 @@ $relationships = array (
     'is_custom' => false,
     'from_studio' => false,
   ),
-  'liuch_fangkuang_liucheng_created_by' => 
+  'daik_jiekuangren_info_created_by' => 
   array (
-    'id' => '1b8f6907-8707-96bd-3dd6-555196f0519e',
-    'relationship_name' => 'liuch_fangkuang_liucheng_created_by',
+    'id' => 'ef270074-14cd-4e90-bb4f-555165cd4e45',
+    'relationship_name' => 'daik_jiekuangren_info_created_by',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'liuch_fangkuang_liucheng',
-    'rhs_table' => 'liuch_fangkuang_liucheng',
+    'rhs_module' => 'daik_jiekuangren_info',
+    'rhs_table' => 'daik_jiekuangren_info',
     'rhs_key' => 'created_by',
     'join_table' => NULL,
     'join_key_lhs' => NULL,
@@ -87,15 +87,15 @@ $relationships = array (
     'is_custom' => false,
     'from_studio' => false,
   ),
-  'liuch_fangkuang_liucheng_assigned_user' => 
+  'daik_jiekuangren_info_assigned_user' => 
   array (
-    'id' => '1bdd85bc-e167-c374-bf40-5551965df446',
-    'relationship_name' => 'liuch_fangkuang_liucheng_assigned_user',
+    'id' => 'f3180094-028a-3376-c99d-5551650cc8c4',
+    'relationship_name' => 'daik_jiekuangren_info_assigned_user',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'liuch_fangkuang_liucheng',
-    'rhs_table' => 'liuch_fangkuang_liucheng',
+    'rhs_module' => 'daik_jiekuangren_info',
+    'rhs_table' => 'daik_jiekuangren_info',
     'rhs_key' => 'assigned_user_id',
     'join_table' => NULL,
     'join_key_lhs' => NULL,

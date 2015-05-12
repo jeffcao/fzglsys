@@ -35,12 +35,14 @@ class fangkuang_liucheng_custom_class {
     public function show_other_fields($bean, $event, $arguments){
         require_once('include/entryPoint.php');
         require_once('modules/Campaigns/utils.php');
+        $full_bean = BeanFactory::newBean("liuch_fangkuang_liucheng");
+        $full_bean->retrieve ($bean->id);
+        $a = BeanFactory::getBean("daik_jiekuangren_info", $full_bean->daik_jiekuangren_info_id_c);
+        $bean->jiekuangren_bianhao_c = $a->danang_bianhao;
 //        $a = new daik_jiekuangren_info();
 //        $a->retrieve($bean->daik_jiekuangren_info_id_c); //check but I believe that's the account id relate field in the case
 //        $jiekuangren_bianhao_value = $a->danang_bianhao;
 //        $bean->jiekuangren_bianhao_c = $jiekuangren_bianhao_value;
-
-        $GLOBALS['log']->info("fangkuang_liucheng_calculate_field_class.show_other_fields, bean->parent_type:{$bean->parent_type}.");
 
     }
 }

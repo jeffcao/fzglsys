@@ -113,6 +113,10 @@ array (
         6 => 
         array (
           0 => 'description',
+          1 => 
+          array (
+            'name' => 'liuch_fangkuang_liucheng_daik_jiekuangren_info_1_name',
+          ),
         ),
       ),
       'lbl_editview_panel1' => 

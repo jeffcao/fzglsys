@@ -2,10 +2,20 @@
 $module_name = 'daik_jiekuangren_info';
 $viewdefs [$module_name] = 
 array (
-  'EditView' => 
+  'DetailView' => 
   array (
     'templateMeta' => 
     array (
+      'form' => 
+      array (
+        'buttons' => 
+        array (
+          0 => 'EDIT',
+          1 => 'DUPLICATE',
+          2 => 'DELETE',
+          3 => 'FIND_DUPLICATES',
+        ),
+      ),
       'maxColumns' => '2',
       'widths' => 
       array (
@@ -24,6 +34,11 @@ array (
       'tabDefs' => 
       array (
         'DEFAULT' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL3' => 
         array (
           'newTab' => false,
           'panelDefault' => 'expanded',
@@ -113,6 +128,31 @@ array (
         6 => 
         array (
           0 => 'description',
+          1 => 
+          array (
+            'name' => 'liuch_fangkuang_liucheng_daik_jiekuangren_info_1_name',
+          ),
+        ),
+      ),
+      'lbl_editview_panel3' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'modified_by_name',
+            'label' => 'LBL_MODIFIED_NAME',
+          ),
+          1 => 'date_modified',
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'created_by_name',
+            'label' => 'LBL_CREATED',
+          ),
+          1 => 'date_entered',
         ),
       ),
       'lbl_editview_panel1' => 

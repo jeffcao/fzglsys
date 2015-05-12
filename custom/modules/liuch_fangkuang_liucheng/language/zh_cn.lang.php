@@ -1,5 +1,5 @@
 <?php
-// created: 2015-05-08 16:01:13
+// created: 2015-05-12 10:52:40
 $mod_strings = array (
   'LBL_EDITVIEW_PANEL1' => '风险审批',
   'LBL_EDITVIEW_PANEL2' => '部门审批',
@@ -12,4 +12,5 @@ $mod_strings = array (
   'LBL_JIEKUANGREN_BIANHAO' => '借款人编号',
   'LBL_JIEKUANGREN_ZHENGJIAN_LEIXIN' => '借款人证件类型',
   'LBL_JIEKUANGREN_ZHENGJIANHAOMA' => '借款人证件号码',
+  'LBL_LIUCH_FANGKUANG_LIUCHENG_DAIK_JIEKUANGREN_INFO_1_FROM_DAIK_JIEKUANGREN_INFO_TITLE' => '借款人档案',
 );

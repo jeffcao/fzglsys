@@ -1,10 +1,10 @@
 <?php
 $module_name = 'liuch_fangkuang_liucheng';
-$viewdefs [$module_name] = 
+$viewdefs [$module_name] =
 array (
   'EditView' => 
   array (
-    'templateMeta' => 
+    'templateMeta' =>
     array (
       'maxColumns' => '2',
       'widths' => 
@@ -76,7 +76,7 @@ array (
             'name' => 'jiekuangren_bianhao_c',
             'studio' => 'visible',
             'label' => '借款人编号',
-            'type' => 'readonly',
+              'type' => 'readonly',
           ),
         ),
         2 => 

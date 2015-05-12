@@ -2,10 +2,20 @@
 $module_name = 'liuch_fangkuang_liucheng';
 $viewdefs [$module_name] = 
 array (
-  'EditView' => 
+  'DetailView' => 
   array (
     'templateMeta' => 
     array (
+      'form' => 
+      array (
+        'buttons' => 
+        array (
+          0 => 'EDIT',
+          1 => 'DUPLICATE',
+          2 => 'DELETE',
+          3 => 'FIND_DUPLICATES',
+        ),
+      ),
       'maxColumns' => '2',
       'widths' => 
       array (
@@ -76,7 +86,6 @@ array (
             'name' => 'jiekuangren_bianhao_c',
             'studio' => 'visible',
             'label' => '借款人编号',
-            'type' => 'readonly',
           ),
         ),
         2 => 
@@ -154,16 +163,15 @@ array (
             'name' => 'created_by_name',
             'label' => 'LBL_CREATED',
           ),
-          1 => 
-          array (
-            'name' => 'date_entered',
-            'comment' => 'Date record created',
-            'label' => 'LBL_DATE_ENTERED',
-          ),
+          1 => 'date_entered',
         ),
         9 => 
         array (
           0 => 'description',
+          1 => 
+          array (
+            'name' => 'daik_jiekuangren_info_liuch_fangkuang_liucheng_1_name',
+          ),
         ),
       ),
       'lbl_editview_panel1' => 
