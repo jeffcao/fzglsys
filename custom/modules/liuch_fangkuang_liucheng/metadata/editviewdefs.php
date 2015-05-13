@@ -86,12 +86,14 @@ array (
             'name' => 'jiekuangren_zhengjian_leixin_c',
             'studio' => 'visible',
             'label' => '借款人证件类型',
+              'type' => 'readonly',
           ),
           1 => 
           array (
             'name' => 'jiekuangren_zhengjian_haoma_c',
             'studio' => 'visible',
             'label' => '借款人证件号码',
+              'type' => 'readonly',
           ),
         ),
         3 => 
