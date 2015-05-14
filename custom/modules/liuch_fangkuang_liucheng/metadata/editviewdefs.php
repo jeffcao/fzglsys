@@ -76,7 +76,7 @@ array (
             'name' => 'jiekuangren_bianhao_c',
             'studio' => 'visible',
             'label' => '借款人编号',
-            'type' => 'readonly',
+              'type' => 'readonly',
           ),
         ),
         2 => 

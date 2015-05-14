@@ -41,7 +41,7 @@ class fangkuang_liucheng_custom_class {
         $a = BeanFactory::getBean("daik_jiekuangren_info", $daik_jiekuangren_info_id);
         $bean->jiekuangren_bianhao_c = $a->danang_bianhao;
         $bean->jiekuangren_zhengjian_haoma_c = $a->zhengjian_haoma;
-        $bean->jiekuangren_zhengjian_leixin_c = $a->zhengjian_leixin;
+        $bean->jiekuangren_zhengjian_leixin_c = $GLOBALS["app_list_strings"]["fzglsys_zhengjian_type_list"][$a->zhengjian_leixin];
 
     }
 }
