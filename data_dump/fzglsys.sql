@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2015-05-14 17:26:35
+-- Generation Time: 2015-05-15 19:14:04
 -- 服务器版本： 5.6.21
 -- PHP Version: 5.6.3
 
@@ -2549,7 +2549,7 @@ INSERT INTO `liuch_fangkuang_liucheng` (`id`, `name`, `date_entered`, `date_modi
 ('b3aec49a-ab07-9ec4-a79e-5545c8a0f512', '2015050003', '2015-05-03 07:04:13', '2015-05-13 06:41:37', '1', '1', NULL, 1, '', '2015-05-03', 'zhidanzhong', '345345.000000', '', '2015-05-28', 'diya', '345345.000000', 34.00000000, 'xianjin', 'tongyi', NULL, '2015-05-03', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL),
 ('bf9a8ba5-8a4c-3a7f-fe0d-5552ba46ca4e', '2015050009', '2015-05-13 02:43:32', '2015-05-13 06:41:37', '1', '1', NULL, 1, '', '2015-05-13', 'zhidanzhong', '2.000000', '', '2015-05-29', 'diya', '3.000000', 3.00000000, 'xianjin', 'tongyi', NULL, '2015-05-13', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL),
 ('c4b4407f-3865-35bd-43b1-554c54371130', '2015050007', '2015-05-08 06:13:26', '2015-05-13 06:41:37', '1', '1', NULL, 1, '', '2015-05-08', 'zhidanzhong', '5.000000', '', '2015-05-15', 'diya', '45.000000', 4.00000000, 'xianjin', 'tongyi', NULL, '2015-05-08', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL),
-('cb942cff-649e-73c5-8f9f-5545c82a57e8', '2015050001', '2015-05-03 07:02:40', '2015-05-03 07:02:40', '1', '1', '', 0, NULL, '2015-05-03', 'zhidanzhong', '4324234.000000', NULL, '2015-05-23', 'diya', '2323.000000', 0.10000000, 'xianjin', 'tongyi', '', '2015-05-03', 'tongyi', '', NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', '', NULL, '', '', NULL),
+('cb942cff-649e-73c5-8f9f-5545c82a57e8', '2015050001', '2015-05-03 07:02:40', '2015-05-15 09:07:12', '1', '1', NULL, 0, '', '2015-05-03', 'zhidanzhong', '4324234.000000', '', '2015-05-23', 'diya', '2323.000000', 0.10000000, 'xianjin', 'tongyi', NULL, '2015-05-03', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL),
 ('d22ac15f-d0d1-d41a-5b04-5552bb8f5701', '565', '2015-05-13 02:50:21', '2015-05-13 03:02:25', '1', '1', NULL, 1, '', '2015-05-13', 'zhidanzhong', '5.000000', '', '2015-05-22', 'diya', '5.000000', 5.00000000, 'xianjin', 'tongyi', NULL, '2015-05-13', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL),
 ('df321a45-b428-8a32-865b-554c54e589cd', '2015050008', '2015-05-08 06:15:41', '2015-05-13 06:41:37', '1', '1', NULL, 1, '', '2015-05-08', 'zhidanzhong', '6.000000', '', '2015-05-29', 'diya', '66.000000', 6.00000000, 'xianjin', 'tongyi', NULL, '2015-05-08', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL);
 
@@ -3674,7 +3674,7 @@ CREATE TABLE IF NOT EXISTS `tracker` (
   `session_id` varchar(36) DEFAULT NULL,
   `visible` tinyint(1) DEFAULT '0',
   `deleted` tinyint(1) DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=362 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=377 DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `tracker`
@@ -3705,7 +3705,7 @@ INSERT INTO `tracker` (`id`, `monitor_id`, `user_id`, `module_name`, `item_id`, 
 (322, 'c7449701-1d9a-2f47-8d66-5552cdbb0024', '1', 'liuch_fangkuang_liucheng', 'bf9a8ba5-8a4c-3a7f-fe0d-5552ba46ca4e', '2015050009', '2015-05-13 04:05:37', 'detailview', 'jpcvj1ad5fbjjsn73nb3msqb57', 0, 0),
 (323, '67942488-58cb-473a-80d5-5552cdbd4c08', '1', 'liuch_fangkuang_liucheng', '928f1898-45c4-879c-62d6-5552c98d8513', '2015050011', '2015-05-13 04:05:41', 'detailview', 'jpcvj1ad5fbjjsn73nb3msqb57', 0, 0),
 (324, '63d8145c-2201-7200-c627-5552f19a0348', '1', 'liuch_fangkuang_liucheng', '950868ae-9589-83dd-dc4e-5552be745c39', '2015050010', '2015-05-13 06:38:42', 'detailview', 'jpcvj1ad5fbjjsn73nb3msqb57', 0, 0),
-(361, '34b35415-19b5-5642-864a-5554621d9e08', '1', 'liuch_fangkuang_liucheng', 'cb942cff-649e-73c5-8f9f-5545c82a57e8', '2015050001', '2015-05-14 08:53:57', 'editview', 'jpcvj1ad5fbjjsn73nb3msqb57', 1, 0);
+(376, '9c4a83b2-3289-9434-c398-5555b71d7b4d', '1', 'liuch_fangkuang_liucheng', 'cb942cff-649e-73c5-8f9f-5545c82a57e8', '2015050001', '2015-05-15 09:07:32', 'editview', 'jpcvj1ad5fbjjsn73nb3msqb57', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -5155,7 +5155,7 @@ MODIFY `tracker_key` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `tracker`
 --
 ALTER TABLE `tracker`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=362;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=377;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

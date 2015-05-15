@@ -26,6 +26,14 @@ class liuch_fangkuang_liuchengViewEdit extends ViewEdit {
 //            $this->ev->ss->assign('readOnly', 'readonly = "readonly"');
 //        else
 //            $this->ev->ss->assign('readOnly', '');
+        if ($this->bean->danju_zhuangtai == "zhidanzhong"){
+            unset($this->ev->defs['panels']['lbl_editview_panel1']);
+            unset($this->ev->defs['panels']['lbl_editview_panel2']);
+            unset($this->ev->defs['panels']['lbl_editview_panel3']);
+            unset($this->ev->defs['panels']['lbl_editview_panel4']);
+            $th = new TemplateHandler();
+            $th->clearCache($this->module);
+        }
         $GLOBALS['log']->info("liuch_fangkuang_liuchengViewEdit.display");
 //        var_dump($this->ev);
         $this->ev->ss->assign('jiekuangren_zhengjian_leixin_c', 'disabled="disabled"');

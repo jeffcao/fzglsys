@@ -43,4 +43,30 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['jiekuangren_zhengjian_haoma_c
     'dbType' => 'non-db',
     'studio' => 'visible',
 );
+
+$dictionary['liuch_fangkuang_liucheng']['fields']['jiekuangren_zhengjian_haoma_c']= array(
+    'name' => 'jiekuangren_zhengjian_haoma_c',
+    'vname' => 'LBL_JIEKUANGREN_ZHENGJIANHAOMA',
+//    'type' => 'relate',
+    'rname' => 'zhengjian_haoma',
+//    'id_name' => 'daik_jiekuangren_info_id_c',
+//    'link' => 'daik_jiekuangren_info',
+    'module' => 'daik_jiekuangren_info',
+    'source' => 'non-db',
+    'dbType' => 'non-db',
+    'studio' => 'visible',
+);
+
+$dictionary['liuch_fangkuang_liucheng']['fields']['jiekuangren_zhengjian_haoma_c']= array(
+    'name' => 'jiekuangren_zhengjian_haoma_c',
+    'vname' => 'LBL_JIEKUANGREN_ZHENGJIANHAOMA',
+//    'type' => 'relate',
+    'rname' => 'zhengjian_haoma',
+//    'id_name' => 'daik_jiekuangren_info_id_c',
+//    'link' => 'daik_jiekuangren_info',
+    'module' => 'daik_jiekuangren_info',
+    'source' => 'non-db',
+    'dbType' => 'non-db',
+    'studio' => 'visible',
+);
 ?>
