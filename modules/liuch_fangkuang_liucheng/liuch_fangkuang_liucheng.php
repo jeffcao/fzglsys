@@ -37,12 +37,40 @@
 /**
  * THIS CLASS IS FOR DEVELOPERS TO MAKE CUSTOMIZATIONS IN
  */
+
+require_once('include/upload_file.php');
 require_once('modules/liuch_fangkuang_liucheng/liuch_fangkuang_liucheng_sugar.php');
 class liuch_fangkuang_liucheng extends liuch_fangkuang_liucheng_sugar {
 	
 	function liuch_fangkuang_liucheng(){	
 		parent::liuch_fangkuang_liucheng_sugar();
 	}
-	
+        function deleteAttachment($isduplicate="false"){
+        if($this->ACLAccess('edit')){
+            if($isduplicate=="true"){
+                return true;
+            }
+            $removeFile = "upload://{$this->id}";
+        }
+
+        if(file_exists($removeFile)) {
+            if(!unlink($removeFile)) {
+                $GLOBALS['log']->error("*** Could not unlink() file: [ {$removeFile} ]");
+            }else{
+                $this->filename = '';
+                $this->file_mime_type = '';
+                $this->file = '';
+                $this->save();
+                return true;
+            }
+        } else {
+            $this->filename = '';
+            $this->file_mime_type = '';
+            $this->file = '';
+            $this->save();
+            return true;
+        }
+        return false;
+    }
 }
 ?>

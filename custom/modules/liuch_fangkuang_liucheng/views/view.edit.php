@@ -36,8 +36,8 @@ class liuch_fangkuang_liuchengViewEdit extends ViewEdit {
         }
         $GLOBALS['log']->info("liuch_fangkuang_liuchengViewEdit.display");
 //        var_dump($this->ev);
-        $this->ev->ss->assign('jiekuangren_zhengjian_leixin_c', 'disabled="disabled"');
-        $this->ev->ss->assign('jiekuangren_bianhao_c', 'readonly = "readonly"');
+//        $this->ev->ss->assign('jiekuangren_zhengjian_leixin_c', 'disabled="disabled"');
+//        $this->ev->ss->assign('jiekuangren_bianhao_c', 'readonly = "readonly"');
 
         parent::display();
     }

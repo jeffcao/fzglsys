@@ -37,7 +37,7 @@
 $relationships = array (
   'liuch_fangkuang_liucheng_modified_user' => 
   array (
-    'id' => '1b4c320f-792a-b15d-e9cf-5551963fd808',
+    'id' => 'b90a3b7d-ee27-6b7c-1382-555708092fe5',
     'relationship_name' => 'liuch_fangkuang_liucheng_modified_user',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
@@ -63,7 +63,7 @@ $relationships = array (
   ),
   'liuch_fangkuang_liucheng_created_by' => 
   array (
-    'id' => '1b8f6907-8707-96bd-3dd6-555196f0519e',
+    'id' => 'b99c0c78-cbe3-88b9-e245-5557086fe88c',
     'relationship_name' => 'liuch_fangkuang_liucheng_created_by',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
@@ -89,7 +89,7 @@ $relationships = array (
   ),
   'liuch_fangkuang_liucheng_assigned_user' => 
   array (
-    'id' => '1bdd85bc-e167-c374-bf40-5551965df446',
+    'id' => 'ba19a7c3-8ed4-43c2-84ba-55570810767b',
     'relationship_name' => 'liuch_fangkuang_liucheng_assigned_user',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',

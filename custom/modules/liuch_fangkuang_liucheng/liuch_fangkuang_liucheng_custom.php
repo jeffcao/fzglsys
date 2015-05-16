@@ -42,7 +42,26 @@ class fangkuang_liucheng_custom_class {
         $bean->jiekuangren_bianhao_c = $a->danang_bianhao;
         $bean->jiekuangren_zhengjian_haoma_c = $a->zhengjian_haoma;
         $bean->jiekuangren_zhengjian_leixin_c = $GLOBALS["app_list_strings"]["fzglsys_zhengjian_type_list"][$a->zhengjian_leixin];
+        $bean->jiekuangren_jiating_zhuzhi_c = $a->jiating_zhuzhi;
+        $bean->jiekuangren_lianxi_dianhua_c = $a->lianxi_dianhua;
 
+        $bean->jiekuangren_gongzuo_danwei_c = $a->gongzuo_danwei;
+        $bean->jiekuangren_zhiwu_c = $a->zhiwu;
+        $bean->jiekuangren_hunyin_zhuangkuang_c = $a->hunyin_zhuangkuang;
+        $bean->jiekuangren_qita_lianxiren_xinming_c = $a->qita_lianxiren_xinming;
+        $bean->jiekuangren_qita_lianxiren_dianhua_c = $a->qita_lianxiren_dianhua;
+        $bean->jiekuangren_qita_lianxiren_guanxi_c = $a->qita_lianren_guanxi;
+
+        $bean->jiekuangren_peiou_xinming_c = $a->jiekuangren_peiou_xinming;
+        $bean->jiekuangren_peiou_zhengjian_leixin_c = $GLOBALS["app_list_strings"]["fzglsys_zhengjian_type_list"][$a->peiou_zhengjian_leixin];
+        $bean->jiekuangren_peiou_zhengjian_haoma_c = $a->peiou_zhengjian_haoma;
+        $bean->jiekuangren_peiou_gongzuo_danwei_c = $a->peiou_gongzuo_danwei;
+        $bean->jiekuangren_peiou_zhiwu_c = $a->peiou_zhiwu;
+
+        $a->custom_fields->retrieve();
+        $xindai_guwen = BeanFactory::getBean("Users", $a->user_id_c);
+        $bean->jiekuangren_xindai_guwen_xinming_c = $xindai_guwen->first_name . $xindai_guwen->last_name;
+        $bean->jiekuangren_xindai_guwen_gonghao_c = $xindai_guwen->gonghao_c;
     }
 }
 ?>
