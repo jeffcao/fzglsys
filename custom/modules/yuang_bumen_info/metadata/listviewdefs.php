@@ -16,27 +16,20 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'FENGONGSI_C' => 
+  'BUMEN_FUZEREN_C' => 
   array (
     'type' => 'relate',
     'default' => true,
     'studio' => 'visible',
-    'label' => 'LBL_FENGONGSI',
-    'id' => 'YUANG_FENGONGSI_INFO_ID_C',
-    'link' => false,
+    'label' => 'LBL_BUMEN_FUZEREN',
+    'id' => 'USER_ID_C',
+    'link' => true,
     'width' => '10%',
   ),
   'DIANHUA' => 
   array (
     'type' => 'phone',
     'label' => 'LBL_DIANHUA',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'FUZEREN_XIMING' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_FUZEREN_XIMING',
     'width' => '10%',
     'default' => true,
   ),

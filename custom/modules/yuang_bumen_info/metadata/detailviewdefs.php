@@ -73,19 +73,14 @@ array (
             'name' => 'dizhi',
             'label' => 'LBL_DIZHI',
           ),
-          1 => 
-          array (
-            'name' => 'fengongsi_c',
-            'studio' => 'visible',
-            'label' => 'LBL_FENGONGSI',
-          ),
         ),
         3 => 
         array (
           0 => 
           array (
-            'name' => 'fuzeren_ximing',
-            'label' => 'LBL_FUZEREN_XIMING',
+            'name' => 'bumen_fuzeren_c',
+            'studio' => 'visible',
+            'label' => 'LBL_BUMEN_FUZEREN',
           ),
           1 => 
           array (

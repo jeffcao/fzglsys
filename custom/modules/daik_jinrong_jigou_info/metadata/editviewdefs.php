@@ -61,19 +61,6 @@ array (
         array (
           0 => 
           array (
-            'name' => 'fenzhi_jigou',
-            'label' => 'LBL_FENZHI_JIGOU',
-          ),
-          1 => 
-          array (
-            'name' => 'fenzhi_jigou_bianma',
-            'label' => 'LBL_FENZHI_JIGOU_BIANMA',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
             'name' => 'lianxiren_xinming',
             'label' => 'LBL_LIANXIREN_XINMING',
           ),
@@ -83,7 +70,7 @@ array (
             'label' => 'LBL_LIANXIREN_DIANHUA',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -92,7 +79,7 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -101,7 +88,7 @@ array (
           ),
           1 => '',
         ),
-        6 => 
+        5 => 
         array (
           0 => 'description',
         ),
