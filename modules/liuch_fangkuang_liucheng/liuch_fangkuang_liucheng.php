@@ -46,31 +46,37 @@ class liuch_fangkuang_liucheng extends liuch_fangkuang_liucheng_sugar {
 		parent::liuch_fangkuang_liucheng_sugar();
 	}
         function deleteAttachment($isduplicate="false"){
-        if($this->ACLAccess('edit')){
-            if($isduplicate=="true"){
-                return true;
-            }
-            $removeFile = "upload://{$this->id}";
-        }
+            $deleteFieldName = $_REQUEST['deleteFieldName'];
+            $prefix_stored_name = str_replace("filename","",$deleteFieldName);
+            $real_file_mine_type = $prefix_stored_name."file_mime_type";
+            $real_file_ext = $prefix_stored_name."file_ext";
+            $real_stored_file_name = $prefix_stored_name.$this->id;
 
-        if(file_exists($removeFile)) {
-            if(!unlink($removeFile)) {
-                $GLOBALS['log']->error("*** Could not unlink() file: [ {$removeFile} ]");
-            }else{
-                $this->filename = '';
-                $this->file_mime_type = '';
+            if($this->ACLAccess('edit')){
+                if($isduplicate=="true"){
+                    return true;
+                }
+                $removeFile = "upload://{$real_stored_file_name}";
+            }
+
+            if(file_exists($removeFile)) {
+                if(!unlink($removeFile)) {
+                    $GLOBALS['log']->error("*** Could not unlink() file: [ {$removeFile} ]");
+                }else{
+                    $this->$deleteFieldName = '';
+                    $this->$real_file_mine_type = '';
+                    $this->file = '';
+                    $this->save();
+                    return true;
+                }
+            } else {
+                $this->$deleteFieldName = '';
+                $this->$real_file_mine_type = '';
                 $this->file = '';
                 $this->save();
                 return true;
             }
-        } else {
-            $this->filename = '';
-            $this->file_mime_type = '';
-            $this->file = '';
-            $this->save();
-            return true;
-        }
-        return false;
+            return false;
     }
 }
 ?>

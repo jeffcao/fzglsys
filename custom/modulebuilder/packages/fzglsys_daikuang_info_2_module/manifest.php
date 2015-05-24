@@ -60,9 +60,9 @@ $manifest = array (
   'icon' => '',
   'is_uninstallable' => true,
   'name' => 'fzglsys_daikuang_info_2_module',
-  'published_date' => '2015-05-19 04:16:36',
+  'published_date' => '2015-05-23 12:12:00',
   'type' => 'module',
-  'version' => 1432008996,
+  'version' => 1432383120,
   'remove_tables' => 'prompt',
 );
 

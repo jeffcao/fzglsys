@@ -52,6 +52,11 @@ else {
     $app_strings = return_application_language($GLOBALS['current_language']);
     $mod_strings = return_module_language($GLOBALS['current_language'], 'ACL');
 	$file_type = strtolower($_REQUEST['type']);
+    $file_fname = strtolower($_REQUEST['fname']);
+    $prefix_stored_name = str_replace("filename","",$file_fname);
+    $real_file_mine_type = $prefix_stored_name."file_mime_type";
+    $real_stored_file_name = $prefix_stored_name.strtolower($_REQUEST['id']);
+
     if(!isset($_REQUEST['isTempFile'])) {
 	    //Custom modules may have capitalizations anywhere in their names. We should check the passed in format first.
 		require('include/modules.php');
@@ -108,7 +113,7 @@ else {
     } elseif(isset($_REQUEST['isTempFile']) && $file_type == "import") {
     	$local_location = "upload://import/{$_REQUEST['tempName']}";
     } else {
-		$local_location = "upload://{$_REQUEST['id']}";
+		$local_location = "upload://{$real_stored_file_name}";
     }
 
 	if(isset($_REQUEST['isTempFile']) && ($_REQUEST['type']=="SugarFieldImage")) {
@@ -135,8 +140,9 @@ else {
             $query = "SELECT filename name, file_mime_type FROM notes ";
 			$query .= "WHERE notes.id = '" . $db->quote($_REQUEST['id']) ."'";
 		} elseif( !isset($_REQUEST['isTempFile']) && !isset($_REQUEST['tempName'] ) && isset($_REQUEST['type']) && $file_type!='temp' ){ //make sure not email temp file.
-			$query = "SELECT filename name FROM ". $file_type ." ";
-			$query .= "WHERE ". $file_type .".id= '".$db->quote($_REQUEST['id'])."'";
+//			$query = "SELECT filename name FROM ". $file_type ." ";
+			$query = "SELECT ".$file_fname." name, ".$real_file_mine_type." file_mime_type  FROM ". $file_type ." ";
+            $query .= "WHERE ". $file_type .".id= '".$db->quote($_REQUEST['id'])."'";
 		}elseif( $file_type == 'temp'){
 			$doQuery = false;
 		}
@@ -156,7 +162,7 @@ else {
             if (isset($row['file_mime_type']) && strpos($row['file_mime_type'], 'image/') === 0) {
                 $mime_type = $row['file_mime_type'];
             }
-			$download_location = "upload://{$_REQUEST['id']}";
+			$download_location = "upload://{$real_stored_file_name}";
 		} else if(isset(  $_REQUEST['tempName'] ) && isset($_REQUEST['isTempFile']) ){
 			// downloading a temp file (email 2.0)
 			$download_location = $local_location;
