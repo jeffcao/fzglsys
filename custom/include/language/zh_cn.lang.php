@@ -59,7 +59,7 @@ $GLOBALS['app_list_strings']['fzglsys_daikuang_shenqing_option01_list']=array (
   'butongyi' => '不通过',
   'yichang_guanbi' => '异常关闭',
 );
-$app_strings['LBL_GROUPTAB5_1430472938'] = '基础数据维护';
+$app_strings['LBL_GROUPTAB5_1430472938'] = '公司数据维护';
 
 $app_strings['LBL_GROUPTAB6_1430472938'] = '放款流程';
 
@@ -77,3 +77,11 @@ $app_list_strings['moduleListSingular']['yuang_yuangong_guanli']='员工维护';
 $app_list_strings['moduleListSingular']['yuang_fengongsi_info']='分公司维护';
 $app_list_strings['moduleListSingular']['yuang_bumen_info']='部门维护';
 $app_list_strings['moduleListSingular']['yuang_waibu_qudao_info']='合作渠道信息';
+$app_list_strings['moduleList']['fdi2m_jinrong_fenzhi_jigou_info']='金融分支机构';
+$app_list_strings['moduleList']['fdi2m_jinrong_chanpin_info']='金融产品信息';
+$app_list_strings['moduleListSingular']['fdi2m_jinrong_fenzhi_jigou_info']='金融分支机构';
+$app_list_strings['moduleListSingular']['fdi2m_jinrong_chanpin_info']='金融产品信息';
+$app_strings['LBL_GROUPTAB2_1433324777'] = '金融信息维护';
+
+$app_strings['LBL_GROUPTAB3_1433324777'] = '新建组';
+?>

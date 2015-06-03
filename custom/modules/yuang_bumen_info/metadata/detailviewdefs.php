@@ -70,11 +70,25 @@ array (
         array (
           0 => 
           array (
+            'name' => 'bumeng_jibie_c',
+            'label' => 'LBL_BUMENG_JIBIE',
+          ),
+          1 => 
+          array (
+            'name' => 'shangji_bumen_c',
+            'studio' => 'visible',
+            'label' => 'LBL_SHANGJI_BUMEN',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
             'name' => 'dizhi',
             'label' => 'LBL_DIZHI',
           ),
         ),
-        3 => 
+        4 => 
         array (
           0 => 
           array (
@@ -88,7 +102,7 @@ array (
             'label' => 'LBL_FUZEREN_DIANHUA',
           ),
         ),
-        4 => 
+        5 => 
         array (
           0 => 
           array (
@@ -97,7 +111,7 @@ array (
           ),
           1 => 'date_entered',
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (
@@ -106,7 +120,7 @@ array (
           ),
           1 => 'date_modified',
         ),
-        6 => 
+        7 => 
         array (
           0 => 'description',
         ),
