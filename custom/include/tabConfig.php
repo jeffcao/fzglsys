@@ -1,5 +1,5 @@
 <?php
-// created: 2015-06-03 17:58:54
+// created: 2015-06-03 18:10:47
 $GLOBALS['tabStructure'] = array (
   'LBL_GROUPTAB5_1430472938' => 
   array (

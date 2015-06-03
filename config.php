@@ -1,5 +1,5 @@
 <?php
-// created: 2015-06-03 17:58:54
+// created: 2015-06-03 18:10:47
 $sugar_config = array (
   'addAjaxBannedModules' => 
   array (
@@ -125,6 +125,13 @@ $sugar_config = array (
     119 => 'asol_ProcessInstances',
     120 => 'asol_WorkingNodes',
     121 => 'asol_OnHold',
+    122 => 'asol_Process',
+    123 => 'asol_Events',
+    124 => 'asol_Activity',
+    125 => 'asol_Task',
+    126 => 'asol_ProcessInstances',
+    127 => 'asol_WorkingNodes',
+    128 => 'asol_OnHold',
   ),
   'admin_access_control' => false,
   'admin_export_only' => false,
@@ -348,7 +355,7 @@ $sugar_config = array (
     'timeout' => 86400,
   ),
   'js_custom_version' => 1,
-  'js_lang_version' => 13,
+  'js_lang_version' => 14,
   'languages' => 
   array (
     'en_us' => 'English (US)',
