@@ -401,6 +401,7 @@ array (
             'name' => 'fenkong_beizhu',
             'studio' => 'visible',
             'label' => 'LBL_FENKONG_BEIZHU',
+              'customCode'=>'<textarea rows="4" cols="20"  id="fenkong_beizhu" name="fenkong_beizhu" {$fenkongReadOnly}>',
           ),
         ),
       ),
