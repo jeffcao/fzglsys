@@ -6,8 +6,14 @@ array (
   array (
     'templateMeta' => 
     array (
+        'includes' => array(
+            0 =>
+            array(
+              'file' => 'custom/modules/liuch_fangkuang_liucheng/javascripts/liuch_custom_funs.js',
+            ),
+        ),
       'maxColumns' => '2',
-      'widths' => 
+      'widths' =>
       array (
         0 => 
         array (
@@ -57,11 +63,24 @@ array (
       'form' => 
       array (
         'enctype' => 'multipart/form-data',
-        'buttons' => 
+        'buttons' =>
         array (
-          0 => 'SAVE',
-          1 => 'CANCEL',
+         'SAVE',
+         'CANCEL',
+            array('customCode'=>'<input title="{$APP.LBL_SUBMIT_LIUCHENG_BUTTON_TITLE}" ' .
+ 	                                 		'                    accessKey="{$APP.LBL_SUBMIT_LIUCHENG_BUTTON_KEY}" ' .
+ 	                                 		'                    class="button primary" ' .
+ 	                                 		'					 onclick="'.$js_form.' {if $isDuplicate}_form.return_id.value=\'\'; {/if}_form.action.value=\'Save\'; if(check_form(\'' . $view . '\'))SUGAR.ajaxUI.submitForm(_form);return false;" ' .
+ 	                                 		'                    type="submit" ' .
+ 	                                 		'                    name="button" ' .
+                                            '                    id="'.$type.$location.'" ' .
+ 	                                 		'                    value="{$APP.LBL_SUBMIT_LIUCHENG_BUTTON_LABEL}">')
+ 	                                 ,
         ),
+          'hidden' =>
+          array(
+              0 => '<input type="hidden" name="liucheng_status" id="liucheng_status" value="{$liucheng_status}">',
+          ),
       ),
     ),
     'panels' => 
@@ -401,7 +420,6 @@ array (
             'name' => 'fenkong_beizhu',
             'studio' => 'visible',
             'label' => 'LBL_FENKONG_BEIZHU',
-              'customCode'=>'<textarea rows="4" cols="20"  id="fenkong_beizhu" name="fenkong_beizhu" {$fenkongReadOnly}>',
           ),
         ),
       ),
