@@ -12,6 +12,9 @@ class fangkuang_liucheng_custom_class {
         require_once('include/entryPoint.php');
         require_once('modules/Campaigns/utils.php');
 //        global $db;
+        if ($_REQUEST['action']== "submit_liucheng"){
+            $bean->danju_zhuangtai = "dai_fengkong_shenhe";
+        }
         if(isset($bean->fetched_row['id'])) { return; }
 //        (isset($arguments['isUpdate']) && $arguments['isUpdate'] == false)
         $d_t = date("Ym");

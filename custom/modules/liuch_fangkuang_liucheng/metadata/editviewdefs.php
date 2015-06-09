@@ -67,14 +67,12 @@ array (
         array (
          'SAVE',
          'CANCEL',
-            array('customCode'=>'<input title="{$APP.LBL_SUBMIT_LIUCHENG_BUTTON_TITLE}" ' .
- 	                                 		'                    accessKey="{$APP.LBL_SUBMIT_LIUCHENG_BUTTON_KEY}" ' .
- 	                                 		'                    class="button primary" ' .
- 	                                 		'					 onclick="'.$js_form.' {if $isDuplicate}_form.return_id.value=\'\'; {/if}_form.action.value=\'Save\'; if(check_form(\'' . $view . '\'))SUGAR.ajaxUI.submitForm(_form);return false;" ' .
+            array('customCode'=>'<input class="button primary" ' .
+ 	                                 		'					 onclick="this.form.action.value=\'submit_liucheng\'; if(check_form(\'EditView\'))SUGAR.ajaxUI.submitForm(this.form);return false;" ' .
  	                                 		'                    type="submit" ' .
  	                                 		'                    name="button" ' .
-                                            '                    id="'.$type.$location.'" ' .
- 	                                 		'                    value="{$APP.LBL_SUBMIT_LIUCHENG_BUTTON_LABEL}">')
+                                            '                    id="SUBMIT_LIUCHENG" ' .
+ 	                                 		'                    value="提交">')
  	                                 ,
         ),
           'hidden' =>

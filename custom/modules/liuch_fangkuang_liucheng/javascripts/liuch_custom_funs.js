@@ -34,5 +34,5 @@ function liucheng_controll(panel_id) {
 $(document).ready(function(){
     var liucheng_status =  $("#liucheng_status")[0].value;
 
-    liucheng_controll("Default_liuch_fangkuang_liucheng_Subpanel");
+    //liucheng_controll("Default_liuch_fangkuang_liucheng_Subpanel");
 })

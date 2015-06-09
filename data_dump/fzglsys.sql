@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.2.11
+-- version 4.4.3
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2015-06-07 14:16:34
--- 服务器版本： 5.6.21
--- PHP Version: 5.6.3
+-- Generation Time: 2015-06-09 18:56:11
+-- 服务器版本： 5.6.24
+-- PHP Version: 5.6.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -1698,7 +1698,7 @@ CREATE TABLE IF NOT EXISTS `bugs` (
   `description` text,
   `deleted` tinyint(1) DEFAULT '0',
   `assigned_user_id` char(36) DEFAULT NULL,
-`bug_number` int(11) NOT NULL,
+  `bug_number` int(11) NOT NULL,
   `type` varchar(255) DEFAULT NULL,
   `status` varchar(100) DEFAULT NULL,
   `priority` varchar(100) DEFAULT NULL,
@@ -1835,7 +1835,7 @@ CREATE TABLE IF NOT EXISTS `campaigns` (
   `created_by` char(36) DEFAULT NULL,
   `deleted` tinyint(1) DEFAULT '0',
   `assigned_user_id` char(36) DEFAULT NULL,
-`tracker_key` int(11) NOT NULL,
+  `tracker_key` int(11) NOT NULL,
   `tracker_count` int(11) DEFAULT '0',
   `refer_url` varchar(255) DEFAULT 'http://',
   `tracker_text` varchar(255) DEFAULT NULL,
@@ -1911,7 +1911,7 @@ CREATE TABLE IF NOT EXISTS `campaign_trkrs` (
   `id` char(36) NOT NULL,
   `tracker_name` varchar(30) DEFAULT NULL,
   `tracker_url` varchar(255) DEFAULT 'http://',
-`tracker_key` int(11) NOT NULL,
+  `tracker_key` int(11) NOT NULL,
   `campaign_id` char(36) DEFAULT NULL,
   `date_entered` datetime DEFAULT NULL,
   `date_modified` datetime DEFAULT NULL,
@@ -1938,7 +1938,7 @@ CREATE TABLE IF NOT EXISTS `cases` (
   `description` text,
   `deleted` tinyint(1) DEFAULT '0',
   `assigned_user_id` char(36) DEFAULT NULL,
-`case_number` int(11) NOT NULL,
+  `case_number` int(11) NOT NULL,
   `type` varchar(255) DEFAULT NULL,
   `status` varchar(100) DEFAULT NULL,
   `priority` varchar(100) DEFAULT NULL,
@@ -2500,7 +2500,7 @@ CREATE TABLE IF NOT EXISTS `emailman` (
   `date_entered` datetime DEFAULT NULL,
   `date_modified` datetime DEFAULT NULL,
   `user_id` char(36) DEFAULT NULL,
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `campaign_id` char(36) DEFAULT NULL,
   `marketing_id` char(36) DEFAULT NULL,
   `list_id` char(36) DEFAULT NULL,
@@ -3296,7 +3296,7 @@ INSERT INTO `liuch_fangkuang_liucheng` (`id`, `name`, `date_entered`, `date_modi
 ('b3aec49a-ab07-9ec4-a79e-5545c8a0f512', '2015050003', '2015-05-03 07:04:13', '2015-05-13 06:41:37', '1', '1', NULL, 1, '', '2015-05-03', 'zhidanzhong', '345345.000000', '', '2015-05-28', 'diya', '345345.000000', 34.00000000, 'xianjin', 'tongyi', NULL, '2015-05-03', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 ('bf9a8ba5-8a4c-3a7f-fe0d-5552ba46ca4e', '2015050009', '2015-05-13 02:43:32', '2015-05-13 06:41:37', '1', '1', NULL, 1, '', '2015-05-13', 'zhidanzhong', '2.000000', '', '2015-05-29', 'diya', '3.000000', 3.00000000, 'xianjin', 'tongyi', NULL, '2015-05-13', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 ('c4b4407f-3865-35bd-43b1-554c54371130', '2015050007', '2015-05-08 06:13:26', '2015-05-13 06:41:37', '1', '1', NULL, 1, '', '2015-05-08', 'zhidanzhong', '5.000000', '', '2015-05-15', 'diya', '45.000000', 4.00000000, 'xianjin', 'tongyi', NULL, '2015-05-08', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('cb942cff-649e-73c5-8f9f-5545c82a57e8', '2015050001', '2015-05-03 07:02:40', '2015-06-07 03:35:47', '1', '1', NULL, 0, '', '2015-05-03', 'zhidanzhong', '4324234.000000', '', '2015-05-23', 'diya', '2323.000000', 0.10000000, 'xianjin', 'tongyi', 'fsdgdfg', '2015-05-03', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+('cb942cff-649e-73c5-8f9f-5545c82a57e8', '2015050001', '2015-05-03 07:02:40', '2015-06-09 16:50:40', '1', '1', NULL, 0, '', '2015-05-03', 'dai_fengkong_shenhe', '4324234.000000', '', '2015-05-23', 'diya', '77.000000', 0.10000000, 'xianjin', 'tongyi', 'fsdgdfgasdfasdf', '2015-05-03', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 ('d22ac15f-d0d1-d41a-5b04-5552bb8f5701', '565', '2015-05-13 02:50:21', '2015-05-13 03:02:25', '1', '1', NULL, 1, '', '2015-05-13', 'zhidanzhong', '5.000000', '', '2015-05-22', 'diya', '5.000000', 5.00000000, 'xianjin', 'tongyi', NULL, '2015-05-13', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 ('df321a45-b428-8a32-865b-554c54e589cd', '2015050008', '2015-05-08 06:15:41', '2015-05-13 06:41:37', '1', '1', NULL, 1, '', '2015-05-08', 'zhidanzhong', '6.000000', '', '2015-05-29', 'diya', '66.000000', 6.00000000, 'xianjin', 'tongyi', NULL, '2015-05-08', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
@@ -3836,7 +3836,7 @@ CREATE TABLE IF NOT EXISTS `prospects` (
   `alt_address_country` varchar(255) DEFAULT NULL,
   `assistant` varchar(75) DEFAULT NULL,
   `assistant_phone` varchar(100) DEFAULT NULL,
-`tracker_key` int(11) NOT NULL,
+  `tracker_key` int(11) NOT NULL,
   `birthdate` date DEFAULT NULL,
   `lead_id` char(36) DEFAULT NULL,
   `account_name` varchar(150) DEFAULT NULL,
@@ -3926,274 +3926,274 @@ CREATE TABLE IF NOT EXISTS `relationships` (
 --
 
 INSERT INTO `relationships` (`id`, `relationship_name`, `lhs_module`, `lhs_table`, `lhs_key`, `rhs_module`, `rhs_table`, `rhs_key`, `join_table`, `join_key_lhs`, `join_key_rhs`, `relationship_type`, `relationship_role_column`, `relationship_role_column_value`, `reverse`, `deleted`) VALUES
-('112be88b-0d81-a80e-0903-5573ba7b6697', 'asol_processinstances_modified_user', 'Users', 'users', 'id', 'asol_ProcessInstances', 'asol_processinstances', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('1192803f-3ca0-48d6-f0f4-5573baa668f4', 'asol_processinstances_created_by', 'Users', 'users', 'id', 'asol_ProcessInstances', 'asol_processinstances', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('11f5b6d8-5542-ac36-d794-5573ba887a0c', 'asol_processinstances_assigned_user', 'Users', 'users', 'id', 'asol_ProcessInstances', 'asol_processinstances', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('14c17ca9-5be6-bc8c-f1f3-5573baf6db52', 'asol_task_modified_user', 'Users', 'users', 'id', 'asol_Task', 'asol_task', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('15305432-3b67-f842-9979-5573ba92a376', 'asol_task_created_by', 'Users', 'users', 'id', 'asol_Task', 'asol_task', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('1598b7b7-6d49-f7c8-a451-5573baf30725', 'asol_task_assigned_user', 'Users', 'users', 'id', 'asol_Task', 'asol_task', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('184caa3b-d40d-54c5-6298-5573ba2a4f3c', 'asol_workingnodes_modified_user', 'Users', 'users', 'id', 'asol_WorkingNodes', 'asol_workingnodes', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('18bf2655-b75e-4134-dca2-5573bab23fb3', 'asol_workingnodes_created_by', 'Users', 'users', 'id', 'asol_WorkingNodes', 'asol_workingnodes', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('192388b3-3b63-68d4-3521-5573ba80ac78', 'asol_workingnodes_assigned_user', 'Users', 'users', 'id', 'asol_WorkingNodes', 'asol_workingnodes', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('1b9b7a67-b018-39cc-0601-5573ba10d0db', 'asol_workflowmanagercommon_modified_user', 'Users', 'users', 'id', 'asol_WorkFlowManagerCommon', 'asol_workflowmanagercommon', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('1bffcc6d-4420-3184-3270-5573baf62257', 'asol_workflowmanagercommon_created_by', 'Users', 'users', 'id', 'asol_WorkFlowManagerCommon', 'asol_workflowmanagercommon', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('1c6c9360-b9b5-462b-e6d6-5573ba62539c', 'asol_workflowmanagercommon_assigned_user', 'Users', 'users', 'id', 'asol_WorkFlowManagerCommon', 'asol_workflowmanagercommon', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('1f48fafa-a713-7ae5-a0bf-5573bab62d92', 'fdi2m_jinrong_chanpin_info_modified_user', 'Users', 'users', 'id', 'fdi2m_jinrong_chanpin_info', 'fdi2m_jinrong_chanpin_info', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('1fbd6d00-caa1-045e-56d1-5573ba0e4b46', 'fdi2m_jinrong_chanpin_info_created_by', 'Users', 'users', 'id', 'fdi2m_jinrong_chanpin_info', 'fdi2m_jinrong_chanpin_info', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('20380031-63a6-73d9-3f31-5573ba7b0d5c', 'fdi2m_jinrong_chanpin_info_assigned_user', 'Users', 'users', 'id', 'fdi2m_jinrong_chanpin_info', 'fdi2m_jinrong_chanpin_info', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('230b7b82-1fcc-7607-e80c-5573ba814424', 'fdi2m_jinrong_fenzhi_jigou_info_modified_user', 'Users', 'users', 'id', 'fdi2m_jinrong_fenzhi_jigou_info', 'fdi2m_jinrong_fenzhi_jigou_info', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('23a5bee1-33f3-5950-4053-5573ba897d8b', 'fdi2m_jinrong_fenzhi_jigou_info_created_by', 'Users', 'users', 'id', 'fdi2m_jinrong_fenzhi_jigou_info', 'fdi2m_jinrong_fenzhi_jigou_info', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('241545cd-b258-899e-16f7-5573baa9ce7d', 'fdi2m_jinrong_fenzhi_jigou_info_assigned_user', 'Users', 'users', 'id', 'fdi2m_jinrong_fenzhi_jigou_info', 'fdi2m_jinrong_fenzhi_jigou_info', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('26e55a4c-a4ef-39b0-cd7f-5573ba7eb002', 'daik_jiekuangren_info_modified_user', 'Users', 'users', 'id', 'daik_jiekuangren_info', 'daik_jiekuangren_info', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('2746520c-b2ea-d0bf-e484-5573ba9d4c4a', 'daik_jiekuangren_info_created_by', 'Users', 'users', 'id', 'daik_jiekuangren_info', 'daik_jiekuangren_info', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('279b2bc5-76cc-ec6e-92d4-5573ba97725e', 'daik_jiekuangren_info_assigned_user', 'Users', 'users', 'id', 'daik_jiekuangren_info', 'daik_jiekuangren_info', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('2a089bea-1fb7-5628-0be7-5573ba1059a8', 'daik_jinrong_jigou_info_modified_user', 'Users', 'users', 'id', 'daik_jinrong_jigou_info', 'daik_jinrong_jigou_info', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('2a6613bc-594b-06a4-5dcc-5573bad46921', 'daik_jinrong_jigou_info_created_by', 'Users', 'users', 'id', 'daik_jinrong_jigou_info', 'daik_jinrong_jigou_info', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('2acc9bc8-c26d-cdf0-c78d-5573ba0d842d', 'daik_jinrong_jigou_info_assigned_user', 'Users', 'users', 'id', 'daik_jinrong_jigou_info', 'daik_jinrong_jigou_info', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('2ec9ad11-fabd-0739-8b84-5573ba1338d9', 'liuch_fangkuang_liucheng_modified_user', 'Users', 'users', 'id', 'liuch_fangkuang_liucheng', 'liuch_fangkuang_liucheng', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('2f260c83-cd94-672e-b25d-5573ba8029c5', 'liuch_fangkuang_liucheng_created_by', 'Users', 'users', 'id', 'liuch_fangkuang_liucheng', 'liuch_fangkuang_liucheng', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('2f730ed5-7c1e-2004-5734-5573ba4e9b93', 'liuch_fangkuang_liucheng_assigned_user', 'Users', 'users', 'id', 'liuch_fangkuang_liucheng', 'liuch_fangkuang_liucheng', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('308185d3-c93c-2316-ef31-5573ba06c884', 'yuang_bumen_info_modified_user', 'Users', 'users', 'id', 'yuang_bumen_info', 'yuang_bumen_info', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('30d2c299-f03b-7254-075b-5573baf1a824', 'yuang_bumen_info_created_by', 'Users', 'users', 'id', 'yuang_bumen_info', 'yuang_bumen_info', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('311ff14b-2331-cf42-93f5-5573ba74d00d', 'yuang_bumen_info_assigned_user', 'Users', 'users', 'id', 'yuang_bumen_info', 'yuang_bumen_info', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('31af034f-7a17-b69a-f04e-5573ba8eab5d', 'asol_activity_modified_user', 'Users', 'users', 'id', 'asol_Activity', 'asol_activity', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('32572338-cd55-6459-aafd-5573ba3fa9c2', 'yuang_fengongsi_info_modified_user', 'Users', 'users', 'id', 'yuang_fengongsi_info', 'yuang_fengongsi_info', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('32c38e7e-43e6-0be4-ea6e-5573ba67a70c', 'yuang_fengongsi_info_created_by', 'Users', 'users', 'id', 'yuang_fengongsi_info', 'yuang_fengongsi_info', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('33131c6b-c1d6-b864-5a2b-5573ba649bb5', 'yuang_fengongsi_info_assigned_user', 'Users', 'users', 'id', 'yuang_fengongsi_info', 'yuang_fengongsi_info', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('351acfbf-63ea-885b-9a0f-5573ba5cf47d', 'yuang_waibu_qudao_info_modified_user', 'Users', 'users', 'id', 'yuang_waibu_qudao_info', 'yuang_waibu_qudao_info', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('356e6595-5567-be15-b856-5573baece94f', 'yuang_waibu_qudao_info_created_by', 'Users', 'users', 'id', 'yuang_waibu_qudao_info', 'yuang_waibu_qudao_info', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('35cfc3aa-f69d-4018-c1d0-5573ba1889ad', 'yuang_waibu_qudao_info_assigned_user', 'Users', 'users', 'id', 'yuang_waibu_qudao_info', 'yuang_waibu_qudao_info', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('3847bbe1-2915-27f4-8e2b-5573ba8c6ebd', 'yuang_yuangong_guanli_modified_user', 'Users', 'users', 'id', 'yuang_yuangong_guanli', 'yuang_yuangong_guanli', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('385909c2-06eb-b4b8-4d49-5573bafcf395', 'asol_activity_created_by', 'Users', 'users', 'id', 'asol_Activity', 'asol_activity', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('38b0a80a-c3de-8778-63e8-5573ba2e37a4', 'yuang_yuangong_guanli_created_by', 'Users', 'users', 'id', 'yuang_yuangong_guanli', 'yuang_yuangong_guanli', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('3908d477-67b4-a693-c509-5573ba72f4fb', 'yuang_yuangong_guanli_assigned_user', 'Users', 'users', 'id', 'yuang_yuangong_guanli', 'yuang_yuangong_guanli', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('3eec0fc9-ff7e-9662-e8fc-5573ba1feadb', 'asol_activity_assigned_user', 'Users', 'users', 'id', 'asol_Activity', 'asol_activity', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('46b2576d-33b4-9054-3300-5573bafa11e5', 'accounts_bugs', 'Accounts', 'accounts', 'id', 'Bugs', 'bugs', 'id', 'accounts_bugs', 'account_id', 'bug_id', 'many-to-many', NULL, NULL, 0, 0),
-('470c96ad-98fb-01b7-1cb2-5573bab2dfd0', 'accounts_contacts', 'Accounts', 'accounts', 'id', 'Contacts', 'contacts', 'id', 'accounts_contacts', 'account_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
-('47602416-90df-fc06-5946-5573bad66665', 'accounts_opportunities', 'Accounts', 'accounts', 'id', 'Opportunities', 'opportunities', 'id', 'accounts_opportunities', 'account_id', 'opportunity_id', 'many-to-many', NULL, NULL, 0, 0),
-('47ab0af9-8966-38c1-68b2-5573ba0344a0', 'calls_contacts', 'Calls', 'calls', 'id', 'Contacts', 'contacts', 'id', 'calls_contacts', 'call_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
-('47f6bbfb-0470-e172-9a22-5573bac269dd', 'calls_users', 'Calls', 'calls', 'id', 'Users', 'users', 'id', 'calls_users', 'call_id', 'user_id', 'many-to-many', NULL, NULL, 0, 0),
-('4841363f-8542-96d9-5e82-5573ba0998b8', 'calls_leads', 'Calls', 'calls', 'id', 'Leads', 'leads', 'id', 'calls_leads', 'call_id', 'lead_id', 'many-to-many', NULL, NULL, 0, 0),
-('488ba964-6093-2091-4d77-5573bae5a515', 'cases_bugs', 'Cases', 'cases', 'id', 'Bugs', 'bugs', 'id', 'cases_bugs', 'case_id', 'bug_id', 'many-to-many', NULL, NULL, 0, 0),
-('48d8f4f2-cf5e-a7e9-dfab-5573bac22bc4', 'contacts_bugs', 'Contacts', 'contacts', 'id', 'Bugs', 'bugs', 'id', 'contacts_bugs', 'contact_id', 'bug_id', 'many-to-many', NULL, NULL, 0, 0),
-('49228a99-677d-a5a7-7c27-5573bad7d178', 'contacts_cases', 'Contacts', 'contacts', 'id', 'Cases', 'cases', 'id', 'contacts_cases', 'contact_id', 'case_id', 'many-to-many', NULL, NULL, 0, 0),
-('49400368-7d27-f167-7bda-5573ba69ca54', 'oauthtokens_assigned_user', 'Users', 'users', 'id', 'OAuthTokens', 'oauth_tokens', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('496d2479-44da-8594-32fa-5573ba4c6be8', 'contacts_users', 'Contacts', 'contacts', 'id', 'Users', 'users', 'id', 'contacts_users', 'contact_id', 'user_id', 'many-to-many', NULL, NULL, 0, 0),
-('4a0c69fc-a3dd-6181-0492-5573bad25d5d', 'emails_bugs_rel', 'Emails', 'emails', 'id', 'Bugs', 'bugs', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Bugs', 0, 0),
-('4aa3e13c-9a46-bdca-4894-5573ba62bb96', 'emails_cases_rel', 'Emails', 'emails', 'id', 'Cases', 'cases', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Cases', 0, 0),
-('4aa444c0-463d-cf2d-eee4-5573ba674aac', 'leads_modified_user', 'Users', 'users', 'id', 'Leads', 'leads', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('4b4d861b-1529-f08a-4605-5573bab3681d', 'leads_created_by', 'Users', 'users', 'id', 'Leads', 'leads', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('4b5559b0-aff7-1ef2-a807-5573ba00397c', 'emails_opportunities_rel', 'Emails', 'emails', 'id', 'Opportunities', 'opportunities', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Opportunities', 0, 0),
-('4bb7c4df-c18a-b080-1836-5573ba6043b7', 'emails_tasks_rel', 'Emails', 'emails', 'id', 'Tasks', 'tasks', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Tasks', 0, 0),
-('4c17deb7-a2fb-8afe-70bf-5573ba2bb339', 'emails_users_rel', 'Emails', 'emails', 'id', 'Users', 'users', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Users', 0, 0),
-('4c746696-40f0-1edf-58a5-5573ba126feb', 'emails_project_task_rel', 'Emails', 'emails', 'id', 'ProjectTask', 'project_task', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'ProjectTask', 0, 0),
-('4cda31f1-d4e5-a991-fdc7-5573babc3584', 'emails_projects_rel', 'Emails', 'emails', 'id', 'Project', 'project', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Project', 0, 0),
-('4d32c1ff-4e80-79b9-2906-5573ba72a0fa', 'emails_prospects_rel', 'Emails', 'emails', 'id', 'Prospects', 'prospects', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Prospects', 0, 0),
-('4d903c3e-6ab1-9f20-9d25-5573ba9df930', 'meetings_contacts', 'Meetings', 'meetings', 'id', 'Contacts', 'contacts', 'id', 'meetings_contacts', 'meeting_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
-('4de27ea9-8a53-106a-5103-5573baa9e68e', 'meetings_users', 'Meetings', 'meetings', 'id', 'Users', 'users', 'id', 'meetings_users', 'meeting_id', 'user_id', 'many-to-many', NULL, NULL, 0, 0),
-('4e44cdc5-8d21-887a-9d4c-5573ba12e6ab', 'meetings_leads', 'Meetings', 'meetings', 'id', 'Leads', 'leads', 'id', 'meetings_leads', 'meeting_id', 'lead_id', 'many-to-many', NULL, NULL, 0, 0),
-('4ebbcb2c-2a48-0ed4-19af-5573baf5ab53', 'opportunities_contacts', 'Opportunities', 'opportunities', 'id', 'Contacts', 'contacts', 'id', 'opportunities_contacts', 'opportunity_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
-('4f1366ed-c5b2-a73b-42e1-5573ba07d5a2', 'prospect_list_campaigns', 'ProspectLists', 'prospect_lists', 'id', 'Campaigns', 'campaigns', 'id', 'prospect_list_campaigns', 'prospect_list_id', 'campaign_id', 'many-to-many', NULL, NULL, 0, 0),
-('4f644043-7da1-af7b-d6f0-5573ba6574ee', 'prospect_list_contacts', 'ProspectLists', 'prospect_lists', 'id', 'Contacts', 'contacts', 'id', 'prospect_lists_prospects', 'prospect_list_id', 'related_id', 'many-to-many', 'related_type', 'Contacts', 0, 0),
-('4fb45712-b275-d60b-5a94-5573bacaa878', 'prospect_list_prospects', 'ProspectLists', 'prospect_lists', 'id', 'Prospects', 'prospects', 'id', 'prospect_lists_prospects', 'prospect_list_id', 'related_id', 'many-to-many', 'related_type', 'Prospects', 0, 0),
-('50075977-a698-a8b4-c384-5573ba8cfd2e', 'prospect_list_leads', 'ProspectLists', 'prospect_lists', 'id', 'Leads', 'leads', 'id', 'prospect_lists_prospects', 'prospect_list_id', 'related_id', 'many-to-many', 'related_type', 'Leads', 0, 0),
-('50559174-86b2-bede-4c95-5573baf00ab9', 'prospect_list_users', 'ProspectLists', 'prospect_lists', 'id', 'Users', 'users', 'id', 'prospect_lists_prospects', 'prospect_list_id', 'related_id', 'many-to-many', 'related_type', 'Users', 0, 0),
-('50827008-d5e3-4d31-1d84-5573ba7e0642', 'leads_assigned_user', 'Users', 'users', 'id', 'Leads', 'leads', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('50a9bb80-24ed-d88a-2a96-5573ba573b57', 'prospect_list_accounts', 'ProspectLists', 'prospect_lists', 'id', 'Accounts', 'accounts', 'id', 'prospect_lists_prospects', 'prospect_list_id', 'related_id', 'many-to-many', 'related_type', 'Accounts', 0, 0),
-('50e75b14-0b27-1e7d-29ba-5573baf6f9d8', 'leads_email_addresses', 'Leads', 'leads', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'bean_module', 'Leads', 0, 0),
-('50fd83e0-db87-6baf-30fa-5573ba5a86bc', 'roles_users', 'Roles', 'roles', 'id', 'Users', 'users', 'id', 'roles_users', 'role_id', 'user_id', 'many-to-many', NULL, NULL, 0, 0),
-('51484d1b-2c93-5079-7230-5573ba2e2964', 'leads_email_addresses_primary', 'Leads', 'leads', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'primary_address', '1', 0, 0),
-('51a76e58-822a-e3ae-6c34-5573ba31b083', 'lead_direct_reports', 'Leads', 'leads', 'id', 'Leads', 'leads', 'reports_to_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('521275af-d252-3a0e-f1af-5573bada5389', 'lead_tasks', 'Leads', 'leads', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Leads', 0, 0),
-('529e398f-752f-59b4-5abd-5573baf2f9b5', 'lead_notes', 'Leads', 'leads', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Leads', 0, 0),
-('531326f5-32f7-41d4-1eff-5573bae56565', 'lead_meetings', 'Leads', 'leads', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Leads', 0, 0),
-('53764ed9-1c55-fe9f-b94a-5573ba0dd8ee', 'lead_calls', 'Leads', 'leads', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Leads', 0, 0),
-('53d6ab9a-987d-367b-624d-5573ba21007e', 'lead_emails', 'Leads', 'leads', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Leads', 0, 0),
-('54346f2f-ba4c-72d2-2135-5573ba20eb24', 'lead_campaign_log', 'Leads', 'leads', 'id', 'CampaignLog', 'campaign_log', 'target_id', NULL, NULL, NULL, 'one-to-many', 'target_type', 'Leads', 0, 0),
-('54a373d1-d4f7-004c-9bef-5573ba2dcc35', 'projects_bugs', 'Project', 'project', 'id', 'Bugs', 'bugs', 'id', 'projects_bugs', 'project_id', 'bug_id', 'many-to-many', NULL, NULL, 0, 0),
-('54f6607c-3c20-8fa3-8a48-5573ba015e06', 'projects_cases', 'Project', 'project', 'id', 'Cases', 'cases', 'id', 'projects_cases', 'project_id', 'case_id', 'many-to-many', NULL, NULL, 0, 0),
-('554f3584-c67a-b838-805f-5573ba51ff3a', 'projects_accounts', 'Project', 'project', 'id', 'Accounts', 'accounts', 'id', 'projects_accounts', 'project_id', 'account_id', 'many-to-many', NULL, NULL, 0, 0),
-('55a0f4f1-dbcc-1477-bd78-5573ba8e1bc0', 'projects_contacts', 'Project', 'project', 'id', 'Contacts', 'contacts', 'id', 'projects_contacts', 'project_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
-('55f1cb8a-2b8d-92dd-7310-5573ba93be7d', 'projects_opportunities', 'Project', 'project', 'id', 'Opportunities', 'opportunities', 'id', 'projects_opportunities', 'project_id', 'opportunity_id', 'many-to-many', NULL, NULL, 0, 0),
-('5658f00a-6a3a-58b9-e582-5573ba3cb571', 'acl_roles_actions', 'ACLRoles', 'acl_roles', 'id', 'ACLActions', 'acl_actions', 'id', 'acl_roles_actions', 'role_id', 'action_id', 'many-to-many', NULL, NULL, 0, 0),
-('56b6a1eb-657c-d5be-d720-5573ba0e026f', 'acl_roles_users', 'ACLRoles', 'acl_roles', 'id', 'Users', 'users', 'id', 'acl_roles_users', 'role_id', 'user_id', 'many-to-many', NULL, NULL, 0, 0),
-('57138859-1551-1d42-1528-5573ba48005c', 'cases_modified_user', 'Users', 'users', 'id', 'Cases', 'cases', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('57282a65-bc76-4332-f174-5573ba505c74', 'email_marketing_prospect_lists', 'EmailMarketing', 'email_marketing', 'id', 'ProspectLists', 'prospect_lists', 'id', 'email_marketing_prospect_lists', 'email_marketing_id', 'prospect_list_id', 'many-to-many', NULL, NULL, 0, 0),
-('578fd8f6-22f9-85c9-d433-5573baade65d', 'leads_documents', 'Leads', 'leads', 'id', 'Documents', 'documents', 'id', 'linked_documents', 'parent_id', 'document_id', 'many-to-many', 'parent_type', 'Leads', 0, 0),
-('57f3f62d-0d83-06b6-c453-5573bab7bbac', 'documents_accounts', 'Documents', 'documents', 'id', 'Accounts', 'accounts', 'id', 'documents_accounts', 'document_id', 'account_id', 'many-to-many', NULL, NULL, 0, 0),
-('585abcf8-7957-6b7c-2c2f-5573bae45da1', 'documents_contacts', 'Documents', 'documents', 'id', 'Contacts', 'contacts', 'id', 'documents_contacts', 'document_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
-('58a1c0f3-5e0c-5ad7-a108-5573ba41b1da', 'cases_created_by', 'Users', 'users', 'id', 'Cases', 'cases', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('58b2103c-d726-3aa6-b8d6-5573ba586681', 'documents_opportunities', 'Documents', 'documents', 'id', 'Opportunities', 'opportunities', 'id', 'documents_opportunities', 'document_id', 'opportunity_id', 'many-to-many', NULL, NULL, 0, 0),
-('5903fb8d-7c4e-6d1f-0abb-5573baac1f6d', 'documents_cases', 'Documents', 'documents', 'id', 'Cases', 'cases', 'id', 'documents_cases', 'document_id', 'case_id', 'many-to-many', NULL, NULL, 0, 0),
-('593ebb94-8c35-5d9f-80fa-5573baf05620', 'cases_assigned_user', 'Users', 'users', 'id', 'Cases', 'cases', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('5953e4c7-58bb-7a8c-5a17-5573ba465238', 'documents_bugs', 'Documents', 'documents', 'id', 'Bugs', 'bugs', 'id', 'documents_bugs', 'document_id', 'bug_id', 'many-to-many', NULL, NULL, 0, 0),
-('59a50d5e-f28c-fae1-5133-5573bab63a23', 'asol_activity_asol_activity', 'asol_Activity', 'asol_activity', 'id', 'asol_Activity', 'asol_activity', 'id', 'asol_activisol_activity_c', 'asol_activ898activity_ida', 'asol_activ9e2dctivity_idb', 'many-to-many', NULL, NULL, 0, 0),
-('59a950d6-441f-b6ef-2220-5573ba8c5b49', 'case_calls', 'Cases', 'cases', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Cases', 0, 0),
-('5a03fb4e-ac75-0787-b090-5573ba2d85ec', 'asol_activity_asol_task', 'asol_Activity', 'asol_activity', 'id', 'asol_Task', 'asol_task', 'id', 'asol_activity_asol_task_c', 'asol_activ5b86ctivity_ida', 'asol_activf613ol_task_idb', 'many-to-many', NULL, NULL, 0, 0),
-('5a0a4f7c-cdf6-5de5-e783-5573ba719390', 'case_tasks', 'Cases', 'cases', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Cases', 0, 0),
-('5a64984d-a5cc-0eba-fd78-5573ba84367e', 'asol_events_asol_activity', 'asol_Events', 'asol_events', 'id', 'asol_Activity', 'asol_activity', 'id', 'asol_eventssol_activity_c', 'asol_event87f4_events_ida', 'asol_event8042ctivity_idb', 'many-to-many', NULL, NULL, 0, 0),
-('5a8d68ba-5d05-7616-694a-5573bac918f5', 'case_notes', 'Cases', 'cases', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Cases', 0, 0),
-('5ab691f3-42a5-53f5-2b09-5573ba44b489', 'asol_process_asol_activity', 'asol_Process', 'asol_process', 'id', 'asol_Activity', 'asol_activity', 'id', 'asol_process_asol_activity_c', 'asol_process_asol_activityasol_process_ida', 'asol_process_asol_activityasol_activity_idb', 'many-to-many', NULL, NULL, 0, 0),
-('5b05c888-93df-5c3a-0782-5573ba4fde2a', 'case_meetings', 'Cases', 'cases', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Cases', 0, 0),
-('5b080825-e21a-fab9-3fec-5573ba3f3690', 'asol_process_asol_events', 'asol_Process', 'asol_process', 'id', 'asol_Events', 'asol_events', 'id', 'asol_proces_asol_events_c', 'asol_proce6f14process_ida', 'asol_procea8ca_events_idb', 'many-to-many', NULL, NULL, 0, 0),
-('5b57d3bf-ed7b-2dce-0397-5573bae8cfbf', 'asol_process_asol_events_1', 'asol_Process', 'asol_process', 'id', 'asol_Events', 'asol_events', 'id', 'asol_process_asol_events_1_c', 'asol_process_asol_events_1asol_process_ida', 'asol_process_asol_events_1asol_events_idb', 'many-to-many', NULL, NULL, 0, 0),
-('5b6783a9-d6f0-6e7f-3f30-5573bafe5651', 'case_emails', 'Cases', 'cases', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Cases', 0, 0),
-('5bc9aa4c-69cf-98f7-8a1d-5573bae9923e', 'asol_process_asol_task', 'asol_Process', 'asol_process', 'id', 'asol_Task', 'asol_task', 'id', 'asol_process_asol_task_c', 'asol_process_asol_taskasol_process_ida', 'asol_process_asol_taskasol_task_idb', 'many-to-many', NULL, NULL, 0, 0),
-('5ec28652-22cb-ad72-8f3c-5573ba3d046f', 'bugs_modified_user', 'Users', 'users', 'id', 'Bugs', 'bugs', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('5f2341d2-f0c8-14d8-1c0e-5573bae261f2', 'bugs_created_by', 'Users', 'users', 'id', 'Bugs', 'bugs', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('5f993e0b-4f5e-ccee-14f5-5573ba491faa', 'bugs_assigned_user', 'Users', 'users', 'id', 'Bugs', 'bugs', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('601f00d1-e6dc-896e-a509-5573ba931527', 'bug_tasks', 'Bugs', 'bugs', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Bugs', 0, 0),
-('60b43bb5-0117-490d-54d5-5573ba291d0b', 'bug_meetings', 'Bugs', 'bugs', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Bugs', 0, 0),
-('61153f8d-7f14-646d-b034-5573baf2fbd0', 'bug_calls', 'Bugs', 'bugs', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Bugs', 0, 0),
-('61711fa8-40b7-2266-0182-5573bae8533f', 'bug_emails', 'Bugs', 'bugs', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Bugs', 0, 0),
-('61cb2f88-d12d-6a2c-f979-5573ba9b45c3', 'bug_notes', 'Bugs', 'bugs', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Bugs', 0, 0),
-('622abd32-a896-5a2e-2128-5573bad36ebc', 'bugs_release', 'Releases', 'releases', 'id', 'Bugs', 'bugs', 'found_in_release', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('62bf32b3-4726-7bdb-d29d-5573bad195f4', 'bugs_fixed_in_release', 'Releases', 'releases', 'id', 'Bugs', 'bugs', 'fixed_in_release', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('63a50ec6-d06b-e473-293c-5573ba1781bd', 'user_direct_reports', 'Users', 'users', 'id', 'Users', 'users', 'reports_to_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('6409d78b-4d8c-408e-ec8c-5573ba9a75d7', 'users_email_addresses', 'Users', 'users', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'bean_module', 'Users', 0, 0),
-('64715843-b527-5d8a-8fd6-5573ba503f1d', 'users_email_addresses_primary', 'Users', 'users', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'primary_address', '1', 0, 0),
-('66285603-8efa-c9bf-5d4e-5573ba166d32', 'campaignlog_contact', 'CampaignLog', 'campaign_log', 'related_id', 'Contacts', 'contacts', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('66b33c22-2354-24e4-8e3e-5573ba14d836', 'campaignlog_lead', 'CampaignLog', 'campaign_log', 'related_id', 'Leads', 'leads', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('6741199f-f55d-f363-2ba1-5573baba6bd2', 'campaignlog_created_opportunities', 'CampaignLog', 'campaign_log', 'related_id', 'Opportunities', 'opportunities', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('679ec3b7-f2bd-4198-7373-5573bab5702e', 'campaignlog_targeted_users', 'CampaignLog', 'campaign_log', 'target_id', 'Users', 'users', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('67f8a5cb-1bc9-8317-5b49-5573ba9a6c9a', 'campaignlog_sent_emails', 'CampaignLog', 'campaign_log', 'related_id', 'Emails', 'emails', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('6a5d0bac-6df4-417a-312e-5573baf1225c', 'asol_events_modified_user', 'Users', 'users', 'id', 'asol_Events', 'asol_events', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('6ac8900b-61d9-1e70-0277-5573ba5f57bb', 'projects_notes', 'Project', 'project', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Project', 0, 0),
-('6b573b40-a408-bbdd-405f-5573ba52e2cc', 'projects_tasks', 'Project', 'project', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Project', 0, 0),
-('6bbdb11b-18af-d1e0-2cda-5573ba9348c3', 'projects_meetings', 'Project', 'project', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Project', 0, 0),
-('6c4b3c68-053c-f632-d55e-5573ba6d6c54', 'projects_calls', 'Project', 'project', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Project', 0, 0),
-('6cc798d3-1c89-8670-12b1-5573ba8c8f7a', 'projects_emails', 'Project', 'project', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Project', 0, 0),
-('6d3005c3-93fe-3480-2872-5573ba2aafb7', 'projects_project_tasks', 'Project', 'project', 'id', 'ProjectTask', 'project_task', 'project_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('6d8d7150-0cfa-7369-35cd-5573badc2bb2', 'projects_assigned_user', 'Users', 'users', 'id', 'Project', 'project', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('6dffdbd2-bcdb-a563-6867-5573ba8b34cf', 'projects_modified_user', 'Users', 'users', 'id', 'Project', 'project', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('6e77c9be-3d7a-5d57-672e-5573bae407df', 'projects_created_by', 'Users', 'users', 'id', 'Project', 'project', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('711e75b4-87e9-3336-ce6f-5573ba610ee1', 'project_tasks_notes', 'ProjectTask', 'project_task', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'ProjectTask', 0, 0),
-('7173008c-3948-b989-1f21-5573ba3f02b6', 'asol_events_created_by', 'Users', 'users', 'id', 'asol_Events', 'asol_events', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('7185fc0f-86e7-01f9-81ea-5573ba7c63a0', 'project_tasks_tasks', 'ProjectTask', 'project_task', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'ProjectTask', 0, 0),
-('71e1c1c9-545f-1ada-fd42-5573ba4a626f', 'project_tasks_meetings', 'ProjectTask', 'project_task', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'ProjectTask', 0, 0),
-('72458893-de05-b8d7-e3a2-5573ba8de6c9', 'project_tasks_calls', 'ProjectTask', 'project_task', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'ProjectTask', 0, 0),
-('72d60b97-cdca-6c39-dbf5-5573ba17d4b7', 'project_tasks_emails', 'ProjectTask', 'project_task', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'ProjectTask', 0, 0),
-('73651290-766f-be40-fb6f-5573bade2a15', 'project_tasks_assigned_user', 'Users', 'users', 'id', 'ProjectTask', 'project_task', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('73c7c851-f0fb-3443-b2bf-5573baa099a4', 'project_tasks_modified_user', 'Users', 'users', 'id', 'ProjectTask', 'project_task', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('742cb00a-9222-68df-6b05-5573ba183d3b', 'project_tasks_created_by', 'Users', 'users', 'id', 'ProjectTask', 'project_task', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('77ceb097-83bb-a53f-b84b-5573ba5956ab', 'campaigns_modified_user', 'Users', 'users', 'id', 'Campaigns', 'campaigns', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('7849e011-5ffd-14c6-571c-5573baf833f0', 'campaigns_created_by', 'Users', 'users', 'id', 'Campaigns', 'campaigns', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('78cf0216-f9b9-67c4-e6a1-5573ba55e35a', 'asol_events_assigned_user', 'Users', 'users', 'id', 'asol_Events', 'asol_events', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('78cfceb0-ddec-80cc-09a1-5573baa6bbba', 'campaigns_assigned_user', 'Users', 'users', 'id', 'Campaigns', 'campaigns', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('795c1104-8b74-7f75-6609-5573babcb8eb', 'campaign_accounts', 'Campaigns', 'campaigns', 'id', 'Accounts', 'accounts', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('79c86f59-75dc-f13e-8aa6-5573ba5bb1e8', 'campaign_contacts', 'Campaigns', 'campaigns', 'id', 'Contacts', 'contacts', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('7a23b1ef-fd18-8185-d2ab-5573ba7e6c0a', 'campaign_leads', 'Campaigns', 'campaigns', 'id', 'Leads', 'leads', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('7a836060-1d1e-41dd-c00b-5573baa6b32a', 'campaign_prospects', 'Campaigns', 'campaigns', 'id', 'Prospects', 'prospects', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('7ade2f1b-918c-4d1a-2f3f-5573ba7fe70d', 'campaign_opportunities', 'Campaigns', 'campaigns', 'id', 'Opportunities', 'opportunities', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('7b372570-9141-85aa-0d28-5573baec40de', 'campaign_email_marketing', 'Campaigns', 'campaigns', 'id', 'EmailMarketing', 'email_marketing', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('7b96bb30-3a35-ff4d-bbeb-5573ba34a29b', 'campaign_emailman', 'Campaigns', 'campaigns', 'id', 'EmailMan', 'emailman', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('7bf139d9-f047-d757-d2ff-5573ba05ebe0', 'campaign_campaignlog', 'Campaigns', 'campaigns', 'id', 'CampaignLog', 'campaign_log', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('7c78ef6c-4ef7-170d-7856-5573ba3647d3', 'campaign_assigned_user', 'Users', 'users', 'id', 'Campaigns', 'campaigns', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('7cf65ae9-2e0d-4a17-4ccf-5573ba28ad6a', 'campaign_modified_user', 'Users', 'users', 'id', 'Campaigns', 'campaigns', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('7f2eddb6-9e2e-7015-8334-5573ba6e5431', 'prospectlists_assigned_user', 'Users', 'users', 'id', 'prospectlists', 'prospect_lists', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('831c21fd-2abb-cabd-8399-5573ba510d3c', 'prospects_modified_user', 'Users', 'users', 'id', 'Prospects', 'prospects', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('83af7df6-0f9a-19d5-b0c1-5573ba26f766', 'prospects_created_by', 'Users', 'users', 'id', 'Prospects', 'prospects', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('84420f19-f380-a6fe-0cf2-5573ba1fdfc3', 'prospects_assigned_user', 'Users', 'users', 'id', 'Prospects', 'prospects', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('84a4b51f-56d1-08d3-45a7-5573baf74dc6', 'prospects_email_addresses', 'Prospects', 'prospects', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'bean_module', 'Prospects', 0, 0),
-('852288a5-3bbf-53f1-9113-5573ba9b3f72', 'prospects_email_addresses_primary', 'Prospects', 'prospects', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'primary_address', '1', 0, 0),
-('857f1afa-f446-4d15-819d-5573ba8d727e', 'prospect_tasks', 'Prospects', 'prospects', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Prospects', 0, 0),
-('85da942c-e7b2-483f-a51f-5573ba2c4b11', 'prospect_notes', 'Prospects', 'prospects', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Prospects', 0, 0),
-('863e3c1c-4294-7198-ea5b-5573ba0d6c09', 'prospect_meetings', 'Prospects', 'prospects', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Prospects', 0, 0),
-('8696ace6-5ae8-ac63-9777-5573ba163432', 'prospect_calls', 'Prospects', 'prospects', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Prospects', 0, 0),
-('86ed6efc-b18b-5c76-6226-5573babaf3b7', 'prospect_emails', 'Prospects', 'prospects', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Prospects', 0, 0),
-('87418d93-bfd5-802d-a7bd-5573ba6a77b9', 'prospect_campaign_log', 'Prospects', 'prospects', 'id', 'CampaignLog', 'campaign_log', 'target_id', NULL, NULL, NULL, 'one-to-many', 'target_type', 'Prospects', 0, 0),
-('88a54fb7-458f-a334-4e4e-5573bac79b4d', 'email_template_email_marketings', 'EmailTemplates', 'email_templates', 'id', 'EmailMarketing', 'email_marketing', 'template_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('8a14131e-d36d-98b5-14f3-5573ba8f035f', 'campaign_campaigntrakers', 'Campaigns', 'campaigns', 'id', 'CampaignTrackers', 'campaign_trkrs', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('902b3bfd-f233-d015-286e-5573bad73c89', 'schedulers_created_by_rel', 'Users', 'users', 'id', 'Schedulers', 'schedulers', 'created_by', NULL, NULL, NULL, 'one-to-one', NULL, NULL, 0, 0),
-('909cbab8-5b0c-50a4-447c-5573ba79d311', 'schedulers_modified_user_id_rel', 'Users', 'users', 'id', 'Schedulers', 'schedulers', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('910baf31-1599-cc3b-f44e-5573bab49a04', 'schedulers_jobs_rel', 'Schedulers', 'schedulers', 'id', 'SchedulersJobs', 'job_queue', 'scheduler_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('920ee26e-ca7a-1551-5aac-5573bab20b5d', 'schedulersjobs_assigned_user', 'Users', 'users', 'id', 'SchedulersJobs', 'schedulersjobs', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('96a15f53-dce4-b818-d1c0-5573bae725e0', 'contacts_modified_user', 'Users', 'users', 'id', 'Contacts', 'contacts', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('972b2531-a27c-8904-f7d5-5573ba82cb16', 'contacts_created_by', 'Users', 'users', 'id', 'Contacts', 'contacts', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('97b32c2a-4e4e-894d-34ff-5573badd8a30', 'contacts_assigned_user', 'Users', 'users', 'id', 'Contacts', 'contacts', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('9821033f-4104-2027-9aa7-5573ba88e86f', 'contacts_email_addresses', 'Contacts', 'contacts', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'bean_module', 'Contacts', 0, 0),
-('987ce644-06d1-e5cd-3b4d-5573ba6e6d66', 'contacts_email_addresses_primary', 'Contacts', 'contacts', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'primary_address', '1', 0, 0),
-('98e9d5c2-f908-1c75-f45a-5573baa7a62c', 'contact_direct_reports', 'Contacts', 'contacts', 'id', 'Contacts', 'contacts', 'reports_to_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('993c0a22-1ef7-0f7d-a934-5573baa1c6a0', 'contact_leads', 'Contacts', 'contacts', 'id', 'Leads', 'leads', 'contact_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('9990221c-3f6c-6eca-cb58-5573ba05de75', 'contact_notes', 'Contacts', 'contacts', 'id', 'Notes', 'notes', 'contact_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('99e30f27-3d2d-c9a7-c00e-5573ba99cf27', 'contact_tasks', 'Contacts', 'contacts', 'id', 'Tasks', 'tasks', 'contact_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('9a374011-1970-41d8-8e6d-5573ba5b8434', 'contact_tasks_parent', 'Contacts', 'contacts', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Contacts', 0, 0),
-('9a896c38-6f45-1026-6ec5-5573ba1c630c', 'contact_notes_parent', 'Contacts', 'contacts', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Contacts', 0, 0),
-('9aea66b9-c710-41dc-628f-5573bac28f69', 'contact_campaign_log', 'Contacts', 'contacts', 'id', 'CampaignLog', 'campaign_log', 'target_id', NULL, NULL, NULL, 'one-to-many', 'target_type', 'Contacts', 0, 0),
-('9ef0cb5c-e169-0411-65e7-5573bac573bb', 'accounts_modified_user', 'Users', 'users', 'id', 'Accounts', 'accounts', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('9f732146-02e5-9b8f-e99a-5573ba02bc32', 'accounts_created_by', 'Users', 'users', 'id', 'Accounts', 'accounts', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('a00f88d2-000d-95a5-f295-5573ba98bb37', 'accounts_assigned_user', 'Users', 'users', 'id', 'Accounts', 'accounts', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('a0a81fbc-e061-eb6f-530b-5573ba04a189', 'accounts_email_addresses', 'Accounts', 'accounts', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'bean_module', 'Accounts', 0, 0),
-('a0b6043a-a866-b08f-f30c-5573ba6e3981', 'asol_onhold_modified_user', 'Users', 'users', 'id', 'asol_OnHold', 'asol_onhold', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('a0fdfebe-73ce-9b5e-baf7-5573bab820d8', 'accounts_email_addresses_primary', 'Accounts', 'accounts', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'primary_address', '1', 0, 0),
-('a14fb1bf-3043-ebb0-7c08-5573ba2ae25e', 'member_accounts', 'Accounts', 'accounts', 'id', 'Accounts', 'accounts', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('a1a0a367-5c82-a28f-3992-5573baf31212', 'account_cases', 'Accounts', 'accounts', 'id', 'Cases', 'cases', 'account_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('a1f3eb5f-cb06-eb4b-9f87-5573baec50db', 'account_tasks', 'Accounts', 'accounts', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Accounts', 0, 0),
-('a24bbdda-b97a-6869-ec39-5573ba010553', 'account_notes', 'Accounts', 'accounts', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Accounts', 0, 0),
-('a29d1d04-c322-d8b9-9877-5573baf7328b', 'account_meetings', 'Accounts', 'accounts', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Accounts', 0, 0),
-('a3237839-2813-93da-8bfb-5573ba85e533', 'account_calls', 'Accounts', 'accounts', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Accounts', 0, 0),
-('a379d39c-2489-2569-c53f-5573ba2520d3', 'account_emails', 'Accounts', 'accounts', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Accounts', 0, 0),
-('a3dfd70e-9a3d-6ccc-34b4-5573ba614c1a', 'account_leads', 'Accounts', 'accounts', 'id', 'Leads', 'leads', 'account_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('a43d29a4-3558-2229-3398-5573bae6bd99', 'account_campaign_log', 'Accounts', 'accounts', 'id', 'CampaignLog', 'campaign_log', 'target_id', NULL, NULL, NULL, 'one-to-many', 'target_type', 'Accounts', 0, 0),
-('a737f7c4-a07d-8481-9bd5-5573ba4bd7b8', 'opportunities_modified_user', 'Users', 'users', 'id', 'Opportunities', 'opportunities', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('a75f0e5a-5acf-fed5-5157-5573bae554b7', 'asol_onhold_created_by', 'Users', 'users', 'id', 'asol_OnHold', 'asol_onhold', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('a79aaf47-b770-0049-4307-5573bafe1ea7', 'opportunities_created_by', 'Users', 'users', 'id', 'Opportunities', 'opportunities', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('a815a8f8-87be-ed51-bc23-5573ba4fed71', 'opportunities_assigned_user', 'Users', 'users', 'id', 'Opportunities', 'opportunities', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('a8a90e0e-03aa-a664-4716-5573ba043506', 'opportunity_calls', 'Opportunities', 'opportunities', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Opportunities', 0, 0),
-('a931bf47-2c67-f2fc-7bfe-5573ba162aca', 'opportunity_meetings', 'Opportunities', 'opportunities', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Opportunities', 0, 0),
-('a98cd9fb-73af-815f-53b6-5573ba782a41', 'opportunity_tasks', 'Opportunities', 'opportunities', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Opportunities', 0, 0),
-('a9f35cd0-1c66-d399-0e3d-5573ba5819e1', 'opportunity_notes', 'Opportunities', 'opportunities', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Opportunities', 0, 0),
-('aa6f2e3c-e394-6bec-44cd-5573badca041', 'opportunity_emails', 'Opportunities', 'opportunities', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Opportunities', 0, 0),
-('aacdf872-98b7-ed59-d80b-5573ba200db3', 'opportunity_leads', 'Opportunities', 'opportunities', 'id', 'Leads', 'leads', 'opportunity_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('ab28d773-1928-e7db-1b53-5573bab018f0', 'opportunity_currencies', 'Opportunities', 'opportunities', 'currency_id', 'Currencies', 'currencies', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('ab840530-24f7-4f68-9889-5573ba6789f9', 'opportunities_campaign', 'Campaigns', 'campaigns', 'id', 'Opportunities', 'opportunities', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('ada7ca06-5f5b-8dbb-25cd-5573baaf5312', 'emailtemplates_assigned_user', 'Users', 'users', 'id', 'EmailTemplates', 'email_templates', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('adfe0810-1398-c632-6e91-5573baa8e206', 'asol_onhold_assigned_user', 'Users', 'users', 'id', 'asol_OnHold', 'asol_onhold', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('b07ee8ba-438e-87fd-08f7-5573bab92de6', 'notes_assigned_user', 'Users', 'users', 'id', 'Notes', 'notes', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('b0f9c24b-ad33-87d1-44c6-5573bae27e29', 'notes_modified_user', 'Users', 'users', 'id', 'Notes', 'notes', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('b173422a-7fe4-23bb-6ce0-5573ba181090', 'notes_created_by', 'Users', 'users', 'id', 'Notes', 'notes', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('b4d242ac-cab1-35db-89b5-5573ba36adb1', 'calls_modified_user', 'Users', 'users', 'id', 'Calls', 'calls', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('b5300bc8-45b2-8780-dae1-5573ba6b8395', 'calls_created_by', 'Users', 'users', 'id', 'Calls', 'calls', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('b5a0e692-ffbc-5130-b921-5573baf96ad0', 'calls_assigned_user', 'Users', 'users', 'id', 'Calls', 'calls', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('b6257c28-7ca2-a007-af6a-5573ba02c511', 'calls_notes', 'Calls', 'calls', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Calls', 0, 0),
-('bc0e543e-1c46-3340-bfea-5573ba5123e6', 'emails_assigned_user', 'Users', 'users', 'id', 'Emails', 'emails', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('bc6956c4-4be2-596e-62b4-5573ba0c7a02', 'emails_modified_user', 'Users', 'users', 'id', 'Emails', 'emails', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('bcd87358-af74-b61e-c613-5573ba0e3994', 'emails_created_by', 'Users', 'users', 'id', 'Emails', 'emails', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('bd45edba-5535-419f-6f94-5573baf9effa', 'emails_notes_rel', 'Emails', 'emails', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('bdd2818e-7c60-48b9-9d72-5573ba4b8692', 'emails_contacts_rel', 'Emails', 'emails', 'id', 'Contacts', 'contacts', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Contacts', 0, 0),
-('be597b58-f796-dbd5-aa2b-5573baa1ffb8', 'emails_accounts_rel', 'Emails', 'emails', 'id', 'Accounts', 'accounts', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Accounts', 0, 0),
-('beb299e1-143e-a9a7-3d38-5573ba692b2d', 'emails_leads_rel', 'Emails', 'emails', 'id', 'Leads', 'leads', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Leads', 0, 0),
-('bf087eae-b34a-b8a1-a14e-5573ba3dd0d6', 'emails_meetings_rel', 'Emails', 'emails', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('c273cf42-aa58-3cab-e839-5573ba048d5d', 'meetings_modified_user', 'Users', 'users', 'id', 'Meetings', 'meetings', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('c2e48e97-e39d-c6d3-286d-5573ba1dc753', 'meetings_created_by', 'Users', 'users', 'id', 'Meetings', 'meetings', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('c352306c-8280-1daf-78f6-5573ba2f45b9', 'meetings_assigned_user', 'Users', 'users', 'id', 'Meetings', 'meetings', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('c3db3a1e-703e-707c-1eab-5573baa0542d', 'meetings_notes', 'Meetings', 'meetings', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Meetings', 0, 0),
-('c6bdc98f-f302-16cd-1cca-5573bacad784', 'tasks_modified_user', 'Users', 'users', 'id', 'Tasks', 'tasks', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('c71abeeb-df63-b8f3-a64a-5573ba54650b', 'tasks_created_by', 'Users', 'users', 'id', 'Tasks', 'tasks', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('c772fce9-0955-bda8-9252-5573babe29af', 'tasks_assigned_user', 'Users', 'users', 'id', 'Tasks', 'tasks', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('c7dbb8a9-05f7-78c9-64c1-5573ba2b2def', 'tasks_notes', 'Tasks', 'tasks', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('d533612f-49dc-2e88-d056-5573ba58e417', 'documents_modified_user', 'Users', 'users', 'id', 'Documents', 'documents', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('d5a5a0ca-c488-ded6-c3cb-5573babbd970', 'documents_created_by', 'Users', 'users', 'id', 'Documents', 'documents', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0);
+('103c0861-1066-f32a-64a5-55770b3540c5', 'member_accounts', 'Accounts', 'accounts', 'id', 'Accounts', 'accounts', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('10d7d5e8-3476-4d2d-ad03-55770b30b693', 'account_cases', 'Accounts', 'accounts', 'id', 'Cases', 'cases', 'account_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('117ba0b8-1ffa-5ff7-aab4-55770bde1cd2', 'account_tasks', 'Accounts', 'accounts', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Accounts', 0, 0),
+('121553f8-e643-ba91-d6ee-55770bd1a110', 'account_notes', 'Accounts', 'accounts', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Accounts', 0, 0),
+('12a22637-ce57-e42c-3bac-55770b60ac0b', 'account_meetings', 'Accounts', 'accounts', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Accounts', 0, 0),
+('133fe1dc-7ea3-b249-c48c-55770bf85e2d', 'account_calls', 'Accounts', 'accounts', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Accounts', 0, 0),
+('13ce5678-f012-1e08-d7ec-55770b0adb27', 'account_emails', 'Accounts', 'accounts', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Accounts', 0, 0),
+('1469f485-395f-11ac-d3ce-55770b34a5ed', 'account_leads', 'Accounts', 'accounts', 'id', 'Leads', 'leads', 'account_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('14f3a565-8495-7aaa-abfc-55770b08a5ef', 'accounts_bugs', 'Accounts', 'accounts', 'id', 'Bugs', 'bugs', 'id', 'accounts_bugs', 'account_id', 'bug_id', 'many-to-many', NULL, NULL, 0, 0),
+('14f63269-1b10-f129-cf37-55770b94752b', 'account_campaign_log', 'Accounts', 'accounts', 'id', 'CampaignLog', 'campaign_log', 'target_id', NULL, NULL, NULL, 'one-to-many', 'target_type', 'Accounts', 0, 0),
+('159ea312-ae89-4d59-4231-55770ba5c7e2', 'accounts_contacts', 'Accounts', 'accounts', 'id', 'Contacts', 'contacts', 'id', 'accounts_contacts', 'account_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
+('15cb0802-ffac-4e3e-ed7f-55770bc30220', 'contacts_created_by', 'Users', 'users', 'id', 'Contacts', 'contacts', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('16382717-8a37-dade-3488-55770be902a8', 'accounts_opportunities', 'Accounts', 'accounts', 'id', 'Opportunities', 'opportunities', 'id', 'accounts_opportunities', 'account_id', 'opportunity_id', 'many-to-many', NULL, NULL, 0, 0),
+('16ce27d0-36ca-0209-1530-55770bc96949', 'calls_contacts', 'Calls', 'calls', 'id', 'Contacts', 'contacts', 'id', 'calls_contacts', 'call_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
+('1769d31f-8329-dcce-486d-55770bf0efd8', 'calls_users', 'Calls', 'calls', 'id', 'Users', 'users', 'id', 'calls_users', 'call_id', 'user_id', 'many-to-many', NULL, NULL, 0, 0),
+('1803d197-a6b0-a193-e10c-55770b28b0b3', 'calls_leads', 'Calls', 'calls', 'id', 'Leads', 'leads', 'id', 'calls_leads', 'call_id', 'lead_id', 'many-to-many', NULL, NULL, 0, 0),
+('18a526f2-e216-882f-1ca2-55770b96e3c6', 'cases_bugs', 'Cases', 'cases', 'id', 'Bugs', 'bugs', 'id', 'cases_bugs', 'case_id', 'bug_id', 'many-to-many', NULL, NULL, 0, 0),
+('191c33bf-03f1-e46b-8e7f-55770ba65029', 'opportunities_modified_user', 'Users', 'users', 'id', 'Opportunities', 'opportunities', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('19474e40-d414-511a-bf13-55770b6f93d2', 'contacts_bugs', 'Contacts', 'contacts', 'id', 'Bugs', 'bugs', 'id', 'contacts_bugs', 'contact_id', 'bug_id', 'many-to-many', NULL, NULL, 0, 0),
+('19e875c1-97c1-a3c9-cbd5-55770bb3c139', 'contacts_cases', 'Contacts', 'contacts', 'id', 'Cases', 'cases', 'id', 'contacts_cases', 'contact_id', 'case_id', 'many-to-many', NULL, NULL, 0, 0),
+('19f42eed-34cc-6ad7-ddb1-55770b8332c3', 'opportunities_created_by', 'Users', 'users', 'id', 'Opportunities', 'opportunities', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('1a7d478f-975d-b495-92ac-55770bc02a3c', 'contacts_users', 'Contacts', 'contacts', 'id', 'Users', 'users', 'id', 'contacts_users', 'contact_id', 'user_id', 'many-to-many', NULL, NULL, 0, 0),
+('1aae4c17-b257-67c8-6be3-55770bc6de15', 'opportunities_assigned_user', 'Users', 'users', 'id', 'Opportunities', 'opportunities', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('1b498ce8-5be5-5334-8de9-55770b04d7fc', 'opportunity_calls', 'Opportunities', 'opportunities', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Opportunities', 0, 0),
+('1b6d91e9-33a9-8d96-66d4-55770bf2b4f3', 'emails_bugs_rel', 'Emails', 'emails', 'id', 'Bugs', 'bugs', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Bugs', 0, 0),
+('1bdda662-8597-7a62-1eb2-55770b5b3a05', 'opportunity_meetings', 'Opportunities', 'opportunities', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Opportunities', 0, 0),
+('1bfe1365-0292-f1f7-3f55-55770bbebb13', 'emails_cases_rel', 'Emails', 'emails', 'id', 'Cases', 'cases', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Cases', 0, 0),
+('1c678ce2-fb19-0707-c2e4-55770b38f3bd', 'opportunity_tasks', 'Opportunities', 'opportunities', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Opportunities', 0, 0),
+('1d02b779-b998-ebe2-0a2e-55770b92ef10', 'opportunity_notes', 'Opportunities', 'opportunities', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Opportunities', 0, 0),
+('1d0b7586-853c-4bbc-7bfc-55770bedea61', 'emails_opportunities_rel', 'Emails', 'emails', 'id', 'Opportunities', 'opportunities', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Opportunities', 0, 0),
+('1d8b4c84-4415-b992-b72b-55770b4c1bbe', 'opportunity_emails', 'Opportunities', 'opportunities', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Opportunities', 0, 0),
+('1dbbeecf-56d5-28fd-a872-55770b9b6cfd', 'emails_tasks_rel', 'Emails', 'emails', 'id', 'Tasks', 'tasks', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Tasks', 0, 0),
+('1e1ad55a-aa20-c3ff-4ae3-55770b5ed85f', 'opportunity_leads', 'Opportunities', 'opportunities', 'id', 'Leads', 'leads', 'opportunity_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('1e4d1e55-a619-ec7c-978a-55770b1defe4', 'emails_users_rel', 'Emails', 'emails', 'id', 'Users', 'users', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Users', 0, 0),
+('1eaa6582-27cd-70e4-1d1e-55770b38f936', 'opportunity_currencies', 'Opportunities', 'opportunities', 'currency_id', 'Currencies', 'currencies', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('1edf628d-0075-641b-6bee-55770b680276', 'emails_project_task_rel', 'Emails', 'emails', 'id', 'ProjectTask', 'project_task', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'ProjectTask', 0, 0),
+('1f365859-ddc9-dab2-d64f-55770bb1eb4b', 'opportunities_campaign', 'Campaigns', 'campaigns', 'id', 'Opportunities', 'opportunities', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('1f86ce9f-64b0-e9e1-4f16-55770bcf6dd4', 'emails_projects_rel', 'Emails', 'emails', 'id', 'Project', 'project', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Project', 0, 0),
+('201559c6-532e-ac10-7f9f-55770b854663', 'emails_prospects_rel', 'Emails', 'emails', 'id', 'Prospects', 'prospects', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Prospects', 0, 0),
+('20b00821-f57a-9bed-82f7-55770b19d6d6', 'contacts_assigned_user', 'Users', 'users', 'id', 'Contacts', 'contacts', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('20cb0894-e6c3-8330-994e-55770bc56b47', 'meetings_contacts', 'Meetings', 'meetings', 'id', 'Contacts', 'contacts', 'id', 'meetings_contacts', 'meeting_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
+('2161c75a-747f-7340-3830-55770b5d9ce3', 'meetings_users', 'Meetings', 'meetings', 'id', 'Users', 'users', 'id', 'meetings_users', 'meeting_id', 'user_id', 'many-to-many', NULL, NULL, 0, 0),
+('21f53370-2160-f253-d1d7-55770be26977', 'meetings_leads', 'Meetings', 'meetings', 'id', 'Leads', 'leads', 'id', 'meetings_leads', 'meeting_id', 'lead_id', 'many-to-many', NULL, NULL, 0, 0),
+('223fdbcc-cdce-5770-7db7-55770b664675', 'emailtemplates_assigned_user', 'Users', 'users', 'id', 'EmailTemplates', 'email_templates', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('22894f76-ed55-965c-3cd2-55770b5fbd85', 'opportunities_contacts', 'Opportunities', 'opportunities', 'id', 'Contacts', 'contacts', 'id', 'opportunities_contacts', 'opportunity_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
+('232e3a98-9044-727d-7de1-55770b9f2e06', 'prospect_list_campaigns', 'ProspectLists', 'prospect_lists', 'id', 'Campaigns', 'campaigns', 'id', 'prospect_list_campaigns', 'prospect_list_id', 'campaign_id', 'many-to-many', NULL, NULL, 0, 0),
+('23c1279f-5b2e-6a51-67ac-55770b087b3d', 'prospect_list_contacts', 'ProspectLists', 'prospect_lists', 'id', 'Contacts', 'contacts', 'id', 'prospect_lists_prospects', 'prospect_list_id', 'related_id', 'many-to-many', 'related_type', 'Contacts', 0, 0),
+('2453f79e-4898-fe06-e232-55770beb7228', 'prospect_list_prospects', 'ProspectLists', 'prospect_lists', 'id', 'Prospects', 'prospects', 'id', 'prospect_lists_prospects', 'prospect_list_id', 'related_id', 'many-to-many', 'related_type', 'Prospects', 0, 0),
+('24e44ecb-ef99-ac6c-78e3-55770bde9ff6', 'prospect_list_leads', 'ProspectLists', 'prospect_lists', 'id', 'Leads', 'leads', 'id', 'prospect_lists_prospects', 'prospect_list_id', 'related_id', 'many-to-many', 'related_type', 'Leads', 0, 0),
+('259b79e6-57ff-8927-c655-55770bbfed7b', 'prospect_list_users', 'ProspectLists', 'prospect_lists', 'id', 'Users', 'users', 'id', 'prospect_lists_prospects', 'prospect_list_id', 'related_id', 'many-to-many', 'related_type', 'Users', 0, 0),
+('260888fe-7645-4224-bb97-55770b9b713f', 'notes_assigned_user', 'Users', 'users', 'id', 'Notes', 'notes', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('262fdf39-e1c6-07e8-1c1f-55770b3226be', 'prospect_list_accounts', 'ProspectLists', 'prospect_lists', 'id', 'Accounts', 'accounts', 'id', 'prospect_lists_prospects', 'prospect_list_id', 'related_id', 'many-to-many', 'related_type', 'Accounts', 0, 0),
+('26b39dc0-ca46-e3ae-334d-55770b5ae452', 'notes_modified_user', 'Users', 'users', 'id', 'Notes', 'notes', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('26c8f9c3-8ec5-ab58-fedd-55770b2c8774', 'roles_users', 'Roles', 'roles', 'id', 'Users', 'users', 'id', 'roles_users', 'role_id', 'user_id', 'many-to-many', NULL, NULL, 0, 0),
+('278b2120-ecbf-b26a-0ff4-55770b10f13e', 'notes_created_by', 'Users', 'users', 'id', 'Notes', 'notes', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('279b4b56-8557-2af9-e85b-55770b0258ec', 'projects_bugs', 'Project', 'project', 'id', 'Bugs', 'bugs', 'id', 'projects_bugs', 'project_id', 'bug_id', 'many-to-many', NULL, NULL, 0, 0),
+('28352b26-6913-c5fd-0820-55770b19244d', 'projects_cases', 'Project', 'project', 'id', 'Cases', 'cases', 'id', 'projects_cases', 'project_id', 'case_id', 'many-to-many', NULL, NULL, 0, 0),
+('28f14664-deb8-eac6-7304-55770b6851ff', 'projects_accounts', 'Project', 'project', 'id', 'Accounts', 'accounts', 'id', 'projects_accounts', 'project_id', 'account_id', 'many-to-many', NULL, NULL, 0, 0),
+('298a957f-7f5b-03e8-8ace-55770bc5350b', 'projects_contacts', 'Project', 'project', 'id', 'Contacts', 'contacts', 'id', 'projects_contacts', 'project_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
+('29f30423-b528-4eff-272f-55770b474fd4', 'contacts_email_addresses', 'Contacts', 'contacts', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'bean_module', 'Contacts', 0, 0),
+('2a23770d-80bb-4e34-1c5c-55770ba0a7f8', 'projects_opportunities', 'Project', 'project', 'id', 'Opportunities', 'opportunities', 'id', 'projects_opportunities', 'project_id', 'opportunity_id', 'many-to-many', NULL, NULL, 0, 0),
+('2ac6d424-1cac-985e-edfe-55770b7d4564', 'acl_roles_actions', 'ACLRoles', 'acl_roles', 'id', 'ACLActions', 'acl_actions', 'id', 'acl_roles_actions', 'role_id', 'action_id', 'many-to-many', NULL, NULL, 0, 0),
+('2b622605-330c-72e0-e508-55770b91d93a', 'acl_roles_users', 'ACLRoles', 'acl_roles', 'id', 'Users', 'users', 'id', 'acl_roles_users', 'role_id', 'user_id', 'many-to-many', NULL, NULL, 0, 0),
+('2c02e42e-91a0-8ada-3e72-55770b8b681a', 'calls_modified_user', 'Users', 'users', 'id', 'Calls', 'calls', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('2c065544-359b-f276-334f-55770b066d2c', 'email_marketing_prospect_lists', 'EmailMarketing', 'email_marketing', 'id', 'ProspectLists', 'prospect_lists', 'id', 'email_marketing_prospect_lists', 'email_marketing_id', 'prospect_list_id', 'many-to-many', NULL, NULL, 0, 0),
+('2ca5dc10-fa36-9ccd-f8fc-55770b599aa7', 'leads_documents', 'Leads', 'leads', 'id', 'Documents', 'documents', 'id', 'linked_documents', 'parent_id', 'document_id', 'many-to-many', 'parent_type', 'Leads', 0, 0),
+('2d2bde42-96bc-4679-cce9-55770b573b09', 'calls_created_by', 'Users', 'users', 'id', 'Calls', 'calls', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('2d45590b-242f-b2ec-bf88-55770becaa11', 'documents_accounts', 'Documents', 'documents', 'id', 'Accounts', 'accounts', 'id', 'documents_accounts', 'document_id', 'account_id', 'many-to-many', NULL, NULL, 0, 0),
+('2de24e6c-79d0-07af-b4ab-55770b678f1f', 'calls_assigned_user', 'Users', 'users', 'id', 'Calls', 'calls', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('2df5ac05-3ad3-ed57-8856-55770b7074d5', 'documents_contacts', 'Documents', 'documents', 'id', 'Contacts', 'contacts', 'id', 'documents_contacts', 'document_id', 'contact_id', 'many-to-many', NULL, NULL, 0, 0),
+('2e7db88d-e587-1c9b-fbf3-55770b46a681', 'calls_notes', 'Calls', 'calls', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Calls', 0, 0),
+('2e89b93d-791b-05ba-29f7-55770b0b737b', 'documents_opportunities', 'Documents', 'documents', 'id', 'Opportunities', 'opportunities', 'id', 'documents_opportunities', 'document_id', 'opportunity_id', 'many-to-many', NULL, NULL, 0, 0),
+('2f1d027c-4dfb-424d-e6f7-55770b127480', 'documents_cases', 'Documents', 'documents', 'id', 'Cases', 'cases', 'id', 'documents_cases', 'document_id', 'case_id', 'many-to-many', NULL, NULL, 0, 0),
+('2fc44df5-2564-35c4-2953-55770b90e7d9', 'documents_bugs', 'Documents', 'documents', 'id', 'Bugs', 'bugs', 'id', 'documents_bugs', 'document_id', 'bug_id', 'many-to-many', NULL, NULL, 0, 0),
+('306b6fb0-33f7-6efe-fd41-55770b7837b9', 'asol_activity_asol_activity', 'asol_Activity', 'asol_activity', 'id', 'asol_Activity', 'asol_activity', 'id', 'asol_activisol_activity_c', 'asol_activ898activity_ida', 'asol_activ9e2dctivity_idb', 'many-to-many', NULL, NULL, 0, 0),
+('31193564-1547-47de-86e7-55770b64e775', 'asol_activity_asol_task', 'asol_Activity', 'asol_activity', 'id', 'asol_Task', 'asol_task', 'id', 'asol_activity_asol_task_c', 'asol_activ5b86ctivity_ida', 'asol_activf613ol_task_idb', 'many-to-many', NULL, NULL, 0, 0),
+('31b2a786-ee7c-5602-9493-55770b4ade51', 'asol_events_asol_activity', 'asol_Events', 'asol_events', 'id', 'asol_Activity', 'asol_activity', 'id', 'asol_eventssol_activity_c', 'asol_event87f4_events_ida', 'asol_event8042ctivity_idb', 'many-to-many', NULL, NULL, 0, 0),
+('325033ff-360b-c930-37c4-55770b98ba4f', 'asol_process_asol_activity', 'asol_Process', 'asol_process', 'id', 'asol_Activity', 'asol_activity', 'id', 'asol_process_asol_activity_c', 'asol_process_asol_activityasol_process_ida', 'asol_process_asol_activityasol_activity_idb', 'many-to-many', NULL, NULL, 0, 0),
+('32e50233-291c-ec15-f21c-55770b19244a', 'asol_process_asol_events', 'asol_Process', 'asol_process', 'id', 'asol_Events', 'asol_events', 'id', 'asol_proces_asol_events_c', 'asol_proce6f14process_ida', 'asol_procea8ca_events_idb', 'many-to-many', NULL, NULL, 0, 0),
+('33630283-3b12-8c62-50f9-55770b285f9e', 'contacts_email_addresses_primary', 'Contacts', 'contacts', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'primary_address', '1', 0, 0),
+('337705ce-8c39-8c98-de8a-55770b5648e3', 'asol_process_asol_events_1', 'asol_Process', 'asol_process', 'id', 'asol_Events', 'asol_events', 'id', 'asol_process_asol_events_1_c', 'asol_process_asol_events_1asol_process_ida', 'asol_process_asol_events_1asol_events_idb', 'many-to-many', NULL, NULL, 0, 0),
+('34123f33-774e-5eee-0487-55770b4a3805', 'asol_process_asol_task', 'asol_Process', 'asol_process', 'id', 'asol_Task', 'asol_task', 'id', 'asol_process_asol_task_c', 'asol_process_asol_taskasol_process_ida', 'asol_process_asol_taskasol_task_idb', 'many-to-many', NULL, NULL, 0, 0),
+('35b73d68-6a06-ddd8-86df-55770b7adf20', 'emails_assigned_user', 'Users', 'users', 'id', 'Emails', 'emails', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('3676ebe5-dd6a-acef-217b-55770b512fc4', 'emails_modified_user', 'Users', 'users', 'id', 'Emails', 'emails', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('3713c6a2-8388-1b50-3c66-55770b6fc418', 'emails_created_by', 'Users', 'users', 'id', 'Emails', 'emails', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('37a0afd5-ab9e-b0e2-c794-55770b2325b3', 'emails_notes_rel', 'Emails', 'emails', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('382c52d1-0533-dd37-6bbb-55770b64391d', 'emails_contacts_rel', 'Emails', 'emails', 'id', 'Contacts', 'contacts', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Contacts', 0, 0),
+('38b3bb8f-b9b4-f8ca-ad77-55770b6ceb91', 'emails_accounts_rel', 'Emails', 'emails', 'id', 'Accounts', 'accounts', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Accounts', 0, 0),
+('3944e691-c969-1a82-283e-55770b77fb1f', 'emails_leads_rel', 'Emails', 'emails', 'id', 'Leads', 'leads', 'id', 'emails_beans', 'email_id', 'bean_id', 'many-to-many', 'bean_module', 'Leads', 0, 0),
+('39cfe2f7-85f0-5404-bc6e-55770bf7b072', 'emails_meetings_rel', 'Emails', 'emails', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('3c95013a-84eb-d550-0e56-55770b840474', 'contact_direct_reports', 'Contacts', 'contacts', 'id', 'Contacts', 'contacts', 'reports_to_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('457a07ad-6f6b-842c-321a-55770bf255b0', 'contact_leads', 'Contacts', 'contacts', 'id', 'Leads', 'leads', 'contact_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('4ebd0f00-64c0-ac64-68d7-55770b089dc0', 'contact_notes', 'Contacts', 'contacts', 'id', 'Notes', 'notes', 'contact_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('4fe131c3-5f4d-6dd2-f6bd-55770bfffd94', 'meetings_modified_user', 'Users', 'users', 'id', 'Meetings', 'meetings', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('507df2f1-5bb1-7af0-dc68-55770bdad1e1', 'meetings_created_by', 'Users', 'users', 'id', 'Meetings', 'meetings', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('510d8445-85e3-5644-0b03-55770b2a3023', 'meetings_assigned_user', 'Users', 'users', 'id', 'Meetings', 'meetings', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('51ad0ba0-1283-f433-0b42-55770b51040d', 'meetings_notes', 'Meetings', 'meetings', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Meetings', 0, 0),
+('55c02338-3f01-1081-00ac-55770bfcdb60', 'tasks_modified_user', 'Users', 'users', 'id', 'Tasks', 'tasks', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('567c35fb-a8a0-7796-c05c-55770b188b4a', 'tasks_created_by', 'Users', 'users', 'id', 'Tasks', 'tasks', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('571b32cf-65a1-3cc2-6d30-55770b4a0a15', 'tasks_assigned_user', 'Users', 'users', 'id', 'Tasks', 'tasks', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('57aa27d6-c2bc-7df1-fdfd-55770bf4aca7', 'tasks_notes', 'Tasks', 'tasks', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('58b80ae8-b8a7-a0d2-534e-55770b6ddcd3', 'contact_tasks', 'Contacts', 'contacts', 'id', 'Tasks', 'tasks', 'contact_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('6248076d-1188-9977-b6ad-55770b7a304e', 'contact_tasks_parent', 'Contacts', 'contacts', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Contacts', 0, 0),
+('6a024957-2d41-b554-167b-55770bd3e38d', 'documents_modified_user', 'Users', 'users', 'id', 'Documents', 'documents', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('6adec0c7-4e58-a4a5-0955-55770b7427b0', 'documents_created_by', 'Users', 'users', 'id', 'Documents', 'documents', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('6b480bab-a9a1-b6a0-d22c-55770bf8c92b', 'contact_notes_parent', 'Contacts', 'contacts', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Contacts', 0, 0),
+('6b8115a4-81c5-6799-20a9-55770be2290e', 'documents_assigned_user', 'Users', 'users', 'id', 'Documents', 'documents', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('6c1e5f65-5caf-fa88-3c3a-55770b8795bb', 'document_revisions', 'Documents', 'documents', 'id', 'DocumentRevisions', 'document_revisions', 'document_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('6e329252-1d55-52e5-9ffe-55770b8cfc36', 'revisions_created_by', 'Users', 'users', 'id', 'DocumentRevisions', 'document_revisions', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('74840575-3408-030a-d844-55770b0db275', 'contact_campaign_log', 'Contacts', 'contacts', 'id', 'CampaignLog', 'campaign_log', 'target_id', NULL, NULL, NULL, 'one-to-many', 'target_type', 'Contacts', 0, 0),
+('7872733f-efea-023e-fc72-55770b1dbf1f', 'inbound_email_created_by', 'Users', 'users', 'id', 'InboundEmail', 'inbound_email', 'created_by', NULL, NULL, NULL, 'one-to-one', NULL, NULL, 0, 0),
+('791e6e70-2105-d857-fefc-55770bc3a939', 'inbound_email_modified_user_id', 'Users', 'users', 'id', 'InboundEmail', 'inbound_email', 'modified_user_id', NULL, NULL, NULL, 'one-to-one', NULL, NULL, 0, 0),
+('7c22b710-c1f8-46e5-7d80-55770b96583d', 'saved_search_assigned_user', 'Users', 'users', 'id', 'SavedSearch', 'saved_search', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('825a404e-0348-93cf-fd61-55770bfa9c2f', 'sugarfeed_modified_user', 'Users', 'users', 'id', 'SugarFeed', 'sugarfeed', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('8342d3a8-42f2-cafd-4e0e-55770be29aa3', 'sugarfeed_created_by', 'Users', 'users', 'id', 'SugarFeed', 'sugarfeed', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('83e5f2bd-9f76-4f68-ebf9-55770bca5840', 'sugarfeed_assigned_user', 'Users', 'users', 'id', 'SugarFeed', 'sugarfeed', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('87bbd239-721a-9ee9-f161-55770b1fcf7f', 'leads_modified_user', 'Users', 'users', 'id', 'Leads', 'leads', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('8b59ec36-bb73-5960-b4d3-55770bcd07ee', 'eapm_modified_user', 'Users', 'users', 'id', 'EAPM', 'eapm', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('8c156675-e678-2940-4d87-55770baa5785', 'eapm_created_by', 'Users', 'users', 'id', 'EAPM', 'eapm', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('8caf31ce-ebe2-8f10-ecd9-55770b31d61b', 'eapm_assigned_user', 'Users', 'users', 'id', 'EAPM', 'eapm', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('8ee94bae-1b7d-a194-ed4d-55770baa5b46', 'leads_created_by', 'Users', 'users', 'id', 'Leads', 'leads', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('8f82f387-2165-e761-a245-55770b4337e2', 'leads_assigned_user', 'Users', 'users', 'id', 'Leads', 'leads', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('90217a73-19dc-6e7e-260f-55770ba251e9', 'leads_email_addresses', 'Leads', 'leads', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'bean_module', 'Leads', 0, 0),
+('903e15b8-9f3d-36fc-5323-55770b495005', 'oauthkeys_modified_user', 'Users', 'users', 'id', 'OAuthKeys', 'oauthkeys', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('90c4e04f-2a56-6dee-9cad-55770b513ed2', 'leads_email_addresses_primary', 'Leads', 'leads', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'primary_address', '1', 0, 0),
+('91550681-bc84-509d-4dae-55770ba82cb4', 'lead_direct_reports', 'Leads', 'leads', 'id', 'Leads', 'leads', 'reports_to_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('91e63f0a-126e-a16c-920b-55770b61136d', 'lead_tasks', 'Leads', 'leads', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Leads', 0, 0),
+('927c6602-8fea-365b-ad66-55770b02fce8', 'lead_notes', 'Leads', 'leads', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Leads', 0, 0),
+('92d7d24d-8e46-be61-dea7-55770bb91b63', 'oauthkeys_created_by', 'Users', 'users', 'id', 'OAuthKeys', 'oauthkeys', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('930c8f57-9385-e189-aca7-55770b6a99cb', 'lead_meetings', 'Leads', 'leads', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Leads', 0, 0),
+('937fe0ae-56c7-ea11-6e0e-55770b4ff091', 'oauthkeys_assigned_user', 'Users', 'users', 'id', 'OAuthKeys', 'oauthkeys', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('93964430-735e-dc4b-89fb-55770b30a7c1', 'lead_calls', 'Leads', 'leads', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Leads', 0, 0),
+('94288a2a-03e6-1e89-3c4d-55770bce774a', 'lead_emails', 'Leads', 'leads', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Leads', 0, 0),
+('94b46f25-cae3-1676-c8fa-55770b4ba408', 'lead_campaign_log', 'Leads', 'leads', 'id', 'CampaignLog', 'campaign_log', 'target_id', NULL, NULL, NULL, 'one-to-many', 'target_type', 'Leads', 0, 0),
+('95aa99f7-d9f0-0f53-3adc-55770b66f15c', 'consumer_tokens', 'OAuthKeys', 'oauth_consumer', 'id', 'OAuthTokens', 'oauth_tokens', 'consumer', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('963e06b7-c4a0-9870-d1b0-55770bc08c65', 'oauthtokens_assigned_user', 'Users', 'users', 'id', 'OAuthTokens', 'oauth_tokens', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('98ca44ec-f096-2cc8-0583-55770bfb7606', 'cases_modified_user', 'Users', 'users', 'id', 'Cases', 'cases', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('99947d3b-7460-e3f4-b797-55770be55d5a', 'cases_created_by', 'Users', 'users', 'id', 'Cases', 'cases', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('9a645a4f-45ba-4474-fa5d-55770b21cb1c', 'cases_assigned_user', 'Users', 'users', 'id', 'Cases', 'cases', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('9a663107-4003-1bbb-6bfe-55770bb8c8ae', 'asol_activity_modified_user', 'Users', 'users', 'id', 'asol_Activity', 'asol_activity', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('9af5c5b3-bbae-3941-baa8-55770ba30fd1', 'case_calls', 'Cases', 'cases', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Cases', 0, 0),
+('9b7fcaa0-2c4c-190f-6f4a-55770b9aecbe', 'case_tasks', 'Cases', 'cases', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Cases', 0, 0),
+('9c3ee776-83d4-b9f5-43e3-55770b9b07a6', 'case_notes', 'Cases', 'cases', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Cases', 0, 0),
+('9d1c57ca-d58c-50b6-617a-55770b68024e', 'asol_activity_created_by', 'Users', 'users', 'id', 'asol_Activity', 'asol_activity', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('9d46e231-4e9c-0183-5b16-55770b61c34b', 'case_meetings', 'Cases', 'cases', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Cases', 0, 0),
+('9db35661-0deb-7d0c-3ec3-55770b9551c5', 'asol_activity_assigned_user', 'Users', 'users', 'id', 'asol_Activity', 'asol_activity', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('9de2c492-b126-7cd6-e621-55770b02b917', 'case_emails', 'Cases', 'cases', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Cases', 0, 0),
+('a1c37c1d-93ea-ad4d-bc82-55770b38241f', 'asol_events_modified_user', 'Users', 'users', 'id', 'asol_Events', 'asol_events', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('a22526ab-7976-8456-1405-55770b7f3456', 'bugs_modified_user', 'Users', 'users', 'id', 'Bugs', 'bugs', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('a274a847-0b8b-b7fb-b320-55770b122b77', 'asol_events_created_by', 'Users', 'users', 'id', 'asol_Events', 'asol_events', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('a2cd8527-be6e-ebcb-afc0-55770b25a6cc', 'bugs_created_by', 'Users', 'users', 'id', 'Bugs', 'bugs', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('a30ba68f-7b59-9539-14f8-55770b23dea2', 'asol_events_assigned_user', 'Users', 'users', 'id', 'asol_Events', 'asol_events', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('a395d99a-0d84-d7e0-3e0a-55770b18c638', 'bugs_assigned_user', 'Users', 'users', 'id', 'Bugs', 'bugs', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('a4240a5b-ea37-1c01-0a0d-55770b1a63a1', 'bug_tasks', 'Bugs', 'bugs', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Bugs', 0, 0),
+('a4b0e106-9f76-5494-1962-55770b407ddb', 'bug_meetings', 'Bugs', 'bugs', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Bugs', 0, 0),
+('a543e7a8-1e26-4c75-38c6-55770bbc94f0', 'bug_calls', 'Bugs', 'bugs', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Bugs', 0, 0),
+('a5e7a46b-ce08-535c-1f7d-55770b8ac509', 'bug_emails', 'Bugs', 'bugs', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Bugs', 0, 0),
+('a67131cd-1fb6-c09b-760f-55770b16d7f9', 'asol_onhold_modified_user', 'Users', 'users', 'id', 'asol_OnHold', 'asol_onhold', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('a678e7e3-3b5b-269c-2df3-55770b1e7c2e', 'bug_notes', 'Bugs', 'bugs', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Bugs', 0, 0),
+('a70a0f7c-47a9-67b8-f028-55770bfb6ca6', 'bugs_release', 'Releases', 'releases', 'id', 'Bugs', 'bugs', 'found_in_release', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('a796872c-90a3-2cf3-4d42-55770b6b24f4', 'bugs_fixed_in_release', 'Releases', 'releases', 'id', 'Bugs', 'bugs', 'fixed_in_release', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('a8f860ee-4208-f582-b172-55770b1d1c2b', 'user_direct_reports', 'Users', 'users', 'id', 'Users', 'users', 'reports_to_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('a94cab89-04a4-fa63-526e-55770b238156', 'asol_onhold_created_by', 'Users', 'users', 'id', 'asol_OnHold', 'asol_onhold', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('a99b3f5b-c16f-2256-5c78-55770b8e82f8', 'users_email_addresses', 'Users', 'users', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'bean_module', 'Users', 0, 0),
+('a9b008db-6a0f-88d8-be08-55770b446db0', 'contacts_modified_user', 'Users', 'users', 'id', 'Contacts', 'contacts', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('a9eaab34-fcf2-b7da-342a-55770b5b70f6', 'asol_onhold_assigned_user', 'Users', 'users', 'id', 'asol_OnHold', 'asol_onhold', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('aa291972-7464-8cdc-867a-55770b0c053e', 'users_email_addresses_primary', 'Users', 'users', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'primary_address', '1', 0, 0),
+('ac52a96f-061a-6a43-ebad-55770b63f3f6', 'campaignlog_contact', 'CampaignLog', 'campaign_log', 'related_id', 'Contacts', 'contacts', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('aceba5cb-3807-5617-fbe0-55770b5ecb9d', 'campaignlog_lead', 'CampaignLog', 'campaign_log', 'related_id', 'Leads', 'leads', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('ad79493f-7273-ac1f-89fb-55770b56d011', 'campaignlog_created_opportunities', 'CampaignLog', 'campaign_log', 'related_id', 'Opportunities', 'opportunities', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('ad88255d-74bc-4d13-1fe0-55770bbfcdd8', 'asol_process_modified_user', 'Users', 'users', 'id', 'asol_Process', 'asol_process', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('ae235646-7400-2670-63a3-55770b72718b', 'campaignlog_targeted_users', 'CampaignLog', 'campaign_log', 'target_id', 'Users', 'users', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('ae637ac1-2fc9-e64a-bf6d-55770b33fd89', 'asol_process_created_by', 'Users', 'users', 'id', 'asol_Process', 'asol_process', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('aecc0683-0662-c17d-028e-55770b42389e', 'campaignlog_sent_emails', 'CampaignLog', 'campaign_log', 'related_id', 'Emails', 'emails', 'id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('aef48852-dd27-5d9d-b97e-55770baf387e', 'asol_process_assigned_user', 'Users', 'users', 'id', 'asol_Process', 'asol_process', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b23d0317-2359-3ebf-6a67-55770b05dfe5', 'projects_notes', 'Project', 'project', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Project', 0, 0),
+('b2492043-7fd5-a2b9-a560-55770bbfaf80', 'asol_processinstances_modified_user', 'Users', 'users', 'id', 'asol_ProcessInstances', 'asol_processinstances', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b35aaa1f-6a45-cd64-8c52-55770b1fe36f', 'projects_tasks', 'Project', 'project', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Project', 0, 0),
+('b364400f-f486-72e3-c019-55770b9f63d7', 'asol_processinstances_created_by', 'Users', 'users', 'id', 'asol_ProcessInstances', 'asol_processinstances', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b40221be-4010-cc59-30e0-55770be4ff9a', 'asol_processinstances_assigned_user', 'Users', 'users', 'id', 'asol_ProcessInstances', 'asol_processinstances', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b41d9dbf-aa4f-e6ab-ec94-55770bc917f6', 'projects_meetings', 'Project', 'project', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Project', 0, 0),
+('b4c86bfc-6b8d-f7ad-2bf8-55770b52f238', 'projects_calls', 'Project', 'project', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Project', 0, 0),
+('b5589951-36f5-418f-c106-55770b8bcc1b', 'projects_emails', 'Project', 'project', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Project', 0, 0),
+('b5dd57ec-4095-5915-1211-55770b25da39', 'projects_project_tasks', 'Project', 'project', 'id', 'ProjectTask', 'project_task', 'project_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b66bad25-f5dd-fca4-c849-55770b06845c', 'projects_assigned_user', 'Users', 'users', 'id', 'Project', 'project', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b6f8456e-7f35-da53-cd4e-55770b849329', 'projects_modified_user', 'Users', 'users', 'id', 'Project', 'project', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b7802a3b-39d3-7159-b48f-55770b1363c7', 'projects_created_by', 'Users', 'users', 'id', 'Project', 'project', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b79e150f-512d-c774-0b6e-55770beba755', 'asol_task_modified_user', 'Users', 'users', 'id', 'asol_Task', 'asol_task', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b845f510-ef8c-e647-b307-55770b093268', 'asol_task_created_by', 'Users', 'users', 'id', 'asol_Task', 'asol_task', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('b8d93fed-8576-716f-8d5c-55770bca3b12', 'asol_task_assigned_user', 'Users', 'users', 'id', 'asol_Task', 'asol_task', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('baf8d081-94e3-d29c-bf74-55770b2329c1', 'project_tasks_notes', 'ProjectTask', 'project_task', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'ProjectTask', 0, 0),
+('bc825c59-9408-8a3e-480b-55770b464ead', 'asol_workingnodes_modified_user', 'Users', 'users', 'id', 'asol_WorkingNodes', 'asol_workingnodes', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('bd8ae629-3997-4dac-4f48-55770b1c8774', 'project_tasks_tasks', 'ProjectTask', 'project_task', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'ProjectTask', 0, 0),
+('bda7f502-2914-ed66-8974-55770ba8a888', 'asol_workingnodes_created_by', 'Users', 'users', 'id', 'asol_WorkingNodes', 'asol_workingnodes', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('be2464c9-faa8-c022-883a-55770bab30d3', 'project_tasks_meetings', 'ProjectTask', 'project_task', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'ProjectTask', 0, 0),
+('be49068f-7da6-439d-8ca6-55770b955cd0', 'asol_workingnodes_assigned_user', 'Users', 'users', 'id', 'asol_WorkingNodes', 'asol_workingnodes', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('bec15e73-115d-5ebf-0882-55770b7b0d67', 'project_tasks_calls', 'ProjectTask', 'project_task', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'ProjectTask', 0, 0),
+('bf5b95df-70cc-aeda-68b3-55770b378faf', 'project_tasks_emails', 'ProjectTask', 'project_task', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'ProjectTask', 0, 0),
+('bfec0423-8b62-a5d2-4aec-55770b55b587', 'project_tasks_assigned_user', 'Users', 'users', 'id', 'ProjectTask', 'project_task', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('c07bf3e9-6969-2629-499e-55770b72088b', 'project_tasks_modified_user', 'Users', 'users', 'id', 'ProjectTask', 'project_task', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('c1095bd5-3aa8-0931-dfb7-55770b6931a9', 'project_tasks_created_by', 'Users', 'users', 'id', 'ProjectTask', 'project_task', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('c1599988-56d1-6a0e-772d-55770bda4c1e', 'asol_workflowmanagercommon_modified_user', 'Users', 'users', 'id', 'asol_WorkFlowManagerCommon', 'asol_workflowmanagercommon', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('c1f1c96c-17ae-eb00-030b-55770bd3f28b', 'asol_workflowmanagercommon_created_by', 'Users', 'users', 'id', 'asol_WorkFlowManagerCommon', 'asol_workflowmanagercommon', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('c290533c-a756-44c2-89f4-55770bf3920e', 'asol_workflowmanagercommon_assigned_user', 'Users', 'users', 'id', 'asol_WorkFlowManagerCommon', 'asol_workflowmanagercommon', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('c5ea557d-c8df-532f-9b06-55770b63902a', 'campaigns_modified_user', 'Users', 'users', 'id', 'Campaigns', 'campaigns', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('c61dfbb7-f479-931d-b087-55770bbdf608', 'fdi2m_jinrong_chanpin_info_modified_user', 'Users', 'users', 'id', 'fdi2m_jinrong_chanpin_info', 'fdi2m_jinrong_chanpin_info', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('c7b7ed9c-5314-3d23-9d37-55770b3eee54', 'campaigns_created_by', 'Users', 'users', 'id', 'Campaigns', 'campaigns', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('c7c82c5a-d1df-12b2-ebb7-55770b66fcc4', 'fdi2m_jinrong_chanpin_info_created_by', 'Users', 'users', 'id', 'fdi2m_jinrong_chanpin_info', 'fdi2m_jinrong_chanpin_info', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('c859ab6d-a9b6-104a-a274-55770b5ea020', 'campaigns_assigned_user', 'Users', 'users', 'id', 'Campaigns', 'campaigns', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('c869339e-f738-3ba4-db5c-55770b2b3c52', 'fdi2m_jinrong_chanpin_info_assigned_user', 'Users', 'users', 'id', 'fdi2m_jinrong_chanpin_info', 'fdi2m_jinrong_chanpin_info', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('c900ff6d-bdc9-936b-7db0-55770b2e5379', 'campaign_accounts', 'Campaigns', 'campaigns', 'id', 'Accounts', 'accounts', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('c9903e4f-e298-4bec-21f2-55770bbd9ea5', 'campaign_contacts', 'Campaigns', 'campaigns', 'id', 'Contacts', 'contacts', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('ca1e3834-513e-7537-cb9b-55770b8d48eb', 'campaign_leads', 'Campaigns', 'campaigns', 'id', 'Leads', 'leads', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('caaa6bdb-4931-8db1-3618-55770be58bb0', 'campaign_prospects', 'Campaigns', 'campaigns', 'id', 'Prospects', 'prospects', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('cb390b5e-3ad8-3b93-9a95-55770bc1341d', 'campaign_opportunities', 'Campaigns', 'campaigns', 'id', 'Opportunities', 'opportunities', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('cbc46ad5-7dee-be16-bda1-55770b304c24', 'campaign_email_marketing', 'Campaigns', 'campaigns', 'id', 'EmailMarketing', 'email_marketing', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('cc05ed0a-35ab-bcd9-6af4-55770bbc1c97', 'fdi2m_jinrong_fenzhi_jigou_info_modified_user', 'Users', 'users', 'id', 'fdi2m_jinrong_fenzhi_jigou_info', 'fdi2m_jinrong_fenzhi_jigou_info', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('cc4d6d04-3935-ff68-893e-55770bcf2697', 'campaign_emailman', 'Campaigns', 'campaigns', 'id', 'EmailMan', 'emailman', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('ccb009aa-6420-b7cd-df61-55770b7580d9', 'fdi2m_jinrong_fenzhi_jigou_info_created_by', 'Users', 'users', 'id', 'fdi2m_jinrong_fenzhi_jigou_info', 'fdi2m_jinrong_fenzhi_jigou_info', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('ccea671f-0c92-f67b-3709-55770b0a4d88', 'campaign_campaignlog', 'Campaigns', 'campaigns', 'id', 'CampaignLog', 'campaign_log', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('cd52dbfd-d281-af1a-fbe0-55770b8a60fd', 'fdi2m_jinrong_fenzhi_jigou_info_assigned_user', 'Users', 'users', 'id', 'fdi2m_jinrong_fenzhi_jigou_info', 'fdi2m_jinrong_fenzhi_jigou_info', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('cd710db4-3138-a4fd-e195-55770b2b368e', 'accounts_modified_user', 'Users', 'users', 'id', 'Accounts', 'accounts', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('cd82b078-e451-61ad-5b6b-55770be7b558', 'campaign_assigned_user', 'Users', 'users', 'id', 'Campaigns', 'campaigns', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('ce15cbc7-da83-9ebf-21a6-55770b85fee5', 'campaign_modified_user', 'Users', 'users', 'id', 'Campaigns', 'campaigns', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d12012ca-0471-2cd3-c1f8-55770b6fd4dc', 'prospectlists_assigned_user', 'Users', 'users', 'id', 'prospectlists', 'prospect_lists', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d157da97-09ce-3ca7-fe3e-55770bef801c', 'daik_jiekuangren_info_modified_user', 'Users', 'users', 'id', 'daik_jiekuangren_info', 'daik_jiekuangren_info', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d1f471d4-be15-30d6-6fac-55770b1dade1', 'daik_jiekuangren_info_created_by', 'Users', 'users', 'id', 'daik_jiekuangren_info', 'daik_jiekuangren_info', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d28ac5d6-27ab-74b9-8d43-55770b2b34a6', 'daik_jiekuangren_info_assigned_user', 'Users', 'users', 'id', 'daik_jiekuangren_info', 'daik_jiekuangren_info', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d62682ef-319d-b06f-a935-55770bb10215', 'daik_jinrong_jigou_info_modified_user', 'Users', 'users', 'id', 'daik_jinrong_jigou_info', 'daik_jinrong_jigou_info', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d653bcbd-2c4b-5946-6401-55770b7af2a0', 'prospects_modified_user', 'Users', 'users', 'id', 'Prospects', 'prospects', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d6cbdd34-eb43-415d-1f76-55770b948789', 'daik_jinrong_jigou_info_created_by', 'Users', 'users', 'id', 'daik_jinrong_jigou_info', 'daik_jinrong_jigou_info', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d762e519-081e-bf9e-ebb4-55770ba0b421', 'daik_jinrong_jigou_info_assigned_user', 'Users', 'users', 'id', 'daik_jinrong_jigou_info', 'daik_jinrong_jigou_info', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d7fecb5b-6508-5691-ec64-55770b3ec12f', 'prospects_created_by', 'Users', 'users', 'id', 'Prospects', 'prospects', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d89a5f24-c8a8-30a6-e91c-55770bc6a059', 'prospects_assigned_user', 'Users', 'users', 'id', 'Prospects', 'prospects', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('d940a87b-61b2-9283-8692-55770b0df7c3', 'prospects_email_addresses', 'Prospects', 'prospects', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'bean_module', 'Prospects', 0, 0),
+('d9d1cb11-9ed0-7029-6f09-55770bd5aac3', 'prospects_email_addresses_primary', 'Prospects', 'prospects', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'primary_address', '1', 0, 0),
+('da5d4041-6e3f-3160-1e4f-55770b3a84f4', 'prospect_tasks', 'Prospects', 'prospects', 'id', 'Tasks', 'tasks', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Prospects', 0, 0),
+('daf4a600-aa00-ce2a-3e5c-55770b332dbc', 'prospect_notes', 'Prospects', 'prospects', 'id', 'Notes', 'notes', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Prospects', 0, 0),
+('db860792-eae7-78b3-b3f7-55770b840f25', 'prospect_meetings', 'Prospects', 'prospects', 'id', 'Meetings', 'meetings', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Prospects', 0, 0),
+('dc070d5d-11d3-6411-2035-55770b84a988', 'accounts_created_by', 'Users', 'users', 'id', 'Accounts', 'accounts', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('dc106655-d2b6-cead-4b98-55770be1d42c', 'prospect_calls', 'Prospects', 'prospects', 'id', 'Calls', 'calls', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Prospects', 0, 0),
+('dcb31959-28ae-77f3-e545-55770b34e88f', 'prospect_emails', 'Prospects', 'prospects', 'id', 'Emails', 'emails', 'parent_id', NULL, NULL, NULL, 'one-to-many', 'parent_type', 'Prospects', 0, 0),
+('dcefe203-a941-057d-aeeb-55770b643183', 'liuch_fangkuang_liucheng_modified_user', 'Users', 'users', 'id', 'liuch_fangkuang_liucheng', 'liuch_fangkuang_liucheng', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('dd424e49-f791-92f4-4a8a-55770bc4adf5', 'prospect_campaign_log', 'Prospects', 'prospects', 'id', 'CampaignLog', 'campaign_log', 'target_id', NULL, NULL, NULL, 'one-to-many', 'target_type', 'Prospects', 0, 0),
+('dd8ba42f-2809-d7c2-fa60-55770b933913', 'liuch_fangkuang_liucheng_created_by', 'Users', 'users', 'id', 'liuch_fangkuang_liucheng', 'liuch_fangkuang_liucheng', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('de24618b-f284-ca73-189a-55770b32e742', 'liuch_fangkuang_liucheng_assigned_user', 'Users', 'users', 'id', 'liuch_fangkuang_liucheng', 'liuch_fangkuang_liucheng', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('df3fc8a0-3cd3-53bf-b490-55770bb8db49', 'email_template_email_marketings', 'EmailTemplates', 'email_templates', 'id', 'EmailMarketing', 'email_marketing', 'template_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('dfe6d283-c24d-e9b0-7dc8-55770bf3bad3', 'yuang_bumen_info_modified_user', 'Users', 'users', 'id', 'yuang_bumen_info', 'yuang_bumen_info', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('e083276a-a4e7-17a5-a6b6-55770b034e73', 'yuang_bumen_info_created_by', 'Users', 'users', 'id', 'yuang_bumen_info', 'yuang_bumen_info', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('e1300138-bd5d-1c41-eec2-55770b1c3595', 'yuang_bumen_info_assigned_user', 'Users', 'users', 'id', 'yuang_bumen_info', 'yuang_bumen_info', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('e31417c5-67a2-d963-e760-55770bd1d39b', 'yuang_fengongsi_info_modified_user', 'Users', 'users', 'id', 'yuang_fengongsi_info', 'yuang_fengongsi_info', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0);
 INSERT INTO `relationships` (`id`, `relationship_name`, `lhs_module`, `lhs_table`, `lhs_key`, `rhs_module`, `rhs_table`, `rhs_key`, `join_table`, `join_key_lhs`, `join_key_rhs`, `relationship_type`, `relationship_role_column`, `relationship_role_column_value`, `reverse`, `deleted`) VALUES
-('d60325cd-15fe-8bdf-ad98-5573ba416bf0', 'documents_assigned_user', 'Users', 'users', 'id', 'Documents', 'documents', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('d68f7d5d-349f-b5d1-9cf7-5573bad6ecc9', 'document_revisions', 'Documents', 'documents', 'id', 'DocumentRevisions', 'document_revisions', 'document_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('d7f89f42-af6a-f490-1330-5573ba325e11', 'revisions_created_by', 'Users', 'users', 'id', 'DocumentRevisions', 'document_revisions', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('dba602a1-4e47-b7e3-0c08-5573ba1fe375', 'asol_process_modified_user', 'Users', 'users', 'id', 'asol_Process', 'asol_process', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('dec0f324-9646-675f-8cc0-5573baf443aa', 'inbound_email_created_by', 'Users', 'users', 'id', 'InboundEmail', 'inbound_email', 'created_by', NULL, NULL, NULL, 'one-to-one', NULL, NULL, 0, 0),
-('df2b5a2e-cdd3-eafd-2472-5573ba04095d', 'inbound_email_modified_user_id', 'Users', 'users', 'id', 'InboundEmail', 'inbound_email', 'modified_user_id', NULL, NULL, NULL, 'one-to-one', NULL, NULL, 0, 0),
-('e1b27d22-6799-3424-d56b-5573bac4c7c2', 'saved_search_assigned_user', 'Users', 'users', 'id', 'SavedSearch', 'saved_search', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('e27508e2-121e-a15f-d5ea-5573baca9aa0', 'asol_process_created_by', 'Users', 'users', 'id', 'asol_Process', 'asol_process', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('e67e875b-5e07-ed30-0c4d-5573ba3509c7', 'sugarfeed_modified_user', 'Users', 'users', 'id', 'SugarFeed', 'sugarfeed', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('e6feb3ed-d0da-ceb4-c1a5-5573baf810be', 'sugarfeed_created_by', 'Users', 'users', 'id', 'SugarFeed', 'sugarfeed', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('e766e84e-9c89-881b-f645-5573ba0b48ce', 'sugarfeed_assigned_user', 'Users', 'users', 'id', 'SugarFeed', 'sugarfeed', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('eab105c4-e613-37de-07ca-5573ba2d0664', 'asol_process_assigned_user', 'Users', 'users', 'id', 'asol_Process', 'asol_process', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('ed0cb715-f7c4-5c06-f080-5573babcd3e7', 'eapm_modified_user', 'Users', 'users', 'id', 'EAPM', 'eapm', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('ed73c98b-36ee-3715-6236-5573ba4f325f', 'eapm_created_by', 'Users', 'users', 'id', 'EAPM', 'eapm', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('ef3aa746-09d3-ce2b-69bb-5573ba71e88b', 'eapm_assigned_user', 'Users', 'users', 'id', 'EAPM', 'eapm', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('f1cab4bd-f2ea-d308-60f8-5573ba911d4d', 'oauthkeys_modified_user', 'Users', 'users', 'id', 'OAuthKeys', 'oauthkeys', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('f2382e0c-0971-0ba5-920a-5573ba55afb6', 'oauthkeys_created_by', 'Users', 'users', 'id', 'OAuthKeys', 'oauthkeys', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('f2981601-10d8-fc35-f2ca-5573ba59950b', 'oauthkeys_assigned_user', 'Users', 'users', 'id', 'OAuthKeys', 'oauthkeys', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
-('f4018d3c-43fe-c03a-7124-5573ba9c6bfa', 'consumer_tokens', 'OAuthKeys', 'oauth_consumer', 'id', 'OAuthTokens', 'oauth_tokens', 'consumer', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0);
+('e369e27f-808c-70aa-5e7d-55770b60b9d5', 'campaign_campaigntrakers', 'Campaigns', 'campaigns', 'id', 'CampaignTrackers', 'campaign_trkrs', 'campaign_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('e62e0749-85e7-a97c-8f75-55770bde4cdd', 'accounts_assigned_user', 'Users', 'users', 'id', 'Accounts', 'accounts', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('e64784fe-e608-a11a-368e-55770ba82c6f', 'yuang_fengongsi_info_created_by', 'Users', 'users', 'id', 'yuang_fengongsi_info', 'yuang_fengongsi_info', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('e6da287f-afaf-7833-655c-55770b1b1145', 'yuang_fengongsi_info_assigned_user', 'Users', 'users', 'id', 'yuang_fengongsi_info', 'yuang_fengongsi_info', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('ea4ae7cb-1dc0-70ff-9f6d-55770be5513c', 'yuang_waibu_qudao_info_modified_user', 'Users', 'users', 'id', 'yuang_waibu_qudao_info', 'yuang_waibu_qudao_info', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('eaed7175-71c6-0f22-cd97-55770b14e2d7', 'yuang_waibu_qudao_info_created_by', 'Users', 'users', 'id', 'yuang_waibu_qudao_info', 'yuang_waibu_qudao_info', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('eb910621-4886-d1bc-7b88-55770b3063ad', 'yuang_waibu_qudao_info_assigned_user', 'Users', 'users', 'id', 'yuang_waibu_qudao_info', 'yuang_waibu_qudao_info', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('ec306cd2-d47c-cf9c-6acb-55770b1d9eb9', 'schedulers_created_by_rel', 'Users', 'users', 'id', 'Schedulers', 'schedulers', 'created_by', NULL, NULL, NULL, 'one-to-one', NULL, NULL, 0, 0),
+('ecc32240-0aca-f74e-e07e-55770b3a76e3', 'schedulers_modified_user_id_rel', 'Users', 'users', 'id', 'Schedulers', 'schedulers', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('ed6087ae-6db5-6c83-7e57-55770b5d664d', 'schedulers_jobs_rel', 'Schedulers', 'schedulers', 'id', 'SchedulersJobs', 'job_queue', 'scheduler_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('eea7d4a9-b927-b960-5ccb-55770b3454b7', 'schedulersjobs_assigned_user', 'Users', 'users', 'id', 'SchedulersJobs', 'schedulersjobs', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('eee10fec-d2ca-a921-d145-55770b4c69cc', 'accounts_email_addresses', 'Accounts', 'accounts', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'bean_module', 'Accounts', 0, 0),
+('ef1a5a8d-557e-a1f3-aff6-55770b1b539e', 'yuang_yuangong_guanli_modified_user', 'Users', 'users', 'id', 'yuang_yuangong_guanli', 'yuang_yuangong_guanli', 'modified_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('f09cf5f5-64b5-ce82-63c4-55770bdb3069', 'yuang_yuangong_guanli_created_by', 'Users', 'users', 'id', 'yuang_yuangong_guanli', 'yuang_yuangong_guanli', 'created_by', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('f1484ff8-029d-4484-fb49-55770bb1c1ad', 'yuang_yuangong_guanli_assigned_user', 'Users', 'users', 'id', 'yuang_yuangong_guanli', 'yuang_yuangong_guanli', 'assigned_user_id', NULL, NULL, NULL, 'one-to-many', NULL, NULL, 0, 0),
+('f7f10315-15ed-6271-0f60-55770b42a874', 'accounts_email_addresses_primary', 'Accounts', 'accounts', 'id', 'EmailAddresses', 'email_addresses', 'id', 'email_addr_bean_rel', 'bean_id', 'email_address_id', 'many-to-many', 'primary_address', '1', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -4416,7 +4416,7 @@ CREATE TABLE IF NOT EXISTS `tasks` (
 
 DROP TABLE IF EXISTS `tracker`;
 CREATE TABLE IF NOT EXISTS `tracker` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `monitor_id` char(36) NOT NULL,
   `user_id` varchar(36) DEFAULT NULL,
   `module_name` varchar(255) DEFAULT NULL,
@@ -4427,7 +4427,7 @@ CREATE TABLE IF NOT EXISTS `tracker` (
   `session_id` varchar(36) DEFAULT NULL,
   `visible` tinyint(1) DEFAULT '0',
   `deleted` tinyint(1) DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=814 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=940 DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `tracker`
@@ -4466,7 +4466,7 @@ INSERT INTO `tracker` (`id`, `monitor_id`, `user_id`, `module_name`, `item_id`, 
 (660, '599f129c-7ad7-9762-1235-556ece0a4b49', '1', 'fdi2m_jinrong_chanpin_info', '2b7adadf-c9a9-2b6f-6bb2-556ece985f6b', 'AAA', '2015-06-03 09:53:38', 'detailview', 'c2krsn45fpkp3v5etsuqio4uq7', 0, 0),
 (773, 'aad4f4c0-3886-a01a-5489-5573a3810b55', '1', 'Users', 'da26dab0-900d-916d-0bc0-55572a5c5184', '张 部门', '2015-06-07 01:52:19', 'editview', 'pah40tvh4qsqf0fjutvu1k5724', 1, 0),
 (780, '69d55ddb-267f-e2eb-eb78-5573a92f868c', '1', 'yuang_bumen_info', '1a0fb5c5-26d1-7a01-020b-556ec3e52091', '徐州分公司', '2015-06-07 02:16:51', 'detailview', 'pah40tvh4qsqf0fjutvu1k5724', 1, 0),
-(813, 'bac572c3-9cf6-6755-e55c-5573bc352538', '1', 'liuch_fangkuang_liucheng', 'cb942cff-649e-73c5-8f9f-5545c82a57e8', '2015050001', '2015-06-07 03:35:52', 'editview', 'pah40tvh4qsqf0fjutvu1k5724', 1, 0);
+(939, 'ce530fbc-0d3a-93cd-0c6b-557719c3c973', '1', 'liuch_fangkuang_liucheng', 'cb942cff-649e-73c5-8f9f-5545c82a57e8', '2015050001', '2015-06-09 16:50:41', 'detailview', '6pcosm4qs0nrlcai6jmfi5nq60', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -4769,8 +4769,8 @@ CREATE TABLE IF NOT EXISTS `versions` (
 INSERT INTO `versions` (`id`, `deleted`, `date_entered`, `date_modified`, `modified_user_id`, `created_by`, `name`, `file_version`, `db_version`) VALUES
 ('29ef6838-0f8b-216f-5d0b-5542c27e2c25', 0, '2015-04-30 23:59:51', '2015-04-30 23:59:51', '1', '1', 'Chart Data Cache', '3.5.1', '3.5.1'),
 ('2da5efec-73f8-0295-72f9-5542c2d5c1ae', 0, '2015-04-30 23:59:51', '2015-04-30 23:59:51', '1', '1', 'htaccess', '3.5.1', '3.5.1'),
-('5c613099-8a91-72dd-8ccd-5573bafcf62b', 0, '2015-06-07 03:27:56', '2015-06-07 03:27:56', '1', '1', 'Rebuild Relationships', '4.0.0', '4.0.0'),
-('69aa6792-ef59-ca15-0736-5573ba05691a', 0, '2015-06-07 03:27:56', '2015-06-07 03:27:56', '1', '1', 'Rebuild Extensions', '4.0.0', '4.0.0');
+('37f3b3e1-4ee9-d8a4-723e-55770b73123d', 0, '2015-06-09 15:51:39', '2015-06-09 15:51:39', '1', '1', 'Rebuild Relationships', '4.0.0', '4.0.0'),
+('554ff644-ee38-c99d-b479-55770b371ff1', 0, '2015-06-09 15:51:39', '2015-06-09 15:51:39', '1', '1', 'Rebuild Extensions', '4.0.0', '4.0.0');
 
 -- --------------------------------------------------------
 
@@ -5003,943 +5003,1202 @@ CREATE TABLE IF NOT EXISTS `yuang_yuangong_guanli_audit` (
 -- Indexes for table `accounts`
 --
 ALTER TABLE `accounts`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_accnt_id_del` (`id`,`deleted`), ADD KEY `idx_accnt_name_del` (`name`,`deleted`), ADD KEY `idx_accnt_assigned_del` (`deleted`,`assigned_user_id`), ADD KEY `idx_accnt_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_accnt_id_del` (`id`,`deleted`),
+  ADD KEY `idx_accnt_name_del` (`name`,`deleted`),
+  ADD KEY `idx_accnt_assigned_del` (`deleted`,`assigned_user_id`),
+  ADD KEY `idx_accnt_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `accounts_audit`
 --
 ALTER TABLE `accounts_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_accounts_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_accounts_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `accounts_bugs`
 --
 ALTER TABLE `accounts_bugs`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_acc_bug_acc` (`account_id`), ADD KEY `idx_acc_bug_bug` (`bug_id`), ADD KEY `idx_account_bug` (`account_id`,`bug_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_acc_bug_acc` (`account_id`),
+  ADD KEY `idx_acc_bug_bug` (`bug_id`),
+  ADD KEY `idx_account_bug` (`account_id`,`bug_id`);
 
 --
 -- Indexes for table `accounts_cases`
 --
 ALTER TABLE `accounts_cases`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_acc_case_acc` (`account_id`), ADD KEY `idx_acc_acc_case` (`case_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_acc_case_acc` (`account_id`),
+  ADD KEY `idx_acc_acc_case` (`case_id`);
 
 --
 -- Indexes for table `accounts_contacts`
 --
 ALTER TABLE `accounts_contacts`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_account_contact` (`account_id`,`contact_id`), ADD KEY `idx_contid_del_accid` (`contact_id`,`deleted`,`account_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_account_contact` (`account_id`,`contact_id`),
+  ADD KEY `idx_contid_del_accid` (`contact_id`,`deleted`,`account_id`);
 
 --
 -- Indexes for table `accounts_opportunities`
 --
 ALTER TABLE `accounts_opportunities`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_account_opportunity` (`account_id`,`opportunity_id`), ADD KEY `idx_oppid_del_accid` (`opportunity_id`,`deleted`,`account_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_account_opportunity` (`account_id`,`opportunity_id`),
+  ADD KEY `idx_oppid_del_accid` (`opportunity_id`,`deleted`,`account_id`);
 
 --
 -- Indexes for table `acl_actions`
 --
 ALTER TABLE `acl_actions`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_aclaction_id_del` (`id`,`deleted`), ADD KEY `idx_category_name` (`category`,`name`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_aclaction_id_del` (`id`,`deleted`),
+  ADD KEY `idx_category_name` (`category`,`name`);
 
 --
 -- Indexes for table `acl_roles`
 --
 ALTER TABLE `acl_roles`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_aclrole_id_del` (`id`,`deleted`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_aclrole_id_del` (`id`,`deleted`);
 
 --
 -- Indexes for table `acl_roles_actions`
 --
 ALTER TABLE `acl_roles_actions`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_acl_role_id` (`role_id`), ADD KEY `idx_acl_action_id` (`action_id`), ADD KEY `idx_aclrole_action` (`role_id`,`action_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_acl_role_id` (`role_id`),
+  ADD KEY `idx_acl_action_id` (`action_id`),
+  ADD KEY `idx_aclrole_action` (`role_id`,`action_id`);
 
 --
 -- Indexes for table `acl_roles_users`
 --
 ALTER TABLE `acl_roles_users`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_aclrole_id` (`role_id`), ADD KEY `idx_acluser_id` (`user_id`), ADD KEY `idx_aclrole_user` (`role_id`,`user_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_aclrole_id` (`role_id`),
+  ADD KEY `idx_acluser_id` (`user_id`),
+  ADD KEY `idx_aclrole_user` (`role_id`,`user_id`);
 
 --
 -- Indexes for table `address_book`
 --
 ALTER TABLE `address_book`
- ADD KEY `ab_user_bean_idx` (`assigned_user_id`,`bean`);
+  ADD KEY `ab_user_bean_idx` (`assigned_user_id`,`bean`);
 
 --
 -- Indexes for table `asol_activisol_activity_c`
 --
 ALTER TABLE `asol_activisol_activity_c`
- ADD PRIMARY KEY (`id`), ADD KEY `asol_activi_asol_activity_ida1` (`asol_activ898activity_ida`), ADD KEY `asol_activi_asol_activity_alt` (`asol_activ9e2dctivity_idb`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `asol_activi_asol_activity_ida1` (`asol_activ898activity_ida`),
+  ADD KEY `asol_activi_asol_activity_alt` (`asol_activ9e2dctivity_idb`);
 
 --
 -- Indexes for table `asol_activity`
 --
 ALTER TABLE `asol_activity`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `asol_activity_asol_task_c`
 --
 ALTER TABLE `asol_activity_asol_task_c`
- ADD PRIMARY KEY (`id`), ADD KEY `asol_activity_asol_task_ida1` (`asol_activ5b86ctivity_ida`), ADD KEY `asol_activity_asol_task_alt` (`asol_activf613ol_task_idb`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `asol_activity_asol_task_ida1` (`asol_activ5b86ctivity_ida`),
+  ADD KEY `asol_activity_asol_task_alt` (`asol_activf613ol_task_idb`);
 
 --
 -- Indexes for table `asol_activity_audit`
 --
 ALTER TABLE `asol_activity_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_asol_activity_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_asol_activity_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `asol_config`
 --
 ALTER TABLE `asol_config`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `asol_events`
 --
 ALTER TABLE `asol_events`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `asol_eventssol_activity_c`
 --
 ALTER TABLE `asol_eventssol_activity_c`
- ADD PRIMARY KEY (`id`), ADD KEY `asol_events_asol_activity_alt` (`asol_event87f4_events_ida`,`asol_event8042ctivity_idb`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `asol_events_asol_activity_alt` (`asol_event87f4_events_ida`,`asol_event8042ctivity_idb`);
 
 --
 -- Indexes for table `asol_events_audit`
 --
 ALTER TABLE `asol_events_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_asol_events_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_asol_events_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `asol_onhold`
 --
 ALTER TABLE `asol_onhold`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `asol_onhold_audit`
 --
 ALTER TABLE `asol_onhold_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_asol_onhold_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_asol_onhold_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `asol_process`
 --
 ALTER TABLE `asol_process`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `asol_processinstances`
 --
 ALTER TABLE `asol_processinstances`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `asol_processinstances_audit`
 --
 ALTER TABLE `asol_processinstances_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_asol_processinstances_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_asol_processinstances_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `asol_process_asol_activity_c`
 --
 ALTER TABLE `asol_process_asol_activity_c`
- ADD PRIMARY KEY (`id`), ADD KEY `asol_process_asol_activity_ida1` (`asol_process_asol_activityasol_process_ida`), ADD KEY `asol_process_asol_activity_alt` (`asol_process_asol_activityasol_activity_idb`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `asol_process_asol_activity_ida1` (`asol_process_asol_activityasol_process_ida`),
+  ADD KEY `asol_process_asol_activity_alt` (`asol_process_asol_activityasol_activity_idb`);
 
 --
 -- Indexes for table `asol_process_asol_events_1_c`
 --
 ALTER TABLE `asol_process_asol_events_1_c`
- ADD PRIMARY KEY (`id`), ADD KEY `asol_process_asol_events_1_ida1` (`asol_process_asol_events_1asol_process_ida`), ADD KEY `asol_process_asol_events_1_alt` (`asol_process_asol_events_1asol_events_idb`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `asol_process_asol_events_1_ida1` (`asol_process_asol_events_1asol_process_ida`),
+  ADD KEY `asol_process_asol_events_1_alt` (`asol_process_asol_events_1asol_events_idb`);
 
 --
 -- Indexes for table `asol_process_asol_task_c`
 --
 ALTER TABLE `asol_process_asol_task_c`
- ADD PRIMARY KEY (`id`), ADD KEY `asol_process_asol_task_ida1` (`asol_process_asol_taskasol_process_ida`), ADD KEY `asol_process_asol_task_alt` (`asol_process_asol_taskasol_task_idb`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `asol_process_asol_task_ida1` (`asol_process_asol_taskasol_process_ida`),
+  ADD KEY `asol_process_asol_task_alt` (`asol_process_asol_taskasol_task_idb`);
 
 --
 -- Indexes for table `asol_process_audit`
 --
 ALTER TABLE `asol_process_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_asol_process_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_asol_process_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `asol_proces_asol_events_c`
 --
 ALTER TABLE `asol_proces_asol_events_c`
- ADD PRIMARY KEY (`id`), ADD KEY `asol_process_asol_events_ida1` (`asol_proce6f14process_ida`), ADD KEY `asol_process_asol_events_alt` (`asol_procea8ca_events_idb`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `asol_process_asol_events_ida1` (`asol_proce6f14process_ida`),
+  ADD KEY `asol_process_asol_events_alt` (`asol_procea8ca_events_idb`);
 
 --
 -- Indexes for table `asol_task`
 --
 ALTER TABLE `asol_task`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `asol_task_audit`
 --
 ALTER TABLE `asol_task_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_asol_task_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_asol_task_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `asol_workflowmanagercommon`
 --
 ALTER TABLE `asol_workflowmanagercommon`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `asol_workflowmanagercommon_audit`
 --
 ALTER TABLE `asol_workflowmanagercommon_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_asol_workflowmanagercommon_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_asol_workflowmanagercommon_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `asol_workingnodes`
 --
 ALTER TABLE `asol_workingnodes`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `asol_workingnodes_audit`
 --
 ALTER TABLE `asol_workingnodes_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_asol_workingnodes_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_asol_workingnodes_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `bugs`
 --
 ALTER TABLE `bugs`
- ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `bugsnumk` (`bug_number`), ADD KEY `bug_number` (`bug_number`), ADD KEY `idx_bug_name` (`name`), ADD KEY `idx_bugs_assigned_user` (`assigned_user_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `bugsnumk` (`bug_number`),
+  ADD KEY `bug_number` (`bug_number`),
+  ADD KEY `idx_bug_name` (`name`),
+  ADD KEY `idx_bugs_assigned_user` (`assigned_user_id`);
 
 --
 -- Indexes for table `bugs_audit`
 --
 ALTER TABLE `bugs_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_bugs_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_bugs_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `calls`
 --
 ALTER TABLE `calls`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_call_name` (`name`), ADD KEY `idx_status` (`status`), ADD KEY `idx_calls_date_start` (`date_start`), ADD KEY `idx_calls_par_del` (`parent_id`,`parent_type`,`deleted`), ADD KEY `idx_calls_assigned_del` (`deleted`,`assigned_user_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_call_name` (`name`),
+  ADD KEY `idx_status` (`status`),
+  ADD KEY `idx_calls_date_start` (`date_start`),
+  ADD KEY `idx_calls_par_del` (`parent_id`,`parent_type`,`deleted`),
+  ADD KEY `idx_calls_assigned_del` (`deleted`,`assigned_user_id`);
 
 --
 -- Indexes for table `calls_contacts`
 --
 ALTER TABLE `calls_contacts`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_con_call_call` (`call_id`), ADD KEY `idx_con_call_con` (`contact_id`), ADD KEY `idx_call_contact` (`call_id`,`contact_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_con_call_call` (`call_id`),
+  ADD KEY `idx_con_call_con` (`contact_id`),
+  ADD KEY `idx_call_contact` (`call_id`,`contact_id`);
 
 --
 -- Indexes for table `calls_leads`
 --
 ALTER TABLE `calls_leads`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_lead_call_call` (`call_id`), ADD KEY `idx_lead_call_lead` (`lead_id`), ADD KEY `idx_call_lead` (`call_id`,`lead_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_lead_call_call` (`call_id`),
+  ADD KEY `idx_lead_call_lead` (`lead_id`),
+  ADD KEY `idx_call_lead` (`call_id`,`lead_id`);
 
 --
 -- Indexes for table `calls_users`
 --
 ALTER TABLE `calls_users`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_usr_call_call` (`call_id`), ADD KEY `idx_usr_call_usr` (`user_id`), ADD KEY `idx_call_users` (`call_id`,`user_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_usr_call_call` (`call_id`),
+  ADD KEY `idx_usr_call_usr` (`user_id`),
+  ADD KEY `idx_call_users` (`call_id`,`user_id`);
 
 --
 -- Indexes for table `campaigns`
 --
 ALTER TABLE `campaigns`
- ADD PRIMARY KEY (`id`), ADD KEY `camp_auto_tracker_key` (`tracker_key`), ADD KEY `idx_campaign_name` (`name`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `camp_auto_tracker_key` (`tracker_key`),
+  ADD KEY `idx_campaign_name` (`name`);
 
 --
 -- Indexes for table `campaigns_audit`
 --
 ALTER TABLE `campaigns_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_campaigns_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_campaigns_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `campaign_log`
 --
 ALTER TABLE `campaign_log`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_camp_tracker` (`target_tracker_key`), ADD KEY `idx_camp_campaign_id` (`campaign_id`), ADD KEY `idx_camp_more_info` (`more_information`), ADD KEY `idx_target_id` (`target_id`), ADD KEY `idx_target_id_deleted` (`target_id`,`deleted`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_camp_tracker` (`target_tracker_key`),
+  ADD KEY `idx_camp_campaign_id` (`campaign_id`),
+  ADD KEY `idx_camp_more_info` (`more_information`),
+  ADD KEY `idx_target_id` (`target_id`),
+  ADD KEY `idx_target_id_deleted` (`target_id`,`deleted`);
 
 --
 -- Indexes for table `campaign_trkrs`
 --
 ALTER TABLE `campaign_trkrs`
- ADD PRIMARY KEY (`id`), ADD KEY `campaign_tracker_key_idx` (`tracker_key`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `campaign_tracker_key_idx` (`tracker_key`);
 
 --
 -- Indexes for table `cases`
 --
 ALTER TABLE `cases`
- ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `casesnumk` (`case_number`), ADD KEY `case_number` (`case_number`), ADD KEY `idx_case_name` (`name`), ADD KEY `idx_account_id` (`account_id`), ADD KEY `idx_cases_stat_del` (`assigned_user_id`,`status`,`deleted`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `casesnumk` (`case_number`),
+  ADD KEY `case_number` (`case_number`),
+  ADD KEY `idx_case_name` (`name`),
+  ADD KEY `idx_account_id` (`account_id`),
+  ADD KEY `idx_cases_stat_del` (`assigned_user_id`,`status`,`deleted`);
 
 --
 -- Indexes for table `cases_audit`
 --
 ALTER TABLE `cases_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_cases_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_cases_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `cases_bugs`
 --
 ALTER TABLE `cases_bugs`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_cas_bug_cas` (`case_id`), ADD KEY `idx_cas_bug_bug` (`bug_id`), ADD KEY `idx_case_bug` (`case_id`,`bug_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_cas_bug_cas` (`case_id`),
+  ADD KEY `idx_cas_bug_bug` (`bug_id`),
+  ADD KEY `idx_case_bug` (`case_id`,`bug_id`);
 
 --
 -- Indexes for table `config`
 --
 ALTER TABLE `config`
- ADD KEY `idx_config_cat` (`category`);
+  ADD KEY `idx_config_cat` (`category`);
 
 --
 -- Indexes for table `contacts`
 --
 ALTER TABLE `contacts`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_cont_last_first` (`last_name`,`first_name`,`deleted`), ADD KEY `idx_contacts_del_last` (`deleted`,`last_name`), ADD KEY `idx_cont_del_reports` (`deleted`,`reports_to_id`,`last_name`), ADD KEY `idx_reports_to_id` (`reports_to_id`), ADD KEY `idx_del_id_user` (`deleted`,`id`,`assigned_user_id`), ADD KEY `idx_cont_assigned` (`assigned_user_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_cont_last_first` (`last_name`,`first_name`,`deleted`),
+  ADD KEY `idx_contacts_del_last` (`deleted`,`last_name`),
+  ADD KEY `idx_cont_del_reports` (`deleted`,`reports_to_id`,`last_name`),
+  ADD KEY `idx_reports_to_id` (`reports_to_id`),
+  ADD KEY `idx_del_id_user` (`deleted`,`id`,`assigned_user_id`),
+  ADD KEY `idx_cont_assigned` (`assigned_user_id`);
 
 --
 -- Indexes for table `contacts_audit`
 --
 ALTER TABLE `contacts_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_contacts_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_contacts_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `contacts_bugs`
 --
 ALTER TABLE `contacts_bugs`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_con_bug_con` (`contact_id`), ADD KEY `idx_con_bug_bug` (`bug_id`), ADD KEY `idx_contact_bug` (`contact_id`,`bug_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_con_bug_con` (`contact_id`),
+  ADD KEY `idx_con_bug_bug` (`bug_id`),
+  ADD KEY `idx_contact_bug` (`contact_id`,`bug_id`);
 
 --
 -- Indexes for table `contacts_cases`
 --
 ALTER TABLE `contacts_cases`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_con_case_con` (`contact_id`), ADD KEY `idx_con_case_case` (`case_id`), ADD KEY `idx_contacts_cases` (`contact_id`,`case_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_con_case_con` (`contact_id`),
+  ADD KEY `idx_con_case_case` (`case_id`),
+  ADD KEY `idx_contacts_cases` (`contact_id`,`case_id`);
 
 --
 -- Indexes for table `contacts_users`
 --
 ALTER TABLE `contacts_users`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_con_users_con` (`contact_id`), ADD KEY `idx_con_users_user` (`user_id`), ADD KEY `idx_contacts_users` (`contact_id`,`user_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_con_users_con` (`contact_id`),
+  ADD KEY `idx_con_users_user` (`user_id`),
+  ADD KEY `idx_contacts_users` (`contact_id`,`user_id`);
 
 --
 -- Indexes for table `cron_remove_documents`
 --
 ALTER TABLE `cron_remove_documents`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_cron_remove_document_bean_id` (`bean_id`), ADD KEY `idx_cron_remove_document_stamp` (`date_modified`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_cron_remove_document_bean_id` (`bean_id`),
+  ADD KEY `idx_cron_remove_document_stamp` (`date_modified`);
 
 --
 -- Indexes for table `currencies`
 --
 ALTER TABLE `currencies`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_currency_name` (`name`,`deleted`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_currency_name` (`name`,`deleted`);
 
 --
 -- Indexes for table `custom_fields`
 --
 ALTER TABLE `custom_fields`
- ADD KEY `idx_beanid_set_num` (`bean_id`,`set_num`);
+  ADD KEY `idx_beanid_set_num` (`bean_id`,`set_num`);
 
 --
 -- Indexes for table `daik_jiekuangren_info`
 --
 ALTER TABLE `daik_jiekuangren_info`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `daik_jiekuangren_info_audit`
 --
 ALTER TABLE `daik_jiekuangren_info_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_daik_jiekuangren_info_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_daik_jiekuangren_info_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `daik_jiekuangren_info_cstm`
 --
 ALTER TABLE `daik_jiekuangren_info_cstm`
- ADD PRIMARY KEY (`id_c`);
+  ADD PRIMARY KEY (`id_c`);
 
 --
 -- Indexes for table `daik_jinrong_jigou_info`
 --
 ALTER TABLE `daik_jinrong_jigou_info`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `daik_jinrong_jigou_info_audit`
 --
 ALTER TABLE `daik_jinrong_jigou_info_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_daik_jinrong_jigou_info_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_daik_jinrong_jigou_info_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `documents`
 --
 ALTER TABLE `documents`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_doc_cat` (`category_id`,`subcategory_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_doc_cat` (`category_id`,`subcategory_id`);
 
 --
 -- Indexes for table `documents_accounts`
 --
 ALTER TABLE `documents_accounts`
- ADD PRIMARY KEY (`id`), ADD KEY `documents_accounts_account_id` (`account_id`,`document_id`), ADD KEY `documents_accounts_document_id` (`document_id`,`account_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `documents_accounts_account_id` (`account_id`,`document_id`),
+  ADD KEY `documents_accounts_document_id` (`document_id`,`account_id`);
 
 --
 -- Indexes for table `documents_bugs`
 --
 ALTER TABLE `documents_bugs`
- ADD PRIMARY KEY (`id`), ADD KEY `documents_bugs_bug_id` (`bug_id`,`document_id`), ADD KEY `documents_bugs_document_id` (`document_id`,`bug_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `documents_bugs_bug_id` (`bug_id`,`document_id`),
+  ADD KEY `documents_bugs_document_id` (`document_id`,`bug_id`);
 
 --
 -- Indexes for table `documents_cases`
 --
 ALTER TABLE `documents_cases`
- ADD PRIMARY KEY (`id`), ADD KEY `documents_cases_case_id` (`case_id`,`document_id`), ADD KEY `documents_cases_document_id` (`document_id`,`case_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `documents_cases_case_id` (`case_id`,`document_id`),
+  ADD KEY `documents_cases_document_id` (`document_id`,`case_id`);
 
 --
 -- Indexes for table `documents_contacts`
 --
 ALTER TABLE `documents_contacts`
- ADD PRIMARY KEY (`id`), ADD KEY `documents_contacts_contact_id` (`contact_id`,`document_id`), ADD KEY `documents_contacts_document_id` (`document_id`,`contact_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `documents_contacts_contact_id` (`contact_id`,`document_id`),
+  ADD KEY `documents_contacts_document_id` (`document_id`,`contact_id`);
 
 --
 -- Indexes for table `documents_opportunities`
 --
 ALTER TABLE `documents_opportunities`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_docu_opps_oppo_id` (`opportunity_id`,`document_id`), ADD KEY `idx_docu_oppo_docu_id` (`document_id`,`opportunity_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_docu_opps_oppo_id` (`opportunity_id`,`document_id`),
+  ADD KEY `idx_docu_oppo_docu_id` (`document_id`,`opportunity_id`);
 
 --
 -- Indexes for table `document_revisions`
 --
 ALTER TABLE `document_revisions`
- ADD PRIMARY KEY (`id`), ADD KEY `documentrevision_mimetype` (`file_mime_type`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `documentrevision_mimetype` (`file_mime_type`);
 
 --
 -- Indexes for table `eapm`
 --
 ALTER TABLE `eapm`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_app_active` (`assigned_user_id`,`application`,`validated`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_app_active` (`assigned_user_id`,`application`,`validated`);
 
 --
 -- Indexes for table `emailman`
 --
 ALTER TABLE `emailman`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_eman_list` (`list_id`,`user_id`,`deleted`), ADD KEY `idx_eman_campaign_id` (`campaign_id`), ADD KEY `idx_eman_relid_reltype_id` (`related_id`,`related_type`,`campaign_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_eman_list` (`list_id`,`user_id`,`deleted`),
+  ADD KEY `idx_eman_campaign_id` (`campaign_id`),
+  ADD KEY `idx_eman_relid_reltype_id` (`related_id`,`related_type`,`campaign_id`);
 
 --
 -- Indexes for table `emails`
 --
 ALTER TABLE `emails`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_email_name` (`name`), ADD KEY `idx_message_id` (`message_id`), ADD KEY `idx_email_parent_id` (`parent_id`), ADD KEY `idx_email_assigned` (`assigned_user_id`,`type`,`status`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_email_name` (`name`),
+  ADD KEY `idx_message_id` (`message_id`),
+  ADD KEY `idx_email_parent_id` (`parent_id`),
+  ADD KEY `idx_email_assigned` (`assigned_user_id`,`type`,`status`);
 
 --
 -- Indexes for table `emails_beans`
 --
 ALTER TABLE `emails_beans`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_emails_beans_bean_id` (`bean_id`), ADD KEY `idx_emails_beans_email_bean` (`email_id`,`bean_id`,`deleted`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_emails_beans_bean_id` (`bean_id`),
+  ADD KEY `idx_emails_beans_email_bean` (`email_id`,`bean_id`,`deleted`);
 
 --
 -- Indexes for table `emails_email_addr_rel`
 --
 ALTER TABLE `emails_email_addr_rel`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_eearl_email_id` (`email_id`,`address_type`), ADD KEY `idx_eearl_address_id` (`email_address_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_eearl_email_id` (`email_id`,`address_type`),
+  ADD KEY `idx_eearl_address_id` (`email_address_id`);
 
 --
 -- Indexes for table `emails_text`
 --
 ALTER TABLE `emails_text`
- ADD PRIMARY KEY (`email_id`), ADD KEY `emails_textfromaddr` (`from_addr`);
+  ADD PRIMARY KEY (`email_id`),
+  ADD KEY `emails_textfromaddr` (`from_addr`);
 
 --
 -- Indexes for table `email_addresses`
 --
 ALTER TABLE `email_addresses`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_ea_caps_opt_out_invalid` (`email_address_caps`,`opt_out`,`invalid_email`), ADD KEY `idx_ea_opt_out_invalid` (`email_address`,`opt_out`,`invalid_email`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_ea_caps_opt_out_invalid` (`email_address_caps`,`opt_out`,`invalid_email`),
+  ADD KEY `idx_ea_opt_out_invalid` (`email_address`,`opt_out`,`invalid_email`);
 
 --
 -- Indexes for table `email_addr_bean_rel`
 --
 ALTER TABLE `email_addr_bean_rel`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_email_address_id` (`email_address_id`), ADD KEY `idx_bean_id` (`bean_id`,`bean_module`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_email_address_id` (`email_address_id`),
+  ADD KEY `idx_bean_id` (`bean_id`,`bean_module`);
 
 --
 -- Indexes for table `email_cache`
 --
 ALTER TABLE `email_cache`
- ADD KEY `idx_ie_id` (`ie_id`), ADD KEY `idx_mail_date` (`ie_id`,`mbox`,`senddate`), ADD KEY `idx_mail_from` (`ie_id`,`mbox`,`fromaddr`), ADD KEY `idx_mail_subj` (`subject`), ADD KEY `idx_mail_to` (`toaddr`);
+  ADD KEY `idx_ie_id` (`ie_id`),
+  ADD KEY `idx_mail_date` (`ie_id`,`mbox`,`senddate`),
+  ADD KEY `idx_mail_from` (`ie_id`,`mbox`,`fromaddr`),
+  ADD KEY `idx_mail_subj` (`subject`),
+  ADD KEY `idx_mail_to` (`toaddr`);
 
 --
 -- Indexes for table `email_marketing`
 --
 ALTER TABLE `email_marketing`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_emmkt_name` (`name`), ADD KEY `idx_emmkit_del` (`deleted`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_emmkt_name` (`name`),
+  ADD KEY `idx_emmkit_del` (`deleted`);
 
 --
 -- Indexes for table `email_marketing_prospect_lists`
 --
 ALTER TABLE `email_marketing_prospect_lists`
- ADD PRIMARY KEY (`id`), ADD KEY `email_mp_prospects` (`email_marketing_id`,`prospect_list_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `email_mp_prospects` (`email_marketing_id`,`prospect_list_id`);
 
 --
 -- Indexes for table `email_templates`
 --
 ALTER TABLE `email_templates`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_email_template_name` (`name`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_email_template_name` (`name`);
 
 --
 -- Indexes for table `fdi2m_jinrong_chanpin_info`
 --
 ALTER TABLE `fdi2m_jinrong_chanpin_info`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `fdi2m_jinrong_chanpin_info_audit`
 --
 ALTER TABLE `fdi2m_jinrong_chanpin_info_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_fdi2m_jinrong_chanpin_info_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_fdi2m_jinrong_chanpin_info_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `fdi2m_jinrong_chanpin_info_cstm`
 --
 ALTER TABLE `fdi2m_jinrong_chanpin_info_cstm`
- ADD PRIMARY KEY (`id_c`);
+  ADD PRIMARY KEY (`id_c`);
 
 --
 -- Indexes for table `fdi2m_jinrong_fenzhi_jigou_info`
 --
 ALTER TABLE `fdi2m_jinrong_fenzhi_jigou_info`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `fdi2m_jinrong_fenzhi_jigou_info_audit`
 --
 ALTER TABLE `fdi2m_jinrong_fenzhi_jigou_info_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_fdi2m_jinrong_fenzhi_jigou_info_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_fdi2m_jinrong_fenzhi_jigou_info_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `fdi2m_jinrong_fenzhi_jigou_info_cstm`
 --
 ALTER TABLE `fdi2m_jinrong_fenzhi_jigou_info_cstm`
- ADD PRIMARY KEY (`id_c`);
+  ADD PRIMARY KEY (`id_c`);
 
 --
 -- Indexes for table `fields_meta_data`
 --
 ALTER TABLE `fields_meta_data`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_meta_id_del` (`id`,`deleted`), ADD KEY `idx_meta_cm_del` (`custom_module`,`deleted`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_meta_id_del` (`id`,`deleted`),
+  ADD KEY `idx_meta_cm_del` (`custom_module`,`deleted`);
 
 --
 -- Indexes for table `folders`
 --
 ALTER TABLE `folders`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_parent_folder` (`parent_folder`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_parent_folder` (`parent_folder`);
 
 --
 -- Indexes for table `folders_rel`
 --
 ALTER TABLE `folders_rel`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_poly_module_poly_id` (`polymorphic_module`,`polymorphic_id`), ADD KEY `idx_fr_id_deleted_poly` (`folder_id`,`deleted`,`polymorphic_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_poly_module_poly_id` (`polymorphic_module`,`polymorphic_id`),
+  ADD KEY `idx_fr_id_deleted_poly` (`folder_id`,`deleted`,`polymorphic_id`);
 
 --
 -- Indexes for table `folders_subscriptions`
 --
 ALTER TABLE `folders_subscriptions`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_folder_id_assigned_user_id` (`folder_id`,`assigned_user_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_folder_id_assigned_user_id` (`folder_id`,`assigned_user_id`);
 
 --
 -- Indexes for table `import_maps`
 --
 ALTER TABLE `import_maps`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_owner_module_name` (`assigned_user_id`,`module`,`name`,`deleted`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_owner_module_name` (`assigned_user_id`,`module`,`name`,`deleted`);
 
 --
 -- Indexes for table `inbound_email`
 --
 ALTER TABLE `inbound_email`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `inbound_email_autoreply`
 --
 ALTER TABLE `inbound_email_autoreply`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_ie_autoreplied_to` (`autoreplied_to`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_ie_autoreplied_to` (`autoreplied_to`);
 
 --
 -- Indexes for table `inbound_email_cache_ts`
 --
 ALTER TABLE `inbound_email_cache_ts`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `job_queue`
 --
 ALTER TABLE `job_queue`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_status_scheduler` (`status`,`scheduler_id`), ADD KEY `idx_status_time` (`status`,`execute_time`,`date_entered`), ADD KEY `idx_status_entered` (`status`,`date_entered`), ADD KEY `idx_status_modified` (`status`,`date_modified`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_status_scheduler` (`status`,`scheduler_id`),
+  ADD KEY `idx_status_time` (`status`,`execute_time`,`date_entered`),
+  ADD KEY `idx_status_entered` (`status`,`date_entered`),
+  ADD KEY `idx_status_modified` (`status`,`date_modified`);
 
 --
 -- Indexes for table `leads`
 --
 ALTER TABLE `leads`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_lead_acct_name_first` (`account_name`,`deleted`), ADD KEY `idx_lead_last_first` (`last_name`,`first_name`,`deleted`), ADD KEY `idx_lead_del_stat` (`last_name`,`status`,`deleted`,`first_name`), ADD KEY `idx_lead_opp_del` (`opportunity_id`,`deleted`), ADD KEY `idx_leads_acct_del` (`account_id`,`deleted`), ADD KEY `idx_del_user` (`deleted`,`assigned_user_id`), ADD KEY `idx_lead_assigned` (`assigned_user_id`), ADD KEY `idx_lead_contact` (`contact_id`), ADD KEY `idx_reports_to` (`reports_to_id`), ADD KEY `idx_lead_phone_work` (`phone_work`), ADD KEY `idx_leads_id_del` (`id`,`deleted`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_lead_acct_name_first` (`account_name`,`deleted`),
+  ADD KEY `idx_lead_last_first` (`last_name`,`first_name`,`deleted`),
+  ADD KEY `idx_lead_del_stat` (`last_name`,`status`,`deleted`,`first_name`),
+  ADD KEY `idx_lead_opp_del` (`opportunity_id`,`deleted`),
+  ADD KEY `idx_leads_acct_del` (`account_id`,`deleted`),
+  ADD KEY `idx_del_user` (`deleted`,`assigned_user_id`),
+  ADD KEY `idx_lead_assigned` (`assigned_user_id`),
+  ADD KEY `idx_lead_contact` (`contact_id`),
+  ADD KEY `idx_reports_to` (`reports_to_id`),
+  ADD KEY `idx_lead_phone_work` (`phone_work`),
+  ADD KEY `idx_leads_id_del` (`id`,`deleted`);
 
 --
 -- Indexes for table `leads_audit`
 --
 ALTER TABLE `leads_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_leads_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_leads_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `linked_documents`
 --
 ALTER TABLE `linked_documents`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_parent_document` (`parent_type`,`parent_id`,`document_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_parent_document` (`parent_type`,`parent_id`,`document_id`);
 
 --
 -- Indexes for table `liuch_fangkuang_liucheng`
 --
 ALTER TABLE `liuch_fangkuang_liucheng`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `liuch_fangkuang_liucheng_audit`
 --
 ALTER TABLE `liuch_fangkuang_liucheng_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_liuch_fangkuang_liucheng_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_liuch_fangkuang_liucheng_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `liuch_fangkuang_liucheng_cstm`
 --
 ALTER TABLE `liuch_fangkuang_liucheng_cstm`
- ADD PRIMARY KEY (`id_c`);
+  ADD PRIMARY KEY (`id_c`);
 
 --
 -- Indexes for table `meetings`
 --
 ALTER TABLE `meetings`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_mtg_name` (`name`), ADD KEY `idx_meet_par_del` (`parent_id`,`parent_type`,`deleted`), ADD KEY `idx_meet_stat_del` (`assigned_user_id`,`status`,`deleted`), ADD KEY `idx_meet_date_start` (`date_start`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_mtg_name` (`name`),
+  ADD KEY `idx_meet_par_del` (`parent_id`,`parent_type`,`deleted`),
+  ADD KEY `idx_meet_stat_del` (`assigned_user_id`,`status`,`deleted`),
+  ADD KEY `idx_meet_date_start` (`date_start`);
 
 --
 -- Indexes for table `meetings_contacts`
 --
 ALTER TABLE `meetings_contacts`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_con_mtg_mtg` (`meeting_id`), ADD KEY `idx_con_mtg_con` (`contact_id`), ADD KEY `idx_meeting_contact` (`meeting_id`,`contact_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_con_mtg_mtg` (`meeting_id`),
+  ADD KEY `idx_con_mtg_con` (`contact_id`),
+  ADD KEY `idx_meeting_contact` (`meeting_id`,`contact_id`);
 
 --
 -- Indexes for table `meetings_leads`
 --
 ALTER TABLE `meetings_leads`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_lead_meeting_meeting` (`meeting_id`), ADD KEY `idx_lead_meeting_lead` (`lead_id`), ADD KEY `idx_meeting_lead` (`meeting_id`,`lead_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_lead_meeting_meeting` (`meeting_id`),
+  ADD KEY `idx_lead_meeting_lead` (`lead_id`),
+  ADD KEY `idx_meeting_lead` (`meeting_id`,`lead_id`);
 
 --
 -- Indexes for table `meetings_users`
 --
 ALTER TABLE `meetings_users`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_usr_mtg_mtg` (`meeting_id`), ADD KEY `idx_usr_mtg_usr` (`user_id`), ADD KEY `idx_meeting_users` (`meeting_id`,`user_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_usr_mtg_mtg` (`meeting_id`),
+  ADD KEY `idx_usr_mtg_usr` (`user_id`),
+  ADD KEY `idx_meeting_users` (`meeting_id`,`user_id`);
 
 --
 -- Indexes for table `notes`
 --
 ALTER TABLE `notes`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_note_name` (`name`), ADD KEY `idx_notes_parent` (`parent_id`,`parent_type`), ADD KEY `idx_note_contact` (`contact_id`), ADD KEY `idx_notes_assigned_del` (`deleted`,`assigned_user_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_note_name` (`name`),
+  ADD KEY `idx_notes_parent` (`parent_id`,`parent_type`),
+  ADD KEY `idx_note_contact` (`contact_id`),
+  ADD KEY `idx_notes_assigned_del` (`deleted`,`assigned_user_id`);
 
 --
 -- Indexes for table `oauth_consumer`
 --
 ALTER TABLE `oauth_consumer`
- ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `ckey` (`c_key`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `ckey` (`c_key`);
 
 --
 -- Indexes for table `oauth_nonce`
 --
 ALTER TABLE `oauth_nonce`
- ADD PRIMARY KEY (`conskey`,`nonce`), ADD KEY `oauth_nonce_keyts` (`conskey`,`nonce_ts`);
+  ADD PRIMARY KEY (`conskey`,`nonce`),
+  ADD KEY `oauth_nonce_keyts` (`conskey`,`nonce_ts`);
 
 --
 -- Indexes for table `oauth_tokens`
 --
 ALTER TABLE `oauth_tokens`
- ADD PRIMARY KEY (`id`,`deleted`), ADD KEY `oauth_state_ts` (`tstate`,`token_ts`), ADD KEY `constoken_key` (`consumer`);
+  ADD PRIMARY KEY (`id`,`deleted`),
+  ADD KEY `oauth_state_ts` (`tstate`,`token_ts`),
+  ADD KEY `constoken_key` (`consumer`);
 
 --
 -- Indexes for table `opportunities`
 --
 ALTER TABLE `opportunities`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_opp_name` (`name`), ADD KEY `idx_opp_assigned` (`assigned_user_id`), ADD KEY `idx_opp_id_deleted` (`id`,`deleted`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_opp_name` (`name`),
+  ADD KEY `idx_opp_assigned` (`assigned_user_id`),
+  ADD KEY `idx_opp_id_deleted` (`id`,`deleted`);
 
 --
 -- Indexes for table `opportunities_audit`
 --
 ALTER TABLE `opportunities_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_opportunities_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_opportunities_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `opportunities_contacts`
 --
 ALTER TABLE `opportunities_contacts`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_con_opp_con` (`contact_id`), ADD KEY `idx_con_opp_opp` (`opportunity_id`), ADD KEY `idx_opportunities_contacts` (`opportunity_id`,`contact_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_con_opp_con` (`contact_id`),
+  ADD KEY `idx_con_opp_opp` (`opportunity_id`),
+  ADD KEY `idx_opportunities_contacts` (`opportunity_id`,`contact_id`);
 
 --
 -- Indexes for table `outbound_email`
 --
 ALTER TABLE `outbound_email`
- ADD PRIMARY KEY (`id`), ADD KEY `oe_user_id_idx` (`id`,`user_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `oe_user_id_idx` (`id`,`user_id`);
 
 --
 -- Indexes for table `project`
 --
 ALTER TABLE `project`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `projects_accounts`
 --
 ALTER TABLE `projects_accounts`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_proj_acct_proj` (`project_id`), ADD KEY `idx_proj_acct_acct` (`account_id`), ADD KEY `projects_accounts_alt` (`project_id`,`account_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_proj_acct_proj` (`project_id`),
+  ADD KEY `idx_proj_acct_acct` (`account_id`),
+  ADD KEY `projects_accounts_alt` (`project_id`,`account_id`);
 
 --
 -- Indexes for table `projects_bugs`
 --
 ALTER TABLE `projects_bugs`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_proj_bug_proj` (`project_id`), ADD KEY `idx_proj_bug_bug` (`bug_id`), ADD KEY `projects_bugs_alt` (`project_id`,`bug_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_proj_bug_proj` (`project_id`),
+  ADD KEY `idx_proj_bug_bug` (`bug_id`),
+  ADD KEY `projects_bugs_alt` (`project_id`,`bug_id`);
 
 --
 -- Indexes for table `projects_cases`
 --
 ALTER TABLE `projects_cases`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_proj_case_proj` (`project_id`), ADD KEY `idx_proj_case_case` (`case_id`), ADD KEY `projects_cases_alt` (`project_id`,`case_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_proj_case_proj` (`project_id`),
+  ADD KEY `idx_proj_case_case` (`case_id`),
+  ADD KEY `projects_cases_alt` (`project_id`,`case_id`);
 
 --
 -- Indexes for table `projects_contacts`
 --
 ALTER TABLE `projects_contacts`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_proj_con_proj` (`project_id`), ADD KEY `idx_proj_con_con` (`contact_id`), ADD KEY `projects_contacts_alt` (`project_id`,`contact_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_proj_con_proj` (`project_id`),
+  ADD KEY `idx_proj_con_con` (`contact_id`),
+  ADD KEY `projects_contacts_alt` (`project_id`,`contact_id`);
 
 --
 -- Indexes for table `projects_opportunities`
 --
 ALTER TABLE `projects_opportunities`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_proj_opp_proj` (`project_id`), ADD KEY `idx_proj_opp_opp` (`opportunity_id`), ADD KEY `projects_opportunities_alt` (`project_id`,`opportunity_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_proj_opp_proj` (`project_id`),
+  ADD KEY `idx_proj_opp_opp` (`opportunity_id`),
+  ADD KEY `projects_opportunities_alt` (`project_id`,`opportunity_id`);
 
 --
 -- Indexes for table `projects_products`
 --
 ALTER TABLE `projects_products`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_proj_prod_project` (`project_id`), ADD KEY `idx_proj_prod_product` (`product_id`), ADD KEY `projects_products_alt` (`project_id`,`product_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_proj_prod_project` (`project_id`),
+  ADD KEY `idx_proj_prod_product` (`product_id`),
+  ADD KEY `projects_products_alt` (`project_id`,`product_id`);
 
 --
 -- Indexes for table `project_task`
 --
 ALTER TABLE `project_task`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `project_task_audit`
 --
 ALTER TABLE `project_task_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_project_task_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_project_task_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `prospects`
 --
 ALTER TABLE `prospects`
- ADD PRIMARY KEY (`id`), ADD KEY `prospect_auto_tracker_key` (`tracker_key`), ADD KEY `idx_prospects_last_first` (`last_name`,`first_name`,`deleted`), ADD KEY `idx_prospecs_del_last` (`last_name`,`deleted`), ADD KEY `idx_prospects_id_del` (`id`,`deleted`), ADD KEY `idx_prospects_assigned` (`assigned_user_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `prospect_auto_tracker_key` (`tracker_key`),
+  ADD KEY `idx_prospects_last_first` (`last_name`,`first_name`,`deleted`),
+  ADD KEY `idx_prospecs_del_last` (`last_name`,`deleted`),
+  ADD KEY `idx_prospects_id_del` (`id`,`deleted`),
+  ADD KEY `idx_prospects_assigned` (`assigned_user_id`);
 
 --
 -- Indexes for table `prospect_lists`
 --
 ALTER TABLE `prospect_lists`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_prospect_list_name` (`name`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_prospect_list_name` (`name`);
 
 --
 -- Indexes for table `prospect_lists_prospects`
 --
 ALTER TABLE `prospect_lists_prospects`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_plp_pro_id` (`prospect_list_id`), ADD KEY `idx_plp_rel_id` (`related_id`,`related_type`,`prospect_list_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_plp_pro_id` (`prospect_list_id`),
+  ADD KEY `idx_plp_rel_id` (`related_id`,`related_type`,`prospect_list_id`);
 
 --
 -- Indexes for table `prospect_list_campaigns`
 --
 ALTER TABLE `prospect_list_campaigns`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_pro_id` (`prospect_list_id`), ADD KEY `idx_cam_id` (`campaign_id`), ADD KEY `idx_prospect_list_campaigns` (`prospect_list_id`,`campaign_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_pro_id` (`prospect_list_id`),
+  ADD KEY `idx_cam_id` (`campaign_id`),
+  ADD KEY `idx_prospect_list_campaigns` (`prospect_list_id`,`campaign_id`);
 
 --
 -- Indexes for table `relationships`
 --
 ALTER TABLE `relationships`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_rel_name` (`relationship_name`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_rel_name` (`relationship_name`);
 
 --
 -- Indexes for table `releases`
 --
 ALTER TABLE `releases`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_releases` (`name`,`deleted`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_releases` (`name`,`deleted`);
 
 --
 -- Indexes for table `roles`
 --
 ALTER TABLE `roles`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_role_id_del` (`id`,`deleted`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_role_id_del` (`id`,`deleted`);
 
 --
 -- Indexes for table `roles_homepage`
 --
 ALTER TABLE `roles_homepage`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `roles_modules`
 --
 ALTER TABLE `roles_modules`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_role_id` (`role_id`), ADD KEY `idx_module_id` (`module_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_role_id` (`role_id`),
+  ADD KEY `idx_module_id` (`module_id`);
 
 --
 -- Indexes for table `roles_users`
 --
 ALTER TABLE `roles_users`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_ru_role_id` (`role_id`), ADD KEY `idx_ru_user_id` (`user_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_ru_role_id` (`role_id`),
+  ADD KEY `idx_ru_user_id` (`user_id`);
 
 --
 -- Indexes for table `saved_search`
 --
 ALTER TABLE `saved_search`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_desc` (`name`,`deleted`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_desc` (`name`,`deleted`);
 
 --
 -- Indexes for table `schedulers`
 --
 ALTER TABLE `schedulers`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_schedule` (`date_time_start`,`deleted`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_schedule` (`date_time_start`,`deleted`);
 
 --
 -- Indexes for table `sugarfeed`
 --
 ALTER TABLE `sugarfeed`
- ADD PRIMARY KEY (`id`), ADD KEY `sgrfeed_date` (`date_entered`,`deleted`), ADD KEY `idx_sgrfeed_rmod_rid_date` (`related_module`,`related_id`,`date_entered`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `sgrfeed_date` (`date_entered`,`deleted`),
+  ADD KEY `idx_sgrfeed_rmod_rid_date` (`related_module`,`related_id`,`date_entered`);
 
 --
 -- Indexes for table `tasks`
 --
 ALTER TABLE `tasks`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_tsk_name` (`name`), ADD KEY `idx_task_con_del` (`contact_id`,`deleted`), ADD KEY `idx_task_par_del` (`parent_id`,`parent_type`,`deleted`), ADD KEY `idx_task_assigned` (`assigned_user_id`), ADD KEY `idx_task_status` (`status`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_tsk_name` (`name`),
+  ADD KEY `idx_task_con_del` (`contact_id`,`deleted`),
+  ADD KEY `idx_task_par_del` (`parent_id`,`parent_type`,`deleted`),
+  ADD KEY `idx_task_assigned` (`assigned_user_id`),
+  ADD KEY `idx_task_status` (`status`);
 
 --
 -- Indexes for table `tracker`
 --
 ALTER TABLE `tracker`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_tracker_iid` (`item_id`), ADD KEY `idx_tracker_userid_vis_id` (`user_id`,`visible`,`id`), ADD KEY `idx_tracker_userid_itemid_vis` (`user_id`,`item_id`,`visible`), ADD KEY `idx_tracker_monitor_id` (`monitor_id`), ADD KEY `idx_tracker_date_modified` (`date_modified`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_tracker_iid` (`item_id`),
+  ADD KEY `idx_tracker_userid_vis_id` (`user_id`,`visible`,`id`),
+  ADD KEY `idx_tracker_userid_itemid_vis` (`user_id`,`item_id`,`visible`),
+  ADD KEY `idx_tracker_monitor_id` (`monitor_id`),
+  ADD KEY `idx_tracker_date_modified` (`date_modified`);
 
 --
 -- Indexes for table `upgrade_history`
 --
 ALTER TABLE `upgrade_history`
- ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `upgrade_history_md5_uk` (`md5sum`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `upgrade_history_md5_uk` (`md5sum`);
 
 --
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_user_name` (`user_name`,`is_group`,`status`,`last_name`,`first_name`,`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_user_name` (`user_name`,`is_group`,`status`,`last_name`,`first_name`,`id`);
 
 --
 -- Indexes for table `users_cstm`
 --
 ALTER TABLE `users_cstm`
- ADD PRIMARY KEY (`id_c`);
+  ADD PRIMARY KEY (`id_c`);
 
 --
 -- Indexes for table `users_feeds`
 --
 ALTER TABLE `users_feeds`
- ADD KEY `idx_ud_user_id` (`user_id`,`feed_id`);
+  ADD KEY `idx_ud_user_id` (`user_id`,`feed_id`);
 
 --
 -- Indexes for table `users_last_import`
 --
 ALTER TABLE `users_last_import`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_user_id` (`assigned_user_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_user_id` (`assigned_user_id`);
 
 --
 -- Indexes for table `users_password_link`
 --
 ALTER TABLE `users_password_link`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_username` (`username`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_username` (`username`);
 
 --
 -- Indexes for table `users_signatures`
 --
 ALTER TABLE `users_signatures`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_usersig_uid` (`user_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_usersig_uid` (`user_id`);
 
 --
 -- Indexes for table `user_preferences`
 --
 ALTER TABLE `user_preferences`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_userprefnamecat` (`assigned_user_id`,`category`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_userprefnamecat` (`assigned_user_id`,`category`);
 
 --
 -- Indexes for table `vcals`
 --
 ALTER TABLE `vcals`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_vcal` (`type`,`user_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_vcal` (`type`,`user_id`);
 
 --
 -- Indexes for table `versions`
 --
 ALTER TABLE `versions`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_version` (`name`,`deleted`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_version` (`name`,`deleted`);
 
 --
 -- Indexes for table `yuang_bumen_info`
 --
 ALTER TABLE `yuang_bumen_info`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `yuang_bumen_info_audit`
 --
 ALTER TABLE `yuang_bumen_info_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_yuang_bumen_info_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_yuang_bumen_info_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `yuang_bumen_info_cstm`
 --
 ALTER TABLE `yuang_bumen_info_cstm`
- ADD PRIMARY KEY (`id_c`);
+  ADD PRIMARY KEY (`id_c`);
 
 --
 -- Indexes for table `yuang_fengongsi_info`
 --
 ALTER TABLE `yuang_fengongsi_info`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `yuang_fengongsi_info_audit`
 --
 ALTER TABLE `yuang_fengongsi_info_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_yuang_fengongsi_info_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_yuang_fengongsi_info_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `yuang_waibu_qudao_info`
 --
 ALTER TABLE `yuang_waibu_qudao_info`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `yuang_waibu_qudao_info_audit`
 --
 ALTER TABLE `yuang_waibu_qudao_info_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_yuang_waibu_qudao_info_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_yuang_waibu_qudao_info_parent_id` (`parent_id`);
 
 --
 -- Indexes for table `yuang_yuangong_guanli`
 --
 ALTER TABLE `yuang_yuangong_guanli`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `yuang_yuangong_guanli_audit`
 --
 ALTER TABLE `yuang_yuangong_guanli_audit`
- ADD PRIMARY KEY (`id`), ADD KEY `idx_yuang_yuangong_guanli_parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_yuang_yuangong_guanli_parent_id` (`parent_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -5949,37 +6208,37 @@ ALTER TABLE `yuang_yuangong_guanli_audit`
 -- AUTO_INCREMENT for table `bugs`
 --
 ALTER TABLE `bugs`
-MODIFY `bug_number` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `bug_number` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `campaigns`
 --
 ALTER TABLE `campaigns`
-MODIFY `tracker_key` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `tracker_key` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `campaign_trkrs`
 --
 ALTER TABLE `campaign_trkrs`
-MODIFY `tracker_key` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `tracker_key` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `cases`
 --
 ALTER TABLE `cases`
-MODIFY `case_number` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `case_number` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `emailman`
 --
 ALTER TABLE `emailman`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `prospects`
 --
 ALTER TABLE `prospects`
-MODIFY `tracker_key` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `tracker_key` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tracker`
 --
 ALTER TABLE `tracker`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=814;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=940;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

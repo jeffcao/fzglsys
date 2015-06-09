@@ -1,5 +1,5 @@
 <?php
-// created: 2015-05-16 12:34:46
+// created: 2015-06-09 11:13:10
 $mod_strings = array (
   'LBL_EDITVIEW_PANEL1' => '风险审批',
   'LBL_EDITVIEW_PANEL2' => '部门审批',
@@ -42,8 +42,7 @@ $mod_strings = array (
   'LBL_QITA1_ZHENGMING_FILENAME' => '其它1',
   'LBL_QITA2_ZHENGMING_FILE_MIME_TYPE' => '其它2文件类型',
   'LBL_QITA2_ZHENGMING_FILENAME' => '其它2',
-    'LBL_SUBMIT_LIUCHENG_BUTTON_TITLE' => '提交',
-    'LBL_SUBMIT_LIUCHENG_BUTTON_KEY' => '',
-    'LBL_SUBMIT_LIUCHENG_BUTTON_LABEL' => '提交',
-
+  'LBL_SUBMIT_LIUCHENG_BUTTON_TITLE' => '提交',
+  'LBL_SUBMIT_LIUCHENG_BUTTON_KEY' => '',
+  'LBL_SUBMIT_LIUCHENG_BUTTON_LABEL' => '提交流程',
 );
