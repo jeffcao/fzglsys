@@ -36,13 +36,16 @@ function disabled_action_buttons(){
     $("#SAVE_HEADER").prop('disabled', true);
     $("#CANCEL_HEADER").prop('disabled', true);
     $("#SAVE_FOOTER").prop('disabled', true);
+    //alert($("#SAVE_FOOTER"));
     $("#CANCEL_FOOTER").prop('disabled', true);
+    //alert($("#SUBMIT_LIUCHENG"));
     $("#SUBMIT_LIUCHENG").prop('disabled', true);
 }
 
 function always_disabled_obj(){
     liucheng_controll("LBL_EDITVIEW_PANEL5");
     $("#name").prop('disabled', true);
+    $("#danju_zhuangtai").prop('disabled', true);
     $("#kefu_jingli_c").prop('disabled', true);
     $("#btn_kefu_jingli_c").prop('disabled', true);
     $("#btn_clr_kefu_jingli_c").prop('disabled', true);

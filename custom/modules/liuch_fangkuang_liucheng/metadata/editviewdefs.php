@@ -185,6 +185,9 @@ array (
             'name' => 'jinrong_fenzhi_jigou_c',
             'studio' => 'visible',
             'label' => 'LBL_JINRONG_FENZHI_JIGOU',
+              'displayParams' => array(
+                  'initial_filter' => '&daik_jinrong_jigou_info_id_c_advanced="+encodeURIComponent(document.getElementById("daik_jinrong_jigou_info_id_c").value)+"',
+              ),
           ),
         ),
         7 => 
@@ -194,6 +197,9 @@ array (
             'name' => 'daikuang_chanpin_c',
             'studio' => 'visible',
             'label' => 'LBL_DAIKUANG_CHANPIN',
+              'displayParams' => array(
+                  'initial_filter' => '&daik_jinrong_jigou_info_id_c_advanced="+encodeURIComponent(document.getElementById("daik_jinrong_jigou_info_id_c").value)+"',
+              ),
           ),
           1 => '',
         ),
