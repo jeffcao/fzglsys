@@ -70,12 +70,22 @@ array (
         array (
           0 => 
           array (
+            'name' => 'suoshu_jigou_c',
+            'studio' => 'visible',
+            'label' => 'LBL_SUOSHU_JIGOU',
+          ),
+          1 => '',
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
             'name' => 'dizhi',
             'label' => 'LBL_DIZHI',
           ),
           1 => '',
         ),
-        3 => 
+        4 => 
         array (
           0 => 
           array (
@@ -84,11 +94,11 @@ array (
           ),
           1 => '',
         ),
-        4 => 
+        5 => 
         array (
           0 => 'description',
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (
@@ -97,7 +107,7 @@ array (
           ),
           1 => 'date_modified',
         ),
-        6 => 
+        7 => 
         array (
           0 => 
           array (

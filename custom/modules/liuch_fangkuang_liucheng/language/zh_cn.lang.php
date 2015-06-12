@@ -1,5 +1,5 @@
 <?php
-// created: 2015-06-09 11:13:10
+// created: 2015-06-12 09:47:46
 $mod_strings = array (
   'LBL_EDITVIEW_PANEL1' => '风险审批',
   'LBL_EDITVIEW_PANEL2' => '部门审批',
@@ -45,4 +45,27 @@ $mod_strings = array (
   'LBL_SUBMIT_LIUCHENG_BUTTON_TITLE' => '提交',
   'LBL_SUBMIT_LIUCHENG_BUTTON_KEY' => '',
   'LBL_SUBMIT_LIUCHENG_BUTTON_LABEL' => '提交流程',
+  'LBL_FENGKONG_JINGLI_USER_ID' => '风控经理 (related 用户 ID)',
+  'LBL_FENGKONG_JINGLI' => '风控经理',
+  'LBL_BUMEN_JINGLI_USER_ID' => '部门经理 (related 用户 ID)',
+  'LBL_BUMEN_JINGLI' => '部门经理',
+  'LBL_CHANPIN_JINGLI_USER_ID' => '产品经理 (related 用户 ID)',
+  'LBL_CHANPIN_JINGLI' => '产品经理',
+  'LBL_KEFU_JINGLI_USER_ID' => '客服经理 (related 用户 ID)',
+  'LBL_KEFU_JINGLI' => '客服经理',
+  'LBL_KEFU_ZILIAO_GUIDAN' => '资料归档',
+  'LBL_KEFU_ZILIAO_GUIDANG' => '资料归档(del)',
+  'LBL_FENKONG_SHENGPI_DATE' => '风控审批时间',
+  'LBL_DAIKUANG_LEIXIN' => '担保方式',
+  'LBL_DAIKUANG_QIXIAN' => '贷款期限(月)',
+  'LBL_QUDAO_LAIYUAN_YUANG_WAIBU_QUDAO_INFO_ID' => '渠道来源 (related 合作渠道信息 ID)',
+  'LBL_QUDAO_LAIYUAN' => '渠道来源',
+  'LBL_JINRONG_JIGOU_DAIK_JINRONG_JIGOU_INFO_ID' => '金融机构 (related 金融机构 ID)',
+  'LBL_JINRONG_JIGOU' => '金融机构',
+  'LBL_JINRONG_FENZHI_JIGOU_FDI2M_JINRONG_FENZHI_JIGOU_INFO_ID' => '金融分支机构 (related 金融分支机构 ID)',
+  'LBL_JINRONG_FENZHI_JIGOU' => '金融分支机构',
+  'LBL_DAIKUANG_CHANPIN_FDI2M_JINRONG_CHANPIN_INFO_ID' => '贷款产品 (related 金融产品信息 ID)',
+  'LBL_DAIKUANG_CHANPIN' => '贷款产品',
+  'LBL_HUANKUANG_ZHOUQI' => '还款周期',
+  'LBL_NAME' => '单据编号',
 );

@@ -2,18 +2,15 @@
 $module_name = 'liuch_fangkuang_liucheng';
 $viewdefs [$module_name] = 
 array (
-  'DetailView' => 
+  'EditView' => 
   array (
     'templateMeta' => 
     array (
-      'form' => 
+      'includes' => 
       array (
-        'buttons' => 
+        0 => 
         array (
-          0 => 'EDIT',
-          1 => 'DUPLICATE',
-          2 => 'DELETE',
-          3 => 'FIND_DUPLICATES',
+          'file' => 'custom/modules/liuch_fangkuang_liucheng/javascripts/liuch_custom_funs.js',
         ),
       ),
       'maxColumns' => '2',
@@ -64,6 +61,24 @@ array (
           'panelDefault' => 'expanded',
         ),
       ),
+      'form' => 
+      array (
+        'enctype' => 'multipart/form-data',
+        'buttons' => 
+        array (
+          0 => 'SAVE',
+          1 => 'CANCEL',
+          2 => 
+          array (
+            'customCode' => '<input class="button primary" 					 onclick="this.form.action.value=\'submit_liucheng\'; if(check_form(\'EditView\'))SUGAR.ajaxUI.submitForm(this.form);return false;"                     type="submit"                     name="button"                     id="SUBMIT_LIUCHENG"                     value="提交">',
+          ),
+        ),
+        'hidden' => 
+        array (
+          0 => '<input type="hidden" name="liucheng_status" id="liucheng_status" value="{$liucheng_status}">',
+          1 => '<input type="hidden" name="disabled_all" id="disabled_all" value="{$disabled_all}">',
+        ),
+      ),
     ),
     'panels' => 
     array (
@@ -76,6 +91,7 @@ array (
           array (
             'name' => 'zhidan_date',
             'label' => 'LBL_ZHIDAN_DATE',
+            'type' => 'readonly',
           ),
         ),
         1 => 
@@ -91,6 +107,7 @@ array (
             'name' => 'jiekuangren_bianhao_c',
             'studio' => 'visible',
             'label' => '借款人编号',
+            'type' => 'readonly',
           ),
         ),
         2 => 
@@ -100,12 +117,14 @@ array (
             'name' => 'jiekuangren_zhengjian_leixin_c',
             'studio' => 'visible',
             'label' => '借款人证件类型',
+            'type' => 'readonly',
           ),
           1 => 
           array (
             'name' => 'jiekuangren_zhengjian_haoma_c',
             'studio' => 'visible',
             'label' => '借款人证件号码',
+            'type' => 'readonly',
           ),
         ),
         3 => 
@@ -115,12 +134,14 @@ array (
             'name' => 'jiekuangren_jiating_zhuzhi_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_JIATING_ZHUZI',
+            'type' => 'readonly',
           ),
           1 => 
           array (
             'name' => 'jiekuangren_lianxi_dianhua_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_LIANXI_DIANHUA',
+            'type' => 'readonly',
           ),
         ),
         4 => 
@@ -132,8 +153,8 @@ array (
           ),
           1 => 
           array (
-            'name' => 'daikuang_qixian_c',
-            'label' => 'LBL_DAIKUANG_QIXIAN',
+            'name' => 'huankuang_zhouqi',
+            'label' => 'LBL_HUANKUANG_ZHOUQI',
           ),
         ),
         5 => 
@@ -144,39 +165,8 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_DAIKUANG_LEIXIN',
           ),
-          1 => 
-          array (
-            'name' => 'qudao_laiyuan_c',
-            'studio' => 'visible',
-            'label' => 'LBL_QUDAO_LAIYUAN',
-          ),
         ),
         6 => 
-        array (
-          0 => 
-          array (
-            'name' => 'jinrong_jigou_c',
-            'studio' => 'visible',
-            'label' => 'LBL_JINRONG_JIGOU',
-          ),
-          1 => 
-          array (
-            'name' => 'jinrong_fenzhi_jigou_c',
-            'studio' => 'visible',
-            'label' => 'LBL_JINRONG_FENZHI_JIGOU',
-          ),
-        ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'daikuang_chanpin_c',
-            'studio' => 'visible',
-            'label' => 'LBL_DAIKUANG_CHANPIN',
-          ),
-          1 => '',
-        ),
-        8 => 
         array (
           0 => 
           array (
@@ -189,7 +179,7 @@ array (
             'label' => 'LBL_YUQI_YONGJIN_BILI',
           ),
         ),
-        9 => 
+        7 => 
         array (
           0 => 
           array (
@@ -198,7 +188,7 @@ array (
             'label' => 'LBL_YUQI_SHOUKUANG_TYPE',
           ),
         ),
-        10 => 
+        8 => 
         array (
           0 => 
           array (
@@ -206,7 +196,7 @@ array (
             'label' => 'LBL_SHENFEN_ZHENGMING_FILENAME',
           ),
         ),
-        11 => 
+        9 => 
         array (
           0 => 
           array (
@@ -214,7 +204,7 @@ array (
             'label' => 'LBL_HUNYIN_ZHENGMING_FILENAME',
           ),
         ),
-        12 => 
+        10 => 
         array (
           0 => 
           array (
@@ -222,7 +212,7 @@ array (
             'label' => 'LBL_SHOURU_ZHENGMING_FILENAME',
           ),
         ),
-        13 => 
+        11 => 
         array (
           0 => 
           array (
@@ -230,7 +220,7 @@ array (
             'label' => 'LBL_CAICHAN_ZHENGMING_FILENAME',
           ),
         ),
-        14 => 
+        12 => 
         array (
           0 => 
           array (
@@ -238,7 +228,7 @@ array (
             'label' => 'LBL_YONGTU_ZHENGMING_FILENAME',
           ),
         ),
-        15 => 
+        13 => 
         array (
           0 => 
           array (
@@ -246,7 +236,7 @@ array (
             'label' => 'LBL_QITA1_ZHENGMING_FILENAME',
           ),
         ),
-        16 => 
+        14 => 
         array (
           0 => 
           array (
@@ -254,7 +244,7 @@ array (
             'label' => 'LBL_QITA2_ZHENGMING_FILENAME',
           ),
         ),
-        17 => 
+        15 => 
         array (
           0 => 
           array (
@@ -263,16 +253,23 @@ array (
             'label' => 'LBL_DANJU_ZHUANGTAI',
           ),
         ),
-        18 => 
+        16 => 
         array (
           0 => 
           array (
             'name' => 'created_by_name',
             'label' => 'LBL_CREATED',
+            'type' => 'readonly',
           ),
-          1 => 'date_entered',
+          1 => 
+          array (
+            'name' => 'date_entered',
+            'comment' => 'Date record created',
+            'label' => 'LBL_DATE_ENTERED',
+            'type' => 'readonly',
+          ),
         ),
-        19 => 
+        17 => 
         array (
           0 => 'description',
         ),
@@ -286,12 +283,14 @@ array (
             'name' => 'jiekuangren_gongzuo_danwei_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_GONGZUO_DANWEI',
+            'type' => 'readonly',
           ),
           1 => 
           array (
             'name' => 'jiekuangren_zhiwu_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_ZHIWU',
+            'type' => 'readonly',
           ),
         ),
         1 => 
@@ -301,6 +300,7 @@ array (
             'name' => 'jiekuangren_hunyin_zhuangkuang_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_HUNYIN_ZHUANGKUANG',
+            'type' => 'readonly',
           ),
           1 => '',
         ),
@@ -311,12 +311,14 @@ array (
             'name' => 'jiekuangren_qita_lianxiren_xinming_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_QITA_LIANXIREN_XINMING',
+            'type' => 'readonly',
           ),
           1 => 
           array (
             'name' => 'jiekuangren_qita_lianxiren_dianhua_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_QITA_LIANXIREN_DIANHUA',
+            'type' => 'readonly',
           ),
         ),
         3 => 
@@ -326,6 +328,7 @@ array (
             'name' => 'jiekuangren_qita_lianxiren_guanxi_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_QITA_LIANXIREN_GUANXI',
+            'type' => 'readonly',
           ),
           1 => '',
         ),
@@ -336,12 +339,14 @@ array (
             'name' => 'jiekuangren_peiou_xinming_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_PEIOU_XINMING',
+            'type' => 'readonly',
           ),
           1 => 
           array (
             'name' => 'jiekuangren_peiou_zhiwu_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_PEIOU_ZHIWU',
+            'type' => 'readonly',
           ),
         ),
         5 => 
@@ -351,12 +356,14 @@ array (
             'name' => 'jiekuangren_peiou_zhengjian_leixin_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_PEIOU_ZHENGJIAN_LEIXIN',
+            'type' => 'readonly',
           ),
           1 => 
           array (
             'name' => 'jiekuangren_peiou_zhengjian_haoma_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_PEIOU_ZHENGJIAN_HAOMA',
+            'type' => 'readonly',
           ),
         ),
         6 => 
@@ -366,6 +373,7 @@ array (
             'name' => 'jiekuangren_peiou_gongzuo_danwei_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_PEIOU_GONGZUO_DANWEI',
+            'type' => 'readonly',
           ),
         ),
         7 => 
@@ -375,12 +383,14 @@ array (
             'name' => 'jiekuangren_xindai_guwen_xinming_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_XINDAI_GUWEN_XINMING',
+            'type' => 'readonly',
           ),
           1 => 
           array (
             'name' => 'jiekuangren_xindai_guwen_gonghao_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_XINDAI_GUWEN_GONGHAO',
+            'type' => 'readonly',
           ),
         ),
       ),

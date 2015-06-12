@@ -34,7 +34,9 @@ class liuch_fangkuang_liuchengViewEdit extends ViewEdit {
             $this->bean->status = $this->bean->getDefaultStatus();
         } //if
 
-//        global $current_user;
+        global $current_user;
+
+        $this->bean->custom_fields->retrieve();
 //
 //        // check if current user is in specific role
 //        $isEnabledRole = in_array("ITOperation", ACLRole::getUserRoleNames($current_user->id));
@@ -54,6 +56,21 @@ class liuch_fangkuang_liuchengViewEdit extends ViewEdit {
         $GLOBALS['log']->info("liuch_fangkuang_liuchengViewEdit.display");
 //        var_dump($this->ev);
         $this->ev->ss->assign('liucheng_status', $this->bean->danju_zhuangtai);
+        $this->ev->ss->assign('disabled_all', "0");
+        if ($current_user->id != $this->bean->created_by and $current_user->id != $this->bean->user_id_c
+            and $current_user->id != $this->bean->user_id1_c and $current_user->id != $this->bean->user_id2_c
+            and $current_user->id != $this->bean->user_id3_c ){
+            $this->ev->ss->assign('disabled_all', "1");
+
+        }
+        if (($current_user->id == $this->bean->created_by and $this->bean->danju_zhuangtai != "zhidanzhong") or
+            ($current_user->id == $this->bean->user_id_c and $this->bean->danju_zhuangtai != "dai_fengkong_shenhe") or
+            ($current_user->id == $this->bean->user_id1_c and $this->bean->danju_zhuangtai != "dai_bumen_shenhe") or
+            ($current_user->id == $this->bean->user_id2_c and $this->bean->danju_zhuangtai != "dai_chanpin_shenhe") or
+            ($current_user->id == $this->bean->user_id3_c and $this->bean->danju_zhuangtai != "dai_kehu_chuli")){
+            $this->ev->ss->assign('disabled_all', "1");
+        }
+        if(!isset($this->bean->created_by)) { $this->ev->ss->assign('disabled_all', "0"); }
 
 //        $action_button_header[] = <<<EOD
 //                    <input type="button" id="SAVE_HEADER" title="{$APP['LBL_SAVE_BUTTON_TITLE']}" accessKey="{$APP['LBL_SAVE_BUTTON_KEY']}"

@@ -47,14 +47,13 @@ array (
         array (
           0 => 
           array (
-            'name' => 'zuigao_erdu',
-            'label' => 'LBL_ZUIGAO_ERDU',
+            'name' => 'danbao_fangshi',
+            'label' => 'LBL_DANBAO_FANGSHI',
           ),
           1 => 
           array (
-            'name' => 'danbao_fangshi2_c',
-            'studio' => 'visible',
-            'label' => 'LBL_DANBAO_FANGSHI2',
+            'name' => 'zuigao_erdu',
+            'label' => 'LBL_ZUIGAO_ERDU',
           ),
         ),
         2 => 

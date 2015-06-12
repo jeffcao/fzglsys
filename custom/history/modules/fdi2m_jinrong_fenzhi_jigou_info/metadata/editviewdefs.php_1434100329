@@ -1,5 +1,5 @@
 <?php
-$module_name = 'fdi2m_jinrong_chanpin_info';
+$module_name = 'fdi2m_jinrong_fenzhi_jigou_info';
 $viewdefs [$module_name] = 
 array (
   'EditView' => 
@@ -39,44 +39,38 @@ array (
           0 => 'name',
           1 => 
           array (
-            'name' => 'chanpin_daima',
-            'label' => 'LBL_CHANPIN_DAIMA',
+            'name' => 'fenzhi_jigou_bianhao',
+            'label' => 'LBL_FENZHI_JIGOU_BIANHAO',
           ),
         ),
         1 => 
         array (
           0 => 
           array (
-            'name' => 'zuigao_erdu',
-            'label' => 'LBL_ZUIGAO_ERDU',
+            'name' => 'lianxiren_xinming',
+            'label' => 'LBL_LIANXIREN_XINMING',
           ),
           1 => 
           array (
-            'name' => 'danbao_fangshi2_c',
-            'studio' => 'visible',
-            'label' => 'LBL_DANBAO_FANGSHI2',
+            'name' => 'lianxiren_dianhua',
+            'label' => 'LBL_LIANXIREN_DIANHUA',
           ),
         ),
         2 => 
         array (
           0 => 
           array (
-            'name' => 'zuichang_qixian',
-            'label' => 'LBL_ZUICHANG_QIXIAN',
+            'name' => 'dizhi',
+            'label' => 'LBL_DIZHI',
           ),
-          1 => 
-          array (
-            'name' => 'lilv',
-            'label' => 'LBL_LILV',
-          ),
+          1 => '',
         ),
         3 => 
         array (
           0 => 
           array (
-            'name' => 'suoshu_jigou_c',
-            'studio' => 'visible',
-            'label' => 'LBL_SUOSHU_JIGOU',
+            'name' => 'wangzhan',
+            'label' => 'LBL_WANGZHAN',
           ),
           1 => '',
         ),

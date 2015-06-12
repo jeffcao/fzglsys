@@ -47,6 +47,16 @@ array (
         array (
           0 => 
           array (
+            'name' => 'suoshu_jigou_c',
+            'studio' => 'visible',
+            'label' => 'LBL_SUOSHU_JIGOU',
+          ),
+          1 => '',
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
             'name' => 'lianxiren_xinming',
             'label' => 'LBL_LIANXIREN_XINMING',
           ),
@@ -56,7 +66,7 @@ array (
             'label' => 'LBL_LIANXIREN_DIANHUA',
           ),
         ),
-        2 => 
+        3 => 
         array (
           0 => 
           array (
@@ -65,7 +75,7 @@ array (
           ),
           1 => '',
         ),
-        3 => 
+        4 => 
         array (
           0 => 
           array (
@@ -74,7 +84,7 @@ array (
           ),
           1 => '',
         ),
-        4 => 
+        5 => 
         array (
           0 => 'description',
         ),

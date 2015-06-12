@@ -27,12 +27,6 @@ $GLOBALS['app_list_strings']['fzglsys_daikuang_type__list']=array (
   'baozheng' => '保证',
   'xinyong' => '信用',
 );
-$GLOBALS['app_list_strings']['fzglsys_zhiwu_type_list']=array (
-  'xindai_guwen' => '信贷顾问',
-  'fengkong_jingli' => '风控经理',
-  'bumen_jingli' => '部门经理',
-  'chanpin_jingli' => '产品经理',
-);
 $GLOBALS['app_list_strings']['fzglsys_jinrong_jigou_type_list']=array (
   'shangye_yinhang' => '商业银行',
   'xiaofei_jinrong_gongsi' => '消费金融公司',
@@ -50,9 +44,6 @@ $GLOBALS['app_list_strings']['fzglsys_shoukuang_type_list']=array (
   'xianjin' => '现金',
   'shuaka' => '刷卡',
   'zhifubao' => '支付宝',
-);
-$GLOBALS['app_list_strings']['fzglsys_daikuang_shengqin_guidang_list']=array (
-  'ziliaoguidang' => '',
 );
 $GLOBALS['app_list_strings']['fzglsys_daikuang_shenqing_option01_list']=array (
   'tongyi' => '通过',
@@ -84,4 +75,15 @@ $app_list_strings['moduleListSingular']['fdi2m_jinrong_chanpin_info']='金融产
 $app_strings['LBL_GROUPTAB2_1433324777'] = '金融信息维护';
 
 $app_strings['LBL_GROUPTAB3_1433324777'] = '新建组';
-?>
+
+$GLOBALS['app_list_strings']['fzglsys_daikuang_shengqin_guidang_list']=array (
+  'ziliao_weiguidang' => ' ',
+  'ziliao_yiguidang' => '资料已归档',
+);
+$GLOBALS['app_list_strings']['fzglsys_zhiwu_type_list']=array (
+  'xindai_guwen' => '信贷顾问',
+  'fengkong_jingli' => '风控经理',
+  'bumen_jingli' => '部门经理',
+  'chanpin_jingli' => '产品经理',
+  'kefu_jingli' => '客服经理',
+);

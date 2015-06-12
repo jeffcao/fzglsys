@@ -2,6 +2,11 @@
  //WARNING: The contents of this file are auto-generated
 
 
+ // created: 2015-06-12 05:29:50
+$dictionary['liuch_fangkuang_liucheng']['fields']['bumen_jingli_c']['labelValue']='部门经理';
+
+ 
+
  // created: 2015-05-16 12:33:23
 $dictionary['liuch_fangkuang_liucheng']['fields']['caichan_zhengming_file_mime_type']['importable']='true';
 $dictionary['liuch_fangkuang_liucheng']['fields']['caichan_zhengming_file_mime_type']['merge_filter']='disabled';
@@ -14,7 +19,53 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['caichan_zhengming_filename'][
 
  
 
+ // created: 2015-06-12 05:35:07
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_jingli_c']['labelValue']='产品经理';
+
+ 
+
  // created: 2015-05-03 08:31:54
+
+ 
+
+ // created: 2015-06-12 09:36:57
+
+ 
+
+ // created: 2015-06-12 09:38:09
+$dictionary['liuch_fangkuang_liucheng']['fields']['daikuang_chanpin_c']['labelValue']='贷款产品';
+
+ 
+
+ // created: 2015-06-12 09:30:44
+
+ 
+
+ // created: 2015-06-12 09:34:15
+$dictionary['liuch_fangkuang_liucheng']['fields']['daikuang_qixian_c']['labelValue']='贷款期限(月)';
+
+ 
+
+ // created: 2015-06-12 09:38:09
+
+ 
+
+ // created: 2015-06-12 09:37:29
+
+ 
+
+ // created: 2015-06-12 05:28:15
+$dictionary['liuch_fangkuang_liucheng']['fields']['fengkong_jingli_c']['labelValue']='风控经理';
+
+ 
+
+ // created: 2015-06-12 09:20:58
+$dictionary['liuch_fangkuang_liucheng']['fields']['fenkong_shengpi_date']['display_default']='';
+
+ 
+
+ // created: 2015-06-12 09:40:16
+$dictionary['liuch_fangkuang_liucheng']['fields']['huankuang_zhouqi']['required']=false;
 
  
 
@@ -125,6 +176,37 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['jiekuangren_zhiwu_c']['merge_
 
  
 
+ // created: 2015-06-12 09:37:29
+$dictionary['liuch_fangkuang_liucheng']['fields']['jinrong_fenzhi_jigou_c']['labelValue']='金融分支机构';
+
+ 
+
+ // created: 2015-06-12 09:36:57
+$dictionary['liuch_fangkuang_liucheng']['fields']['jinrong_jigou_c']['labelValue']='金融机构';
+
+ 
+
+ // created: 2015-06-12 05:35:35
+$dictionary['liuch_fangkuang_liucheng']['fields']['kefu_jingli_c']['labelValue']='客服经理';
+
+ 
+
+ // created: 2015-06-12 09:19:20
+$dictionary['liuch_fangkuang_liucheng']['fields']['kefu_ziliao_guidan_c']['labelValue']='资料归档';
+
+ 
+
+ // created: 2015-06-12 09:19:58
+
+ 
+
+ // created: 2015-06-12 09:47:46
+$dictionary['liuch_fangkuang_liucheng']['fields']['name']['required']=false;
+$dictionary['liuch_fangkuang_liucheng']['fields']['name']['full_text_search']=array (
+);
+
+ 
+
  // created: 2015-05-16 12:34:19
 $dictionary['liuch_fangkuang_liucheng']['fields']['qita1_zhengming_file_mime_type']['importable']='true';
 $dictionary['liuch_fangkuang_liucheng']['fields']['qita1_zhengming_file_mime_type']['merge_filter']='disabled';
@@ -146,6 +228,11 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['qita2_zhengming_file_mime_typ
  // created: 2015-05-16 12:34:46
 $dictionary['liuch_fangkuang_liucheng']['fields']['qita2_zhengming_filename']['importable']='true';
 $dictionary['liuch_fangkuang_liucheng']['fields']['qita2_zhengming_filename']['merge_filter']='disabled';
+
+ 
+
+ // created: 2015-06-12 09:35:47
+$dictionary['liuch_fangkuang_liucheng']['fields']['qudao_laiyuan_c']['labelValue']='渠道来源';
 
  
 
@@ -173,6 +260,22 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['shouru_zhengming_filename']['
 
  
 
+ // created: 2015-06-12 05:29:50
+
+ 
+
+ // created: 2015-06-12 05:35:07
+
+ 
+
+ // created: 2015-06-12 05:35:35
+
+ 
+
+ // created: 2015-06-12 05:28:15
+
+ 
+
  // created: 2015-05-16 12:33:47
 $dictionary['liuch_fangkuang_liucheng']['fields']['yongtu_zhengming_file_mime_type']['importable']='true';
 $dictionary['liuch_fangkuang_liucheng']['fields']['yongtu_zhengming_file_mime_type']['merge_filter']='disabled';
@@ -182,6 +285,10 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['yongtu_zhengming_file_mime_ty
  // created: 2015-05-16 12:34:01
 $dictionary['liuch_fangkuang_liucheng']['fields']['yongtu_zhengming_filename']['importable']='true';
 $dictionary['liuch_fangkuang_liucheng']['fields']['yongtu_zhengming_filename']['merge_filter']='disabled';
+
+ 
+
+ // created: 2015-06-12 09:35:47
 
  
 

@@ -13,8 +13,41 @@ class fangkuang_liucheng_custom_class {
         require_once('modules/Campaigns/utils.php');
 //        global $db;
         if ($_REQUEST['action']== "submit_liucheng"){
-            $bean->danju_zhuangtai = "dai_fengkong_shenhe";
+
+            if ($bean->danju_zhuangtai == "zhidanzhong") {
+                $bean->danju_zhuangtai = "dai_fengkong_shenhe";
+                $bean->user_id_c = $this->get_next_handler_id($bean, "fengkong_jingli");
+            }
+            elseif ($bean->danju_zhuangtai == "dai_fengkong_shenhe") {
+                if ($bean->fenkong_option == "tongyi"){
+                    $bean->danju_zhuangtai = "dai_bumen_shenhe";
+                    $bean->user_id1_c = $this->get_next_handler_id($bean, "bumen_jingli");
+                }
+                else
+                    $bean->danju_zhuangtai = "zhidanzhong";
+            }
+            elseif ($bean->danju_zhuangtai == "dai_bumen_shenhe") {
+                if ($bean->bumen_shengpi_option == "tongyi") {
+                    $bean->danju_zhuangtai = "dai_chanpin_shenhe";
+                    $bean->user_id2_c = $this->get_next_handler_id($bean, "chanpin_jingli");
+                }
+                else
+                    $bean->danju_zhuangtai = "zhidanzhong";
+            }
+            elseif ($bean->danju_zhuangtai == "dai_chanpin_shenhe"){
+                if ($bean->bumen_shengpi_option == "tongyi") {
+                    $bean->danju_zhuangtai = "dai_kehu_chuli";
+                    $bean->user_id3_c = $this->get_next_handler_id($bean, "kefu_jingli");
+                }
+                elseif ($bean->bumen_shengpi_option == "yichang_guanbi")
+                    $bean->danju_zhuangtai = "yichang_guanbi";
+                else
+                    $bean->danju_zhuangtai = "zhidanzhong";
+            }
+            elseif ($bean->danju_zhuangtai == "dai_kehu_chuli")
+                $bean->danju_zhuangtai = "wancheng_huifang";
         }
+
         if(isset($bean->fetched_row['id'])) { return; }
 //        (isset($arguments['isUpdate']) && $arguments['isUpdate'] == false)
         $d_t = date("Ym");
@@ -34,6 +67,27 @@ class fangkuang_liucheng_custom_class {
         $GLOBALS['log']->info("fangkuang_liucheng_calculate_field_class.get_liucheng_num, r_count:{$r_count}");
         $dangan_num = vsprintf("%04d",$r_count+1);
         $bean->name = $d_t.$dangan_num;
+    }
+
+    public function get_next_handler_id($bean, $handle_type) {
+        $bean->custom_fields->retrieve();
+        $daik_jiekuangren_info_id = $bean->daik_jiekuangren_info_id_c;
+        $a = BeanFactory::getBean("daik_jiekuangren_info", $daik_jiekuangren_info_id);
+        $a->custom_fields->retrieve();
+        $xindai_guwen = BeanFactory::getBean("Users", $a->user_id_c);
+        $xindai_guwen->custom_fields->retrieve();
+        $yuang_bumen_info_id = $xindai_guwen->yuang_bumen_info_id_c;
+        $query = "
+                select id_c from users_cstm where yuang_bumen_info_id_c='{$yuang_bumen_info_id}' and gangwei_leixin_c='{$handle_type}'
+            ";
+        echo $query;
+        $GLOBALS['log']->info("get same bumen fenkongM ids, query:".$query);
+        $q_result = $bean->db->query($query);
+        $next_ids = Array();
+        while($queryRow = $bean->db->fetchByAssoc($q_result))
+            $next_ids[] = $queryRow['id_c'];
+        $next_id = $next_ids[rand(0,count($next_ids)-1)];
+        return $next_id;
     }
 
     public function show_other_fields($bean, $event, $arguments){

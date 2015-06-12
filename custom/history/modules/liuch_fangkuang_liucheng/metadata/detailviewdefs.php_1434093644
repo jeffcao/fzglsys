@@ -132,8 +132,8 @@ array (
           ),
           1 => 
           array (
-            'name' => 'daikuang_qixian_c',
-            'label' => 'LBL_DAIKUANG_QIXIAN',
+            'name' => 'huankuang_zhouqi',
+            'label' => 'LBL_HUANKUANG_ZHOUQI',
           ),
         ),
         5 => 
@@ -144,39 +144,8 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_DAIKUANG_LEIXIN',
           ),
-          1 => 
-          array (
-            'name' => 'qudao_laiyuan_c',
-            'studio' => 'visible',
-            'label' => 'LBL_QUDAO_LAIYUAN',
-          ),
         ),
         6 => 
-        array (
-          0 => 
-          array (
-            'name' => 'jinrong_jigou_c',
-            'studio' => 'visible',
-            'label' => 'LBL_JINRONG_JIGOU',
-          ),
-          1 => 
-          array (
-            'name' => 'jinrong_fenzhi_jigou_c',
-            'studio' => 'visible',
-            'label' => 'LBL_JINRONG_FENZHI_JIGOU',
-          ),
-        ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'daikuang_chanpin_c',
-            'studio' => 'visible',
-            'label' => 'LBL_DAIKUANG_CHANPIN',
-          ),
-          1 => '',
-        ),
-        8 => 
         array (
           0 => 
           array (
@@ -189,7 +158,7 @@ array (
             'label' => 'LBL_YUQI_YONGJIN_BILI',
           ),
         ),
-        9 => 
+        7 => 
         array (
           0 => 
           array (
@@ -198,7 +167,7 @@ array (
             'label' => 'LBL_YUQI_SHOUKUANG_TYPE',
           ),
         ),
-        10 => 
+        8 => 
         array (
           0 => 
           array (
@@ -206,7 +175,7 @@ array (
             'label' => 'LBL_SHENFEN_ZHENGMING_FILENAME',
           ),
         ),
-        11 => 
+        9 => 
         array (
           0 => 
           array (
@@ -214,7 +183,7 @@ array (
             'label' => 'LBL_HUNYIN_ZHENGMING_FILENAME',
           ),
         ),
-        12 => 
+        10 => 
         array (
           0 => 
           array (
@@ -222,7 +191,7 @@ array (
             'label' => 'LBL_SHOURU_ZHENGMING_FILENAME',
           ),
         ),
-        13 => 
+        11 => 
         array (
           0 => 
           array (
@@ -230,7 +199,7 @@ array (
             'label' => 'LBL_CAICHAN_ZHENGMING_FILENAME',
           ),
         ),
-        14 => 
+        12 => 
         array (
           0 => 
           array (
@@ -238,7 +207,7 @@ array (
             'label' => 'LBL_YONGTU_ZHENGMING_FILENAME',
           ),
         ),
-        15 => 
+        13 => 
         array (
           0 => 
           array (
@@ -246,7 +215,7 @@ array (
             'label' => 'LBL_QITA1_ZHENGMING_FILENAME',
           ),
         ),
-        16 => 
+        14 => 
         array (
           0 => 
           array (
@@ -254,7 +223,7 @@ array (
             'label' => 'LBL_QITA2_ZHENGMING_FILENAME',
           ),
         ),
-        17 => 
+        15 => 
         array (
           0 => 
           array (
@@ -263,7 +232,7 @@ array (
             'label' => 'LBL_DANJU_ZHUANGTAI',
           ),
         ),
-        18 => 
+        16 => 
         array (
           0 => 
           array (
@@ -272,7 +241,7 @@ array (
           ),
           1 => 'date_entered',
         ),
-        19 => 
+        17 => 
         array (
           0 => 'description',
         ),
@@ -549,9 +518,9 @@ array (
         array (
           0 => 
           array (
-            'name' => 'kefu_ziliao_guidan_c',
+            'name' => 'kefu_ziliao_guidang',
             'studio' => 'visible',
-            'label' => 'LBL_KEFU_ZILIAO_GUIDAN',
+            'label' => 'LBL_KEFU_ZILIAO_GUIDANG',
           ),
           1 => 
           array (
