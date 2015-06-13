@@ -14,6 +14,20 @@ class liuch_fangkuang_liuchengViewList extends ViewList {
         parent::ViewList();
     }
 
+    public function preDisplay()
+    {
+        parent::preDisplay();
+        $this->lv->delete = false;
+        $this->lv->export = false;
+        $this->lv->multiSelect = false;
+        $this->lv->mergeduplicates = false;
+        $this->lv->showMassupdaeFields = false;
+        $this->lv->show_action_dropdown = false;
+        $this->lv->show_process = false;
+        $this->lv->quickViewLinks = false;
+
+    }
+
     function listViewProcess() {
         global $current_user;
         $this->processSearchForm();

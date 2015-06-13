@@ -13,6 +13,7 @@ require_once('include/MVC/View/views/view.edit.php');
 class liuch_fangkuang_liuchengViewEdit extends ViewEdit {
 
     public function preDisplay(){
+        $this->ev->showVCRControl = false;
 //        $buttons_header = array();
 //        $buttons_footer = array();
 //
@@ -30,9 +31,7 @@ class liuch_fangkuang_liuchengViewEdit extends ViewEdit {
     }
     public function display()
     {
-        if($this->ev->isDuplicate){
-            $this->bean->status = $this->bean->getDefaultStatus();
-        } //if
+//
 
         global $current_user;
 
