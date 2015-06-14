@@ -113,7 +113,6 @@ $popupMeta = array (
     'label' => 'LBL_JIATING_ZHIZHU',
     'width' => '10%',
     'default' => true,
-    'name' => 'jiating_zhizhu',
   ),
   'GONGZUO_DANWEI' => 
   array (
@@ -121,7 +120,6 @@ $popupMeta = array (
     'label' => 'LBL_GONGZUO_DANWEI',
     'width' => '10%',
     'default' => true,
-    'name' => 'gongzuo_danwei',
   ),
   'ZHIWU' => 
   array (
@@ -129,7 +127,6 @@ $popupMeta = array (
     'label' => 'LBL_ZHIWU',
     'width' => '10%',
     'default' => true,
-    'name' => 'zhiwu',
   ),
   'HUNYIN_ZHUANGKUANG' => 
   array (
@@ -137,7 +134,6 @@ $popupMeta = array (
     'label' => 'LBL_HUNYIN_ZHUANGKUANG',
     'width' => '10%',
     'default' => true,
-    'name' => 'hunyin_zhuangkuang',
   ),
   'QITA_LIANXIREN_XINMING' => 
   array (
@@ -145,7 +141,6 @@ $popupMeta = array (
     'label' => 'LBL_QITA_LIANXIREN_XINMING',
     'width' => '10%',
     'default' => true,
-    'name' => 'qita_lianxiren_xinming',
   ),
   'QITA_LIANXIREN_DIANHUA' => 
   array (
@@ -153,7 +148,6 @@ $popupMeta = array (
     'label' => 'LBL_QITA_LIANXIREN_DIANHUA',
     'width' => '10%',
     'default' => true,
-    'name' => 'qita_lianxiren_dianhua',
   ),
   'QITA_LIANREN_GUANXI' => 
   array (
@@ -161,7 +155,6 @@ $popupMeta = array (
     'label' => 'LBL_QITA_LIANREN_GUANXI',
     'width' => '10%',
     'default' => true,
-    'name' => 'qita_lianren_guanxi',
   ),
   'JIEKUANREN_PEIOU_XINMING' => 
   array (
@@ -169,7 +162,6 @@ $popupMeta = array (
     'label' => 'LBL_JIEKUANREN_PEIOU_XINMING',
     'width' => '10%',
     'default' => true,
-    'name' => 'jiekuanren_peiou_xinming',
   ),
   'PEIOU_ZHENGJIAN_HAOMA' => 
   array (
@@ -177,7 +169,6 @@ $popupMeta = array (
     'label' => 'LBL_PEIOU_ZHENGJIAN_HAOMA',
     'width' => '10%',
     'default' => true,
-    'name' => 'peiou_zhengjian_haoma',
   ),
   'PEIOU_ZHENGJIAN_LEIXIN' => 
   array (
@@ -186,7 +177,6 @@ $popupMeta = array (
     'studio' => 'visible',
     'label' => 'LBL_PEIOU_ZHENGJIAN_LEIXIN',
     'width' => '10%',
-    'name' => 'peiou_zhengjian_leixin',
   ),
   'PEIOU_GONGZUO_DANWEI' => 
   array (
@@ -194,7 +184,6 @@ $popupMeta = array (
     'label' => 'LBL_PEIOU_GONGZUO_DANWEI',
     'width' => '10%',
     'default' => true,
-    'name' => 'peiou_gongzuo_danwei',
   ),
   'PEIOU_ZHIWU' => 
   array (
@@ -202,7 +191,6 @@ $popupMeta = array (
     'label' => 'LBL_PEIOU_ZHIWU',
     'width' => '10%',
     'default' => true,
-    'name' => 'peiou_zhiwu',
   ),
   'XINDAI_GUWEN_C' => 
   array (

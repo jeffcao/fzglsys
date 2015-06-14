@@ -79,7 +79,7 @@ $(document).ready(function(){
         liucheng_controll("LBL_EDITVIEW_PANEL2");
     if (liucheng_status != "dai_chanpin_shenhe" || disabled_all == "1")
         liucheng_controll("LBL_EDITVIEW_PANEL3");
-    if (liucheng_status != "dai_kefu_huifang" || disabled_all == "1")
+    if (liucheng_status != "dai_kehu_chuli" || disabled_all == "1")
         liucheng_controll("LBL_EDITVIEW_PANEL4");
 
     if (disabled_all == "1" || liucheng_status == "yichang_guanbi" || liucheng_status == "wancheng_huifang")

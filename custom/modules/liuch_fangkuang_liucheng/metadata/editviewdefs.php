@@ -101,13 +101,36 @@ array (
             'name' => 'jiekuangren_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN',
+              'displayParams' => array (
+                  'field_to_name_array' => array(
+                      'id'=>'daik_jiekuangren_info_id_c',
+                      'name'=>'jiekuangren_c',
+                      'danang_bianhao' => 'jiekuangren_bianhao_c',
+                      'zhengjian_leixin' => 'jiekuangren_zhengjian_leixin_c',
+                      'zhengjian_haoma' => 'jiekuangren_zhengjian_haoma_c',
+                      'jiating_zhizhu' => 'jiekuangren_jiating_zhuzhi_c',
+                      'lianxi_dianhua' => 'jiekuangren_lianxi_dianhua_c',
+                      'gongzuo_danwei' => 'jiekuangren_gongzuo_danwei_c',
+                      'zhiwu' => 'jiekuangren_zhiwu_c',
+                      'hunyin_zhuangkuang' => 'jiekuangren_hunyin_zhuangkuang_c',
+                      'qita_lianxiren_xinming' => 'jiekuangren_qita_lianxiren_xinming_c',
+                      'qita_lianxiren_dianhua' => 'jiekuangren_qita_lianxiren_dianhua_c',
+                      'qita_lianren_guanxi' => 'jiekuangren_qita_lianxiren_guanxi_c',
+                      'jiekuanren_peiou_xinming' => 'jiekuangren_peiou_xinming_c',
+                      'peiou_zhiwu' => 'jiekuangren_peiou_zhiwu_c',
+                      'peiou_zhengjian_leixin' => 'jiekuangren_peiou_zhengjian_leixin_c',
+                      'peiou_zhengjian_haoma' => 'jiekuangren_peiou_zhengjian_haoma_c',
+                      'peiou_gongzuo_danwei' => 'jiekuangren_peiou_gongzuo_danwei_c',
+                      'xindai_guwen_c' => 'jiekuangren_xindai_guwen_xinming_c',
+                      'xindai_guwen_c' => 'jiekuangren_xindai_guwen_gonghao_c',
+                  ),
+              ),
           ),
           1 => 
           array (
             'name' => 'jiekuangren_bianhao_c',
             'studio' => 'visible',
             'label' => '借款人编号',
-            'type' => 'readonly',
           ),
         ),
         2 => 
@@ -117,14 +140,12 @@ array (
             'name' => 'jiekuangren_zhengjian_leixin_c',
             'studio' => 'visible',
             'label' => '借款人证件类型',
-            'type' => 'readonly',
           ),
           1 => 
           array (
             'name' => 'jiekuangren_zhengjian_haoma_c',
             'studio' => 'visible',
             'label' => '借款人证件号码',
-            'type' => 'readonly',
           ),
         ),
         3 => 
@@ -134,14 +155,12 @@ array (
             'name' => 'jiekuangren_jiating_zhuzhi_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_JIATING_ZHUZI',
-            'type' => 'readonly',
           ),
           1 => 
           array (
             'name' => 'jiekuangren_lianxi_dianhua_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_LIANXI_DIANHUA',
-            'type' => 'readonly',
           ),
         ),
         4 => 
@@ -320,14 +339,12 @@ array (
             'name' => 'jiekuangren_gongzuo_danwei_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_GONGZUO_DANWEI',
-            'type' => 'readonly',
           ),
           1 => 
           array (
             'name' => 'jiekuangren_zhiwu_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_ZHIWU',
-            'type' => 'readonly',
           ),
         ),
         1 => 
@@ -337,7 +354,6 @@ array (
             'name' => 'jiekuangren_hunyin_zhuangkuang_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_HUNYIN_ZHUANGKUANG',
-            'type' => 'readonly',
           ),
           1 => '',
         ),
@@ -348,14 +364,12 @@ array (
             'name' => 'jiekuangren_qita_lianxiren_xinming_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_QITA_LIANXIREN_XINMING',
-            'type' => 'readonly',
           ),
           1 => 
           array (
             'name' => 'jiekuangren_qita_lianxiren_dianhua_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_QITA_LIANXIREN_DIANHUA',
-            'type' => 'readonly',
           ),
         ),
         3 => 
@@ -365,7 +379,6 @@ array (
             'name' => 'jiekuangren_qita_lianxiren_guanxi_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_QITA_LIANXIREN_GUANXI',
-            'type' => 'readonly',
           ),
           1 => '',
         ),
@@ -376,14 +389,12 @@ array (
             'name' => 'jiekuangren_peiou_xinming_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_PEIOU_XINMING',
-            'type' => 'readonly',
           ),
           1 => 
           array (
             'name' => 'jiekuangren_peiou_zhiwu_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_PEIOU_ZHIWU',
-            'type' => 'readonly',
           ),
         ),
         5 => 
@@ -393,14 +404,12 @@ array (
             'name' => 'jiekuangren_peiou_zhengjian_leixin_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_PEIOU_ZHENGJIAN_LEIXIN',
-            'type' => 'readonly',
           ),
           1 => 
           array (
             'name' => 'jiekuangren_peiou_zhengjian_haoma_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_PEIOU_ZHENGJIAN_HAOMA',
-            'type' => 'readonly',
           ),
         ),
         6 => 
@@ -410,7 +419,6 @@ array (
             'name' => 'jiekuangren_peiou_gongzuo_danwei_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_PEIOU_GONGZUO_DANWEI',
-            'type' => 'readonly',
           ),
         ),
         7 => 
@@ -420,14 +428,12 @@ array (
             'name' => 'jiekuangren_xindai_guwen_xinming_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_XINDAI_GUWEN_XINMING',
-            'type' => 'readonly',
           ),
           1 => 
           array (
             'name' => 'jiekuangren_xindai_guwen_gonghao_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN_XINDAI_GUWEN_GONGHAO',
-            'type' => 'readonly',
           ),
         ),
       ),

@@ -57,9 +57,8 @@ array (
         array (
           0 => 
           array (
-            'name' => 'danbao_fangshi2_c',
-            'studio' => 'visible',
-            'label' => 'LBL_DANBAO_FANGSHI2',
+            'name' => 'danbao_fangshi',
+            'label' => 'LBL_DANBAO_FANGSHI',
           ),
           1 => 
           array (

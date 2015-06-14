@@ -35,11 +35,11 @@ class fangkuang_liucheng_custom_class {
                     $bean->danju_zhuangtai = "zhidanzhong";
             }
             elseif ($bean->danju_zhuangtai == "dai_chanpin_shenhe"){
-                if ($bean->bumen_shengpi_option == "tongyi") {
+                if ($bean->chanpin_shengpi_option == "tongyi") {
                     $bean->danju_zhuangtai = "dai_kehu_chuli";
                     $bean->user_id3_c = $this->get_next_handler_id($bean, "kefu_jingli");
                 }
-                elseif ($bean->bumen_shengpi_option == "yichang_guanbi")
+                elseif ($bean->chanpin_shengpi_option == "yichang_guanbi")
                     $bean->danju_zhuangtai = "yichang_guanbi";
                 else
                     $bean->danju_zhuangtai = "zhidanzhong";

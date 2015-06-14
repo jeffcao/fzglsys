@@ -207,6 +207,12 @@ function getRoleActions($role_id, $type='module'){
                 $action->aclaccess = ACL_ALLOW_DEFAULT;
 
             }
+            if ($action->category != "daik_jiekuangren_info" and $action->category != "daik_jinrong_jigou_info" and $action->category != "fdi2m_jinrong_chanpin_info"
+                and $action->category != "fdi2m_jinrong_fenzhi_jigou_info" and $action->category != "liuch_fangkuang_liucheng" and $action->category != "yuang_bumen_info"
+                and $action->category != "yuang_waibu_qudao_info"){
+                continue;
+            }
+
             //#27877 . If  there is no this module in beanlist , we will not show them in UI, no matter this module was deleted or not in ACL_ACTIONS table.
             if(empty($beanList[$action->category])){
                 continue;

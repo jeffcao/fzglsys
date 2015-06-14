@@ -12,15 +12,6 @@ $GLOBALS['app_list_strings']['fzglsys_daikuang_shenqing_option02_list']=array (
   'tongyi' => '同意',
   'butongyi' => '不同意',
 );
-$GLOBALS['app_list_strings']['fzglsys_daikuang_shenqing_status_list']=array (
-  'zhidanzhong' => '制单中',
-  'dai_fengkong_shenhe' => '待风控经理审核',
-  'dai_bumen_shenhe' => '待部门经理审核',
-  'dai_chanpin_shenhe' => '待产品经理审核',
-  'dai_kehu_chuli' => '待客户处理',
-  'wancheng_huifang' => '完成回访',
-  'xichang_guanbi' => '异常关闭',
-);
 $GLOBALS['app_list_strings']['fzglsys_daikuang_type__list']=array (
   'diya' => '抵押',
   'zhiya' => '质押',
@@ -86,4 +77,13 @@ $GLOBALS['app_list_strings']['fzglsys_zhiwu_type_list']=array (
   'bumen_jingli' => '部门经理',
   'chanpin_jingli' => '产品经理',
   'kefu_jingli' => '客服经理',
+);
+$GLOBALS['app_list_strings']['fzglsys_daikuang_shenqing_status_list']=array (
+  'zhidanzhong' => '制单中',
+  'dai_fengkong_shenhe' => '待风控经理审核',
+  'dai_bumen_shenhe' => '待部门经理审核',
+  'dai_chanpin_shenhe' => '待产品经理审核',
+  'dai_kehu_chuli' => '待客服处理',
+  'wancheng_huifang' => '完成回访',
+  'xichang_guanbi' => '异常关闭',
 );
