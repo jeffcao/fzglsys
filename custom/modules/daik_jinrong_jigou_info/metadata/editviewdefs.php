@@ -6,6 +6,13 @@ array (
   array (
     'templateMeta' => 
     array (
+        'includes' =>
+            array (
+                0 =>
+                    array (
+                        'file' => 'custom/modules/daik_jinrong_jigou_info/javascripts/jinrong_jigou_custom_funs.js',
+                    ),
+            ),
       'maxColumns' => '2',
       'widths' => 
       array (

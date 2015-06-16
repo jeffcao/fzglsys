@@ -6,6 +6,13 @@ array (
   array (
     'templateMeta' => 
     array (
+    'includes' =>
+        array (
+            0 =>
+                array (
+                    'file' => 'custom/modules/fdi2m_jinrong_chanpin_info/javascripts/jinrong_chanpin_custom_funs.js',
+                ),
+        ),
       'maxColumns' => '2',
       'widths' => 
       array (

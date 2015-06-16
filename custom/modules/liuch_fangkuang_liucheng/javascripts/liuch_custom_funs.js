@@ -61,6 +61,13 @@ function always_disabled_obj(){
     $("#chanpin_jingli_c").prop('disabled', true);
     $("#btn_chanpin_jingli_c").prop('disabled', true);
     $("#btn_clr_chanpin_jingli_c").prop('disabled', true);
+
+    $("#jiekuangren_bianhao_c").prop('disabled', true);
+    $("#jiekuangren_zhengjian_leixin_c").prop('disabled', true);
+    $("#jiekuangren_zhengjian_haoma_c").prop('disabled', true);
+    $("#jiekuangren_jiating_zhuzhi_c").prop('disabled', true);
+    $("#jiekuangren_lianxi_dianhua_c").prop('disabled', true);
+
 }
 $(document).ready(function(){
 

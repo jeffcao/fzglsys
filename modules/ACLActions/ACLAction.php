@@ -263,6 +263,13 @@ class ACLAction  extends SugarBean{
                 $acl->aclaccess = $row['access_override'];
                 $isOverride = true;
             }
+
+            if ($acl->category != "daik_jiekuangren_info" and $acl->category != "daik_jinrong_jigou_info" and $acl->category != "fdi2m_jinrong_chanpin_info"
+                and $acl->category != "fdi2m_jinrong_fenzhi_jigou_info" and $acl->category != "liuch_fangkuang_liucheng" and $acl->category != "yuang_bumen_info"
+                and $acl->category != "yuang_waibu_qudao_info"){
+                continue;
+            }
+
             if(!isset($selected_actions[$acl->category])){
                 $selected_actions[$acl->category] = array();
 

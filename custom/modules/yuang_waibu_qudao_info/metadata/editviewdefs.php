@@ -6,6 +6,13 @@ array (
   array (
     'templateMeta' => 
     array (
+        'includes' =>
+            array (
+                0 =>
+                    array (
+                        'file' => 'custom/modules/yuang_waibu_qudao_info/javascripts/waibu_qudao_custom_funs.js',
+                    ),
+            ),
       'maxColumns' => '2',
       'widths' => 
       array (

@@ -6,6 +6,13 @@ array (
   array (
     'templateMeta' => 
     array (
+        'includes' =>
+            array (
+                0 =>
+                    array (
+                        'file' => 'custom/modules/daik_jiekuangren_info/javascripts/jiekuangren_custom_funs.js',
+                    ),
+            ),
       'maxColumns' => '2',
       'widths' => 
       array (
