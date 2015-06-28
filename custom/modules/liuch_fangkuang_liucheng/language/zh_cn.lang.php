@@ -1,5 +1,5 @@
 <?php
-// created: 2015-06-12 09:47:46
+// created: 2015-06-28 08:31:55
 $mod_strings = array (
   'LBL_EDITVIEW_PANEL1' => '风险审批',
   'LBL_EDITVIEW_PANEL2' => '部门审批',
@@ -68,4 +68,7 @@ $mod_strings = array (
   'LBL_DAIKUANG_CHANPIN' => '贷款产品',
   'LBL_HUANKUANG_ZHOUQI' => '还款周期',
   'LBL_NAME' => '单据编号',
+  'LBL_LIUCHENG_DANGQIAN_CHULIREN' => '当前处理人',
+  'LBL_XINDAI_GUWEN_BUMEN_ID' => 'xindai_guwen_bumen_id',
+  'LBL_DANGJU_CREATED_BY_ID_C' => 'dangju created by id c',
 );

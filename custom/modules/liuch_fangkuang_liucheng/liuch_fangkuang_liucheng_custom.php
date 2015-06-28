@@ -50,6 +50,13 @@ class fangkuang_liucheng_custom_class {
 
         if(isset($bean->fetched_row['id'])) { return; }
 //        (isset($arguments['isUpdate']) && $arguments['isUpdate'] == false)
+
+        $created_user = BeanFactory::getBean("Users", $bean->created_by);
+        $created_user->custom_fields->retrieve();
+        $bean->xindai_guwen_bumen_id_c = $created_user->yuang_bumen_info_id_c;
+
+        $bean->dangju_created_by_id_c = $bean->created_by;
+
         $d_t = date("Ym");
         $query = "
                 select count('x') as r_count from liuch_fangkuang_liucheng where name like '$d_t%'
@@ -94,8 +101,30 @@ class fangkuang_liucheng_custom_class {
         require_once('include/entryPoint.php');
         require_once('modules/Campaigns/utils.php');
         $bean->custom_fields->retrieve();
+
+        $cur_handler_id = $bean->dangju_created_by_id_c;
+        if ($bean->danju_zhuangtai == "dai_fengkong_shenhe") {
+            $cur_handler_id = $bean->user_id_c;
+        }
+        elseif ($bean->danju_zhuangtai == "dai_bumen_shenhe") {
+            $cur_handler_id = $bean->user_id1_c;
+        }
+        elseif ($bean->danju_zhuangtai == "dai_chanpin_shenhe"){
+            $cur_handler_id = $bean->user_id2_c;
+        }
+        elseif ($bean->danju_zhuangtai == "dai_kehu_chuli")
+            $cur_handler_id = $bean->user_id3_c;
+
+        if (!empty($cur_handler_id)){
+            $cur_handler = BeanFactory::getBean("Users", $cur_handler_id);
+            if (!empty($cur_handler)){
+                $bean->liucheng_dangqian_chuliren_c = $cur_handler->first_name . $cur_handler->last_name;
+            }
+        }
+
         $daik_jiekuangren_info_id = $bean->daik_jiekuangren_info_id_c;
         $a = BeanFactory::getBean("daik_jiekuangren_info", $daik_jiekuangren_info_id);
+        if (!$a) return;
         $bean->jiekuangren_bianhao_c = $a->danang_bianhao;
         $bean->jiekuangren_zhengjian_haoma_c = $a->zhengjian_haoma;
         $bean->jiekuangren_zhengjian_leixin_c = $GLOBALS["app_list_strings"]["fzglsys_zhengjian_type_list"][$a->zhengjian_leixin];
@@ -119,6 +148,9 @@ class fangkuang_liucheng_custom_class {
         $xindai_guwen = BeanFactory::getBean("Users", $a->user_id_c);
         $bean->jiekuangren_xindai_guwen_xinming_c = $xindai_guwen->first_name . $xindai_guwen->last_name;
         $bean->jiekuangren_xindai_guwen_gonghao_c = $xindai_guwen->gonghao_c;
+
+
+
     }
 }
 ?>

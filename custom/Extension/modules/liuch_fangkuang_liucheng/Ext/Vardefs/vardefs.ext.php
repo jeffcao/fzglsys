@@ -16,6 +16,7 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['jiekuangren_bianhao_c']= arra
 //    'link' => 'daik_jiekuangren_info',
     'module' => 'daik_jiekuangren_info',
     'studio' => 'visible',
+    'sortable' => false,
 );
 $dictionary['liuch_fangkuang_liucheng']['fields']['jiekuangren_zhengjian_leixin_c']= array(
     'name' => 'jiekuangren_zhengjian_leixin_c',
@@ -42,6 +43,7 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['jiekuangren_zhengjian_haoma_c
     'source' => 'non-db',
     'dbType' => 'non-db',
     'studio' => 'visible',
+    'sortable' => false,
 );
 
 $dictionary['liuch_fangkuang_liucheng']['fields']['jiekuangren_jiating_zhuzhi_c']= array(
@@ -425,4 +427,15 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['qita2_zhengming_filename'] = 
     'reportable'=>true,
     'importable' => false,
 );
+
+$dictionary['liuch_fangkuang_liucheng']['fields']['liucheng_dangqian_chuliren_c']= array(
+    'name' => 'liucheng_dangqian_chuliren_c',
+    'vname' => 'LBL_LIUCHENG_DANGQIAN_CHULIREN',
+    'type' => 'varchar',
+    'source' => 'non-db',
+    'dbType' => 'non-db',
+    'studio' => 'visible',
+    'sortable' => false,
+);
+
 ?>

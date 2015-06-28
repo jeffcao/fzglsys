@@ -145,40 +145,50 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_BUMEN',
           ),
-          1 => 'phone_work',
+          1 => 
+          array (
+            'name' => 'fengongsi_c',
+            'studio' => 'visible',
+            'label' => 'LBL_FENGONGSI',
+          ),
         ),
         5 => 
         array (
-          0 => 
+          0 => 'phone_work',
+          1 => 
           array (
             'name' => 'gongzi_c',
             'label' => 'LBL_GONGZI',
-          ),
-          1 => 
-          array (
-            'name' => 'jixiao_c',
-            'label' => 'LBL_JIXIAO',
           ),
         ),
         6 => 
         array (
           0 => 
           array (
+            'name' => 'jixiao_c',
+            'label' => 'LBL_JIXIAO',
+          ),
+          1 => 
+          array (
             'name' => 'butie_c',
             'label' => 'LBL_BUTIE',
           ),
-          1 => 
+        ),
+        7 => 
+        array (
+          0 => 
           array (
             'name' => 'zaizhi_zhuangtai_c',
             'studio' => 'visible',
             'label' => 'LBL_ZAIZHI_ZHUANGTAI',
           ),
+          1 => '',
         ),
-        7 => 
+        8 => 
         array (
           0 => 'description',
         ),
-        8 => 
+        9 => 
         array (
           0 => 'email1',
         ),

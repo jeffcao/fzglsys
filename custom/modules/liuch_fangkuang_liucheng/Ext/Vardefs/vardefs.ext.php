@@ -46,6 +46,11 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['daikuang_qixian_c']['labelVal
 
  
 
+ // created: 2015-06-28 08:31:55
+$dictionary['liuch_fangkuang_liucheng']['fields']['dangju_created_by_id_c']['labelValue']='dangju created by id c';
+
+ 
+
  // created: 2015-06-12 09:38:09
 
  
@@ -200,6 +205,11 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['kefu_ziliao_guidan_c']['label
 
  
 
+ // created: 2015-06-28 06:47:18
+$dictionary['liuch_fangkuang_liucheng']['fields']['liucheng_dangqian_chuliren_c']['merge_filter']='disabled';
+
+ 
+
  // created: 2015-06-12 09:47:46
 $dictionary['liuch_fangkuang_liucheng']['fields']['name']['required']=false;
 $dictionary['liuch_fangkuang_liucheng']['fields']['name']['full_text_search']=array (
@@ -276,6 +286,11 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['shouru_zhengming_filename']['
 
  
 
+ // created: 2015-06-28 07:02:12
+$dictionary['liuch_fangkuang_liucheng']['fields']['xindai_guwen_bumen_id_c']['labelValue']='xindai_guwen_bumen_id';
+
+ 
+
  // created: 2015-05-16 12:33:47
 $dictionary['liuch_fangkuang_liucheng']['fields']['yongtu_zhengming_file_mime_type']['importable']='true';
 $dictionary['liuch_fangkuang_liucheng']['fields']['yongtu_zhengming_file_mime_type']['merge_filter']='disabled';
@@ -309,6 +324,7 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['jiekuangren_bianhao_c']= arra
 //    'link' => 'daik_jiekuangren_info',
     'module' => 'daik_jiekuangren_info',
     'studio' => 'visible',
+    'sortable' => false,
 );
 $dictionary['liuch_fangkuang_liucheng']['fields']['jiekuangren_zhengjian_leixin_c']= array(
     'name' => 'jiekuangren_zhengjian_leixin_c',
@@ -335,6 +351,7 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['jiekuangren_zhengjian_haoma_c
     'source' => 'non-db',
     'dbType' => 'non-db',
     'studio' => 'visible',
+    'sortable' => false,
 );
 
 $dictionary['liuch_fangkuang_liucheng']['fields']['jiekuangren_jiating_zhuzhi_c']= array(
@@ -718,5 +735,16 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['qita2_zhengming_filename'] = 
     'reportable'=>true,
     'importable' => false,
 );
+
+$dictionary['liuch_fangkuang_liucheng']['fields']['liucheng_dangqian_chuliren_c']= array(
+    'name' => 'liucheng_dangqian_chuliren_c',
+    'vname' => 'LBL_LIUCHENG_DANGQIAN_CHULIREN',
+    'type' => 'varchar',
+    'source' => 'non-db',
+    'dbType' => 'non-db',
+    'studio' => 'visible',
+    'sortable' => false,
+);
+
 
 ?>

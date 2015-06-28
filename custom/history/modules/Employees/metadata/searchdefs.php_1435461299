@@ -67,6 +67,17 @@ array (
         'width' => '10%',
         'name' => 'bumen_c',
       ),
+      'fengongsi_c' => 
+      array (
+        'type' => 'relate',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_FENGONGSI',
+        'id' => 'YUANG_FENGONGSI_INFO_ID_C',
+        'link' => true,
+        'width' => '10%',
+        'name' => 'fengongsi_c',
+      ),
       'email' => 
       array (
         'name' => 'email',

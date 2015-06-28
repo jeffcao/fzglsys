@@ -87,38 +87,48 @@ array (
           ),
           1 => 
           array (
-            'name' => 'phone_work',
-            'label' => 'LBL_OFFICE_PHONE',
+            'name' => 'fengongsi_c',
+            'studio' => 'visible',
+            'label' => 'LBL_FENGONGSI',
           ),
         ),
         5 => 
         array (
           0 => 
           array (
-            'name' => 'gongzi_c',
-            'label' => 'LBL_GONGZI',
+            'name' => 'phone_work',
+            'label' => 'LBL_OFFICE_PHONE',
           ),
           1 => 
           array (
-            'name' => 'jixiao_c',
-            'label' => 'LBL_JIXIAO',
+            'name' => 'gongzi_c',
+            'label' => 'LBL_GONGZI',
           ),
         ),
         6 => 
         array (
           0 => 
           array (
+            'name' => 'jixiao_c',
+            'label' => 'LBL_JIXIAO',
+          ),
+          1 => 
+          array (
             'name' => 'butie_c',
             'label' => 'LBL_BUTIE',
           ),
-          1 => 
+        ),
+        7 => 
+        array (
+          0 => 
           array (
             'name' => 'zaizhi_zhuangtai_c',
             'studio' => 'visible',
             'label' => 'LBL_ZAIZHI_ZHUANGTAI',
           ),
+          1 => '',
         ),
-        7 => 
+        8 => 
         array (
           0 => 
           array (
@@ -126,7 +136,7 @@ array (
             'label' => 'LBL_NOTES',
           ),
         ),
-        8 => 
+        9 => 
         array (
           0 => 
           array (

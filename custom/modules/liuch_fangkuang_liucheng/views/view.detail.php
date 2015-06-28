@@ -27,7 +27,7 @@ class CustomLiuch_fangkuang_liuchengViewDetail extends ViewDetail
 
         $this->bean->custom_fields->retrieve();
 
-        if ($this->bean->danju_zhuangtai != "zhidanzhong"){
+        if ($this->bean->danju_zhuangtai != "zhidanzhong" or $current_user->id != $this->bean->created_by){
             unset($this->dv->defs['templateMeta']['form']['buttons'][1]);
         }
 
@@ -44,6 +44,7 @@ class CustomLiuch_fangkuang_liuchengViewDetail extends ViewDetail
             ($current_user->id == $this->bean->user_id3_c and $this->bean->danju_zhuangtai != "dai_kehu_chuli")){
             unset($this->dv->defs['templateMeta']['form']['buttons'][0]);
         }
+
         $th = new TemplateHandler();
         $th->clearCache($this->module);
         parent::display();
