@@ -7,6 +7,11 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['bumen_jingli_c']['labelValue'
 
  
 
+ // created: 2015-06-28 09:44:44
+$dictionary['liuch_fangkuang_liucheng']['fields']['bumen_shengpi_option']['default']='';
+
+ 
+
  // created: 2015-05-16 12:33:23
 $dictionary['liuch_fangkuang_liucheng']['fields']['caichan_zhengming_file_mime_type']['importable']='true';
 $dictionary['liuch_fangkuang_liucheng']['fields']['caichan_zhengming_file_mime_type']['merge_filter']='disabled';
@@ -21,6 +26,11 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['caichan_zhengming_filename'][
 
  // created: 2015-06-12 05:35:07
 $dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_jingli_c']['labelValue']='产品经理';
+
+ 
+
+ // created: 2015-06-28 09:43:22
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_shengpi_option']['default']='';
 
  
 
@@ -41,7 +51,7 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['daikuang_chanpin_c']['labelVa
 
  
 
- // created: 2015-06-12 09:34:15
+ // created: 2015-06-28 10:01:50
 $dictionary['liuch_fangkuang_liucheng']['fields']['daikuang_qixian_c']['labelValue']='贷款期限(月)';
 
  
@@ -61,6 +71,11 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['dangju_created_by_id_c']['lab
 
  // created: 2015-06-12 05:28:15
 $dictionary['liuch_fangkuang_liucheng']['fields']['fengkong_jingli_c']['labelValue']='风控经理';
+
+ 
+
+ // created: 2015-06-28 09:44:00
+$dictionary['liuch_fangkuang_liucheng']['fields']['fenkong_option']['default']='';
 
  
 
@@ -210,8 +225,11 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['liucheng_dangqian_chuliren_c'
 
  
 
- // created: 2015-06-12 09:47:46
+ // created: 2015-06-28 10:09:39
 $dictionary['liuch_fangkuang_liucheng']['fields']['name']['required']=false;
+$dictionary['liuch_fangkuang_liucheng']['fields']['name']['comments']='保存后系统自动生成';
+$dictionary['liuch_fangkuang_liucheng']['fields']['name']['default']='保存后系统自动生成';
+$dictionary['liuch_fangkuang_liucheng']['fields']['name']['help']='保存后系统自动生成';
 $dictionary['liuch_fangkuang_liucheng']['fields']['name']['full_text_search']=array (
 );
 
@@ -255,6 +273,11 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['shenfen_zhengming_file_mime_t
  // created: 2015-05-16 10:49:51
 $dictionary['liuch_fangkuang_liucheng']['fields']['shenfen_zhengming_filename']['importable']='true';
 $dictionary['liuch_fangkuang_liucheng']['fields']['shenfen_zhengming_filename']['merge_filter']='disabled';
+
+ 
+
+ // created: 2015-06-28 10:00:55
+$dictionary['liuch_fangkuang_liucheng']['fields']['shiji_yongjin_bili']['precision']='4';
 
  
 
@@ -304,6 +327,11 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['yongtu_zhengming_filename']['
  
 
  // created: 2015-06-12 09:35:47
+
+ 
+
+ // created: 2015-06-28 10:00:11
+$dictionary['liuch_fangkuang_liucheng']['fields']['yuqi_yongjin_bili']['precision']='4';
 
  
 

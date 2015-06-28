@@ -8,10 +8,6 @@ $GLOBALS['app_list_strings']['fzglsys_zhengjian_type_list']=array (
   'huzhao' => '护照',
   'junguangzheng' => '军官证',
 );
-$GLOBALS['app_list_strings']['fzglsys_daikuang_shenqing_option02_list']=array (
-  'tongyi' => '同意',
-  'butongyi' => '不同意',
-);
 $GLOBALS['app_list_strings']['fzglsys_daikuang_type__list']=array (
   'diya' => '抵押',
   'zhiya' => '质押',
@@ -35,11 +31,6 @@ $GLOBALS['app_list_strings']['fzglsys_shoukuang_type_list']=array (
   'xianjin' => '现金',
   'shuaka' => '刷卡',
   'zhifubao' => '支付宝',
-);
-$GLOBALS['app_list_strings']['fzglsys_daikuang_shenqing_option01_list']=array (
-  'tongyi' => '通过',
-  'butongyi' => '不通过',
-  'yichang_guanbi' => '异常关闭',
 );
 $app_strings['LBL_GROUPTAB5_1430472938'] = '公司数据维护';
 
@@ -86,4 +77,22 @@ $GLOBALS['app_list_strings']['fzglsys_daikuang_shenqing_status_list']=array (
   'dai_kehu_chuli' => '待客服处理',
   'wancheng_huifang' => '完成回访',
   'xichang_guanbi' => '异常关闭',
+);
+$GLOBALS['app_list_strings']['fzglsys_daikuang_shenqing_option01_list']=array (
+  '' => '',
+  'tongyi' => '通过',
+  'butongyi' => '不通过',
+  'yichang_guanbi' => '异常关闭',
+);
+$GLOBALS['app_list_strings']['fzglsys_daikuang_shenqing_option02_list']=array (
+  '' => '',
+  'tongyi' => '同意',
+  'butongyi' => '不同意',
+);
+$GLOBALS['app_list_strings']['fzglsys_bumen_jibie_list']=array (
+  'yiji' => '一级部门',
+  'erji' => '二级部门',
+  'sanji' => '三级部门',
+  'siji' => '四级部门',
+  'wuji' => '五级部门',
 );

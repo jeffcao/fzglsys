@@ -1,5 +1,5 @@
 <?php
-// created: 2015-06-03 17:42:58
+// created: 2015-06-28 09:59:07
 $searchFields['fdi2m_jinrong_chanpin_info'] = array (
   'name' => 
   array (

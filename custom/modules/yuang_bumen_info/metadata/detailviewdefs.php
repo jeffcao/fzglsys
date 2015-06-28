@@ -70,8 +70,9 @@ array (
         array (
           0 => 
           array (
-            'name' => 'bumeng_jibie_c',
-            'label' => 'LBL_BUMENG_JIBIE',
+            'name' => 'bumen_jibie_c',
+            'studio' => 'visible',
+            'label' => 'LBL_BUMEN_JIBIE',
           ),
           1 => 
           array (

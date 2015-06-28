@@ -1,5 +1,5 @@
 <?php
-// created: 2015-05-02 05:39:20
+// created: 2015-06-28 12:14:02
 $mod_strings = array (
   'LNK_NEW_RECORD' => '创建 借款人档案',
   'LNK_LIST' => '视图 借款人档案',
@@ -14,4 +14,5 @@ $mod_strings = array (
   'LBL_QITA_LIANXIREN_DIANHUA' => '备用联系人电话',
   'LBL_EDITVIEW_PANEL2' => '配偶信息',
   'LBL_EDITVIEW_PANEL3' => '维护信息',
+  'LBL_DANANG_BIANHAO' => '档案编号',
 );

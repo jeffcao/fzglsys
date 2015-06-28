@@ -32,7 +32,7 @@ $dictionary['User']['fields']['gangwei_leixin_c']['labelValue']='岗位';
 
  
 
- // created: 2015-05-01 13:51:51
+ // created: 2015-06-28 13:12:59
 $dictionary['User']['fields']['gonghao_c']['labelValue']='工号';
 
  
@@ -65,7 +65,7 @@ $dictionary['User']['fields']['xiebie_c']['labelValue']='性别';
 
  
 
- // created: 2015-05-02 04:19:56
+ // created: 2015-06-28 13:10:53
 $dictionary['User']['fields']['zaizhi_zhuangtai_c']['labelValue']='在职状态';
 
  

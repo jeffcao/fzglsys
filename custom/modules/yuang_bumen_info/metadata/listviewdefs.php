@@ -16,11 +16,12 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'BUMENG_JIBIE_C' => 
+  'BUMEN_JIBIE_C' => 
   array (
-    'type' => 'varchar',
+    'type' => 'enum',
     'default' => true,
-    'label' => 'LBL_BUMENG_JIBIE',
+    'studio' => 'visible',
+    'label' => 'LBL_BUMEN_JIBIE',
     'width' => '10%',
   ),
   'SHANGJI_BUMEN_C' => 

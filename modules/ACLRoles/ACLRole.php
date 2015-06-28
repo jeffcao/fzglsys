@@ -209,7 +209,7 @@ function getRoleActions($role_id, $type='module'){
             }
             if ($action->category != "daik_jiekuangren_info" and $action->category != "daik_jinrong_jigou_info" and $action->category != "fdi2m_jinrong_chanpin_info"
                 and $action->category != "fdi2m_jinrong_fenzhi_jigou_info" and $action->category != "liuch_fangkuang_liucheng" and $action->category != "yuang_bumen_info"
-                and $action->category != "yuang_waibu_qudao_info"){
+                and $action->category != "yuang_waibu_qudao_info" and $action->category != "Users"){
                 continue;
             }
 

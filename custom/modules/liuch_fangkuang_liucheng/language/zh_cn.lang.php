@@ -1,5 +1,5 @@
 <?php
-// created: 2015-06-28 08:31:55
+// created: 2015-06-28 10:00:55
 $mod_strings = array (
   'LBL_EDITVIEW_PANEL1' => '风险审批',
   'LBL_EDITVIEW_PANEL2' => '部门审批',
@@ -71,4 +71,9 @@ $mod_strings = array (
   'LBL_LIUCHENG_DANGQIAN_CHULIREN' => '当前处理人',
   'LBL_XINDAI_GUWEN_BUMEN_ID' => 'xindai_guwen_bumen_id',
   'LBL_DANGJU_CREATED_BY_ID_C' => 'dangju created by id c',
+  'LBL_CHANPIN_SHENGPI_OPTION' => '产品经理审批',
+  'LBL_FENKONG_OPTION' => '风控审批',
+  'LBL_BUMEN_SHENGPI_OPTION' => '部门经理审批',
+  'LBL_YUQI_YONGJIN_BILI' => '预期佣金比例',
+  'LBL_SHIJI_YONGJIN_BILI' => '佣金比例',
 );

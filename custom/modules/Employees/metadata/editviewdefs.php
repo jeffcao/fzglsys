@@ -5,6 +5,13 @@ array (
   array (
     'templateMeta' => 
     array (
+        'includes' =>
+            array (
+                0 =>
+                    array (
+                        'file' => 'custom/modules/Employees/javascripts/employees_custom_funs.js',
+                    ),
+            ),
       'maxColumns' => '2',
       'widths' => 
       array (

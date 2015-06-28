@@ -1,5 +1,5 @@
 <?php
-// created: 2015-06-03 17:01:37
+// created: 2015-06-28 12:15:07
 $mod_strings = array (
   'LNK_NEW_RECORD' => '创建 部门维护',
   'LNK_LIST' => '视图 部门维护',
@@ -10,7 +10,8 @@ $mod_strings = array (
   'LBL_BUMEN_FUZEREN_USER_ID' => '负责人 (related 用户 ID)',
   'LBL_BUMEN_FUZEREN' => '负责人',
   'LBL_FUZEREN_XIMING' => '负责人姓名',
-  'LBL_BUMENG_JIBIE' => '部门级别',
   'LBL_SHANGJI_BUMEN_YUANG_BUMEN_INFO_ID' => '上级部门 (related 部门维护 ID)',
   'LBL_SHANGJI_BUMEN' => '上级部门',
+  'LBL_BUMEN_JIBIE' => '部门级别',
+  'LBL_BUMEN_BIANHAO' => '部门编号',
 );

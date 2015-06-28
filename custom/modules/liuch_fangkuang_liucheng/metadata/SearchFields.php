@@ -1,5 +1,5 @@
 <?php
-// created: 2015-06-27 08:35:29
+// created: 2015-06-28 10:01:50
 $searchFields['liuch_fangkuang_liucheng'] = array (
   'name' => 
   array (

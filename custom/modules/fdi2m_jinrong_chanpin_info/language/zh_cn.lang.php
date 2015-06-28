@@ -1,5 +1,5 @@
 <?php
-// created: 2015-06-12 10:39:05
+// created: 2015-06-28 12:15:27
 $mod_strings = array (
   'LNK_NEW_RECORD' => '创建 金融产品信息',
   'LNK_LIST' => '视图 金融产品信息',
@@ -11,4 +11,7 @@ $mod_strings = array (
   'LBL_SUOSHU_JIGOU' => '所属机构',
   'LBL_DANBAO_FANGSHI2' => '担保方式',
   'LBL_DANBAO_FANGSHI' => '担保方式(del)',
+  'LBL_ZUICHANG_QIXIAN' => '最长期限(月)',
+  'LBL_LILV' => '利率',
+  'LBL_CHANPIN_DAIMA' => '产品代码',
 );
