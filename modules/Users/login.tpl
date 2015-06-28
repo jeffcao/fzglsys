@@ -52,7 +52,7 @@ var LBL_HIDEOPTIONS = '{sugar_translate module="Users" label="LBL_HIDEOPTIONS"}'
 			<table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
 				<tr>
 					<td align="left"><b>{sugar_translate module="Users" label="LBL_LOGIN_WELCOME_TO"}</b><br>
-					    {$LOGIN_IMAGE}
+					    <center>{$LOGIN_IMAGE}</center>
 					</td>
 				</tr>
 				<tr>
