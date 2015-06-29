@@ -11,7 +11,9 @@ array (
         'buttons' => 
         array (
           0 => 'EDIT',
-          1 => 'DELETE',
+          1 => 'DUPLICATE',
+          2 => 'DELETE',
+          3 => 'FIND_DUPLICATES',
         ),
       ),
       'maxColumns' => '2',
@@ -40,11 +42,6 @@ array (
         array (
           'newTab' => false,
           'panelDefault' => 'expanded',
-        ),
-        'LBL_DETAILVIEW_PANEL4' => 
-        array (
-          'newTab' => false,
-          'panelDefault' => 'collapsed',
         ),
         'LBL_EDITVIEW_PANEL2' => 
         array (
@@ -102,27 +99,17 @@ array (
         array (
           0 => 
           array (
-            'name' => 'hunyin_zhuangkuang_1_c',
-            'studio' => 'visible',
-            'label' => 'LBL_HUNYIN_ZHUANGKUANG_1',
+            'name' => 'hunyin_zhuangkuang',
+            'label' => 'LBL_HUNYIN_ZHUANGKUANG',
           ),
-        ),
-        4 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'xindai_guwen_c',
             'studio' => 'visible',
             'label' => 'LBL_XINDAI_GUWEN',
           ),
-          1 => 
-          array (
-            'name' => 'xindai_guwen_gonghao_c',
-            'studio' => 'visible',
-            'label' => 'LBL_XINDAI_GUWEN_GONGHAO',
-          ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -130,7 +117,7 @@ array (
             'label' => 'LBL_JIATING_ZHIZHU',
           ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -138,7 +125,7 @@ array (
             'label' => 'LBL_GONGZUO_DANWEI',
           ),
         ),
-        7 => 
+        6 => 
         array (
           0 => 'description',
         ),
@@ -165,97 +152,6 @@ array (
             'name' => 'qita_lianren_guanxi',
             'label' => 'LBL_QITA_LIANREN_GUANXI',
           ),
-        ),
-      ),
-      'lbl_detailview_panel4' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            'name' => 'qita_lianxiren_xinming_2_c',
-            'label' => 'LBL_QITA_LIANXIREN_XINMING_2',
-          ),
-          1 => 
-          array (
-            'name' => 'qita_lianxiren_dianhua_2_c',
-            'label' => 'LBL_QITA_LIANXIREN_DIANHUA_2',
-          ),
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            'name' => 'qita_lianxiren_guanxi_2_c',
-            'label' => 'LBL_QITA_LIANXIREN_GUANXI_2',
-          ),
-          1 => '',
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'qita_lianxiren_xinming_3_c',
-            'label' => 'LBL_QITA_LIANXIREN_XINMING_3',
-          ),
-          1 => 
-          array (
-            'name' => 'qita_lianxiren_dianhua_3_c',
-            'label' => 'LBL_QITA_LIANXIREN_DIANHUA_3',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'qita_lianxiren_guanxi_3_c',
-            'label' => 'LBL_QITA_LIANXIREN_GUANXI_3',
-          ),
-          1 => '',
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'qita_lianxiren_xinming_4_c',
-            'label' => 'LBL_QITA_LIANXIREN_XINMING_4',
-          ),
-          1 => 
-          array (
-            'name' => 'qita_lianxiren_dianhua_4_c',
-            'label' => 'LBL_QITA_LIANXIREN_DIANHUA_4',
-          ),
-        ),
-        5 => 
-        array (
-          0 => 
-          array (
-            'name' => 'qita_lianxiren_guanxi_4_c',
-            'label' => 'LBL_QITA_LIANXIREN_GUANXI_4',
-          ),
-          1 => '',
-        ),
-        6 => 
-        array (
-          0 => 
-          array (
-            'name' => 'qita_lianxiren_xinming_5_c',
-            'label' => 'LBL_QITA_LIANXIREN_XINMING_5',
-          ),
-          1 => 
-          array (
-            'name' => 'qita_lianxiren_dianhua_5_c',
-            'label' => 'LBL_QITA_LIANXIREN_DIANHUA_5',
-          ),
-        ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'qita_lianxiren_guanxi_5_c',
-            'label' => 'LBL_QITA_LIANXIREN_GUANXI_5',
-          ),
-          1 => '',
         ),
       ),
       'lbl_editview_panel2' => 

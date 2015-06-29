@@ -428,6 +428,64 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['qita2_zhengming_filename'] = 
     'importable' => false,
 );
 
+
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_yinghang_pifu_file_mime_type'] = array(
+    'name' => 'chanpin_yinghang_pifu_file_mime_type',
+    'vname' => 'LBL_CHANPIN_YINGHANG_PIFU_FILE_MIME_TYPE',
+    'type' => 'varchar',
+    'len' => '100',
+    'importable' => false,
+);
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_yinghang_pifu_file_url'] = array(
+    'name'=>'chanpin_yinghang_pifu_file_url',
+    'vname' => 'LBL_CHANPIN_YINGHANG_PIFU_FILE_URL',
+    'type'=>'function',
+    'function_class'=>'UploadFile',
+    'function_name'=>'get_upload_url',
+    'function_params'=> array('$this'),
+    'source'=>'function',
+    'reportable'=>false,
+    'importable' => false,
+);
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_yinghang_pifu_filename'] = array(
+    'name' => 'chanpin_yinghang_pifu_filename',
+    'vname' => 'LBL_CHANPIN_YINGHANG_PIFU_FILENAME',
+    'type' => 'file',
+    'dbType' => 'varchar',
+    'len' => '255',
+    'reportable'=>true,
+    'importable' => false,
+);
+
+
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_yongjin_shouqu_zhengming_file_mime_type'] = array(
+    'name' => 'chanpin_yongjin_shouqu_zhengming_file_mime_type',
+    'vname' => 'LBL_CHANPIN_YONGJIN_SHOUQU_ZHENGMING_FILE_MIME_TYPE',
+    'type' => 'varchar',
+    'len' => '100',
+    'importable' => false,
+);
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_yongjin_shouqu_zhengming_file_url'] = array(
+    'name'=>'chanpin_yongjin_shouqu_zhengming_file_url',
+    'vname' => 'LBL_CHANPIN_YONGJIN_SHOUQU_ZHENGMING_FILE_URL',
+    'type'=>'function',
+    'function_class'=>'UploadFile',
+    'function_name'=>'get_upload_url',
+    'function_params'=> array('$this'),
+    'source'=>'function',
+    'reportable'=>false,
+    'importable' => false,
+);
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_yongjin_shouqu_zhengming_filename'] = array(
+    'name' => 'chanpin_yongjin_shouqu_zhengming_filename',
+    'vname' => 'LBL_CHANPIN_YONGJIN_SHOUQU_ZHENGMING_FILENAME',
+    'type' => 'file',
+    'dbType' => 'varchar',
+    'len' => '255',
+    'reportable'=>true,
+    'importable' => false,
+);
+
 $dictionary['liuch_fangkuang_liucheng']['fields']['liucheng_dangqian_chuliren_c']= array(
     'name' => 'liucheng_dangqian_chuliren_c',
     'vname' => 'LBL_LIUCHENG_DANGQIAN_CHULIREN',

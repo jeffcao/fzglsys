@@ -2,16 +2,17 @@
 $module_name = 'daik_jiekuangren_info';
 $viewdefs [$module_name] = 
 array (
-  'EditView' => 
+  'DetailView' => 
   array (
     'templateMeta' => 
     array (
-      'includes' => 
+      'form' => 
       array (
-        0 => 
-        array (
-          'file' => 'custom/modules/daik_jiekuangren_info/javascripts/jiekuangren_custom_funs.js',
-        ),
+          'buttons' =>
+              array (
+                  0 => 'EDIT',
+                  1 => 'DELETE',
+              ),
       ),
       'maxColumns' => '2',
       'widths' => 
@@ -40,12 +41,17 @@ array (
           'newTab' => false,
           'panelDefault' => 'expanded',
         ),
-        'LBL_EDITVIEW_PANEL3' => 
+        'LBL_DETAILVIEW_PANEL4' => 
         array (
           'newTab' => false,
           'panelDefault' => 'collapsed',
         ),
         'LBL_EDITVIEW_PANEL2' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL3' => 
         array (
           'newTab' => false,
           'panelDefault' => 'expanded',
@@ -100,33 +106,14 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_HUNYIN_ZHUANGKUANG_1',
           ),
-        ),
-        4 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'xindai_guwen_c',
             'studio' => 'visible',
             'label' => 'LBL_XINDAI_GUWEN',
-              'displayParams' =>
-                  array (
-                      'initial_filter' => '&gangwei_leixin_c_advanced="+encodeURIComponent("xindai_guwen")+"',
-                      'field_to_name_array' =>
-                          array (
-                              'id' => 'user_id_c',
-                              'name' => 'xindai_guwen_c',
-                              'gonghao_c' => 'xindai_guwen_gonghao_c',
-                          ),
-                  ),
-          ),
-          1 => 
-          array (
-            'name' => 'xindai_guwen_gonghao_c',
-            'studio' => 'visible',
-            'label' => 'LBL_XINDAI_GUWEN_GONGHAO',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -134,7 +121,7 @@ array (
             'label' => 'LBL_JIATING_ZHIZHU',
           ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -142,7 +129,7 @@ array (
             'label' => 'LBL_GONGZUO_DANWEI',
           ),
         ),
-        7 => 
+        6 => 
         array (
           0 => 'description',
         ),
@@ -171,7 +158,7 @@ array (
           ),
         ),
       ),
-      'lbl_editview_panel3' => 
+      'lbl_detailview_panel4' => 
       array (
         0 => 
         array (
@@ -298,6 +285,27 @@ array (
             'name' => 'peiou_gongzuo_danwei',
             'label' => 'LBL_PEIOU_GONGZUO_DANWEI',
           ),
+        ),
+      ),
+      'lbl_editview_panel3' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'modified_by_name',
+            'label' => 'LBL_MODIFIED_NAME',
+          ),
+          1 => 'date_modified',
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'created_by_name',
+            'label' => 'LBL_CREATED',
+          ),
+          1 => 'date_entered',
         ),
       ),
     ),

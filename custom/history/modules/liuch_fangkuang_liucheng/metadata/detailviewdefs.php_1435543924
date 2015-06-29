@@ -2,15 +2,16 @@
 $module_name = 'liuch_fangkuang_liucheng';
 $viewdefs [$module_name] = 
 array (
-  'EditView' => 
+  'DetailView' => 
   array (
     'templateMeta' => 
     array (
-      'includes' => 
+      'form' => 
       array (
-        0 => 
+        'buttons' => 
         array (
-          'file' => 'custom/modules/liuch_fangkuang_liucheng/javascripts/liuch_custom_funs.js',
+          0 => 'EDIT',
+          1 => 'DELETE',
         ),
       ),
       'maxColumns' => '2',
@@ -61,24 +62,6 @@ array (
           'panelDefault' => 'expanded',
         ),
       ),
-      'form' => 
-      array (
-        'enctype' => 'multipart/form-data',
-        'buttons' => 
-        array (
-          0 => 'SAVE',
-          1 => 'CANCEL',
-          2 => 
-          array (
-            'customCode' => '<input class="button primary" 					 onclick="this.form.action.value=\'submit_liucheng\'; if(check_form(\'EditView\'))SUGAR.ajaxUI.submitForm(this.form);return false;"                     type="submit"                     name="button"                     id="SUBMIT_LIUCHENG"                     value="提交">',
-          ),
-        ),
-        'hidden' => 
-        array (
-          0 => '<input type="hidden" name="liucheng_status" id="liucheng_status" value="{$liucheng_status}">',
-          1 => '<input type="hidden" name="disabled_all" id="disabled_all" value="{$disabled_all}">',
-        ),
-      ),
     ),
     'panels' => 
     array (
@@ -91,7 +74,6 @@ array (
           array (
             'name' => 'zhidan_date',
             'label' => 'LBL_ZHIDAN_DATE',
-            'type' => 'readonly',
           ),
         ),
         1 => 
@@ -101,33 +83,6 @@ array (
             'name' => 'jiekuangren_c',
             'studio' => 'visible',
             'label' => 'LBL_JIEKUANGREN',
-            'displayParams' => 
-            array (
-              'initial_filter' => '&created_by_advanced="+encodeURIComponent("{$current_user->id}")+"',
-              'field_to_name_array' => 
-              array (
-                'id' => 'daik_jiekuangren_info_id_c',
-                'name' => 'jiekuangren_c',
-                'danang_bianhao' => 'jiekuangren_bianhao_c',
-                'zhengjian_leixin' => 'jiekuangren_zhengjian_leixin_c',
-                'zhengjian_haoma' => 'jiekuangren_zhengjian_haoma_c',
-                'jiating_zhizhu' => 'jiekuangren_jiating_zhuzhi_c',
-                'lianxi_dianhua' => 'jiekuangren_lianxi_dianhua_c',
-                'gongzuo_danwei' => 'jiekuangren_gongzuo_danwei_c',
-                'zhiwu' => 'jiekuangren_zhiwu_c',
-                'hunyin_zhuangkuang' => 'jiekuangren_hunyin_zhuangkuang_c',
-                'qita_lianxiren_xinming' => 'jiekuangren_qita_lianxiren_xinming_c',
-                'qita_lianxiren_dianhua' => 'jiekuangren_qita_lianxiren_dianhua_c',
-                'qita_lianren_guanxi' => 'jiekuangren_qita_lianxiren_guanxi_c',
-                'jiekuanren_peiou_xinming' => 'jiekuangren_peiou_xinming_c',
-                'peiou_zhiwu' => 'jiekuangren_peiou_zhiwu_c',
-                'peiou_zhengjian_leixin' => 'jiekuangren_peiou_zhengjian_leixin_c',
-                'peiou_zhengjian_haoma' => 'jiekuangren_peiou_zhengjian_haoma_c',
-                'peiou_gongzuo_danwei' => 'jiekuangren_peiou_gongzuo_danwei_c',
-                'xindai_guwen_c' => 'jiekuangren_xindai_guwen_xinming_c',
-                  'xindai_guwen_gonghao_c' => 'jiekuangren_xindai_guwen_gonghao_c',
-              ),
-            ),
           ),
           1 => 
           array (
@@ -207,10 +162,6 @@ array (
             'name' => 'jinrong_fenzhi_jigou_c',
             'studio' => 'visible',
             'label' => 'LBL_JINRONG_FENZHI_JIGOU',
-            'displayParams' => 
-            array (
-              'initial_filter' => '&daik_jinrong_jigou_info_id_c_advanced="+encodeURIComponent(document.getElementById("daik_jinrong_jigou_info_id_c").value)+"',
-            ),
           ),
         ),
         7 => 
@@ -220,10 +171,6 @@ array (
             'name' => 'daikuang_chanpin_c',
             'studio' => 'visible',
             'label' => 'LBL_DAIKUANG_CHANPIN',
-            'displayParams' => 
-            array (
-              'initial_filter' => '&daik_jinrong_jigou_info_id_c_advanced="+encodeURIComponent(document.getElementById("daik_jinrong_jigou_info_id_c").value)+"',
-            ),
           ),
           1 => '',
         ),
@@ -320,15 +267,8 @@ array (
           array (
             'name' => 'created_by_name',
             'label' => 'LBL_CREATED',
-            'type' => 'readonly',
           ),
-          1 => 
-          array (
-            'name' => 'date_entered',
-            'comment' => 'Date record created',
-            'label' => 'LBL_DATE_ENTERED',
-            'type' => 'readonly',
-          ),
+          1 => 'date_entered',
         ),
         19 => 
         array (
@@ -451,10 +391,6 @@ array (
             'name' => 'fenkong_option',
             'studio' => 'visible',
             'label' => 'LBL_FENKONG_OPTION',
-              'displayParams' =>
-              array(
-                  'javascript' => 'onchange="onOptionsChanged(this, \'fenkong_beizhu\')"',
-              ),
           ),
           1 => 
           array (
@@ -491,10 +427,6 @@ array (
             'name' => 'bumen_shengpi_option',
             'studio' => 'visible',
             'label' => 'LBL_BUMEN_SHENGPI_OPTION',
-              'displayParams' =>
-                  array(
-                      'javascript' => 'onchange="onOptionsChanged(this, \'bumen_beizhu\')"',
-                  ),
           ),
           1 => 
           array (
@@ -531,10 +463,6 @@ array (
             'name' => 'chanpin_shengpi_option',
             'studio' => 'visible',
             'label' => 'LBL_CHANPIN_SHENGPI_OPTION',
-              'displayParams' =>
-                  array(
-                      'javascript' => 'onchange="onChanpinOptionsChanged(this, \'chanpin_beizhu\')"',
-                  ),
           ),
         ),
         1 => 
@@ -597,30 +525,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'chanpin_yinghang_pifu_filename',
-            'label' => 'LBL_CHANPIN_YINGHANG_PIFU_FILENAME',
-          ),
-          1 => '',
-        ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'chanpin_yongjin_shouqu_zhengming_filename',
-            'label' => 'LBL_CHANPIN_YONGJIN_SHOUQU_ZHENGMING_FILENAME',
-          ),
-          1 => '',
-        ),
-        8 => 
-        array (
-          0 => 
-          array (
             'name' => 'chanpin_beizhu',
             'studio' => 'visible',
             'label' => 'LBL_CHANPIN_BEIZHU',
           ),
         ),
-        9 => 
+        7 => 
         array (
           0 => 
           array (

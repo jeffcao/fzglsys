@@ -9,7 +9,7 @@ if(!defined('sugarEntry'))define('sugarEntry', true);
 
 
 
-class jiekuangren_calculate_field_class {
+class jiekuangren_custom_class {
     public function get_dangan_num($bean, $event, $arguments) {
         require_once('include/entryPoint.php');
         require_once('modules/Campaigns/utils.php');
@@ -32,6 +32,18 @@ class jiekuangren_calculate_field_class {
         $GLOBALS['log']->info("calculate_filed_class.get_dangan_num, r_count:{$r_count}");
         $dangan_num = vsprintf("%06d",$r_count+1);
         $bean->danang_bianhao = $d_t.$dangan_num;
+    }
+
+    public function show_other_fields($bean, $event, $arguments){
+        require_once('include/entryPoint.php');
+        require_once('modules/Campaigns/utils.php');
+        $bean->custom_fields->retrieve();
+
+        $xindai_guwen_id = $bean->user_id_c;
+        $a = BeanFactory::getBean("Users", $xindai_guwen_id);
+        if (!$a) return;
+        $bean->xindai_guwen_gonghao_c = $a->gonghao_c;
+
     }
 }
 ?>

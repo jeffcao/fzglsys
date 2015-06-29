@@ -84,15 +84,20 @@ $GLOBALS['app_list_strings']['fzglsys_daikuang_shenqing_option01_list']=array (
   'butongyi' => '不通过',
   'yichang_guanbi' => '异常关闭',
 );
-$GLOBALS['app_list_strings']['fzglsys_daikuang_shenqing_option02_list']=array (
-  '' => '',
-  'tongyi' => '同意',
-  'butongyi' => '不同意',
-);
 $GLOBALS['app_list_strings']['fzglsys_bumen_jibie_list']=array (
   'yiji' => '一级部门',
   'erji' => '二级部门',
   'sanji' => '三级部门',
   'siji' => '四级部门',
   'wuji' => '五级部门',
+);
+$GLOBALS['app_list_strings']['fzglsys_daikuang_shenqing_option02_list']=array (
+  '' => '',
+  'tongyi' => '通过',
+  'butongyi' => '不通过',
+);
+$GLOBALS['app_list_strings']['fzglsys_hunyin_status_list']=array (
+  'yihun' => '已婚',
+  'weihun' => '未婚',
+  'liyi' => '离异',
 );

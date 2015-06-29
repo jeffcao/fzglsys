@@ -4,4 +4,5 @@
 $(document).ready(function(){
 
     $("#danang_bianhao").prop('disabled', true);
+    $("#xindai_guwen_gonghao_c").prop('disabled', true);
 })

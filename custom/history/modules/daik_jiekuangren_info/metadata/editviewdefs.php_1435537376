@@ -6,13 +6,13 @@ array (
   array (
     'templateMeta' => 
     array (
-      'includes' => 
-      array (
-        0 => 
-        array (
-          'file' => 'custom/modules/daik_jiekuangren_info/javascripts/jiekuangren_custom_funs.js',
-        ),
-      ),
+        'includes' =>
+            array (
+                0 =>
+                    array (
+                        'file' => 'custom/modules/daik_jiekuangren_info/javascripts/jiekuangren_custom_funs.js',
+                    ),
+            ),
       'maxColumns' => '2',
       'widths' => 
       array (
@@ -39,11 +39,6 @@ array (
         array (
           'newTab' => false,
           'panelDefault' => 'expanded',
-        ),
-        'LBL_EDITVIEW_PANEL3' => 
-        array (
-          'newTab' => false,
-          'panelDefault' => 'collapsed',
         ),
         'LBL_EDITVIEW_PANEL2' => 
         array (
@@ -96,37 +91,17 @@ array (
         array (
           0 => 
           array (
-            'name' => 'hunyin_zhuangkuang_1_c',
-            'studio' => 'visible',
-            'label' => 'LBL_HUNYIN_ZHUANGKUANG_1',
+            'name' => 'hunyin_zhuangkuang',
+            'label' => 'LBL_HUNYIN_ZHUANGKUANG',
           ),
-        ),
-        4 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'xindai_guwen_c',
             'studio' => 'visible',
             'label' => 'LBL_XINDAI_GUWEN',
-              'displayParams' =>
-                  array (
-                      'initial_filter' => '&gangwei_leixin_c_advanced="+encodeURIComponent("xindai_guwen")+"',
-                      'field_to_name_array' =>
-                          array (
-                              'id' => 'user_id_c',
-                              'name' => 'xindai_guwen_c',
-                              'gonghao_c' => 'xindai_guwen_gonghao_c',
-                          ),
-                  ),
-          ),
-          1 => 
-          array (
-            'name' => 'xindai_guwen_gonghao_c',
-            'studio' => 'visible',
-            'label' => 'LBL_XINDAI_GUWEN_GONGHAO',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -134,7 +109,7 @@ array (
             'label' => 'LBL_JIATING_ZHIZHU',
           ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -142,7 +117,7 @@ array (
             'label' => 'LBL_GONGZUO_DANWEI',
           ),
         ),
-        7 => 
+        6 => 
         array (
           0 => 'description',
         ),
@@ -169,97 +144,6 @@ array (
             'name' => 'qita_lianren_guanxi',
             'label' => 'LBL_QITA_LIANREN_GUANXI',
           ),
-        ),
-      ),
-      'lbl_editview_panel3' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            'name' => 'qita_lianxiren_xinming_2_c',
-            'label' => 'LBL_QITA_LIANXIREN_XINMING_2',
-          ),
-          1 => 
-          array (
-            'name' => 'qita_lianxiren_dianhua_2_c',
-            'label' => 'LBL_QITA_LIANXIREN_DIANHUA_2',
-          ),
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            'name' => 'qita_lianxiren_guanxi_2_c',
-            'label' => 'LBL_QITA_LIANXIREN_GUANXI_2',
-          ),
-          1 => '',
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'qita_lianxiren_xinming_3_c',
-            'label' => 'LBL_QITA_LIANXIREN_XINMING_3',
-          ),
-          1 => 
-          array (
-            'name' => 'qita_lianxiren_dianhua_3_c',
-            'label' => 'LBL_QITA_LIANXIREN_DIANHUA_3',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'qita_lianxiren_guanxi_3_c',
-            'label' => 'LBL_QITA_LIANXIREN_GUANXI_3',
-          ),
-          1 => '',
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'qita_lianxiren_xinming_4_c',
-            'label' => 'LBL_QITA_LIANXIREN_XINMING_4',
-          ),
-          1 => 
-          array (
-            'name' => 'qita_lianxiren_dianhua_4_c',
-            'label' => 'LBL_QITA_LIANXIREN_DIANHUA_4',
-          ),
-        ),
-        5 => 
-        array (
-          0 => 
-          array (
-            'name' => 'qita_lianxiren_guanxi_4_c',
-            'label' => 'LBL_QITA_LIANXIREN_GUANXI_4',
-          ),
-          1 => '',
-        ),
-        6 => 
-        array (
-          0 => 
-          array (
-            'name' => 'qita_lianxiren_xinming_5_c',
-            'label' => 'LBL_QITA_LIANXIREN_XINMING_5',
-          ),
-          1 => 
-          array (
-            'name' => 'qita_lianxiren_dianhua_5_c',
-            'label' => 'LBL_QITA_LIANXIREN_DIANHUA_5',
-          ),
-        ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'qita_lianxiren_guanxi_5_c',
-            'label' => 'LBL_QITA_LIANXIREN_GUANXI_5',
-          ),
-          1 => '',
         ),
       ),
       'lbl_editview_panel2' => 

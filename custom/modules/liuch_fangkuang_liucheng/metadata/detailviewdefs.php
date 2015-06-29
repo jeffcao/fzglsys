@@ -525,12 +525,30 @@ array (
         array (
           0 => 
           array (
+            'name' => 'chanpin_yinghang_pifu_filename',
+            'label' => 'LBL_CHANPIN_YINGHANG_PIFU_FILENAME',
+          ),
+          1 => '',
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'chanpin_yongjin_shouqu_zhengming_filename',
+            'label' => 'LBL_CHANPIN_YONGJIN_SHOUQU_ZHENGMING_FILENAME',
+          ),
+          1 => '',
+        ),
+        8 => 
+        array (
+          0 => 
+          array (
             'name' => 'chanpin_beizhu',
             'studio' => 'visible',
             'label' => 'LBL_CHANPIN_BEIZHU',
           ),
         ),
-        7 => 
+        9 => 
         array (
           0 => 
           array (

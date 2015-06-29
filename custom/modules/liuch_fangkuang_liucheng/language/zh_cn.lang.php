@@ -1,5 +1,5 @@
 <?php
-// created: 2015-06-28 10:00:55
+// created: 2015-06-29 04:10:12
 $mod_strings = array (
   'LBL_EDITVIEW_PANEL1' => '风险审批',
   'LBL_EDITVIEW_PANEL2' => '部门审批',
@@ -76,4 +76,12 @@ $mod_strings = array (
   'LBL_BUMEN_SHENGPI_OPTION' => '部门经理审批',
   'LBL_YUQI_YONGJIN_BILI' => '预期佣金比例',
   'LBL_SHIJI_YONGJIN_BILI' => '佣金比例',
+  'LBL_FENKONG_BEIZHU' => '风控备注说明',
+  'LBL_BUMEN_BEIZHU' => '部门审批意见',
+  'LBL_CHANPIN_BEIZHU' => '产品备注意见',
+  'LBL_KEFU_BEIZHU' => '客服备注',
+  'LBL_CHANPIN_YINGHANG_PIFU_FILE_MIME_TYPE' => '银行批复文件类型',
+  'LBL_CHANPIN_YINGHANG_PIFU_FILENAME' => '上传银行批复',
+  'LBL_CHANPIN_YONGJIN_SHOUQU_ZHENGMING_FILE_MIME_TYPE' => '佣金收取证明文件类型',
+  'LBL_CHANPIN_YONGJIN_SHOUQU_ZHENGMING_FILENAME' => '佣金收取证明',
 );

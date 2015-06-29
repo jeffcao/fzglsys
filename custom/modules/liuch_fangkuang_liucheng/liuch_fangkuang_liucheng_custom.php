@@ -11,12 +11,14 @@ class fangkuang_liucheng_custom_class {
     public function get_liucheng_num($bean, $event, $arguments) {
         require_once('include/entryPoint.php');
         require_once('modules/Campaigns/utils.php');
+        global $timedate;
 //        global $db;
         if ($_REQUEST['action']== "submit_liucheng"){
 
             if ($bean->danju_zhuangtai == "zhidanzhong") {
                 $bean->danju_zhuangtai = "dai_fengkong_shenhe";
                 $bean->user_id_c = $this->get_next_handler_id($bean, "fengkong_jingli");
+                $bean->zhidan_date =  $timedate->to_db_date(date("m/d/Y"));
             }
             elseif ($bean->danju_zhuangtai == "dai_fengkong_shenhe") {
                 if ($bean->fenkong_option == "tongyi"){
@@ -25,6 +27,7 @@ class fangkuang_liucheng_custom_class {
                 }
                 else
                     $bean->danju_zhuangtai = "zhidanzhong";
+                $bean->fenkong_shengpi_date = $timedate->to_db_date(date("m/d/Y"));
             }
             elseif ($bean->danju_zhuangtai == "dai_bumen_shenhe") {
                 if ($bean->bumen_shengpi_option == "tongyi") {
@@ -33,6 +36,7 @@ class fangkuang_liucheng_custom_class {
                 }
                 else
                     $bean->danju_zhuangtai = "zhidanzhong";
+                $bean->bumen_shengpi_date =  $timedate->to_db_date(date("m/d/Y"));
             }
             elseif ($bean->danju_zhuangtai == "dai_chanpin_shenhe"){
                 if ($bean->chanpin_shengpi_option == "tongyi") {
@@ -43,9 +47,13 @@ class fangkuang_liucheng_custom_class {
                     $bean->danju_zhuangtai = "yichang_guanbi";
                 else
                     $bean->danju_zhuangtai = "zhidanzhong";
+                $bean->chanpin_shengpi_date =  $timedate->to_db_date(date("m/d/Y"));
             }
-            elseif ($bean->danju_zhuangtai == "dai_kehu_chuli")
+            elseif ($bean->danju_zhuangtai == "dai_kehu_chuli"){
+                $bean->kefu_chuli_date =  $timedate->to_db_date(date("m/d/Y"));
                 $bean->danju_zhuangtai = "wancheng_huifang";
+            }
+
         }
 
         if(isset($bean->fetched_row['id'])) { return; }

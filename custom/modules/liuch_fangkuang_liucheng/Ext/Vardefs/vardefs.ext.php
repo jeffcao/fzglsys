@@ -2,13 +2,20 @@
  //WARNING: The contents of this file are auto-generated
 
 
+ // created: 2015-06-29 02:27:44
+$dictionary['liuch_fangkuang_liucheng']['fields']['bumen_beizhu']['rows']='6';
+$dictionary['liuch_fangkuang_liucheng']['fields']['bumen_beizhu']['cols']='80';
+
+ 
+
  // created: 2015-06-12 05:29:50
 $dictionary['liuch_fangkuang_liucheng']['fields']['bumen_jingli_c']['labelValue']='部门经理';
 
  
 
- // created: 2015-06-28 09:44:44
+ // created: 2015-06-29 02:38:31
 $dictionary['liuch_fangkuang_liucheng']['fields']['bumen_shengpi_option']['default']='';
+$dictionary['liuch_fangkuang_liucheng']['fields']['bumen_shengpi_option']['options']='fzglsys_daikuang_shenqing_option02_list';
 
  
 
@@ -24,6 +31,12 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['caichan_zhengming_filename'][
 
  
 
+ // created: 2015-06-29 02:28:06
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_beizhu']['rows']='6';
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_beizhu']['cols']='80';
+
+ 
+
  // created: 2015-06-12 05:35:07
 $dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_jingli_c']['labelValue']='产品经理';
 
@@ -31,6 +44,30 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_jingli_c']['labelValu
 
  // created: 2015-06-28 09:43:22
 $dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_shengpi_option']['default']='';
+
+ 
+
+ // created: 2015-06-29 04:09:40
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_yinghang_pifu_file_mime_type']['importable']='true';
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_yinghang_pifu_file_mime_type']['merge_filter']='disabled';
+
+ 
+
+ // created: 2015-06-29 04:09:09
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_yinghang_pifu_filename']['importable']='true';
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_yinghang_pifu_filename']['merge_filter']='disabled';
+
+ 
+
+ // created: 2015-06-29 04:10:02
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_yongjin_shouqu_zhengming_file_mime_type']['importable']='true';
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_yongjin_shouqu_zhengming_file_mime_type']['merge_filter']='disabled';
+
+ 
+
+ // created: 2015-06-29 04:10:12
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_yongjin_shouqu_zhengming_filename']['importable']='true';
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_yongjin_shouqu_zhengming_filename']['merge_filter']='disabled';
 
  
 
@@ -71,6 +108,12 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['dangju_created_by_id_c']['lab
 
  // created: 2015-06-12 05:28:15
 $dictionary['liuch_fangkuang_liucheng']['fields']['fengkong_jingli_c']['labelValue']='风控经理';
+
+ 
+
+ // created: 2015-06-29 02:27:31
+$dictionary['liuch_fangkuang_liucheng']['fields']['fenkong_beizhu']['rows']='6';
+$dictionary['liuch_fangkuang_liucheng']['fields']['fenkong_beizhu']['cols']='80';
 
  
 
@@ -203,6 +246,12 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['jinrong_fenzhi_jigou_c']['lab
 
  // created: 2015-06-12 09:36:57
 $dictionary['liuch_fangkuang_liucheng']['fields']['jinrong_jigou_c']['labelValue']='金融机构';
+
+ 
+
+ // created: 2015-06-29 02:28:44
+$dictionary['liuch_fangkuang_liucheng']['fields']['kefu_beizhu']['rows']='6';
+$dictionary['liuch_fangkuang_liucheng']['fields']['kefu_beizhu']['cols']='80';
 
  
 
@@ -757,6 +806,64 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['qita2_zhengming_file_url'] = 
 $dictionary['liuch_fangkuang_liucheng']['fields']['qita2_zhengming_filename'] = array(
     'name' => 'qita2_zhengming_filename',
     'vname' => 'LBL_QITA2_ZHENGMING_FILENAME',
+    'type' => 'file',
+    'dbType' => 'varchar',
+    'len' => '255',
+    'reportable'=>true,
+    'importable' => false,
+);
+
+
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_yinghang_pifu_file_mime_type'] = array(
+    'name' => 'chanpin_yinghang_pifu_file_mime_type',
+    'vname' => 'LBL_CHANPIN_YINGHANG_PIFU_FILE_MIME_TYPE',
+    'type' => 'varchar',
+    'len' => '100',
+    'importable' => false,
+);
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_yinghang_pifu_file_url'] = array(
+    'name'=>'chanpin_yinghang_pifu_file_url',
+    'vname' => 'LBL_CHANPIN_YINGHANG_PIFU_FILE_URL',
+    'type'=>'function',
+    'function_class'=>'UploadFile',
+    'function_name'=>'get_upload_url',
+    'function_params'=> array('$this'),
+    'source'=>'function',
+    'reportable'=>false,
+    'importable' => false,
+);
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_yinghang_pifu_filename'] = array(
+    'name' => 'chanpin_yinghang_pifu_filename',
+    'vname' => 'LBL_CHANPIN_YINGHANG_PIFU_FILENAME',
+    'type' => 'file',
+    'dbType' => 'varchar',
+    'len' => '255',
+    'reportable'=>true,
+    'importable' => false,
+);
+
+
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_yongjin_shouqu_zhengming_file_mime_type'] = array(
+    'name' => 'chanpin_yongjin_shouqu_zhengming_file_mime_type',
+    'vname' => 'LBL_CHANPIN_YONGJIN_SHOUQU_ZHENGMING_FILE_MIME_TYPE',
+    'type' => 'varchar',
+    'len' => '100',
+    'importable' => false,
+);
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_yongjin_shouqu_zhengming_file_url'] = array(
+    'name'=>'chanpin_yongjin_shouqu_zhengming_file_url',
+    'vname' => 'LBL_CHANPIN_YONGJIN_SHOUQU_ZHENGMING_FILE_URL',
+    'type'=>'function',
+    'function_class'=>'UploadFile',
+    'function_name'=>'get_upload_url',
+    'function_params'=> array('$this'),
+    'source'=>'function',
+    'reportable'=>false,
+    'importable' => false,
+);
+$dictionary['liuch_fangkuang_liucheng']['fields']['chanpin_yongjin_shouqu_zhengming_filename'] = array(
+    'name' => 'chanpin_yongjin_shouqu_zhengming_filename',
+    'vname' => 'LBL_CHANPIN_YONGJIN_SHOUQU_ZHENGMING_FILENAME',
     'type' => 'file',
     'dbType' => 'varchar',
     'len' => '255',

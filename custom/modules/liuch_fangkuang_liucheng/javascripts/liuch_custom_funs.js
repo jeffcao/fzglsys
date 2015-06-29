@@ -32,6 +32,18 @@ function liucheng_controll(panel_id) {
 
 }
 
+function disable_date_input(input_id){
+    var c_span = document.getElementById(input_id).parentElement;
+    var all_input_objs = $(c_span).find("input");
+    $(all_input_objs).each(function(index, input_obj){
+        $(input_obj).prop('disabled', true);
+    });
+    var all_img_objs = $(c_span).find("img");
+    $(all_img_objs).each(function(index, img_obj){
+        if ($(img_obj).id != "" && $(img_obj).id != "undefined"){ $(img_obj).hide();}
+    });
+}
+
 function disabled_action_buttons(){
     $("#SAVE_HEADER").prop('disabled', true);
     $("#CANCEL_HEADER").prop('disabled', true);
@@ -68,7 +80,72 @@ function always_disabled_obj(){
     $("#jiekuangren_jiating_zhuzhi_c").prop('disabled', true);
     $("#jiekuangren_lianxi_dianhua_c").prop('disabled', true);
 
+    disable_date_input("fenkong_shengpi_date");
+    disable_date_input("bumen_shengpi_date");
+    disable_date_input("chanpin_shengpi_date");
+    disable_date_input("kefu_chuli_date");
+
 }
+
+function checkStatusOption(liucheng_status){
+
+    if (liucheng_status == "dai_fengkong_shenhe")
+    {
+        setFieldRequired("fenkong_option", true);
+    }
+    else if (liucheng_status == "dai_bumen_shenhe"){
+        setFieldRequired("bumen_shengpi_option", true);
+    }
+    else if (liucheng_status == "dai_chanpin_shenhe"){
+        setFieldRequired("chanpin_shengpi_option", true);
+    }
+    else if (liucheng_status == "dai_kehu_chuli" ){
+
+    }
+}
+
+function onOptionsChanged(select_obj, req_field){
+    if(select_obj.options[select_obj.selectedIndex].value == "butongyi") {
+        setFieldRequired(req_field, true, "请填写说明.");
+    }
+    else {
+        //no longer required
+        setFieldRequired(req_field, false);
+    }
+
+}
+
+function onChanpinOptionsChanged(select_obj){
+
+    if(select_obj.options[select_obj.selectedIndex].value != "tongyi") {
+        setFieldRequired("chanpin_beizhu", true, "请填写说明.");
+    }
+    else {
+        //no longer required
+        setFieldRequired("chanpin_beizhu", false);
+        setFieldRequired("yinhang_shengpi_date", true);
+        setFieldRequired("fangkuang_date", true);
+        setFieldRequired("fangkuang_jine", true);
+        setFieldRequired("shiji_yongjin", true);
+        setFieldRequired("shiji_yongjin_bili", true);
+        setFieldRequired("chanpin_shoukuang_type", true);
+        setFieldRequired("chanpin_yongjin_shouqu_zhengming_filename", true);
+
+    }
+
+}
+
+function setFieldRequired(fieldName, req, msgStr){
+    if(!msgStr){ msgStr = ""; }
+    for(var i = 0; i < validate["EditView"].length; i++){
+        if(validate["EditView"][i][nameIndex] == fieldName) {
+            validate["EditView"][i][msgIndex] = msgStr;
+            validate["EditView"][i][requiredIndex] = req;
+            break;
+        }
+    }
+}
+
 $(document).ready(function(){
 
     always_disabled_obj();
@@ -91,4 +168,6 @@ $(document).ready(function(){
 
     if (disabled_all == "1" || liucheng_status == "yichang_guanbi" || liucheng_status == "wancheng_huifang")
         disabled_action_buttons();
+
+    checkStatusOption(liucheng_status);
 })

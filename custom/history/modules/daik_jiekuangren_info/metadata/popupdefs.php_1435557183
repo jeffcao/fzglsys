@@ -215,15 +215,5 @@ $popupMeta = array (
     'width' => '10%',
     'name' => 'xindai_guwen_c',
   ),
-  'XINDAI_GUWEN_GONGHAO_C' => 
-  array (
-    'type' => 'varchar',
-    'studio' => 'visible',
-    'sortable' => false,
-    'label' => 'LBL_XINDAI_GUWEN_GONGHAO',
-    'width' => '10%',
-    'default' => true,
-    'name' => 'xindai_guwen_gonghao_c',
-  ),
 ),
 );

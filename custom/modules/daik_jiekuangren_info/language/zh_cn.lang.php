@@ -1,5 +1,5 @@
 <?php
-// created: 2015-06-28 12:14:02
+// created: 2015-06-29 07:51:34
 $mod_strings = array (
   'LNK_NEW_RECORD' => '创建 借款人档案',
   'LNK_LIST' => '视图 借款人档案',
@@ -13,6 +13,23 @@ $mod_strings = array (
   'LBL_QITA_LIANXIREN_XINMING' => '备用联系人姓名',
   'LBL_QITA_LIANXIREN_DIANHUA' => '备用联系人电话',
   'LBL_EDITVIEW_PANEL2' => '配偶信息',
-  'LBL_EDITVIEW_PANEL3' => '维护信息',
+  'LBL_EDITVIEW_PANEL3' => '备用联系人(更多)',
   'LBL_DANANG_BIANHAO' => '档案编号',
+  'LBL_DETAILVIEW_PANEL4' => '备用联系人(更多)',
+  'LBL_DETAILVIEW_PANEL5' => '新建面板 5',
+  'LBL_QITA_LIANXIREN_XINMING_2' => '备用联系人姓名(2)',
+  'LBL_QITA_LIANXIREN_DIANHUA_2' => '备用联系人电话(2)',
+  'LBL_QITA_LIANXIREN_GUANXI_2' => '和借款人关系(2)',
+  'LBL_QITA_LIANXIREN_DIANHUA_3' => '备用联系人电话(3)',
+  'LBL_QITA_LIANXIREN_GUANXI_3' => '和借款人关系(3)',
+  'LBL_QITA_LIANXIREN_XINMING_3' => '备用联系人姓名(3)',
+  'LBL_QITA_LIANXIREN_DIANHUA_4' => '备用联系人电话(4)',
+  'LBL_QITA_LIANXIREN_GUANXI_4' => '和借款人关系(4)',
+  'LBL_QITA_LIANXIREN_XINMING_4' => '备用联系人姓名(4)',
+  'LBL_QITA_LIANXIREN_DIANHUA_5' => '备用联系人电话(5)',
+  'LBL_QITA_LIANXIREN_GUANXI_5' => '和借款人关系(5)',
+  'LBL_QITA_LIANXIREN_XINMING_5' => '备用联系人姓名(5)',
+  'LBL_HUNYIN_ZHUANGKUANG' => '婚姻状况(del)',
+  'LBL_HUNYIN_ZHUANGKUANG_1' => '婚姻状况',
+  'LBL_XINDAI_GUWEN_GONGHAO' => '信贷顾问工号',
 );

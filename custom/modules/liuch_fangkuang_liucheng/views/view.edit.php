@@ -34,6 +34,7 @@ class liuch_fangkuang_liuchengViewEdit extends ViewEdit {
 //
 
         global $current_user;
+        global $timedate;
 
         $this->bean->custom_fields->retrieve();
 //
@@ -50,8 +51,24 @@ class liuch_fangkuang_liuchengViewEdit extends ViewEdit {
 //            unset($this->ev->defs['panels']['lbl_editview_panel4']);
 //            $th = new TemplateHandler();
 //            $th->clearCache($this->module);
-
+//            $timedate->get_user_date_format()
         }
+        if ($this->bean->danju_zhuangtai == "zhidanzhong"){
+            $this->bean->zhidan_date = date("m/d/Y");
+        }
+        elseif($this->bean->danju_zhuangtai == "dai_fengkong_shenhe"){
+            $this->bean->fenkong_shengpi_date = date("m/d/Y");
+        }
+        elseif($this->bean->danju_zhuangtai == "dai_bumen_shenhe"){
+            $this->bean->bumen_shengpi_date = date("m/d/Y");
+        }
+        elseif($this->bean->danju_zhuangtai == "dai_chanpin_shenhe"){
+            $this->bean->chanpin_shengpi_date = date("m/d/Y");
+        }
+        elseif($this->bean->danju_zhuangtai == "dai_kehu_chuli"){
+            $this->bean->kefu_chuli_date = date("m/d/Y");
+        }
+
         $GLOBALS['log']->info("liuch_fangkuang_liuchengViewEdit.display");
 //        var_dump($this->ev);
         $this->ev->ss->assign('liucheng_status', $this->bean->danju_zhuangtai);
