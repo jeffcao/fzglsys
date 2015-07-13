@@ -1,5 +1,5 @@
 <?php
-// created: 2015-06-29 04:10:12
+// created: 2015-07-13 16:45:31
 $mod_strings = array (
   'LBL_EDITVIEW_PANEL1' => '风险审批',
   'LBL_EDITVIEW_PANEL2' => '部门审批',
@@ -74,8 +74,8 @@ $mod_strings = array (
   'LBL_CHANPIN_SHENGPI_OPTION' => '产品经理审批',
   'LBL_FENKONG_OPTION' => '风控审批',
   'LBL_BUMEN_SHENGPI_OPTION' => '部门经理审批',
-  'LBL_YUQI_YONGJIN_BILI' => '预期佣金比例',
-  'LBL_SHIJI_YONGJIN_BILI' => '佣金比例',
+  'LBL_YUQI_YONGJIN_BILI' => '预期佣金比例(%)',
+  'LBL_SHIJI_YONGJIN_BILI' => '佣金比例(%)',
   'LBL_FENKONG_BEIZHU' => '风控备注说明',
   'LBL_BUMEN_BEIZHU' => '部门审批意见',
   'LBL_CHANPIN_BEIZHU' => '产品备注意见',

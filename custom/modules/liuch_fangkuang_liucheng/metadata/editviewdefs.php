@@ -103,7 +103,7 @@ array (
             'label' => 'LBL_JIEKUANGREN',
             'displayParams' => 
             array (
-              'initial_filter' => '&created_by_advanced="+encodeURIComponent("{$current_user->id}")+"',
+              'initial_filter' => '&user_id_c_advanced="+encodeURIComponent("{$current_user->id}")+"',
               'field_to_name_array' => 
               array (
                 'id' => 'daik_jiekuangren_info_id_c',

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2015-06-29 13:43:21
+-- Generation Time: 2015-07-13 18:10:19
 -- 服务器版本： 5.6.24
 -- PHP Version: 5.6.8
 
@@ -2834,17 +2834,6 @@ CREATE TABLE IF NOT EXISTS `daik_jiekuangren_info` (
   `zhiwu` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- 转存表中的数据 `daik_jiekuangren_info`
---
-
-INSERT INTO `daik_jiekuangren_info` (`id`, `name`, `date_entered`, `date_modified`, `modified_user_id`, `created_by`, `description`, `deleted`, `assigned_user_id`, `danang_bianhao`, `zhengjian_leixin`, `zhengjian_haoma`, `hunyin_zhuangkuang`, `qita_lianxiren_xinming`, `qita_lianxiren_dianhua`, `qita_lianren_guanxi`, `jiekuanren_peiou_xinming`, `peiou_zhengjian_leixin`, `peiou_zhengjian_haoma`, `peiou_gongzuo_danwei`, `peiou_zhiwu`, `jiating_zhizhu`, `lianxi_dianhua`, `gongzuo_danwei`, `zhiwu`) VALUES
-('3fe2834e-c3ba-6f28-261c-5590e5cd987d', '吴贷款', '2015-06-29 06:28:17', '2015-06-29 06:28:17', '1', '1', '', 0, NULL, '201506000002', 'shenfenzheng', '3243434234234', NULL, 'asdfas', '23213213', 'sadfasfd', '', 'shenfenzheng', '', '', '', 'safsdfsdaf', '34343434', '', ''),
-('79cc41d8-f0a1-c727-79bd-558cb93e9cbc', '姚晓军', '2015-06-26 02:32:25', '2015-06-29 00:44:25', '1', '1', '是盛大发售', 0, '', '201506000001', 'shenfenzheng', '321084198101020457', '已婚', '张三', '23423423423', '朋友', '李四', 'shenfenzheng', '234234234234', '南京市政府', '2342342342', '南京鼓楼区东井一村', '13813865281', '富洲金融', '经理'),
-('7c400e83-2ca0-0b69-5b33-5544482d4dd2', '李本人', '2015-05-02 03:44:45', '2015-06-26 02:29:19', '1', '1', NULL, 1, '', '201505000002', 'huzhao', '65757', NULL, '456757', '78678', '567', NULL, 'shenfenzheng', NULL, NULL, NULL, '346546', '65876868', NULL, '3423423'),
-('87f11b60-aaec-a901-8f4c-55516bd33a01', '231231', '2015-05-12 02:54:11', '2015-05-16 08:24:00', '1', '1', NULL, 1, '1', '201505000003', 'shenfenzheng', '', NULL, '', '', '', NULL, 'shenfenzheng', NULL, NULL, NULL, '', '', NULL, NULL),
-('eae96076-9bae-c708-abcd-554447a2df6a', '刘某人', '2015-05-02 03:43:57', '2015-06-26 02:29:19', '1', '1', '', 1, NULL, '201505000001', 'shenfenzheng', '234234234', '', '234', '234234', '234234', '', 'shenfenzheng', '', '', '', '234234234', '456456456', '', '');
-
 -- --------------------------------------------------------
 
 --
@@ -2890,16 +2879,6 @@ CREATE TABLE IF NOT EXISTS `daik_jiekuangren_info_cstm` (
   `hunyin_zhuangkuang_1_c` varchar(100) DEFAULT 'yihun'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- 转存表中的数据 `daik_jiekuangren_info_cstm`
---
-
-INSERT INTO `daik_jiekuangren_info_cstm` (`id_c`, `user_id_c`, `qita_lianxiren_xinming_2_c`, `qita_lianxiren_dianhua_2_c`, `qita_lianxiren_guanxi_2_c`, `qita_lianxiren_dianhua_3_c`, `qita_lianxiren_guanxi_3_c`, `qita_lianxiren_xinming_3_c`, `qita_lianxiren_dianhua_4_c`, `qita_lianxiren_guanxi_4_c`, `qita_lianxiren_xinming_4_c`, `qita_lianxiren_dianhua_5_c`, `qita_lianxiren_guanxi_5_c`, `qita_lianxiren_xinming_5_c`, `hunyin_zhuangkuang_1_c`) VALUES
-('3fe2834e-c3ba-6f28-261c-5590e5cd987d', '1', '', '', '', '', '', '', '', '', '', '', '', '', 'yihun'),
-('79cc41d8-f0a1-c727-79bd-558cb93e9cbc', 'b29ab482-6548-84ec-ba10-558cbb500a58', '', '', '', '', '', '', '', '', '', '', '', '', 'yihun'),
-('7c400e83-2ca0-0b69-5b33-5544482d4dd2', '880d930e-94ac-ba6d-2144-554434911d8e', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('eae96076-9bae-c708-abcd-554447a2df6a', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
-
 -- --------------------------------------------------------
 
 --
@@ -2927,17 +2906,6 @@ CREATE TABLE IF NOT EXISTS `daik_jinrong_jigou_info` (
   `lianxiren_dianhua` varchar(255) DEFAULT NULL,
   `wangzhan` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- 转存表中的数据 `daik_jinrong_jigou_info`
---
-
-INSERT INTO `daik_jinrong_jigou_info` (`id`, `name`, `date_entered`, `date_modified`, `modified_user_id`, `created_by`, `description`, `deleted`, `assigned_user_id`, `jigou_leixin`, `jigou_bianma`, `fenzhi_jigou`, `fenzhi_jigou_bianma`, `youbian`, `dizhi`, `lianxiren_xinming`, `lianxiren_dianhua`, `wangzhan`) VALUES
-('70ed875e-5fbb-0a68-4da9-558cb6930fa1', '中银消费金融有限公司', '2015-06-26 02:19:12', '2015-06-26 02:19:35', '1', '1', 'test', 0, '', 'xiaofei_jinrong_gongsi', '02002', NULL, NULL, NULL, NULL, '李重阳', '13456789023', 'http://www.chongyang.com'),
-('c4534437-7f56-1d05-b067-557aa1043b4a', '金融机构001号', '2015-06-12 09:08:58', '2015-06-12 09:09:43', '1', '1', '', 1, NULL, 'shangye_yinhang', '001', NULL, NULL, '', '', '金一号', '234234234', 'http://'),
-('c6714b17-f885-457f-5a38-557aa1e16795', '金融机构001号', '2015-06-12 09:10:06', '2015-06-26 02:18:22', '1', '1', '', 1, NULL, 'shangye_yinhang', '01001', NULL, NULL, '', '', '金一号', '242424', 'http://'),
-('cbfc33ee-8a0d-ab42-e1b8-558cb7afc59b', '招商银行', '2015-06-26 02:23:26', '2015-06-26 05:51:11', '1', '1', 'test', 1, NULL, 'shangye_yinhang', '01002', NULL, NULL, '', '', '典韦', '1345678903', 'http://'),
-('cca7fc33-bcd0-42d0-c5a1-557aaaca77c1', '金融机构002号', '2015-06-12 09:47:15', '2015-06-26 02:18:22', '1', '1', '', 1, NULL, 'xiaofei_jinrong_gongsi', '02001', NULL, NULL, '', '', '金二号', '2342342', 'http://');
 
 -- --------------------------------------------------------
 
@@ -3492,17 +3460,6 @@ CREATE TABLE IF NOT EXISTS `fdi2m_jinrong_chanpin_info` (
   `lilv` float(18,8) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- 转存表中的数据 `fdi2m_jinrong_chanpin_info`
---
-
-INSERT INTO `fdi2m_jinrong_chanpin_info` (`id`, `name`, `date_entered`, `date_modified`, `modified_user_id`, `created_by`, `description`, `deleted`, `assigned_user_id`, `chanpin_daima`, `danbao_fangshi`, `zuichang_qixian`, `zuigao_erdu`, `currency_id`, `lilv`) VALUES
-('1a410576-f204-eaa8-1601-557aa9471d78', '金融机构001号产品001', '2015-06-12 09:42:09', '2015-06-12 09:43:33', '1', '1', '', 1, NULL, '', NULL, '12.00000000', '123123.000000', NULL, 1.00000000),
-('2b7adadf-c9a9-2b6f-6bb2-556ece985f6b', 'AAA', '2015-06-03 09:53:38', '2015-06-03 09:54:03', '1', '1', '', 1, NULL, '234234', 'asdfa', '34.00000000', '234234.000000', NULL, 2.00000000),
-('32f991fa-5fcb-5ab4-0588-557aa9c4496f', '金融机构001号产品001', '2015-06-12 09:43:56', '2015-06-12 09:44:04', '1', '1', '', 1, NULL, '', NULL, '12.00000000', '123123.000000', NULL, 1.00000000),
-('d159f913-2c8b-e445-7995-557aaaa8af3c', '金融机构001号产品001', '2015-06-12 09:45:06', '2015-06-26 02:25:06', '1', '1', '', 1, NULL, '010010001', NULL, '12.00000000', '123123.000000', NULL, 1.00000000),
-('e1a2c16e-36c9-f35f-d526-558cb8d5a173', '新易贷', '2015-06-26 02:26:01', '2015-06-26 02:28:28', '1', '1', 'test', 0, '', '020020001', NULL, '36.00000000', '20.000000', '', 0.88000000);
-
 -- --------------------------------------------------------
 
 --
@@ -3536,17 +3493,6 @@ CREATE TABLE IF NOT EXISTS `fdi2m_jinrong_chanpin_info_cstm` (
   `danbao_fangshi2_c` varchar(100) DEFAULT 'diya'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- 转存表中的数据 `fdi2m_jinrong_chanpin_info_cstm`
---
-
-INSERT INTO `fdi2m_jinrong_chanpin_info_cstm` (`id_c`, `daik_jinrong_jigou_info_id_c`, `danbao_fangshi2_c`) VALUES
-('1a410576-f204-eaa8-1601-557aa9471d78', 'c6714b17-f885-457f-5a38-557aa1e16795', 'diya'),
-('2b7adadf-c9a9-2b6f-6bb2-556ece985f6b', '', NULL),
-('32f991fa-5fcb-5ab4-0588-557aa9c4496f', 'c6714b17-f885-457f-5a38-557aa1e16795', 'diya'),
-('d159f913-2c8b-e445-7995-557aaaa8af3c', 'c6714b17-f885-457f-5a38-557aa1e16795', 'diya'),
-('e1a2c16e-36c9-f35f-d526-558cb8d5a173', '70ed875e-5fbb-0a68-4da9-558cb6930fa1', 'xinyong');
-
 -- --------------------------------------------------------
 
 --
@@ -3570,20 +3516,6 @@ CREATE TABLE IF NOT EXISTS `fdi2m_jinrong_fenzhi_jigou_info` (
   `lianxiren_dianhua` varchar(255) DEFAULT NULL,
   `wangzhan` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- 转存表中的数据 `fdi2m_jinrong_fenzhi_jigou_info`
---
-
-INSERT INTO `fdi2m_jinrong_fenzhi_jigou_info` (`id`, `name`, `date_entered`, `date_modified`, `modified_user_id`, `created_by`, `description`, `deleted`, `assigned_user_id`, `fenzhi_jigou_bianhao`, `dizhi`, `lianxiren_xinming`, `lianxiren_dianhua`, `wangzhan`) VALUES
-('31d80cb3-e5aa-8f4a-a6ee-557aab2b424d', '金融机构002号分支机构001', '2015-06-12 09:50:26', '2015-06-12 09:51:31', '1', '1', '', 1, NULL, '', '', '金二号001', 'wrwrwer', 'http://'),
-('405167b3-2c4c-82e2-6f6a-557aa6fafb32', '金融机构001号分支机构001', '2015-06-12 09:30:14', '2015-06-12 09:33:45', '1', '1', '', 1, NULL, '', '', '金一号001', '34234234', 'http://'),
-('454b00ad-f622-fd94-bd1a-557aa7882bd3', '金融机构001号分支机构002', '2015-06-12 09:34:32', '2015-06-26 02:23:44', '1', '1', '', 1, NULL, '01001002', '', '金一号002', '23423424', 'http://'),
-('7a9ad8d0-c2a0-f3b7-a63f-557aaaba8a13', '金融机构002号分支机构001', '2015-06-12 09:48:05', '2015-06-12 09:49:41', '1', '1', '', 1, NULL, '', '', '金二号001', '23234', 'http://'),
-('81dc1ca5-4939-1e30-615a-557aa77a427d', '金融机构001号分支机构001', '2015-06-12 09:34:02', '2015-06-26 02:23:44', '1', '1', '', 1, NULL, '01001001', '', '金一号001', '23424234', 'http://'),
-('8b640847-445f-0664-2847-558cb731924c', '招商银行御道街支行', '2015-06-26 02:24:40', '2015-06-26 05:52:21', '1', '1', 'test', 1, NULL, '01002001', '', '赵四', '13567989323', 'http://zhaohangyudaojie.com'),
-('9d6d7350-4f06-e126-3848-557aa509f2e4', '金融机构001号分支机构001', '2015-06-12 09:27:19', '2015-06-12 09:29:50', '1', '1', '', 1, NULL, '', '', '金一号001', '23423424', 'http://'),
-('c1540c50-29bb-da89-111e-557aab3916a3', '金融机构002号分支机构001', '2015-06-12 09:52:10', '2015-06-26 02:23:44', '1', '1', '', 1, NULL, '02001001', '', '金二号001', '23423424', 'http://');
 
 -- --------------------------------------------------------
 
@@ -3616,20 +3548,6 @@ CREATE TABLE IF NOT EXISTS `fdi2m_jinrong_fenzhi_jigou_info_cstm` (
   `id_c` char(36) NOT NULL,
   `daik_jinrong_jigou_info_id_c` char(36) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- 转存表中的数据 `fdi2m_jinrong_fenzhi_jigou_info_cstm`
---
-
-INSERT INTO `fdi2m_jinrong_fenzhi_jigou_info_cstm` (`id_c`, `daik_jinrong_jigou_info_id_c`) VALUES
-('31d80cb3-e5aa-8f4a-a6ee-557aab2b424d', 'cca7fc33-bcd0-42d0-c5a1-557aaaca77c1'),
-('405167b3-2c4c-82e2-6f6a-557aa6fafb32', 'c6714b17-f885-457f-5a38-557aa1e16795'),
-('454b00ad-f622-fd94-bd1a-557aa7882bd3', 'c6714b17-f885-457f-5a38-557aa1e16795'),
-('7a9ad8d0-c2a0-f3b7-a63f-557aaaba8a13', 'cca7fc33-bcd0-42d0-c5a1-557aaaca77c1'),
-('81dc1ca5-4939-1e30-615a-557aa77a427d', 'c6714b17-f885-457f-5a38-557aa1e16795'),
-('8b640847-445f-0664-2847-558cb731924c', 'cbfc33ee-8a0d-ab42-e1b8-558cb7afc59b'),
-('9d6d7350-4f06-e126-3848-557aa509f2e4', 'c6714b17-f885-457f-5a38-557aa1e16795'),
-('c1540c50-29bb-da89-111e-557aab3916a3', 'cca7fc33-bcd0-42d0-c5a1-557aaaca77c1');
 
 -- --------------------------------------------------------
 
@@ -4052,41 +3970,6 @@ CREATE TABLE IF NOT EXISTS `liuch_fangkuang_liucheng` (
   `chanpin_yongjin_shouqu_zhengming_filename` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- 转存表中的数据 `liuch_fangkuang_liucheng`
---
-
-INSERT INTO `liuch_fangkuang_liucheng` (`id`, `name`, `date_entered`, `date_modified`, `modified_user_id`, `created_by`, `description`, `deleted`, `assigned_user_id`, `zhidan_date`, `danju_zhuangtai`, `shenqing_jine`, `currency_id`, `huankuang_zhouqi`, `daikuang_leixin`, `yuqi_yongjin`, `yuqi_yongjin_bili`, `yuqi_shoukuang_type`, `fenkong_option`, `fenkong_beizhu`, `fenkong_shengpi_date`, `bumen_shengpi_option`, `bumen_beizhu`, `bumen_shengpi_date`, `chanpin_shengpi_option`, `yinhang_shengpi_date`, `fangkuang_date`, `fangkuang_jine`, `daikuang_daoqiri`, `shiji_yongjin`, `shiji_yongjin_bili`, `chanpin_shoukuang_type`, `chanpin_beizhu`, `chanpin_shengpi_date`, `kefu_ziliao_guidang`, `kefu_beizhu`, `kefu_chuli_date`, `shenfen_zhengming_file_mime_type`, `shenfen_zhengming_filename`, `hunyin_zhengming_file_mime_type`, `hunyin_zhengming_filename`, `shouru_zhengming_file_mime_type`, `shouru_zhengming_filename`, `caichan_zhengming_file_mime_type`, `caichan_zhengming_filename`, `yongtu_zhengming_file_mime_type`, `yongtu_zhengming_filename`, `qita1_zhengming_file_mime_type`, `qita1_zhengming_filename`, `qita2_zhengming_file_mime_type`, `qita2_zhengming_filename`, `chanpin_yinghang_pifu_file_mime_type`, `chanpin_yinghang_pifu_filename`, `chanpin_yongjin_shouqu_zhengming_file_mime_type`, `chanpin_yongjin_shouqu_zhengming_filename`) VALUES
-('132ed574-efb8-f27a-d4b7-558cc2620bfc', '2015060007', '2015-06-26 03:11:27', '2015-06-26 03:11:27', 'b29ab482-6548-84ec-ba10-558cbb500a58', 'b29ab482-6548-84ec-ba10-558cbb500a58', 'test', 0, NULL, '2015-06-26', 'dai_fengkong_shenhe', '20.000000', NULL, NULL, 'diya', '5.000000', 0.03000000, 'xianjin', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, 'application/octet-stream', 'ksrcmd.exe', 'application/octet-stream', 'ksrcmd.exe', NULL, '', NULL, '', NULL, '', NULL, '', NULL, '', NULL, NULL, NULL, NULL),
-('240d72f4-7d7a-95d7-fe28-558d2fb3bcca', '2015060012', '2015-06-26 10:56:27', '2015-06-26 10:56:27', '845bbf79-391a-f29d-0a90-555729614d0b', '845bbf79-391a-f29d-0a90-555729614d0b', '', 0, NULL, '2015-06-26', 'zhidanzhong', '232.000000', NULL, NULL, 'diya', '232323.000000', 2.00000000, 'xianjin', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, '', NULL, '', NULL, '', NULL, '', NULL, '', NULL, '', NULL, NULL, NULL, NULL),
-('2769c7b8-c4d6-345a-a603-557d1187f4a2', '2015060005', '2015-06-14 05:30:14', '2015-06-14 05:30:14', '1', '1', '', 0, NULL, '2015-06-14', 'dai_kehu_chuli', '231232.000000', NULL, NULL, 'diya', '233.000000', 2.00000000, 'xianjin', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, '', NULL, '', NULL, '', NULL, '', NULL, '', NULL, '', NULL, NULL, NULL, NULL),
-('2ff56471-0d5f-fb45-092b-557d0c29fc2b', '2015060004', '2015-06-14 05:09:28', '2015-06-14 05:13:45', 'da26dab0-900d-916d-0bc0-55572a5c5184', '1', NULL, 0, '', '2015-06-14', 'dai_chanpin_shenhe', '132134343.000000', '', NULL, 'diya', '23.000000', 1.00000000, 'xianjin', 'tongyi', 'qweqweqw', NULL, 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('31e24f7e-d659-cf91-9bfd-554601304ec3', '2015050006', '2015-05-03 11:06:33', '2015-05-08 06:15:22', '1', '1', NULL, 1, '', '2015-05-03', 'zhidanzhong', '456.000000', '', '2015-05-22', 'diya', '456456.000000', 6.00000000, 'xianjin', 'tongyi', NULL, '2015-05-03', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('338672da-8cff-7162-8308-558ce0326d54', '2015060011', '2015-06-26 05:17:42', '2015-06-29 01:45:20', '845bbf79-391a-f29d-0a90-555729614d0b', '1', NULL, 0, '', '2015-06-26', 'dai_bumen_shenhe', '234234.000000', '', NULL, 'diya', '23424.000000', 3.00000000, 'xianjin', 'tongyi', 'asdasd', NULL, 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('44566f11-a804-08f2-480c-5545ff09eb45', '2015050003', '2015-05-03 11:00:49', '2015-05-03 11:05:54', '1', '1', '', 1, NULL, '2015-05-03', 'zhidanzhong', '454.000000', NULL, '2015-05-21', 'diya', '454545.000000', 5.00000000, 'xianjin', 'tongyi', '', '2015-05-03', 'tongyi', '', NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', '', NULL, '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('4a388f74-b30f-ae43-ae29-554601805554', '2015050006', '2015-05-03 11:09:30', '2015-05-06 09:44:45', '1', '1', NULL, 1, '', '2015-05-03', 'zhidanzhong', '3243.000000', '', '2015-05-09', 'diya', '4.000000', 34.00000000, 'xianjin', 'tongyi', NULL, '2015-05-03', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('58ee4b70-2630-10bf-a9ae-558f9a0b23c2', '2015060015', '2015-06-28 06:55:50', '2015-06-28 06:55:50', '1', '1', '', 0, NULL, '2015-06-28', 'zhidanzhong', '2343242.000000', NULL, NULL, 'diya', '3232.000000', 2.00000000, 'xianjin', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, '', NULL, '', NULL, '', NULL, '', NULL, '', NULL, '', NULL, NULL, NULL, NULL),
-('69435c0c-c0be-1a17-16dc-558f95b340bb', '2015060014', '2015-06-28 06:34:17', '2015-06-29 09:23:30', '1', '1', NULL, 0, '', '2015-06-28', 'zhidanzhong', '1231233.000000', '', NULL, 'diya', '233.000000', 2.00000000, 'xianjin', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('6a6dbc8c-c0d3-de89-2f96-557afc7108bc', '2015060003', '2015-06-12 15:38:18', '2015-06-13 02:38:25', '1', '1', NULL, 0, '', '2015-06-12', 'dai_fengkong_shenhe', '1213.000000', '', NULL, 'diya', '12.000000', 1.00000000, 'xianjin', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('6b66dcd8-c97c-1b67-5b61-5549e223340b', '6767', '2015-05-06 09:44:29', '2015-05-06 09:44:45', '1', '1', '', 1, NULL, '2015-05-06', 'zhidanzhong', '6.000000', NULL, '2015-05-21', 'diya', '6.000000', 6.00000000, 'xianjin', 'tongyi', '', '2015-05-06', 'tongyi', '', NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', '', NULL, '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('71a7091d-0fe3-cc6e-1e72-554c533d5a43', '2015050006', '2015-05-08 06:12:47', '2015-05-13 06:41:37', '1', '1', '', 1, NULL, '2015-05-08', 'zhidanzhong', '3.000000', NULL, '2015-05-22', 'diya', '3.000000', 3.00000000, 'xianjin', 'tongyi', '', '2015-05-08', 'tongyi', '', NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', '', NULL, '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('77b34a09-644d-6f92-7186-557d3aeef58e', '2015060006', '2015-06-14 08:24:00', '2015-06-14 08:24:00', '1', '1', '', 0, NULL, '2015-06-14', 'zhidanzhong', '231231.000000', NULL, NULL, 'diya', '321.000000', 1.00000000, 'xianjin', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, '', NULL, '', NULL, '', NULL, '', NULL, '', NULL, '', NULL, NULL, NULL, NULL),
-('8e58fa07-e63c-b32a-811f-558cdac55db3', '2015060009', '2015-06-26 04:53:21', '2015-06-29 09:34:15', '845bbf79-391a-f29d-0a90-555729614d0b', 'b29ab482-6548-84ec-ba10-558cbb500a58', 'test', 0, '', '2015-06-26', 'dai_fengkong_shenhe', '30.000000', '', NULL, 'diya', '23.000000', 6.00000000, 'xianjin', NULL, NULL, NULL, 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('8fdbcc3f-0e74-6fa8-4ac2-554c52606fdf', 'adsf', '2015-05-08 06:07:45', '2015-05-08 06:12:26', '1', '1', NULL, 1, '', '2015-05-08', 'zhidanzhong', '3.000000', '', '2015-05-21', 'diya', '3.000000', 3.00000000, 'xianjin', 'tongyi', NULL, '2015-05-08', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('928f1898-45c4-879c-62d6-5552c98d8513', '2015050011', '2015-05-13 03:47:59', '2015-05-13 06:41:37', '1', '1', '', 1, NULL, '2015-05-13', 'zhidanzhong', '5.000000', NULL, '2015-05-29', 'diya', '5.000000', 5.00000000, 'xianjin', 'tongyi', '', '2015-05-13', 'tongyi', '', NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', '', NULL, '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('950868ae-9589-83dd-dc4e-5552be745c39', '2015050010', '2015-05-13 03:01:41', '2015-05-13 06:41:37', '1', '1', NULL, 1, '', '2015-05-13', 'zhidanzhong', '7.000000', '', '2015-05-27', 'diya', '7.000000', 7.00000000, 'xianjin', 'tongyi', NULL, '2015-05-13', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('a8b0a57c-9e8e-774f-cb03-558cc88b148c', '2015060008', '2015-06-26 03:34:48', '2015-06-26 03:34:48', 'b29ab482-6548-84ec-ba10-558cbb500a58', 'b29ab482-6548-84ec-ba10-558cbb500a58', 'test', 0, NULL, '2015-06-26', 'dai_fengkong_shenhe', '30.000000', NULL, NULL, 'diya', '30.000000', 0.05000000, 'shuaka', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, '', NULL, '', NULL, '', NULL, '', NULL, '', NULL, '', NULL, NULL, NULL, NULL),
-('aeb3c1fb-e66b-f3f2-9268-558cdc36f8a6', '2015060010', '2015-06-26 04:59:28', '2015-06-29 01:59:08', '845bbf79-391a-f29d-0a90-555729614d0b', 'b29ab482-6548-84ec-ba10-558cbb500a58', NULL, 0, '', '0000-00-00', 'zhidanzhong', '34.000000', '', NULL, 'diya', '23.000000', 23.00000000, 'xianjin', 'butongyi', 'asdfasf', '2015-06-28', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('b3aec49a-ab07-9ec4-a79e-5545c8a0f512', '2015050003', '2015-05-03 07:04:13', '2015-05-13 06:41:37', '1', '1', NULL, 1, '', '2015-05-03', 'zhidanzhong', '345345.000000', '', '2015-05-28', 'diya', '345345.000000', 34.00000000, 'xianjin', 'tongyi', NULL, '2015-05-03', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('b7c66625-f312-cd8b-1e2b-55794fa9e99b', '2015060002', '2015-06-11 09:05:32', '2015-06-12 06:37:02', '1', '1', NULL, 0, '', '2015-06-11', 'wancheng_huifang', '78.000000', '', '2015-06-26', 'baozheng', '3.000000', 4.00000000, 'xianjin', 'tongyi', NULL, '2015-06-11', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('bf9a8ba5-8a4c-3a7f-fe0d-5552ba46ca4e', '2015050009', '2015-05-13 02:43:32', '2015-05-13 06:41:37', '1', '1', NULL, 1, '', '2015-05-13', 'zhidanzhong', '2.000000', '', '2015-05-29', 'diya', '3.000000', 3.00000000, 'xianjin', 'tongyi', NULL, '2015-05-13', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('c4b4407f-3865-35bd-43b1-554c54371130', '2015050007', '2015-05-08 06:13:26', '2015-05-13 06:41:37', '1', '1', NULL, 1, '', '2015-05-08', 'zhidanzhong', '5.000000', '', '2015-05-15', 'diya', '45.000000', 4.00000000, 'xianjin', 'tongyi', NULL, '2015-05-08', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('cb942cff-649e-73c5-8f9f-5545c82a57e8', '2015050001', '2015-05-03 07:02:40', '2015-06-12 08:03:40', '845bbf79-391a-f29d-0a90-555729614d0b', '1', NULL, 0, '', '2015-05-03', 'zhidanzhong', '4324234.000000', '', '2015-05-23', 'diya', '77.000000', 0.10000000, 'xianjin', 'butongyi', 'fsdgdfgasdfasdf', '2015-05-03', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('d22ac15f-d0d1-d41a-5b04-5552bb8f5701', '565', '2015-05-13 02:50:21', '2015-05-13 03:02:25', '1', '1', NULL, 1, '', '2015-05-13', 'zhidanzhong', '5.000000', '', '2015-05-22', 'diya', '5.000000', 5.00000000, 'xianjin', 'tongyi', NULL, '2015-05-13', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('d6685b69-12b0-fc8f-6629-558f93c2c253', '2015060013', '2015-06-28 06:25:53', '2015-06-28 06:33:47', '1', '1', '', 1, NULL, '2015-06-28', 'zhidanzhong', '2423423.000000', NULL, NULL, 'diya', '2234.000000', 2.00000000, 'xianjin', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, '', NULL, '', NULL, '', NULL, '', NULL, '', NULL, '', NULL, NULL, NULL, NULL),
-('dba5603b-6773-d84e-3d8c-557921ba9bb8', '2015060001', '2015-06-11 05:51:42', '2015-06-11 05:51:42', '880d930e-94ac-ba6d-2144-554434911d8e', '880d930e-94ac-ba6d-2144-554434911d8e', '', 0, NULL, '2015-06-11', 'zhidanzhong', '45.000000', NULL, '2015-06-12', 'xinyong', '34.000000', 3.00000000, 'xianjin', 'tongyi', '', '2015-06-11', 'tongyi', '', NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', '', NULL, '', '', NULL, NULL, '', 'image/png', 'img_hushenka.png', NULL, '', NULL, '', NULL, '', NULL, '', NULL, '', NULL, NULL, NULL, NULL),
-('df321a45-b428-8a32-865b-554c54e589cd', '2015050008', '2015-05-08 06:15:41', '2015-05-13 06:41:37', '1', '1', NULL, 1, '', '2015-05-08', 'zhidanzhong', '6.000000', '', '2015-05-29', 'diya', '66.000000', 6.00000000, 'xianjin', 'tongyi', NULL, '2015-05-08', 'tongyi', NULL, NULL, 'tongyi', NULL, NULL, NULL, NULL, NULL, NULL, 'xianjin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
-
 -- --------------------------------------------------------
 
 --
@@ -4130,41 +4013,6 @@ CREATE TABLE IF NOT EXISTS `liuch_fangkuang_liucheng_cstm` (
   `xindai_guwen_bumen_id_c` varchar(255) DEFAULT NULL,
   `dangju_created_by_id_c` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- 转存表中的数据 `liuch_fangkuang_liucheng_cstm`
---
-
-INSERT INTO `liuch_fangkuang_liucheng_cstm` (`id_c`, `daik_jiekuangren_info_id_c`, `user_id_c`, `user_id1_c`, `user_id2_c`, `user_id3_c`, `kefu_ziliao_guidan_c`, `daikuang_qixian_c`, `yuang_waibu_qudao_info_id_c`, `daik_jinrong_jigou_info_id_c`, `fdi2m_jinrong_fenzhi_jigou_info_id_c`, `fdi2m_jinrong_chanpin_info_id_c`, `xindai_guwen_bumen_id_c`, `dangju_created_by_id_c`) VALUES
-('132ed574-efb8-f27a-d4b7-558cc2620bfc', '79cc41d8-f0a1-c727-79bd-558cb93e9cbc', '845bbf79-391a-f29d-0a90-555729614d0b', NULL, NULL, NULL, 'ziliao_weiguidang', '36', '', '70ed875e-5fbb-0a68-4da9-558cb6930fa1', '', 'e1a2c16e-36c9-f35f-d526-558cb8d5a173', NULL, NULL),
-('240d72f4-7d7a-95d7-fe28-558d2fb3bcca', '79cc41d8-f0a1-c727-79bd-558cb93e9cbc', NULL, NULL, NULL, NULL, 'ziliao_weiguidang', '32', '', '', '', '', NULL, NULL),
-('2769c7b8-c4d6-345a-a603-557d1187f4a2', '7c400e83-2ca0-0b69-5b33-5544482d4dd2', NULL, NULL, NULL, '60552381-cd8d-acf6-691d-557d0b938406', 'ziliao_weiguidang', '23', '', '', '', '', NULL, NULL),
-('2ff56471-0d5f-fb45-092b-557d0c29fc2b', 'eae96076-9bae-c708-abcd-554447a2df6a', '880d930e-94ac-ba6d-2144-554434911d8e', 'da26dab0-900d-916d-0bc0-55572a5c5184', NULL, NULL, 'ziliao_weiguidang', '13', '', '', '', '', NULL, NULL),
-('31e24f7e-d659-cf91-9bfd-554601304ec3', '7c400e83-2ca0-0b69-5b33-5544482d4dd2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('338672da-8cff-7162-8308-558ce0326d54', '79cc41d8-f0a1-c727-79bd-558cb93e9cbc', '845bbf79-391a-f29d-0a90-555729614d0b', '880d930e-94ac-ba6d-2144-554434911d8e', NULL, NULL, 'ziliao_weiguidang', NULL, '', '', '', '', NULL, NULL),
-('44566f11-a804-08f2-480c-5545ff09eb45', '7c400e83-2ca0-0b69-5b33-5544482d4dd2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('4a388f74-b30f-ae43-ae29-554601805554', 'eae96076-9bae-c708-abcd-554447a2df6a', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('58ee4b70-2630-10bf-a9ae-558f9a0b23c2', '79cc41d8-f0a1-c727-79bd-558cb93e9cbc', NULL, NULL, NULL, NULL, 'ziliao_weiguidang', '32', '', '', '', '', 'a2d1ddbb-3d2e-1278-51d4-558cb58cc144', '1'),
-('69435c0c-c0be-1a17-16dc-558f95b340bb', '79cc41d8-f0a1-c727-79bd-558cb93e9cbc', NULL, NULL, NULL, NULL, 'ziliao_weiguidang', '23', '', '', '', '', '', '1'),
-('6a6dbc8c-c0d3-de89-2f96-557afc7108bc', '7c400e83-2ca0-0b69-5b33-5544482d4dd2', '845bbf79-391a-f29d-0a90-555729614d0b', NULL, NULL, NULL, 'ziliao_weiguidang', '12', '', 'c6714b17-f885-457f-5a38-557aa1e16795', '81dc1ca5-4939-1e30-615a-557aa77a427d', 'd159f913-2c8b-e445-7995-557aaaa8af3c', NULL, NULL),
-('6b66dcd8-c97c-1b67-5b61-5549e223340b', 'eae96076-9bae-c708-abcd-554447a2df6a', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('71a7091d-0fe3-cc6e-1e72-554c533d5a43', 'eae96076-9bae-c708-abcd-554447a2df6a', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('77b34a09-644d-6f92-7186-557d3aeef58e', 'eae96076-9bae-c708-abcd-554447a2df6a', NULL, NULL, NULL, NULL, 'ziliao_weiguidang', '23', '', '', '', '', NULL, NULL),
-('8e58fa07-e63c-b32a-811f-558cdac55db3', '79cc41d8-f0a1-c727-79bd-558cb93e9cbc', '845bbf79-391a-f29d-0a90-555729614d0b', NULL, NULL, NULL, 'ziliao_weiguidang', '36', '1c1ef71d-abb8-e936-edc8-558cb65c4b49', '70ed875e-5fbb-0a68-4da9-558cb6930fa1', '', 'e1a2c16e-36c9-f35f-d526-558cb8d5a173', NULL, NULL),
-('8fdbcc3f-0e74-6fa8-4ac2-554c52606fdf', 'eae96076-9bae-c708-abcd-554447a2df6a', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('928f1898-45c4-879c-62d6-5552c98d8513', 'eae96076-9bae-c708-abcd-554447a2df6a', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('950868ae-9589-83dd-dc4e-5552be745c39', 'eae96076-9bae-c708-abcd-554447a2df6a', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('a8b0a57c-9e8e-774f-cb03-558cc88b148c', '79cc41d8-f0a1-c727-79bd-558cb93e9cbc', NULL, NULL, NULL, NULL, 'ziliao_weiguidang', '36', '', '70ed875e-5fbb-0a68-4da9-558cb6930fa1', '', 'e1a2c16e-36c9-f35f-d526-558cb8d5a173', NULL, NULL),
-('aeb3c1fb-e66b-f3f2-9268-558cdc36f8a6', '79cc41d8-f0a1-c727-79bd-558cb93e9cbc', '845bbf79-391a-f29d-0a90-555729614d0b', NULL, NULL, NULL, 'ziliao_weiguidang', '34', '1c1ef71d-abb8-e936-edc8-558cb65c4b49', '70ed875e-5fbb-0a68-4da9-558cb6930fa1', '', 'e1a2c16e-36c9-f35f-d526-558cb8d5a173', NULL, NULL),
-('b3aec49a-ab07-9ec4-a79e-5545c8a0f512', 'eae96076-9bae-c708-abcd-554447a2df6a', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('b7c66625-f312-cd8b-1e2b-55794fa9e99b', 'eae96076-9bae-c708-abcd-554447a2df6a', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('bf9a8ba5-8a4c-3a7f-fe0d-5552ba46ca4e', '87f11b60-aaec-a901-8f4c-55516bd33a01', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('c4b4407f-3865-35bd-43b1-554c54371130', '7c400e83-2ca0-0b69-5b33-5544482d4dd2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('cb942cff-649e-73c5-8f9f-5545c82a57e8', '7c400e83-2ca0-0b69-5b33-5544482d4dd2', '845bbf79-391a-f29d-0a90-555729614d0b', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('d22ac15f-d0d1-d41a-5b04-5552bb8f5701', 'eae96076-9bae-c708-abcd-554447a2df6a', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('d6685b69-12b0-fc8f-6629-558f93c2c253', '79cc41d8-f0a1-c727-79bd-558cb93e9cbc', NULL, NULL, NULL, NULL, 'ziliao_weiguidang', '23', '', '', '', '', '', NULL),
-('dba5603b-6773-d84e-3d8c-557921ba9bb8', 'eae96076-9bae-c708-abcd-554447a2df6a', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('df321a45-b428-8a32-865b-554c54e589cd', '7c400e83-2ca0-0b69-5b33-5544482d4dd2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -5254,124 +5102,7 @@ CREATE TABLE IF NOT EXISTS `tracker` (
   `session_id` varchar(36) DEFAULT NULL,
   `visible` tinyint(1) DEFAULT '0',
   `deleted` tinyint(1) DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=1609 DEFAULT CHARSET=utf8;
-
---
--- 转存表中的数据 `tracker`
---
-
-INSERT INTO `tracker` (`id`, `monitor_id`, `user_id`, `module_name`, `item_id`, `item_summary`, `date_modified`, `action`, `session_id`, `visible`, `deleted`) VALUES
-(68, '9747793a-4a6b-1f1f-b199-5544c265417b', '1', 'asol_Process', '96c98c77-e4e3-2d73-b958-5544c202cfa2', '放款流程', '2015-05-02 12:25:02', 'save', '38h28vrmm905p3r4dee7d34js2', 0, 0),
-(83, '16649ae9-871e-b9dd-630d-5544ef36ddd6', '1', 'asol_Events', 'e192475b-f4eb-bd28-38be-5544c2edc223', 'Event_ 1', '2015-05-02 15:40:22', 'detailview', 'ohjbih1df4nsukcfoedbj0giv1', 0, 0),
-(93, 'aa735906-9137-7792-2ffe-554571e908f6', '1', 'asol_Events', '23b1b4b1-10d7-b32d-a299-5544f026b471', 'Event_ 1', '2015-05-03 00:52:38', 'detailview', 'u62dhocf4jtiquo2e2qgfc8bt4', 1, 0),
-(110, '1335d0d0-9c77-5827-c995-55460002e48f', '1', 'liuch_fangkuang_liucheng', '44566f11-a804-08f2-480c-5545ff09eb45', '2015050003', '2015-05-03 11:05:19', 'detailview', 'u62dhocf4jtiquo2e2qgfc8bt4', 0, 0),
-(217, '5fd391a3-4a35-6e85-889e-5549e2a1bcec', '1', 'liuch_fangkuang_liucheng', '4a388f74-b30f-ae43-ae29-554601805554', '2015050006', '2015-05-06 09:44:06', 'detailview', '495ueshb3o8kdj2uj90u815f34', 0, 0),
-(218, '954ac39e-6fee-210b-db62-5549e2bab7f4', '1', 'liuch_fangkuang_liucheng', '6b66dcd8-c97c-1b67-5b61-5549e223340b', '6767', '2015-05-06 09:44:29', 'detailview', '495ueshb3o8kdj2uj90u815f34', 0, 0),
-(238, '89468928-2e15-3d53-ebce-554c52c33268', '1', 'liuch_fangkuang_liucheng', '31e24f7e-d659-cf91-9bfd-554601304ec3', '2015050006', '2015-05-08 06:07:12', 'detailview', '8eepl1hqq7ko8mvhashrsge3e6', 0, 0),
-(241, '2ceb5e54-f720-53a3-36be-554c53bb515e', '1', 'liuch_fangkuang_liucheng', '8fdbcc3f-0e74-6fa8-4ac2-554c52606fdf', 'adsf', '2015-05-08 06:11:57', 'detailview', '8eepl1hqq7ko8mvhashrsge3e6', 0, 0),
-(257, '2afc8677-541d-3174-0650-554c6d53d049', '1', 'liuch_fangkuang_liucheng', '71a7091d-0fe3-cc6e-1e72-554c533d5a43', '2015050006', '2015-05-08 08:03:53', 'detailview', 'i54n1l53kvfmcrpc3ao3ukkad4', 0, 0),
-(282, 'bdb35841-5da9-371b-5a5a-55519a4cdcf5', '1', 'liuch_fangkuang_liucheng', 'c4b4407f-3865-35bd-43b1-554c54371130', '2015050007', '2015-05-12 06:14:59', 'detailview', 'jpcvj1ad5fbjjsn73nb3msqb57', 0, 0),
-(293, '2d0ff0fd-2d5e-4840-11df-5552baee5ed6', '1', 'liuch_fangkuang_liucheng', 'b3aec49a-ab07-9ec4-a79e-5545c8a0f512', '2015050003', '2015-05-13 02:45:02', 'detailview', 'jpcvj1ad5fbjjsn73nb3msqb57', 0, 0),
-(301, 'be59f622-84eb-f119-d2c0-5552bed6e355', '1', 'liuch_fangkuang_liucheng', 'd22ac15f-d0d1-d41a-5b04-5552bb8f5701', '565', '2015-05-13 03:01:19', 'detailview', 'jpcvj1ad5fbjjsn73nb3msqb57', 0, 0),
-(313, '9fbe0041-644b-a026-2777-5552cb429263', '1', 'liuch_fangkuang_liucheng', 'df321a45-b428-8a32-865b-554c54e589cd', '2015050008', '2015-05-13 03:55:13', 'detailview', 'jpcvj1ad5fbjjsn73nb3msqb57', 0, 0),
-(322, 'c7449701-1d9a-2f47-8d66-5552cdbb0024', '1', 'liuch_fangkuang_liucheng', 'bf9a8ba5-8a4c-3a7f-fe0d-5552ba46ca4e', '2015050009', '2015-05-13 04:05:37', 'detailview', 'jpcvj1ad5fbjjsn73nb3msqb57', 0, 0),
-(323, '67942488-58cb-473a-80d5-5552cdbd4c08', '1', 'liuch_fangkuang_liucheng', '928f1898-45c4-879c-62d6-5552c98d8513', '2015050011', '2015-05-13 04:05:41', 'detailview', 'jpcvj1ad5fbjjsn73nb3msqb57', 0, 0),
-(324, '63d8145c-2201-7200-c627-5552f19a0348', '1', 'liuch_fangkuang_liucheng', '950868ae-9589-83dd-dc4e-5552be745c39', '2015050010', '2015-05-13 06:38:42', 'detailview', 'jpcvj1ad5fbjjsn73nb3msqb57', 0, 0),
-(465, '322e8d92-e582-a058-484d-5556fec521c2', '1', 'daik_jiekuangren_info', '87f11b60-aaec-a901-8f4c-55516bd33a01', '231231', '2015-05-16 08:23:55', 'detailview', '6sch1vpani2f5g1kc8cljmit30', 0, 0),
-(522, '2d14ca51-697b-423a-c977-555721c27b41', '1', 'asol_Process', 'adf701e6-626e-63e1-56cc-5544f05ea200', '放款流程', '2015-05-16 10:50:44', 'editview', '6sch1vpani2f5g1kc8cljmit30', 1, 0),
-(565, 'c9c19d3c-b4dc-01a8-3fec-55572af3b9cc', '1', 'ACLRoles', '4e534808-9ae9-1c6e-0a7d-555729a2af14', '信贷顾问', '2015-05-16 11:31:40', 'detailview', 'a1cparl8s92qr83qcrt1ch72s5', 0, 0),
-(570, '4c613ec4-e2ef-028d-a614-55572b1bbed3', '1', 'ACLRoles', '2193b917-2f7a-9017-c795-55572a43d7c5', '部门经理', '2015-05-16 11:36:42', 'detailview', 'a1cparl8s92qr83qcrt1ch72s5', 0, 0),
-(655, '5474e7f2-e747-6556-9be2-556ec23f71fa', '1', 'yuang_bumen_info', 'd555c22f-ddbd-7436-7927-55435e310057', '销售一部', '2015-06-03 09:03:43', 'detailview', '1btg70bn4iucvvjevp9dvj0fm7', 0, 0),
-(656, '2ae1c173-d53b-1c0b-8c08-556ec3d44641', '1', 'yuang_bumen_info', 'f0bb875b-309d-afa6-749c-556ec3d3aa27', '常州分公司', '2015-06-03 09:05:46', 'detailview', '1btg70bn4iucvvjevp9dvj0fm7', 0, 0),
-(658, 'f13367d0-49ec-1e4e-afd6-556ec3b200ee', '1', 'yuang_bumen_info', '97d1e0e0-7784-eadd-b2cb-556ec3750580', '溧阳办事处', '2015-06-03 09:06:59', 'detailview', '1btg70bn4iucvvjevp9dvj0fm7', 0, 0),
-(660, '599f129c-7ad7-9762-1235-556ece0a4b49', '1', 'fdi2m_jinrong_chanpin_info', '2b7adadf-c9a9-2b6f-6bb2-556ece985f6b', 'AAA', '2015-06-03 09:53:38', 'detailview', 'c2krsn45fpkp3v5etsuqio4uq7', 0, 0),
-(945, '96377384-5dd2-b743-aad1-5579213daa81', '880d930e-94ac-ba6d-2144-554434911d8e', 'liuch_fangkuang_liucheng', 'dba5603b-6773-d84e-3d8c-557921ba9bb8', '2015060001', '2015-06-11 05:51:43', 'detailview', 'cn05ia7q6sd30g3tg6aej20b95', 1, 0),
-(1062, '3333f0bf-7a76-62f3-56f3-557a9262a953', '845bbf79-391a-f29d-0a90-555729614d0b', 'daik_jiekuangren_info', '7c400e83-2ca0-0b69-5b33-5544482d4dd2', '李本人', '2015-06-12 08:03:10', 'detailview', 'l9rr11qlab9q40vtjim98piq04', 0, 0),
-(1073, 'c4bbb4ff-aff9-21dd-c40c-557a94802d5c', '845bbf79-391a-f29d-0a90-555729614d0b', 'yuang_bumen_info', 'f0bb875b-309d-afa6-749c-556ec3d3aa27', '常州分公司', '2015-06-12 08:13:00', 'detailview', 'csmb7m40nse57a9mftb87b2ks4', 0, 0),
-(1076, '19576873-1866-d088-649e-557a95d7e1f7', '845bbf79-391a-f29d-0a90-555729614d0b', 'liuch_fangkuang_liucheng', 'cb942cff-649e-73c5-8f9f-5545c82a57e8', '2015050001', '2015-06-12 08:19:05', 'detailview', 'o0lucrqrtlc12tb96t7oelofr2', 1, 0),
-(1077, 'e177306b-f9e9-6b73-13bc-557a95dc2ada', '845bbf79-391a-f29d-0a90-555729614d0b', 'yuang_bumen_info', '97d1e0e0-7784-eadd-b2cb-556ec3750580', '溧阳办事处', '2015-06-12 08:19:07', 'detailview', 'o0lucrqrtlc12tb96t7oelofr2', 0, 0),
-(1081, 'c68510dd-cbc2-936e-b4b6-557a9629d7be', '845bbf79-391a-f29d-0a90-555729614d0b', 'Employees', '880d930e-94ac-ba6d-2144-554434911d8e', '孟 军', '2015-06-12 08:19:36', 'detailview', 'o0lucrqrtlc12tb96t7oelofr2', 1, 0),
-(1082, '3cb69e43-ba8d-16f2-8129-557a9663c81b', '845bbf79-391a-f29d-0a90-555729614d0b', 'yuang_bumen_info', '1a0fb5c5-26d1-7a01-020b-556ec3e52091', '徐州分公司', '2015-06-12 08:19:40', 'detailview', 'o0lucrqrtlc12tb96t7oelofr2', 0, 0),
-(1088, 'a071c0ef-a193-398a-f4a8-557a9d9f1663', '1', 'yuang_waibu_qudao_info', '35a87795-46c1-499e-f53e-557a9dcd29e5', '外部渠道1号', '2015-06-12 08:49:45', 'detailview', 'kiofmabjrjm4phng0ljc5v1as1', 0, 0),
-(1090, '33f225f4-336a-37a9-6673-557aa1147783', '1', 'daik_jinrong_jigou_info', 'c4534437-7f56-1d05-b067-557aa1043b4a', '金融机构001号', '2015-06-12 09:08:59', 'detailview', 'kiofmabjrjm4phng0ljc5v1as1', 0, 0),
-(1096, 'c3bab03b-7772-fc86-ae73-557aa52eea48', '1', 'fdi2m_jinrong_fenzhi_jigou_info', '9d6d7350-4f06-e126-3848-557aa509f2e4', '金融机构001号分支机构001', '2015-06-12 09:27:26', 'editview', 'kiofmabjrjm4phng0ljc5v1as1', 0, 0),
-(1098, '73ca2224-aa26-b0f9-1572-557aa71bcd84', '1', 'fdi2m_jinrong_fenzhi_jigou_info', '405167b3-2c4c-82e2-6f6a-557aa6fafb32', '金融机构001号分支机构001', '2015-06-12 09:32:16', 'detailview', 'kiofmabjrjm4phng0ljc5v1as1', 0, 0),
-(1099, 'f339a267-54fc-264f-f4af-557aa7282bb3', '1', 'fdi2m_jinrong_fenzhi_jigou_info', '81dc1ca5-4939-1e30-615a-557aa77a427d', '金融机构001号分支机构001', '2015-06-12 09:34:02', 'detailview', 'kiofmabjrjm4phng0ljc5v1as1', 0, 0),
-(1100, 'b68fe38e-036d-b2aa-d1d8-557aa72096bd', '1', 'fdi2m_jinrong_fenzhi_jigou_info', '454b00ad-f622-fd94-bd1a-557aa7882bd3', '金融机构001号分支机构002', '2015-06-12 09:34:32', 'detailview', 'kiofmabjrjm4phng0ljc5v1as1', 0, 0),
-(1101, '682aaf72-3ed2-6119-266f-557aa927ddee', '1', 'fdi2m_jinrong_chanpin_info', '1a410576-f204-eaa8-1601-557aa9471d78', '金融机构001号产品001', '2015-06-12 09:42:10', 'detailview', 'kiofmabjrjm4phng0ljc5v1as1', 0, 0),
-(1102, 'a2164db7-ce3e-5663-aab8-557aa9f6a9cb', '1', 'fdi2m_jinrong_chanpin_info', '32f991fa-5fcb-5ab4-0588-557aa9c4496f', '金融机构001号产品001', '2015-06-12 09:43:57', 'detailview', 'kiofmabjrjm4phng0ljc5v1as1', 0, 0),
-(1105, 'eda4edbb-9db6-e1ee-4d0b-557aaa3b3829', '1', 'fdi2m_jinrong_fenzhi_jigou_info', '7a9ad8d0-c2a0-f3b7-a63f-557aaaba8a13', '金融机构002号分支机构001', '2015-06-12 09:48:05', 'detailview', 'kiofmabjrjm4phng0ljc5v1as1', 0, 0),
-(1107, 'ce5a69bd-de14-f88b-3066-557aab45243f', '1', 'fdi2m_jinrong_fenzhi_jigou_info', '31d80cb3-e5aa-8f4a-a6ee-557aab2b424d', '金融机构002号分支机构001', '2015-06-12 09:50:27', 'detailview', 'kiofmabjrjm4phng0ljc5v1as1', 0, 0),
-(1119, 'd79d0cd1-3594-2138-4000-557afc7e14a1', '1', 'daik_jinrong_jigou_info', 'c6714b17-f885-457f-5a38-557aa1e16795', '金融机构001号', '2015-06-12 15:38:37', 'detailview', 'bdl4fhh6gi84v4khlblo49mop1', 0, 0),
-(1137, '51ade927-98bf-467b-e0af-557bb78a2469', '1', 'liuch_fangkuang_liucheng', '6a6dbc8c-c0d3-de89-2f96-557afc7108bc', '2015060003', '2015-06-13 04:55:14', 'editview', 'v531c5d5aci11j602pfcc7i547', 1, 0),
-(1164, 'dea79362-55cd-3f41-10c7-557ce3af3b82', '1', 'daik_jiekuangren_info', '7c400e83-2ca0-0b69-5b33-5544482d4dd2', '李本人', '2015-06-14 02:13:37', 'detailview', 'a9fss0rogkeurhedrsu806gsi3', 0, 0),
-(1200, '73492e91-9044-3b8f-3836-557d0c37732f', '1', 'liuch_fangkuang_liucheng', '2ff56471-0d5f-fb45-092b-557d0c29fc2b', '2015060004', '2015-06-14 05:09:46', 'detailview', 'rqdvt6lffijt1tfoi8d1ivbei0', 1, 0),
-(1216, '89af41fe-d843-f4eb-8953-557d140311ec', '60552381-cd8d-acf6-691d-557d0b938406', 'liuch_fangkuang_liucheng', '2769c7b8-c4d6-345a-a603-557d1187f4a2', '2015060005', '2015-06-14 05:42:02', 'detailview', 'uigip7uhtcsauas0ovkb7pu291', 1, 0),
-(1217, '8959fab2-b5a4-27db-1c5a-557d140840c7', '60552381-cd8d-acf6-691d-557d0b938406', 'daik_jiekuangren_info', '7c400e83-2ca0-0b69-5b33-5544482d4dd2', '李本人', '2015-06-14 05:42:30', 'detailview', 'uigip7uhtcsauas0ovkb7pu291', 0, 0),
-(1225, 'c671626f-d625-b34d-5bbf-557d382b9741', '1', 'liuch_fangkuang_liucheng', 'b7c66625-f312-cd8b-1e2b-55794fa9e99b', '2015060002', '2015-06-14 08:16:56', 'detailview', 'rdl6qmdfs04mctqaflulmv6r94', 1, 0),
-(1233, '940ca61c-f86c-d688-ad64-558024406fd3', '1', 'yuang_waibu_qudao_info', '2af028aa-3caa-ccae-d804-5580248197d4', 'werw', '2015-06-16 13:29:00', 'detailview', 'bvg61ovn8gt7hmdd43d19ut0i5', 0, 0),
-(1234, '560e9524-9fdb-c730-cadb-558025e16372', '1', 'yuang_waibu_qudao_info', '86a1524d-5aaf-4493-80cd-558025d3bcf8', 'werw', '2015-06-16 13:32:10', 'detailview', 'bvg61ovn8gt7hmdd43d19ut0i5', 0, 0),
-(1235, 'ea12af2d-8a35-fe89-47b5-5580252e5131', '1', 'yuang_waibu_qudao_info', '9361ecd6-3f24-425d-da34-558025c24070', 'qwerwq', '2015-06-16 13:32:35', 'detailview', 'bvg61ovn8gt7hmdd43d19ut0i5', 0, 0),
-(1239, '2332b074-6550-a178-aaa4-55802607635a', '1', 'yuang_bumen_info', '1a0fb5c5-26d1-7a01-020b-556ec3e52091', '徐州分公司', '2015-06-16 13:36:21', 'detailview', 'bvg61ovn8gt7hmdd43d19ut0i5', 0, 0),
-(1241, '83880d40-9022-c5bd-c36a-5580272d47d6', '1', 'daik_jiekuangren_info', 'eae96076-9bae-c708-abcd-554447a2df6a', '刘某人', '2015-06-16 13:41:04', 'editview', 'bvg61ovn8gt7hmdd43d19ut0i5', 0, 0),
-(1244, 'dcb21472-8b56-7273-9e4e-5580293883a6', '1', 'daik_jinrong_jigou_info', 'cca7fc33-bcd0-42d0-c5a1-557aaaca77c1', '金融机构002号', '2015-06-16 13:51:47', 'editview', 'bvg61ovn8gt7hmdd43d19ut0i5', 0, 0),
-(1245, '33f49929-cf86-19ec-feb4-558029a66923', '1', 'fdi2m_jinrong_fenzhi_jigou_info', 'c1540c50-29bb-da89-111e-557aab3916a3', '金融机构002号分支机构001', '2015-06-16 13:51:57', 'editview', 'bvg61ovn8gt7hmdd43d19ut0i5', 0, 0),
-(1246, '9144b658-2441-a42b-4462-55802a572606', '1', 'fdi2m_jinrong_chanpin_info', 'd159f913-2c8b-e445-7995-557aaaa8af3c', '金融机构001号产品001', '2015-06-16 13:52:10', 'editview', 'bvg61ovn8gt7hmdd43d19ut0i5', 0, 0),
-(1251, '2d03126a-6144-e91e-2db6-558593064f74', '1', 'yuang_waibu_qudao_info', 'e6b9b4c1-9caa-98a5-6c15-557a9d98815a', '外部渠道2号', '2015-06-20 16:21:59', 'detailview', 's0tojrvdjtqicg8hj627cfqem6', 0, 0),
-(1254, '8fc77f5f-8947-22da-6cc0-55860ff20575', '880d930e-94ac-ba6d-2144-554434911d8e', 'liuch_fangkuang_liucheng', '2ff56471-0d5f-fb45-092b-557d0c29fc2b', '2015060004', '2015-06-21 01:11:19', 'detailview', 'p5m1b2i6dlc8s90mu71c9i43i1', 1, 0),
-(1266, '2897554c-fdb6-dad1-b813-558cb7be934b', '1', 'daik_jinrong_jigou_info', 'cbfc33ee-8a0d-ab42-e1b8-558cb7afc59b', '招商银行', '2015-06-26 02:23:28', 'detailview', '0qr8k0b0boqu0jtmu9qneoctn0', 0, 0),
-(1267, '51c00e74-6de4-237a-be68-558cb7b28508', '1', 'fdi2m_jinrong_fenzhi_jigou_info', '8b640847-445f-0664-2847-558cb731924c', '招商银行御道街支行', '2015-06-26 02:24:40', 'detailview', '0qr8k0b0boqu0jtmu9qneoctn0', 0, 0),
-(1299, '7a3eb825-5666-ce5c-c265-558cbd0e8600', '1', 'Emails', '37af55f0-ed59-0d1f-08a9-558cbdce8567', 'New account information', '2015-06-26 02:49:49', 'save', '0qr8k0b0boqu0jtmu9qneoctn0', 1, 0),
-(1312, 'e2020dbb-4c35-7945-1946-558cc013d167', '1', 'Users', '880d930e-94ac-ba6d-2144-554434911d8e', '孟 军', '2015-06-26 03:02:49', 'detailview', '0qr8k0b0boqu0jtmu9qneoctn0', 1, 0),
-(1320, 'b9f20169-ae4a-2a32-8166-558cc2c7608a', 'b29ab482-6548-84ec-ba10-558cbb500a58', 'fdi2m_jinrong_chanpin_info', 'e1a2c16e-36c9-f35f-d526-558cb8d5a173', '新易贷', '2015-06-26 03:09:12', 'detailview', 'sjigjtrd79rog8h4f0cdgrlpv0', 1, 0),
-(1322, '36853fd8-4cbb-8da8-065c-558cc3f92572', 'b29ab482-6548-84ec-ba10-558cbb500a58', 'Employees', '73f63406-6a38-fb4b-be00-558cbcdef3c6', '王 军', '2015-06-26 03:12:36', 'detailview', 'g0q0ppm399i2u4hq0iqd6i2k26', 1, 0),
-(1337, '1ffb02c8-d11f-8253-f1e2-558cc41a701c', '1', 'Employees', 'e4d13a0f-a09a-e412-364c-557d1b7294af', '胡 产品', '2015-06-26 03:17:19', 'save', '075bf8d62pbr06npk1u071ns05', 1, 0),
-(1355, '516f258e-437e-743e-9cd3-558cce43191b', '1', 'yuang_fengongsi_info', '59c880e4-3a36-c1c3-7310-55435e848c0a', '南京第一分公司', '2015-06-26 04:01:17', 'detailview', 'dedctn7r4qp5h364ou1cnphvp3', 1, 0),
-(1375, '67171520-f45e-8314-edd7-558cd9607300', 'b29ab482-6548-84ec-ba10-558cbb500a58', 'Employees', '60552381-cd8d-acf6-691d-557d0b938406', '李 客服', '2015-06-26 04:47:53', 'detailview', '1utbvlolvno7a8iacf65fg0bu4', 1, 0),
-(1380, '3da5a86d-d0c0-fd6b-216a-558cd96142e5', 'b29ab482-6548-84ec-ba10-558cbb500a58', 'liuch_fangkuang_liucheng', 'a8b0a57c-9e8e-774f-cb03-558cc88b148c', '2015060008', '2015-06-26 04:49:10', 'detailview', '8u93b5vrgqeket6dcosd66c622', 1, 0),
-(1381, '33996b8f-8d39-7cec-3457-558cd9fc119f', 'b29ab482-6548-84ec-ba10-558cbb500a58', 'liuch_fangkuang_liucheng', '132ed574-efb8-f27a-d4b7-558cc2620bfc', '2015060007', '2015-06-26 04:49:22', 'detailview', '8u93b5vrgqeket6dcosd66c622', 1, 0),
-(1388, '9cd2b6ec-b35d-cff2-2584-558cdb875539', 'b29ab482-6548-84ec-ba10-558cbb500a58', 'liuch_fangkuang_liucheng', '8e58fa07-e63c-b32a-811f-558cdac55db3', '2015060009', '2015-06-26 04:56:16', 'detailview', 'p67jl87qp81v4uoj99lum2cpg1', 1, 0),
-(1395, '5e092bc1-5050-961a-3ffa-558cdddbb494', '1', 'Employees', 'b29ab482-6548-84ec-ba10-558cbb500a58', '王 兵', '2015-06-26 05:03:14', 'detailview', 'dedctn7r4qp5h364ou1cnphvp3', 1, 0),
-(1410, '5f92a7c1-cc79-277a-cac9-558cdf5c5b3d', 'b29ab482-6548-84ec-ba10-558cbb500a58', 'Employees', '845bbf79-391a-f29d-0a90-555729614d0b', '刘 风控', '2015-06-26 05:12:19', 'detailview', '8cgb951ilu3pe9vjt4rqnd0fv4', 1, 0),
-(1414, '71b792fa-f9fa-5258-fcce-558cdfe23392', 'b29ab482-6548-84ec-ba10-558cbb500a58', 'Employees', 'b29ab482-6548-84ec-ba10-558cbb500a58', '王 兵', '2015-06-26 05:13:34', 'detailview', '8cgb951ilu3pe9vjt4rqnd0fv4', 1, 0),
-(1415, '44702689-c251-31dc-54f9-558cdfce4617', 'b29ab482-6548-84ec-ba10-558cbb500a58', 'yuang_bumen_info', 'a2d1ddbb-3d2e-1278-51d4-558cb58cc144', '南京分公司', '2015-06-26 05:13:39', 'detailview', '8cgb951ilu3pe9vjt4rqnd0fv4', 1, 0),
-(1416, 'd7099e83-f876-26f9-0184-558cdfacfb31', 'b29ab482-6548-84ec-ba10-558cbb500a58', 'daik_jiekuangren_info', '79cc41d8-f0a1-c727-79bd-558cb93e9cbc', '姚晓军', '2015-06-26 05:14:20', 'detailview', '8cgb951ilu3pe9vjt4rqnd0fv4', 1, 0),
-(1429, '3515af76-e865-9f0b-dabb-558d37fce4b8', '845bbf79-391a-f29d-0a90-555729614d0b', 'Employees', 'da26dab0-900d-916d-0bc0-55572a5c5184', '张 部门', '2015-06-26 11:29:10', 'detailview', 'dv0ich05rchp317sbo3j4hueb4', 1, 0),
-(1442, '4c57e1ac-2f22-9c04-074b-558d408b5243', '1', 'Employees', '60552381-cd8d-acf6-691d-557d0b938406', '李 客服', '2015-06-26 12:09:29', 'editview', 'c0eas8e8ol385ul0qlh7kmpkb1', 1, 0),
-(1446, '9c8d61a0-dbbf-e0c3-c869-558f662eeae3', '1', 'Employees', '73f63406-6a38-fb4b-be00-558cbcdef3c6', '王 军', '2015-06-28 03:15:39', 'editview', 'qlq20blduhsnnjoi7sk5ueq375', 1, 0),
-(1453, 'e492e98c-8d98-e77e-9ea3-558f848a57b3', '1', 'liuch_fangkuang_liucheng', 'cb942cff-649e-73c5-8f9f-5545c82a57e8', '2015050001', '2015-06-28 05:20:17', 'detailview', 'qlq20blduhsnnjoi7sk5ueq375', 1, 0),
-(1455, 'cef40108-4d3d-a17f-d4c6-558f898fb0b6', '1', 'liuch_fangkuang_liucheng', '2769c7b8-c4d6-345a-a603-557d1187f4a2', '2015060005', '2015-06-28 05:41:33', 'detailview', 'q7rqt64j41tnbj6f7js99d3fo7', 1, 0),
-(1456, '8675c0fe-d8b3-8fea-c659-558f893e7f9a', '1', 'liuch_fangkuang_liucheng', '77b34a09-644d-6f92-7186-557d3aeef58e', '2015060006', '2015-06-28 05:42:34', 'detailview', 'q7rqt64j41tnbj6f7js99d3fo7', 1, 0),
-(1459, 'c79ccc0d-18c4-f96a-ddf0-558f95774403', '1', 'liuch_fangkuang_liucheng', 'd6685b69-12b0-fc8f-6629-558f93c2c253', '2015060013', '2015-06-28 06:33:41', 'detailview', 'vmcj9ip7ot7epq8dhub694hgu1', 0, 0),
-(1461, '50b29cf1-1f26-5b0b-ef97-558f984a504f', '1', 'Users', 'da26dab0-900d-916d-0bc0-55572a5c5184', '张 部门', '2015-06-28 06:46:44', 'detailview', 'vmcj9ip7ot7epq8dhub694hgu1', 1, 0),
-(1462, 'dc91c21d-905b-01ba-db3c-558f9a2f53b4', '1', 'liuch_fangkuang_liucheng', '58ee4b70-2630-10bf-a9ae-558f9a0b23c2', '2015060015', '2015-06-28 06:55:50', 'detailview', 'ga0ekkei36ce1j58uq9p688hv7', 1, 0),
-(1465, '3b104105-e23c-190f-13dd-558f9dac8736', 'da26dab0-900d-916d-0bc0-55572a5c5184', 'liuch_fangkuang_liucheng', '58ee4b70-2630-10bf-a9ae-558f9a0b23c2', '2015060015', '2015-06-28 07:10:11', 'detailview', 'h0929f4124fe02ubpk0c62vl03', 1, 0),
-(1466, '2be4b8c0-579f-a1b8-f2fb-558f9d98c0a3', 'da26dab0-900d-916d-0bc0-55572a5c5184', 'liuch_fangkuang_liucheng', '2ff56471-0d5f-fb45-092b-557d0c29fc2b', '2015060004', '2015-06-28 07:10:22', 'detailview', 'h0929f4124fe02ubpk0c62vl03', 1, 0),
-(1467, 'a639befb-d841-e481-6455-558fa22a6cde', '1', 'daik_jinrong_jigou_info', '70ed875e-5fbb-0a68-4da9-558cb6930fa1', '中银消费金融有限公司', '2015-06-28 07:28:42', 'editview', 'r1iujc6omeka90310pe7v9acl6', 1, 0),
-(1469, 'a26d2801-5c86-9512-394a-558fa6914685', '1', 'Users', '845bbf79-391a-f29d-0a90-555729614d0b', '刘 风控', '2015-06-28 07:46:38', 'detailview', 'vjqjsmnncq0urc7c5pnv3r63b0', 1, 0),
-(1475, 'b75f5943-e071-512d-d0d0-558fa96218d8', '1', 'fdi2m_jinrong_chanpin_info', 'e1a2c16e-36c9-f35f-d526-558cb8d5a173', '新易贷', '2015-06-28 07:59:15', 'detailview', 'seq0eha4vbffjvqsnh5ok4d8a3', 1, 0),
-(1478, 'd9285578-b412-3946-bcf6-558fc68d7b1d', '1', 'yuang_waibu_qudao_info', '1c1ef71d-abb8-e936-edc8-558cb65c4b49', '宜兴渠道1', '2015-06-28 10:01:40', 'detailview', 'seq0eha4vbffjvqsnh5ok4d8a3', 1, 0),
-(1482, 'c3041915-24d0-1e88-97da-558fc9b8bd3d', '1', 'yuang_bumen_info', 'a2d1ddbb-3d2e-1278-51d4-558cb58cc144', '南京分公司', '2015-06-28 10:17:13', 'detailview', 'seq0eha4vbffjvqsnh5ok4d8a3', 1, 0),
-(1501, 'c6fbaec0-68ad-8d9e-0cf5-558ff1061a17', '1', 'Users', '1', 'Cao Jeff', '2015-06-28 13:07:51', 'editview', 'seq0eha4vbffjvqsnh5ok4d8a3', 1, 0),
-(1508, 'b7bd0a55-47c8-5735-9786-55903946c922', '1', 'ACLRoles', '2ca11f19-6d6a-174e-ba46-557a93415b18', '普通员工', '2015-06-28 18:16:00', 'detailview', '2jmvlbigdcbjnd0grngn094746', 1, 0),
-(1510, '3d3b0b65-f490-cad6-d265-55903a710b59', '845bbf79-391a-f29d-0a90-555729614d0b', 'yuang_bumen_info', 'a2d1ddbb-3d2e-1278-51d4-558cb58cc144', '南京分公司', '2015-06-28 18:18:49', 'detailview', 'lj44usgg3c57tsvagru64p5076', 1, 0),
-(1512, 'dba57947-c903-01c7-82e7-55903a8f72f0', '845bbf79-391a-f29d-0a90-555729614d0b', 'Users', '845bbf79-391a-f29d-0a90-555729614d0b', '刘 风控', '2015-06-28 18:19:52', 'detailview', 'lj44usgg3c57tsvagru64p5076', 1, 0),
-(1514, 'ea4baaf9-4e8f-9be2-59b4-55903aa69a4a', '845bbf79-391a-f29d-0a90-555729614d0b', 'Employees', '5f9a81a6-1603-2328-978b-558fee14c44f', '红 太狼', '2015-06-28 18:20:38', 'detailview', 'lj44usgg3c57tsvagru64p5076', 0, 0),
-(1516, 'f35d014d-fe46-301d-caa9-55903ba399ee', '845bbf79-391a-f29d-0a90-555729614d0b', 'daik_jiekuangren_info', '79cc41d8-f0a1-c727-79bd-558cb93e9cbc', '姚晓军', '2015-06-28 18:21:15', 'detailview', 'lj44usgg3c57tsvagru64p5076', 1, 0),
-(1517, '87c1af98-6c26-ca91-c9db-55903be09da9', '845bbf79-391a-f29d-0a90-555729614d0b', 'Employees', '1', 'Cao Jeff', '2015-06-28 18:21:30', 'detailview', 'lj44usgg3c57tsvagru64p5076', 1, 0),
-(1524, '989db415-0b1f-c4db-b7d7-55909cf8802d', '1', 'liuch_fangkuang_liucheng', '338672da-8cff-7162-8308-558ce0326d54', '2015060011', '2015-06-29 01:18:24', 'detailview', 'd498r8kv5buiaqd4uevs1r1j16', 1, 0),
-(1530, 'cffa70e7-62be-9d75-d933-5590a21ad77e', '845bbf79-391a-f29d-0a90-555729614d0b', 'liuch_fangkuang_liucheng', '240d72f4-7d7a-95d7-fe28-558d2fb3bcca', '2015060012', '2015-06-29 01:43:42', 'detailview', '70rl9pj4ul8qr9m7th0fi9ini3', 1, 0),
-(1535, 'c8b6d202-7cbf-921d-5ac8-5590a378a8b6', '845bbf79-391a-f29d-0a90-555729614d0b', 'liuch_fangkuang_liucheng', '338672da-8cff-7162-8308-558ce0326d54', '2015060011', '2015-06-29 01:45:21', 'detailview', '70rl9pj4ul8qr9m7th0fi9ini3', 1, 0),
-(1548, '2f1be24f-5be7-aef6-8a26-5590a6899a3b', 'b29ab482-6548-84ec-ba10-558cbb500a58', 'liuch_fangkuang_liucheng', 'aeb3c1fb-e66b-f3f2-9268-558cdc36f8a6', '2015060010', '2015-06-29 01:58:38', 'detailview', 'ts6m0moh7r7e9uk87p4veuo171', 1, 0),
-(1551, '3103b773-529b-0a95-5700-5590a6ea0ef7', '845bbf79-391a-f29d-0a90-555729614d0b', 'liuch_fangkuang_liucheng', 'aeb3c1fb-e66b-f3f2-9268-558cdc36f8a6', '2015060010', '2015-06-29 01:59:08', 'detailview', 'p0q0ftn2ar36dlllbk09i4jva7', 1, 0),
-(1554, '5fed2bb1-353b-9274-d686-5590bb8d8653', '1', 'Employees', '5f9a81a6-1603-2328-978b-558fee14c44f', '红 太狼', '2015-06-29 03:30:14', 'detailview', '8a0v3qlm54ec7176s7aufq47r5', 0, 0),
-(1558, 'd464a54a-5595-acc5-f550-5590bb492852', '1', 'ACLRoles', 'ebb45c33-eee3-8a4c-3c45-557cfc788904', '管理员', '2015-06-29 03:30:56', 'detailview', '8a0v3qlm54ec7176s7aufq47r5', 0, 0),
-(1559, '7d95a316-3287-24de-2415-5590bc43698b', '1', 'Employees', '650c1d57-5661-b558-73ed-558cbc18081c', '毛 敏', '2015-06-29 03:32:02', 'detailview', '8a0v3qlm54ec7176s7aufq47r5', 1, 0),
-(1577, 'e5f8c116-434c-0881-4550-5590e5d5f6ec', '1', 'daik_jiekuangren_info', '3fe2834e-c3ba-6f28-261c-5590e5cd987d', '吴贷款', '2015-06-29 06:28:45', 'detailview', 'c7qv2sr5qrfsjptruqh7mdoqf3', 1, 0),
-(1585, '3070acf9-70b6-4a89-b69f-5590ec108079', '1', 'Users', '53479583-9790-6b96-4c30-558cbd3cb590', '王客服 客服', '2015-06-29 06:57:47', 'editview', 'c7qv2sr5qrfsjptruqh7mdoqf3', 1, 0),
-(1586, '85d6a300-4d31-61a8-8095-5590fbcf1762', '1', 'daik_jiekuangren_info', '79cc41d8-f0a1-c727-79bd-558cb93e9cbc', '姚晓军', '2015-06-29 08:03:01', 'detailview', 'c7qv2sr5qrfsjptruqh7mdoqf3', 1, 0),
-(1593, 'e89e8adf-0b45-1e84-6712-55910edc2fae', '1', 'liuch_fangkuang_liucheng', '69435c0c-c0be-1a17-16dc-558f95b340bb', '2015060014', '2015-06-29 09:23:30', 'detailview', 'caue3nfoain0lcj46ucl35d697', 1, 0),
-(1608, '4a375d76-f2c7-44a0-240d-559120902ce1', '845bbf79-391a-f29d-0a90-555729614d0b', 'liuch_fangkuang_liucheng', '8e58fa07-e63c-b32a-811f-558cdac55db3', '2015060009', '2015-06-29 10:41:41', 'editview', 'cg5qpp2hmsldv5r6jni6q7t1j5', 1, 0);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -5465,17 +5196,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `user_name`, `user_hash`, `system_generated_password`, `pwd_last_changed`, `authenticate_id`, `sugar_login`, `first_name`, `last_name`, `is_admin`, `external_auth_only`, `receive_notifications`, `description`, `date_entered`, `date_modified`, `modified_user_id`, `created_by`, `title`, `department`, `phone_home`, `phone_mobile`, `phone_work`, `phone_other`, `phone_fax`, `status`, `address_street`, `address_city`, `address_state`, `address_country`, `address_postalcode`, `deleted`, `portal_only`, `show_on_employees`, `employee_status`, `messenger_id`, `messenger_type`, `reports_to_id`, `is_group`) VALUES
-('1', 'admin', '$1$LG9yy5X9$rSJ6LCxGD.7nPf2R/e7bb1', 0, NULL, NULL, 1, 'Cao', 'Jeff', 1, 0, 1, NULL, '2015-04-30 23:59:51', '2015-06-26 03:45:54', '1', '', 'Administrator', NULL, NULL, NULL, NULL, NULL, NULL, 'Active', NULL, NULL, NULL, NULL, NULL, 0, 0, 1, 'Active', NULL, NULL, '', 0),
-('53479583-9790-6b96-4c30-558cbd3cb590', 'wangkf', '$1$MvkbmKby$TTTixbsDdSnH6X4/Xk5v..', 1, '2015-06-29 06:55:00', NULL, 1, '王客服', '客服', 0, 0, 1, 'test', '2015-06-26 02:48:18', '2015-06-29 06:56:40', '1', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Active', NULL, NULL, NULL, NULL, NULL, 0, 0, 1, 'Active', NULL, NULL, '', 0),
-('5f9a81a6-1603-2328-978b-558fee14c44f', '', NULL, 0, NULL, NULL, 1, '红', '太狼', 0, 0, 1, NULL, '2015-06-28 12:53:56', '2015-06-29 03:30:25', '1', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Inactive', NULL, NULL, NULL, NULL, NULL, 1, 0, 1, 'Terminated', NULL, NULL, '', 0),
-('60552381-cd8d-acf6-691d-557d0b938406', 'likefu', '$1$sBdxnrLm$XVvNyzLPDZ59uq9ZTbf3O1', 0, '2015-06-26 04:44:00', NULL, 1, '李', '客服', 0, 0, 1, NULL, '2015-06-14 05:05:46', '2015-06-26 04:48:33', '1', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Active', NULL, NULL, NULL, NULL, NULL, 0, 0, 1, 'Active', NULL, NULL, '', 0),
-('650c1d57-5661-b558-73ed-558cbc18081c', 'maomin', '$1$MethbZYv$U62DQ9ygOqP0l4zHKOXmQ0', 1, '2015-06-26 03:00:00', NULL, 1, '毛', '敏', 0, 0, 1, 'test', '2015-06-26 02:43:50', '2015-06-26 03:04:25', '1', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Active', NULL, NULL, NULL, NULL, NULL, 0, 0, 1, 'Active', NULL, NULL, '', 0),
-('73f63406-6a38-fb4b-be00-558cbcdef3c6', 'wangjun', '$1$PVtA9P5I$9DVrvA0rXbcs3ZNs/Hg9J.', 0, '2015-06-26 03:14:00', NULL, 1, '王', '军', 0, 0, 1, 'test', '2015-06-26 02:42:43', '2015-06-26 03:14:27', '73f63406-6a38-fb4b-be00-558cbcdef3c6', '1', NULL, NULL, NULL, NULL, '234234', NULL, NULL, 'Active', NULL, NULL, NULL, NULL, NULL, 0, 0, 1, 'Active', NULL, NULL, '', 0),
-('845bbf79-391a-f29d-0a90-555729614d0b', 'liufk', '$1$XP4zpct/$hP6ewTW.dJO410FPPZwxc1', 0, '2015-06-12 08:02:00', NULL, 1, '刘', '风控', 0, 0, 1, NULL, '2015-05-16 11:28:06', '2015-06-26 11:30:07', '1', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Active', NULL, NULL, NULL, NULL, NULL, 0, 0, 1, 'Active', NULL, NULL, '', 0),
-('880d930e-94ac-ba6d-2144-554434911d8e', 'mengjun', '$1$ANJo3WtQ$k7VhEJ/PHl9g827nxLRza1', 1, '2015-06-26 03:02:56', NULL, 1, '孟', '军', 0, 0, 1, NULL, '2015-05-02 02:21:37', '2015-06-26 03:02:49', '1', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Active', NULL, NULL, NULL, NULL, NULL, 0, 0, 1, 'Active', NULL, NULL, '', 0),
-('b29ab482-6548-84ec-ba10-558cbb500a58', 'wangbing', '$1$yCJlyF6j$9tmvWpUjoK7vVjeQDl68V.', 0, '2015-06-26 03:07:00', NULL, 1, '王', '兵', 0, 0, 1, 'test', '2015-06-26 02:39:38', '2015-06-26 03:07:21', 'b29ab482-6548-84ec-ba10-558cbb500a58', '1', NULL, NULL, NULL, NULL, '23234324234', NULL, NULL, 'Active', NULL, NULL, NULL, NULL, NULL, 0, 0, 1, 'Active', NULL, NULL, '', 0),
-('da26dab0-900d-916d-0bc0-55572a5c5184', 'zhangbm', '$1$XMbxVbSO$ifNMty2PLQWQoB50vMWEF0', 0, '2015-06-14 05:13:00', NULL, 1, '张', '部门', 0, 0, 1, NULL, '2015-05-16 11:29:58', '2015-06-26 11:29:46', '1', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Active', NULL, NULL, NULL, NULL, NULL, 0, 0, 1, 'Active', NULL, NULL, '', 0),
-('e4d13a0f-a09a-e412-364c-557d1b7294af', 'huchanpin', '$1$PnG/R4dw$TzKLe92o0.SOElKvC0lrd0', 0, '2015-06-14 06:14:00', NULL, 1, '胡', '产品', 0, 0, 1, NULL, '2015-06-14 06:12:23', '2015-06-26 03:17:19', '1', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Active', NULL, NULL, NULL, NULL, NULL, 0, 0, 1, 'Active', NULL, NULL, '', 0);
+('1', 'admin', '$1$LG9yy5X9$rSJ6LCxGD.7nPf2R/e7bb1', 0, NULL, NULL, 1, 'Cao', 'Jeff', 1, 0, 1, NULL, '2015-04-30 23:59:51', '2015-06-26 03:45:54', '1', '', 'Administrator', NULL, NULL, NULL, NULL, NULL, NULL, 'Active', NULL, NULL, NULL, NULL, NULL, 0, 0, 1, 'Active', NULL, NULL, '', 0);
 
 -- --------------------------------------------------------
 
@@ -5504,17 +5225,7 @@ CREATE TABLE IF NOT EXISTS `users_cstm` (
 --
 
 INSERT INTO `users_cstm` (`id_c`, `gangwei_leixin_c`, `gonghao_c`, `butie_c`, `currency_id`, `jixiao_c`, `gongzi_c`, `shengfenzheng_hao_c`, `yuang_bumen_info_id_c`, `yuang_fengongsi_info_id_c`, `xiebie_c`, `zaizhi_zhuangtai_c`) VALUES
-('1', 'xindai_guwen', 'nj0025', NULL, '', NULL, NULL, '', 'a2d1ddbb-3d2e-1278-51d4-558cb58cc144', '59c880e4-3a36-c1c3-7310-55435e848c0a', 'nan', 'zaizhi'),
-('53479583-9790-6b96-4c30-558cbd3cb590', 'kefu_jingli', '1232321', NULL, '', NULL, NULL, '', 'a2d1ddbb-3d2e-1278-51d4-558cb58cc144', '', 'nan', 'zaizhi'),
-('5f9a81a6-1603-2328-978b-558fee14c44f', 'xindai_guwen', '000011', NULL, '', NULL, NULL, '', '', '', 'nan', 'zaizhi'),
-('60552381-cd8d-acf6-691d-557d0b938406', 'xindai_guwen', '2342342', NULL, '', NULL, NULL, '2432432423424', 'a2d1ddbb-3d2e-1278-51d4-558cb58cc144', '', 'nan', 'zaizhi'),
-('650c1d57-5661-b558-73ed-558cbc18081c', 'chanpin_jingli', '123323', NULL, '', NULL, NULL, '', 'a2d1ddbb-3d2e-1278-51d4-558cb58cc144', '', 'nan', 'zaizhi'),
-('73f63406-6a38-fb4b-be00-558cbcdef3c6', 'fengkong_jingli', '100023434', NULL, '', NULL, NULL, '', 'a2d1ddbb-3d2e-1278-51d4-558cb58cc144', '', 'nan', 'zaizhi'),
-('845bbf79-391a-f29d-0a90-555729614d0b', 'fengkong_jingli', '10003', NULL, '', NULL, NULL, '', 'a2d1ddbb-3d2e-1278-51d4-558cb58cc144', '59c880e4-3a36-c1c3-7310-55435e848c0a', 'nan', 'zaizhi'),
-('880d930e-94ac-ba6d-2144-554434911d8e', 'bumen_jingli', '64646', NULL, '', NULL, NULL, '64646', 'a2d1ddbb-3d2e-1278-51d4-558cb58cc144', '59c880e4-3a36-c1c3-7310-55435e848c0a', 'nan', 'zaizhi'),
-('b29ab482-6548-84ec-ba10-558cbb500a58', 'xindai_guwen', '10002345', '234.000000', '', '234.000000', '3432.000000', '234234234234', 'a2d1ddbb-3d2e-1278-51d4-558cb58cc144', '', 'nan', 'zaizhi'),
-('da26dab0-900d-916d-0bc0-55572a5c5184', 'bumen_jingli', '10004', NULL, '', NULL, NULL, '', 'a2d1ddbb-3d2e-1278-51d4-558cb58cc144', '59c880e4-3a36-c1c3-7310-55435e848c0a', 'nan', 'zaizhi'),
-('e4d13a0f-a09a-e412-364c-557d1b7294af', 'chanpin_jingli', '4234234', NULL, '', NULL, NULL, '', 'a2d1ddbb-3d2e-1278-51d4-558cb58cc144', '', 'nan', 'zaizhi');
+('1', 'xindai_guwen', 'nj0025', NULL, '', NULL, NULL, '', 'a2d1ddbb-3d2e-1278-51d4-558cb58cc144', '59c880e4-3a36-c1c3-7310-55435e848c0a', 'nan', 'zaizhi');
 
 -- --------------------------------------------------------
 
@@ -5613,7 +5324,7 @@ INSERT INTO `user_preferences` (`id`, `category`, `deleted`, `date_entered`, `da
 ('110a0743-a5fa-2f02-02a3-5544569e6bda', 'liuch_fangkuang_liucheng2_LIUCH_FANGKUANG_LIUCHENG', 0, '2015-05-02 04:43:43', '2015-06-28 04:38:04', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMzoiamlla3VhbmdyZW5fYyI7czo5OiJzb3J0T3JkZXIiO3M6NDoiREVTQyI7fX0='),
 ('122ee9fc-a1ec-737f-454a-557d0cb09a73', 'Home2_MEETING', 0, '2015-06-14 05:08:16', '2015-06-14 05:08:16', '60552381-cd8d-acf6-691d-557d0b938406', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('135c8615-b83a-7069-58ca-557d0c0a0b20', 'Home2_OPPORTUNITY', 0, '2015-06-14 05:08:16', '2015-06-14 05:08:16', '60552381-cd8d-acf6-691d-557d0b938406', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
-('13b60c3d-e185-3b44-91a3-5542c20d5edc', 'global', 0, '2015-04-30 23:59:51', '2015-06-29 00:34:16', '1', 'YTozMTp7czoyMDoiY2FsZW5kYXJfcHVibGlzaF9rZXkiO3M6MzY6ImNhZjAwZjZjLTdhM2EtMmY2My0xNTczLTU1NDJjMmMxNDYxOSI7czoxMDoidXNlcl90aGVtZSI7czo2OiJTdWdhcjUiO3M6MTM6InJlbWluZGVyX3RpbWUiO2k6MTgwMDtzOjEyOiJtYWlsbWVyZ2Vfb24iO3M6Mjoib24iO3M6ODoidGltZXpvbmUiO3M6MTM6IkV1cm9wZS9CZXJsaW4iO3M6MTY6InN3YXBfbGFzdF92aWV3ZWQiO3M6MDoiIjtzOjE0OiJzd2FwX3Nob3J0Y3V0cyI7czowOiIiO3M6MTk6Im5hdmlnYXRpb25fcGFyYWRpZ20iO3M6MjoiZ20iO3M6MTM6InN1YnBhbmVsX3RhYnMiO3M6MDoiIjtzOjE0OiJtb2R1bGVfZmF2aWNvbiI7czowOiIiO3M6OToiaGlkZV90YWJzIjthOjA6e31zOjExOiJyZW1vdmVfdGFicyI7YTowOnt9czo3OiJub19vcHBzIjtzOjM6Im9mZiI7czoxOToiZW1haWxfcmVtaW5kZXJfdGltZSI7aTotMTtzOjI6InV0IjtzOjE6IjEiO3M6ODoiY3VycmVuY3kiO3M6MzoiLTk5IjtzOjM1OiJkZWZhdWx0X2N1cnJlbmN5X3NpZ25pZmljYW50X2RpZ2l0cyI7czoxOiIyIjtzOjExOiJudW1fZ3JwX3NlcCI7czoxOiIsIjtzOjc6ImRlY19zZXAiO3M6MToiLiI7czo1OiJkYXRlZiI7czo1OiJtL2QvWSI7czo1OiJ0aW1lZiI7czo0OiJoOmlhIjtzOjI2OiJkZWZhdWx0X2xvY2FsZV9uYW1lX2Zvcm1hdCI7czo1OiJzIGYgbCI7czoxNDoidXNlX3JlYWxfbmFtZXMiO3M6Mjoib24iO3M6MTc6Im1haWxfc210cGF1dGhfcmVxIjtzOjA6IiI7czoxMjoibWFpbF9zbXRwc3NsIjtpOjA7czoxNzoiZW1haWxfc2hvd19jb3VudHMiO2k6MDtzOjE5OiJ0aGVtZV9jdXJyZW50X2dyb3VwIjtzOjY6IuaJgOaciSI7czoxMDoiRW1wbG95ZWVzUSI7YTozOntzOjY6Im1vZHVsZSI7czo5OiJFbXBsb3llZXMiO3M6NjoiYWN0aW9uIjtzOjU6ImluZGV4IjtzOjU6InF1ZXJ5IjtzOjQ6InRydWUiO31zOjIyOiJkYWlrX2ppZWt1YW5ncmVuX2luZm9RIjthOjEwOntzOjY6Im1vZHVsZSI7czoyMToiZGFpa19qaWVrdWFuZ3Jlbl9pbmZvIjtzOjY6ImFjdGlvbiI7czo1OiJpbmRleCI7czoxMzoic2VhcmNoRm9ybVRhYiI7czoxMjoiYmFzaWNfc2VhcmNoIjtzOjU6InF1ZXJ5IjtzOjQ6InRydWUiO3M6Nzoib3JkZXJCeSI7czoxMjoiREFURV9FTlRFUkVEIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjtzOjEwOiJuYW1lX2Jhc2ljIjtzOjA6IiI7czoyMDoiZGFuYW5nX2JpYW5oYW9fYmFzaWMiO3M6MDoiIjtzOjIzOiJjdXJyZW50X3VzZXJfb25seV9iYXNpYyI7czoxOiIwIjtzOjY6ImJ1dHRvbiI7czo2OiLmn6Xmib4iO31zOjI1OiJsaXVjaF9mYW5na3VhbmdfbGl1Y2hlbmdRIjtzOjA6IiI7czoxNzoieXVhbmdfYnVtZW5faW5mb1EiO2E6OTp7czo2OiJtb2R1bGUiO3M6MTY6Inl1YW5nX2J1bWVuX2luZm8iO3M6NjoiYWN0aW9uIjtzOjU6ImluZGV4IjtzOjEzOiJzZWFyY2hGb3JtVGFiIjtzOjEyOiJiYXNpY19zZWFyY2giO3M6NToicXVlcnkiO3M6NDoidHJ1ZSI7czo3OiJvcmRlckJ5IjtzOjA6IiI7czo5OiJzb3J0T3JkZXIiO3M6MDoiIjtzOjEwOiJuYW1lX2Jhc2ljIjtzOjA6IiI7czoyMzoiY3VycmVudF91c2VyX29ubHlfYmFzaWMiO3M6MToiMCI7czo2OiJidXR0b24iO3M6Njoi5p+l5om+Ijt9fQ=='),
+('13b60c3d-e185-3b44-91a3-5542c20d5edc', 'global', 0, '2015-04-30 23:59:51', '2015-07-13 14:42:45', '1', 'YTozMjp7czoyMDoiY2FsZW5kYXJfcHVibGlzaF9rZXkiO3M6MzY6ImNhZjAwZjZjLTdhM2EtMmY2My0xNTczLTU1NDJjMmMxNDYxOSI7czoxMDoidXNlcl90aGVtZSI7czo2OiJTdWdhcjUiO3M6MTM6InJlbWluZGVyX3RpbWUiO2k6MTgwMDtzOjEyOiJtYWlsbWVyZ2Vfb24iO3M6Mjoib24iO3M6ODoidGltZXpvbmUiO3M6MTM6IkV1cm9wZS9CZXJsaW4iO3M6MTY6InN3YXBfbGFzdF92aWV3ZWQiO3M6MDoiIjtzOjE0OiJzd2FwX3Nob3J0Y3V0cyI7czowOiIiO3M6MTk6Im5hdmlnYXRpb25fcGFyYWRpZ20iO3M6MjoiZ20iO3M6MTM6InN1YnBhbmVsX3RhYnMiO3M6MDoiIjtzOjE0OiJtb2R1bGVfZmF2aWNvbiI7czowOiIiO3M6OToiaGlkZV90YWJzIjthOjA6e31zOjExOiJyZW1vdmVfdGFicyI7YTowOnt9czo3OiJub19vcHBzIjtzOjM6Im9mZiI7czoxOToiZW1haWxfcmVtaW5kZXJfdGltZSI7aTotMTtzOjI6InV0IjtzOjE6IjEiO3M6ODoiY3VycmVuY3kiO3M6MzoiLTk5IjtzOjM1OiJkZWZhdWx0X2N1cnJlbmN5X3NpZ25pZmljYW50X2RpZ2l0cyI7czoxOiIyIjtzOjExOiJudW1fZ3JwX3NlcCI7czoxOiIsIjtzOjc6ImRlY19zZXAiO3M6MToiLiI7czo1OiJkYXRlZiI7czo1OiJtL2QvWSI7czo1OiJ0aW1lZiI7czo0OiJoOmlhIjtzOjI2OiJkZWZhdWx0X2xvY2FsZV9uYW1lX2Zvcm1hdCI7czo1OiJzIGYgbCI7czoxNDoidXNlX3JlYWxfbmFtZXMiO3M6Mjoib24iO3M6MTc6Im1haWxfc210cGF1dGhfcmVxIjtzOjA6IiI7czoxMjoibWFpbF9zbXRwc3NsIjtpOjA7czoxNzoiZW1haWxfc2hvd19jb3VudHMiO2k6MDtzOjE5OiJ0aGVtZV9jdXJyZW50X2dyb3VwIjtzOjY6IuaJgOaciSI7czoxMDoiRW1wbG95ZWVzUSI7YTozOntzOjY6Im1vZHVsZSI7czo5OiJFbXBsb3llZXMiO3M6NjoiYWN0aW9uIjtzOjU6ImluZGV4IjtzOjU6InF1ZXJ5IjtzOjQ6InRydWUiO31zOjIyOiJkYWlrX2ppZWt1YW5ncmVuX2luZm9RIjthOjEwOntzOjY6Im1vZHVsZSI7czoyMToiZGFpa19qaWVrdWFuZ3Jlbl9pbmZvIjtzOjY6ImFjdGlvbiI7czo1OiJpbmRleCI7czoxMzoic2VhcmNoRm9ybVRhYiI7czoxMjoiYmFzaWNfc2VhcmNoIjtzOjU6InF1ZXJ5IjtzOjQ6InRydWUiO3M6Nzoib3JkZXJCeSI7czoxMjoiREFURV9FTlRFUkVEIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjtzOjEwOiJuYW1lX2Jhc2ljIjtzOjA6IiI7czoyMDoiZGFuYW5nX2JpYW5oYW9fYmFzaWMiO3M6MDoiIjtzOjIzOiJjdXJyZW50X3VzZXJfb25seV9iYXNpYyI7czoxOiIwIjtzOjY6ImJ1dHRvbiI7czo2OiLmn6Xmib4iO31zOjI1OiJsaXVjaF9mYW5na3VhbmdfbGl1Y2hlbmdRIjtzOjA6IiI7czoxNzoieXVhbmdfYnVtZW5faW5mb1EiO2E6OTp7czo2OiJtb2R1bGUiO3M6MTY6Inl1YW5nX2J1bWVuX2luZm8iO3M6NjoiYWN0aW9uIjtzOjU6ImluZGV4IjtzOjEzOiJzZWFyY2hGb3JtVGFiIjtzOjEyOiJiYXNpY19zZWFyY2giO3M6NToicXVlcnkiO3M6NDoidHJ1ZSI7czo3OiJvcmRlckJ5IjtzOjA6IiI7czo5OiJzb3J0T3JkZXIiO3M6MDoiIjtzOjEwOiJuYW1lX2Jhc2ljIjtzOjA6IiI7czoyMzoiY3VycmVudF91c2VyX29ubHlfYmFzaWMiO3M6MToiMCI7czo2OiJidXR0b24iO3M6Njoi5p+l5om+Ijt9czozNDoiSW5ib3VuZEVtYWlsX0luYm91bmRFbWFpbF9PUkRFUl9CWSI7czoxMjoiZGF0ZV9lbnRlcmVkIjt9'),
 ('145e474e-f2d6-4bea-a47c-557d0c1adf13', 'Home2_ACCOUNT', 0, '2015-06-14 05:08:16', '2015-06-14 05:08:16', '60552381-cd8d-acf6-691d-557d0b938406', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('1648145f-d2f2-c854-e9e3-5544a578d0d0', 'asol_WorkingNodes2_ASOL_WORKINGNODES', 0, '2015-05-02 10:24:42', '2015-05-02 10:24:42', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('166e13e4-1f4d-1c83-4425-5542c357f95a', 'ETag', 0, '2015-05-01 00:07:41', '2015-06-03 09:24:44', '1', 'YToxOntzOjEyOiJtYWluTWVudUVUYWciO2k6MTM7fQ=='),
@@ -5621,6 +5332,7 @@ INSERT INTO `user_preferences` (`id`, `category`, `deleted`, `date_entered`, `da
 ('1877a822-3e83-e137-1552-557d0c2e26ce', 'Home2_LEAD', 0, '2015-06-14 05:08:16', '2015-06-14 05:08:16', '60552381-cd8d-acf6-691d-557d0b938406', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('195446a0-17a3-da3c-88c0-557d0cee11a4', 'Home2_SUGARFEED', 0, '2015-06-14 05:08:16', '2015-06-14 05:08:16', '60552381-cd8d-acf6-691d-557d0b938406', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('19bc9187-ac3c-0d17-6950-557d0bf04fbb', 'global', 0, '2015-06-14 05:06:57', '2015-06-26 04:45:19', '60552381-cd8d-acf6-691d-557d0b938406', 'YTozODp7czoxMjoibWFpbG1lcmdlX29uIjtzOjI6Im9uIjtzOjE2OiJzd2FwX2xhc3Rfdmlld2VkIjtzOjA6IiI7czoxNDoic3dhcF9zaG9ydGN1dHMiO3M6MDoiIjtzOjE5OiJuYXZpZ2F0aW9uX3BhcmFkaWdtIjtzOjI6ImdtIjtzOjEzOiJzdWJwYW5lbF90YWJzIjtzOjA6IiI7czoxNDoibW9kdWxlX2Zhdmljb24iO3M6MDoiIjtzOjk6ImhpZGVfdGFicyI7YTowOnt9czoxMToicmVtb3ZlX3RhYnMiO2E6MDp7fXM6Nzoibm9fb3BwcyI7czozOiJvZmYiO3M6MTM6InJlbWluZGVyX3RpbWUiO2k6MTgwMDtzOjE5OiJlbWFpbF9yZW1pbmRlcl90aW1lIjtpOi0xO3M6ODoidGltZXpvbmUiO3M6MTM6IkV1cm9wZS9CZXJsaW4iO3M6MjoidXQiO3M6MToiMSI7czo4OiJjdXJyZW5jeSI7czozOiItOTkiO3M6MzU6ImRlZmF1bHRfY3VycmVuY3lfc2lnbmlmaWNhbnRfZGlnaXRzIjtzOjE6IjIiO3M6MTE6Im51bV9ncnBfc2VwIjtzOjE6IiwiO3M6NzoiZGVjX3NlcCI7czoxOiIuIjtzOjQ6ImZkb3ciO3M6MToiMCI7czo1OiJkYXRlZiI7czo1OiJtL2QvWSI7czo1OiJ0aW1lZiI7czo0OiJoOmlhIjtzOjE1OiJtYWlsX3NtdHBzZXJ2ZXIiO3M6MTI6InNtdHAuMTYzLmNvbSI7czoxMzoibWFpbF9zbXRwdXNlciI7czowOiIiO3M6MTM6Im1haWxfc210cHBhc3MiO3M6MDoiIjtzOjI2OiJkZWZhdWx0X2xvY2FsZV9uYW1lX2Zvcm1hdCI7czo1OiJzIGYgbCI7czoxNjoiZXhwb3J0X2RlbGltaXRlciI7czoxOiIsIjtzOjIyOiJkZWZhdWx0X2V4cG9ydF9jaGFyc2V0IjtzOjU6IlVURi04IjtzOjE0OiJ1c2VfcmVhbF9uYW1lcyI7czoyOiJvbiI7czoxNzoibWFpbF9zbXRwYXV0aF9yZXEiO3M6MDoiIjtzOjEyOiJtYWlsX3NtdHBzc2wiO2k6MDtzOjE1OiJlbWFpbF9saW5rX3R5cGUiO3M6NToic3VnYXIiO3M6MTc6ImVtYWlsX3Nob3dfY291bnRzIjtpOjA7czoyMDoiY2FsZW5kYXJfcHVibGlzaF9rZXkiO3M6MDoiIjtzOjE1OiJsb2dpbmV4cGlyYXRpb24iO3M6MToiMCI7czo3OiJsb2Nrb3V0IjtzOjA6IiI7czoxMToibG9naW5mYWlsZWQiO3M6MToiMCI7czoxMDoidXNlcl90aGVtZSI7czo2OiJTdWdhcjUiO3M6MTk6InRoZW1lX2N1cnJlbnRfZ3JvdXAiO3M6Njoi5omA5pyJIjtzOjI1OiJsaXVjaF9mYW5na3VhbmdfbGl1Y2hlbmdRIjthOjk6e3M6NjoibW9kdWxlIjtzOjI0OiJsaXVjaF9mYW5na3VhbmdfbGl1Y2hlbmciO3M6NjoiYWN0aW9uIjtzOjU6ImluZGV4IjtzOjEzOiJzZWFyY2hGb3JtVGFiIjtzOjEyOiJiYXNpY19zZWFyY2giO3M6NToicXVlcnkiO3M6NDoidHJ1ZSI7czo3OiJvcmRlckJ5IjtzOjA6IiI7czo5OiJzb3J0T3JkZXIiO3M6MDoiIjtzOjEwOiJuYW1lX2Jhc2ljIjtzOjA6IiI7czoyMzoiY3VycmVudF91c2VyX29ubHlfYmFzaWMiO3M6MToiMCI7czo2OiJidXR0b24iO3M6Njoi5p+l5om+Ijt9fQ=='),
+('1dfab808-e876-bd6c-699a-55a3d13dd3f0', 'fdi2m_jinrong_fenzhi_jigou_info2_FDI2M_JINRONG_FEN', 0, '2015-07-13 14:57:11', '2015-07-13 14:57:11', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('206ac7e4-23f7-861e-2ef1-5590bcb3e1f5', 'fdi2m_jinrong_chanpin_info2_FDI2M_JINRONG_CHANPIN_', 0, '2015-06-29 03:32:22', '2015-06-29 03:32:22', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('209cfc3c-7723-239b-2d16-5544a57ee4de', 'asol_ProcessInstances2_ASOL_PROCESSINSTANCES', 0, '2015-05-02 10:24:49', '2015-05-02 10:24:49', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('20fc2d5d-78b7-a540-50ca-558595620e8b', 'fdi2m_jinrong_fenzhi_jigou_info2_FDI2M_JINRONG_FEN', 0, '2015-06-20 16:31:45', '2015-06-20 16:31:45', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
@@ -5633,6 +5345,7 @@ INSERT INTO `user_preferences` (`id`, `category`, `deleted`, `date_entered`, `da
 ('2e35323a-f433-b47f-24ae-5544a60ed93d', 'asol_OnHold2_ASOL_ONHOLD', 0, '2015-05-02 10:25:06', '2015-05-02 10:25:06', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('30a294ee-c28b-d668-342b-558cc10f811c', 'ETag', 0, '2015-06-26 03:05:05', '2015-06-26 03:07:21', 'b29ab482-6548-84ec-ba10-558cbb500a58', 'YToxOntzOjEyOiJtYWluTWVudUVUYWciO2k6Mjt9'),
 ('32b00add-5cf8-4f13-6cf5-556ecdfa9642', 'fdi2m_jinrong_chanpin_info2_FDI2M_JINRONG_CHANPIN_', 0, '2015-06-03 09:48:33', '2015-06-03 09:48:33', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
+('33c9d4bf-b703-55ff-c36f-55a3ce179581', 'EmailMan2_EMAILMAN', 0, '2015-07-13 14:42:53', '2015-07-13 14:42:53', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('33d737c7-3754-04b6-cc40-5557242b9266', 'ACLRoles2_ACLROLE', 0, '2015-05-16 11:05:07', '2015-05-16 11:05:07', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('349f61b1-004b-1df0-58df-558cdc9d5788', 'fdi2m_jinrong_chanpin_info2_FDI2M_JINRONG_CHANPIN_', 0, '2015-06-26 04:59:01', '2015-06-26 04:59:01', 'b29ab482-6548-84ec-ba10-558cbb500a58', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('34d60b57-cee1-8107-28f9-557d1b3baa54', 'Home2_MEETING', 0, '2015-06-14 06:14:45', '2015-06-14 06:14:45', 'e4d13a0f-a09a-e412-364c-557d1b7294af', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
@@ -5702,6 +5415,7 @@ INSERT INTO `user_preferences` (`id`, `category`, `deleted`, `date_entered`, `da
 ('a19009af-0d24-40d9-de50-557a92622385', 'ETag', 0, '2015-06-12 08:02:18', '2015-06-12 08:02:18', '845bbf79-391a-f29d-0a90-555729614d0b', 'YToxOntzOjEyOiJtYWluTWVudUVUYWciO2k6MTt9');
 INSERT INTO `user_preferences` (`id`, `category`, `deleted`, `date_entered`, `date_modified`, `assigned_user_id`, `contents`) VALUES
 ('a550b408-9cbe-beb4-5ea5-558cbe755b98', 'global', 0, '2015-06-26 02:50:42', '2015-06-26 03:00:48', '650c1d57-5661-b558-73ed-558cbc18081c', 'YTozNTp7czoxMjoibWFpbG1lcmdlX29uIjtzOjM6Im9mZiI7czoxNjoic3dhcF9sYXN0X3ZpZXdlZCI7czowOiIiO3M6MTQ6InN3YXBfc2hvcnRjdXRzIjtzOjA6IiI7czoxOToibmF2aWdhdGlvbl9wYXJhZGlnbSI7czoyOiJnbSI7czoxMzoic3VicGFuZWxfdGFicyI7czoyOiJvbiI7czoxNDoibW9kdWxlX2Zhdmljb24iO3M6MDoiIjtzOjk6ImhpZGVfdGFicyI7YTowOnt9czoxMToicmVtb3ZlX3RhYnMiO2E6MDp7fXM6Nzoibm9fb3BwcyI7czozOiJvZmYiO3M6MTM6InJlbWluZGVyX3RpbWUiO2k6LTE7czoxOToiZW1haWxfcmVtaW5kZXJfdGltZSI7aTotMTtzOjg6InRpbWV6b25lIjtzOjM6IlVUQyI7czoyOiJ1dCI7czoxOiIwIjtzOjg6ImN1cnJlbmN5IjtzOjM6Ii05OSI7czozNToiZGVmYXVsdF9jdXJyZW5jeV9zaWduaWZpY2FudF9kaWdpdHMiO3M6MToiMiI7czoxMToibnVtX2dycF9zZXAiO3M6MToiLCI7czo3OiJkZWNfc2VwIjtzOjE6Ii4iO3M6NDoiZmRvdyI7czoxOiIwIjtzOjU6ImRhdGVmIjtzOjU6Im0vZC9ZIjtzOjU6InRpbWVmIjtzOjM6Ikg6aSI7czoxNToibWFpbF9zbXRwc2VydmVyIjtzOjEyOiJzbXRwLjE2My5jb20iO3M6MTM6Im1haWxfc210cHVzZXIiO3M6MDoiIjtzOjEzOiJtYWlsX3NtdHBwYXNzIjtzOjA6IiI7czoyNjoiZGVmYXVsdF9sb2NhbGVfbmFtZV9mb3JtYXQiO3M6NToicyBmIGwiO3M6MTY6ImV4cG9ydF9kZWxpbWl0ZXIiO3M6MToiLCI7czoyMjoiZGVmYXVsdF9leHBvcnRfY2hhcnNldCI7czo1OiJVVEYtOCI7czoxNDoidXNlX3JlYWxfbmFtZXMiO3M6Mjoib24iO3M6MTc6Im1haWxfc210cGF1dGhfcmVxIjtzOjA6IiI7czoxMjoibWFpbF9zbXRwc3NsIjtpOjA7czoxNToiZW1haWxfbGlua190eXBlIjtzOjU6InN1Z2FyIjtzOjE3OiJlbWFpbF9zaG93X2NvdW50cyI7aTowO3M6MjA6ImNhbGVuZGFyX3B1Ymxpc2hfa2V5IjtzOjA6IiI7czoxNToibG9naW5leHBpcmF0aW9uIjtzOjE6IjAiO3M6NzoibG9ja291dCI7czowOiIiO3M6MTE6ImxvZ2luZmFpbGVkIjtzOjE6IjAiO30='),
+('ac569d9f-85f6-4bbf-a1ed-55a3d15071de', 'fdi2m_jinrong_chanpin_info2_FDI2M_JINRONG_CHANPIN_', 0, '2015-07-13 14:57:08', '2015-07-13 14:57:08', '1', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
 ('ac6b383b-488f-a7e4-19c2-554873ddcd3d', 'daik_jiekuangren_info', 0, '2015-05-05 07:40:22', '2015-05-05 07:40:22', '1', 'YToxOntzOjIyOiJMaXN0Vmlld0Rpc3BsYXlDb2x1bW5zIjthOjA6e319'),
 ('ad750522-28da-d461-96c4-558cbe34d710', 'global', 0, '2015-06-26 02:52:25', '2015-06-26 03:12:32', 'b29ab482-6548-84ec-ba10-558cbb500a58', 'YTozODp7czoxMjoibWFpbG1lcmdlX29uIjtzOjI6Im9uIjtzOjE2OiJzd2FwX2xhc3Rfdmlld2VkIjtzOjA6IiI7czoxNDoic3dhcF9zaG9ydGN1dHMiO3M6MDoiIjtzOjE5OiJuYXZpZ2F0aW9uX3BhcmFkaWdtIjtzOjI6ImdtIjtzOjEzOiJzdWJwYW5lbF90YWJzIjtzOjA6IiI7czoxNDoibW9kdWxlX2Zhdmljb24iO3M6MDoiIjtzOjk6ImhpZGVfdGFicyI7YTowOnt9czoxMToicmVtb3ZlX3RhYnMiO2E6MDp7fXM6Nzoibm9fb3BwcyI7czozOiJvZmYiO3M6MTM6InJlbWluZGVyX3RpbWUiO2k6MTgwMDtzOjE5OiJlbWFpbF9yZW1pbmRlcl90aW1lIjtpOi0xO3M6ODoidGltZXpvbmUiO3M6MzoiVVRDIjtzOjI6InV0IjtzOjE6IjEiO3M6ODoiY3VycmVuY3kiO3M6MzoiLTk5IjtzOjM1OiJkZWZhdWx0X2N1cnJlbmN5X3NpZ25pZmljYW50X2RpZ2l0cyI7czoxOiIyIjtzOjExOiJudW1fZ3JwX3NlcCI7czoxOiIsIjtzOjc6ImRlY19zZXAiO3M6MToiLiI7czo0OiJmZG93IjtzOjE6IjAiO3M6NToiZGF0ZWYiO3M6NToibS9kL1kiO3M6NToidGltZWYiO3M6NDoiaDppYSI7czoxNToibWFpbF9zbXRwc2VydmVyIjtzOjEyOiJzbXRwLjE2My5jb20iO3M6MTM6Im1haWxfc210cHVzZXIiO3M6MDoiIjtzOjEzOiJtYWlsX3NtdHBwYXNzIjtzOjA6IiI7czoyNjoiZGVmYXVsdF9sb2NhbGVfbmFtZV9mb3JtYXQiO3M6NToicyBmIGwiO3M6MTY6ImV4cG9ydF9kZWxpbWl0ZXIiO3M6MToiLCI7czoyMjoiZGVmYXVsdF9leHBvcnRfY2hhcnNldCI7czo1OiJVVEYtOCI7czoxNDoidXNlX3JlYWxfbmFtZXMiO3M6Mjoib24iO3M6MTc6Im1haWxfc210cGF1dGhfcmVxIjtzOjA6IiI7czoxMjoibWFpbF9zbXRwc3NsIjtpOjA7czoxNToiZW1haWxfbGlua190eXBlIjtzOjU6InN1Z2FyIjtzOjE3OiJlbWFpbF9zaG93X2NvdW50cyI7aTowO3M6MjA6ImNhbGVuZGFyX3B1Ymxpc2hfa2V5IjtzOjA6IiI7czoxNToibG9naW5leHBpcmF0aW9uIjtzOjE6IjAiO3M6NzoibG9ja291dCI7czowOiIiO3M6MTE6ImxvZ2luZmFpbGVkIjtzOjE6IjAiO3M6MTA6InVzZXJfdGhlbWUiO3M6NjoiU3VnYXI1IjtzOjE5OiJ0aGVtZV9jdXJyZW50X2dyb3VwIjtzOjY6IuaJgOaciSI7czoxMDoiRW1wbG95ZWVzUSI7YTozOntzOjY6Im1vZHVsZSI7czo5OiJFbXBsb3llZXMiO3M6NjoiYWN0aW9uIjtzOjU6ImluZGV4IjtzOjU6InF1ZXJ5IjtzOjQ6InRydWUiO319'),
 ('ae919041-461c-3b05-80b6-557a946ea237', 'daik_jiekuangren_info2_DAIK_JIEKUANGREN_INFO', 0, '2015-06-12 08:13:17', '2015-06-12 08:13:17', '845bbf79-391a-f29d-0a90-555729614d0b', 'YToxOntzOjEzOiJsaXN0dmlld09yZGVyIjthOjI6e3M6Nzoib3JkZXJCeSI7czoxMjoiZGF0ZV9lbnRlcmVkIjtzOjk6InNvcnRPcmRlciI7czo0OiJERVNDIjt9fQ=='),
@@ -5833,11 +5547,7 @@ CREATE TABLE IF NOT EXISTS `yuang_bumen_info` (
 --
 
 INSERT INTO `yuang_bumen_info` (`id`, `name`, `date_entered`, `date_modified`, `modified_user_id`, `created_by`, `description`, `deleted`, `assigned_user_id`, `bumen_bianhao`, `dianhua`, `youbian`, `dizhi`, `fuzeren_ximing`, `fuzeren_dianhua`) VALUES
-('1a0fb5c5-26d1-7a01-020b-556ec3e52091', '徐州分公司', '2015-06-03 09:07:42', '2015-06-26 02:12:20', '1', '1', NULL, 1, '', '000200', '4567457', '676777', NULL, NULL, '32434234'),
-('97d1e0e0-7784-eadd-b2cb-556ec3750580', '溧阳办事处', '2015-06-03 09:06:54', '2015-06-26 02:12:20', '1', '1', '', 1, NULL, '00101', '23312423', '23233', '', NULL, '34234234'),
-('a2d1ddbb-3d2e-1278-51d4-558cb58cc144', '南京分公司', '2015-06-26 02:15:37', '2015-06-28 10:17:13', '1', '1', 'test', 0, '', '01000001', '02523223', '234234234', '城市名人', NULL, '13583069488'),
-('d555c22f-ddbd-7436-7927-55435e310057', '销售一部', '2015-05-01 11:05:36', '2015-06-03 09:03:53', '1', '1', 'asdfasdf', 1, '', 'XS0001', NULL, NULL, NULL, 'Jeff', '54632132'),
-('f0bb875b-309d-afa6-749c-556ec3d3aa27', '常州分公司', '2015-06-03 09:05:45', '2015-06-26 02:12:20', '1', '1', '', 1, NULL, '000100', '123123123', '54533', '', NULL, '324234234');
+('96ea0a76-9901-a7e8-7699-55a3d5ec18e6', '总经办', '2015-07-13 15:14:58', '2015-07-13 15:14:58', '1', '1', '', 0, NULL, '01000001', '025-68729895', '210000', '南京市鼓楼区中山北路城市名人酒店40F', NULL, '13913988820');
 
 -- --------------------------------------------------------
 
@@ -5878,11 +5588,7 @@ CREATE TABLE IF NOT EXISTS `yuang_bumen_info_cstm` (
 --
 
 INSERT INTO `yuang_bumen_info_cstm` (`id_c`, `user_id_c`, `yuang_bumen_info_id_c`, `bumen_jibie_c`) VALUES
-('1a0fb5c5-26d1-7a01-020b-556ec3e52091', '1', 'f0bb875b-309d-afa6-749c-556ec3d3aa27', NULL),
-('97d1e0e0-7784-eadd-b2cb-556ec3750580', '880d930e-94ac-ba6d-2144-554434911d8e', 'f0bb875b-309d-afa6-749c-556ec3d3aa27', NULL),
-('a2d1ddbb-3d2e-1278-51d4-558cb58cc144', '880d930e-94ac-ba6d-2144-554434911d8e', '', 'yiji'),
-('d555c22f-ddbd-7436-7927-55435e310057', NULL, NULL, NULL),
-('f0bb875b-309d-afa6-749c-556ec3d3aa27', 'da26dab0-900d-916d-0bc0-55572a5c5184', '', NULL);
+('96ea0a76-9901-a7e8-7699-55a3d5ec18e6', '1', '', 'yiji');
 
 -- --------------------------------------------------------
 
@@ -5908,13 +5614,6 @@ CREATE TABLE IF NOT EXISTS `yuang_fengongsi_info` (
   `fuzeren_dianhua` varchar(255) DEFAULT NULL,
   `fuzeren_xinming` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- 转存表中的数据 `yuang_fengongsi_info`
---
-
-INSERT INTO `yuang_fengongsi_info` (`id`, `name`, `date_entered`, `date_modified`, `modified_user_id`, `created_by`, `description`, `deleted`, `assigned_user_id`, `fengongsi_bianhao`, `youbian`, `dizhi`, `dianhau`, `fuzeren_dianhua`, `fuzeren_xinming`) VALUES
-('59c880e4-3a36-c1c3-7310-55435e848c0a', '南京第一分公司', '2015-05-01 11:06:42', '2015-05-01 11:06:42', '1', '1', 'asdf', 0, NULL, 'NJB0001', '', '南京X路XX号', '2342342', '454654654', 'Jeff');
 
 -- --------------------------------------------------------
 
@@ -5958,18 +5657,6 @@ CREATE TABLE IF NOT EXISTS `yuang_waibu_qudao_info` (
   `lianxiren_dianhua` varchar(255) DEFAULT NULL,
   `dizhi` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- 转存表中的数据 `yuang_waibu_qudao_info`
---
-
-INSERT INTO `yuang_waibu_qudao_info` (`id`, `name`, `date_entered`, `date_modified`, `modified_user_id`, `created_by`, `description`, `deleted`, `assigned_user_id`, `bianhao`, `lianxiren_xinming`, `lianxiren_dianhua`, `dizhi`) VALUES
-('1c1ef71d-abb8-e936-edc8-558cb65c4b49', '宜兴渠道1', '2015-06-26 02:18:06', '2015-06-26 02:18:06', '1', '1', 'test', 0, NULL, '6', '赵云', '186232334322', ''),
-('2af028aa-3caa-ccae-d804-5580248197d4', 'werw', '2015-06-16 13:28:59', '2015-06-16 13:29:14', '1', '1', '', 1, NULL, NULL, 'werwer', 'werwerwer', ''),
-('35a87795-46c1-499e-f53e-557a9dcd29e5', '外部渠道1号', '2015-06-12 08:49:45', '2015-06-26 02:17:22', '1', '1', '', 1, NULL, '1', '外一号', '23424234', ''),
-('86a1524d-5aaf-4493-80cd-558025d3bcf8', 'werw', '2015-06-16 13:31:33', '2015-06-16 13:32:25', '1', '1', '', 1, NULL, NULL, 'wer', 'wer', ''),
-('9361ecd6-3f24-425d-da34-558025c24070', 'qwerwq', '2015-06-16 13:32:35', '2015-06-20 16:22:11', '1', '1', '', 1, NULL, '5', 'wer', '24234234', ''),
-('e6b9b4c1-9caa-98a5-6c15-557a9d98815a', '外部渠道2号', '2015-06-12 08:50:10', '2015-06-26 02:17:22', '1', '1', '', 1, NULL, '2', '外二号', '2342342', '');
 
 -- --------------------------------------------------------
 
@@ -7283,7 +6970,7 @@ ALTER TABLE `prospects`
 -- AUTO_INCREMENT for table `tracker`
 --
 ALTER TABLE `tracker`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1609;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

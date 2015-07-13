@@ -325,7 +325,7 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['shenfen_zhengming_filename'][
 
  
 
- // created: 2015-06-28 10:00:55
+ // created: 2015-07-13 16:45:31
 $dictionary['liuch_fangkuang_liucheng']['fields']['shiji_yongjin_bili']['precision']='4';
 
  
@@ -379,7 +379,7 @@ $dictionary['liuch_fangkuang_liucheng']['fields']['yongtu_zhengming_filename']['
 
  
 
- // created: 2015-06-28 10:00:11
+ // created: 2015-07-13 16:44:49
 $dictionary['liuch_fangkuang_liucheng']['fields']['yuqi_yongjin_bili']['precision']='4';
 
  

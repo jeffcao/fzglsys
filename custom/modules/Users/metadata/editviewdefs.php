@@ -123,12 +123,7 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_BUMEN',
           ),
-          1 => 
-          array (
-            'name' => 'fengongsi_c',
-            'studio' => 'visible',
-            'label' => 'LBL_FENGONGSI',
-          ),
+          1 => '',
         ),
         3 => 
         array (
