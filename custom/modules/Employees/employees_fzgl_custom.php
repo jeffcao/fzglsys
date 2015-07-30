@@ -14,6 +14,8 @@ class employees_fzgl_calculate_field_class {
         require_once('modules/Campaigns/utils.php');
 //        global $db;
 
+        if( $bean->gonghao_c !== "保存后系统自动生成"){ return; }
+
         $query = "
                 select count('x') as r_count from users
         ";
