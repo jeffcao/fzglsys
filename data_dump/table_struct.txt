@@ -1,0 +1,322 @@
+mysql> show tables;
++---------------------------------------+
+| Tables_in_fzglsys                     |
++---------------------------------------+
+| accounts                              |
+| accounts_audit                        |
+| accounts_bugs                         |
+| accounts_cases                        |
+| accounts_contacts                     |
+| accounts_opportunities                |
+| acl_actions                           |
+| acl_roles                             |
+| acl_roles_actions                     |
+| acl_roles_users                       |
+| address_book                          |
+| asol_activisol_activity_c             |
+| asol_activity                         |
+| asol_activity_asol_task_c             |
+| asol_activity_audit                   |
+| asol_config                           |
+| asol_events                           |
+| asol_events_audit                     |
+| asol_eventssol_activity_c             |
+| asol_onhold                           |
+| asol_onhold_audit                     |
+| asol_proces_asol_events_c             |
+| asol_process                          |
+| asol_process_asol_activity_c          |
+| asol_process_asol_events_1_c          |
+| asol_process_asol_task_c              |
+| asol_process_audit                    |
+| asol_processinstances                 |
+| asol_processinstances_audit           |
+| asol_task                             |
+| asol_task_audit                       |
+| asol_workflowmanagercommon            |
+| asol_workflowmanagercommon_audit      |
+| asol_workingnodes                     |
+| asol_workingnodes_audit               |
+| bugs                                  |
+| bugs_audit                            |
+| calls                                 |
+| calls_contacts                        |
+| calls_leads                           |
+| calls_users                           |
+| campaign_log                          |
+| campaign_trkrs                        |
+| campaigns                             |
+| campaigns_audit                       |
+| cases                                 |
+| cases_audit                           |
+| cases_bugs                            |
+| config                                |
+| contacts                              |
+| contacts_audit                        |
+| contacts_bugs                         |
+| contacts_cases                        |
+| contacts_users                        |
+| cron_remove_documents                 |
+| currencies                            |
+| custom_fields                         |
+| daik_jiekuangren_info                 |
+| daik_jiekuangren_info_audit           |
+| daik_jiekuangren_info_cstm            |
+| daik_jinrong_jigou_info               |
+| daik_jinrong_jigou_info_audit         |
+| document_revisions                    |
+| documents                             |
+| documents_accounts                    |
+| documents_bugs                        |
+| documents_cases                       |
+| documents_contacts                    |
+| documents_opportunities               |
+| eapm                                  |
+| email_addr_bean_rel                   |
+| email_addresses                       |
+| email_cache                           |
+| email_marketing                       |
+| email_marketing_prospect_lists        |
+| email_templates                       |
+| emailman                              |
+| emails                                |
+| emails_beans                          |
+| emails_email_addr_rel                 |
+| emails_text                           |
+| fdi2m_jinrong_chanpin_info            |
+| fdi2m_jinrong_chanpin_info_audit      |
+| fdi2m_jinrong_chanpin_info_cstm       |
+| fdi2m_jinrong_fenzhi_jigou_info       |
+| fdi2m_jinrong_fenzhi_jigou_info_audit |
+| fdi2m_jinrong_fenzhi_jigou_info_cstm  |
+| fields_meta_data                      |
+| folders                               |
+| folders_rel                           |
+| folders_subscriptions                 |
+| import_maps                           |
+| inbound_email                         |
+| inbound_email_autoreply               |
+| inbound_email_cache_ts                |
+| job_queue                             |
+| leads                                 |
+| leads_audit                           |
+| linked_documents                      |
+| liuch_fangkuang_liucheng              |
+| liuch_fangkuang_liucheng_audit        |
+| liuch_fangkuang_liucheng_cstm         |
+| meetings                              |
+| meetings_contacts                     |
+| meetings_leads                        |
+| meetings_users                        |
+| notes                                 |
+| oauth_consumer                        |
+| oauth_nonce                           |
+| oauth_tokens                          |
+| opportunities                         |
+| opportunities_audit                   |
+| opportunities_contacts                |
+| outbound_email                        |
+| project                               |
+| project_task                          |
+| project_task_audit                    |
+| projects_accounts                     |
+| projects_bugs                         |
+| projects_cases                        |
+| projects_contacts                     |
+| projects_opportunities                |
+| projects_products                     |
+| prospect_list_campaigns               |
+| prospect_lists                        |
+| prospect_lists_prospects              |
+| prospects                             |
+| relationships                         |
+| releases                              |
+| roles                                 |
+| roles_homepage                        |
+| roles_modules                         |
+| roles_users                           |
+| saved_search                          |
+| schedulers                            |
+| sugarfeed                             |
+| tasks                                 |
+| tracker                               |
+| upgrade_history                       |
+| user_preferences                      |
+| users                                 |
+| users_cstm                            |
+| users_feeds                           |
+| users_last_import                     |
+| users_password_link                   |
+| users_signatures                      |
+| vcals                                 |
+| versions                              |
+| yuang_bumen_info                      |
+| yuang_bumen_info_audit                |
+| yuang_bumen_info_cstm                 |
+| yuang_fengongsi_info                  |
+| yuang_fengongsi_info_audit            |
+| yuang_waibu_qudao_info                |
+| yuang_waibu_qudao_info_audit          |
+| yuang_yuangong_guanli                 |
+| yuang_yuangong_guanli_audit           |
++---------------------------------------+
+157 rows in set (0.00 sec)
+
+mysql> desc liuch_fangkuang_liucheng
+    -> ;
++-------------------------------------------------+---------------+------+-----+-------------+-------+
+| Field                                           | Type          | Null | Key | Default     | Extra |
++-------------------------------------------------+---------------+------+-----+-------------+-------+
+| id                                              | char(36)      | NO   | PRI | NULL        |       |
+| name                                            | varchar(255)  | YES  |     | NULL        |       |
+| date_entered                                    | datetime      | YES  |     | NULL        |       |
+| date_modified                                   | datetime      | YES  |     | NULL        |       |
+| modified_user_id                                | char(36)      | YES  |     | NULL        |       |
+| created_by                                      | char(36)      | YES  |     | NULL        |       |
+| description                                     | text          | YES  |     | NULL        |       |
+| deleted                                         | tinyint(1)    | YES  |     | 0           |       |
+| assigned_user_id                                | char(36)      | YES  |     | NULL        |       |
+| zhidan_date                                     | date          | YES  |     | NULL        |       |
+| danju_zhuangtai                                 | varchar(100)  | YES  |     | zhidanzhong |       |
+| shenqing_jine                                   | decimal(26,6) | YES  |     | NULL        |       |
+| currency_id                                     | char(36)      | YES  |     | NULL        |       |
+| huankuang_zhouqi                                | date          | YES  |     | NULL        |       |
+| daikuang_leixin                                 | varchar(100)  | YES  |     | diya        |       |
+| yuqi_yongjin                                    | decimal(26,6) | YES  |     | NULL        |       |
+| yuqi_yongjin_bili                               | float(18,8)   | YES  |     | NULL        |       |
+| yuqi_shoukuang_type                             | varchar(100)  | YES  |     | xianjin     |       |
+| fenkong_option                                  | varchar(100)  | YES  |     | NULL        |       |
+| fenkong_beizhu                                  | text          | YES  |     | NULL        |       |
+| fenkong_shengpi_date                            | date          | YES  |     | NULL        |       |
+| bumen_shengpi_option                            | varchar(100)  | YES  |     | NULL        |       |
+| bumen_beizhu                                    | text          | YES  |     | NULL        |       |
+| bumen_shengpi_date                              | date          | YES  |     | NULL        |       |
+| chanpin_shengpi_option                          | varchar(100)  | YES  |     | NULL        |       |
+| yinhang_shengpi_date                            | date          | YES  |     | NULL        |       |
+| fangkuang_date                                  | date          | YES  |     | NULL        |       |
+| fangkuang_jine                                  | decimal(26,6) | YES  |     | NULL        |       |
+| daikuang_daoqiri                                | date          | YES  |     | NULL        |       |
+| shiji_yongjin                                   | decimal(26,6) | YES  |     | NULL        |       |
+| shiji_yongjin_bili                              | float(18,8)   | YES  |     | NULL        |       |
+| chanpin_shoukuang_type                          | varchar(100)  | YES  |     | xianjin     |       |
+| chanpin_beizhu                                  | text          | YES  |     | NULL        |       |
+| chanpin_shengpi_date                            | date          | YES  |     | NULL        |       |
+| kefu_ziliao_guidang                             | text          | YES  |     | NULL        |       |
+| kefu_beizhu                                     | text          | YES  |     | NULL        |       |
+| kefu_chuli_date                                 | date          | YES  |     | NULL        |       |
+| shenfen_zhengming_file_mime_type                | varchar(100)  | YES  |     | NULL        |       |
+| shenfen_zhengming_filename                      | varchar(255)  | YES  |     | NULL        |       |
+| hunyin_zhengming_file_mime_type                 | varchar(100)  | YES  |     | NULL        |       |
+| hunyin_zhengming_filename                       | varchar(255)  | YES  |     | NULL        |       |
+| shouru_zhengming_file_mime_type                 | varchar(100)  | YES  |     | NULL        |       |
+| shouru_zhengming_filename                       | varchar(255)  | YES  |     | NULL        |       |
+| caichan_zhengming_file_mime_type                | varchar(100)  | YES  |     | NULL        |       |
+| caichan_zhengming_filename                      | varchar(255)  | YES  |     | NULL        |       |
+| yongtu_zhengming_file_mime_type                 | varchar(100)  | YES  |     | NULL        |       |
+| yongtu_zhengming_filename                       | varchar(255)  | YES  |     | NULL        |       |
+| qita1_zhengming_file_mime_type                  | varchar(100)  | YES  |     | NULL        |       |
+| qita1_zhengming_filename                        | varchar(255)  | YES  |     | NULL        |       |
+| qita2_zhengming_file_mime_type                  | varchar(100)  | YES  |     | NULL        |       |
+| qita2_zhengming_filename                        | varchar(255)  | YES  |     | NULL        |       |
+| chanpin_yinghang_pifu_file_mime_type            | varchar(100)  | YES  |     | NULL        |       |
+| chanpin_yinghang_pifu_filename                  | varchar(255)  | YES  |     | NULL        |       |
+| chanpin_yongjin_shouqu_zhengming_file_mime_type | varchar(100)  | YES  |     | NULL        |       |
+| chanpin_yongjin_shouqu_zhengming_filename       | varchar(255)  | YES  |     | NULL        |       |
++-------------------------------------------------+---------------+------+-----+-------------+-------+
+55 rows in set (0.00 sec)
+
+mysql> desc liuch_fangkuang_liucheng_cstm;
++--------------------------------------+---------------+------+-----+-------------------+-------+
+| Field                                | Type          | Null | Key | Default           | Extra |
++--------------------------------------+---------------+------+-----+-------------------+-------+
+| id_c                                 | char(36)      | NO   | PRI | NULL              |       |
+| daik_jiekuangren_info_id_c           | char(36)      | YES  |     | NULL              |       |
+| user_id_c                            | char(36)      | YES  |     | NULL              |       |
+| user_id1_c                           | char(36)      | YES  |     | NULL              |       |
+| user_id2_c                           | char(36)      | YES  |     | NULL              |       |
+| user_id3_c                           | char(36)      | YES  |     | NULL              |       |
+| kefu_ziliao_guidan_c                 | varchar(100)  | YES  |     | ziliao_weiguidang |       |
+| daikuang_qixian_c                    | decimal(18,0) | YES  |     | NULL              |       |
+| yuang_waibu_qudao_info_id_c          | char(36)      | YES  |     | NULL              |       |
+| daik_jinrong_jigou_info_id_c         | char(36)      | YES  |     | NULL              |       |
+| fdi2m_jinrong_fenzhi_jigou_info_id_c | char(36)      | YES  |     | NULL              |       |
+| fdi2m_jinrong_chanpin_info_id_c      | char(36)      | YES  |     | NULL              |       |
+| xindai_guwen_bumen_id_c              | varchar(255)  | YES  |     | NULL              |       |
+| dangju_created_by_id_c               | varchar(255)  | YES  |     | NULL              |       |
++--------------------------------------+---------------+------+-----+-------------------+-------+
+14 rows in set (0.00 sec)
+
+mysql> desc users;
++---------------------------+--------------+------+-----+---------+-------+
+| Field                     | Type         | Null | Key | Default | Extra |
++---------------------------+--------------+------+-----+---------+-------+
+| id                        | char(36)     | NO   | PRI | NULL    |       |
+| user_name                 | varchar(60)  | YES  | MUL | NULL    |       |
+| user_hash                 | varchar(255) | YES  |     | NULL    |       |
+| system_generated_password | tinyint(1)   | YES  |     | NULL    |       |
+| pwd_last_changed          | datetime     | YES  |     | NULL    |       |
+| authenticate_id           | varchar(100) | YES  |     | NULL    |       |
+| sugar_login               | tinyint(1)   | YES  |     | 1       |       |
+| first_name                | varchar(30)  | YES  |     | NULL    |       |
+| last_name                 | varchar(30)  | YES  |     | NULL    |       |
+| is_admin                  | tinyint(1)   | YES  |     | 0       |       |
+| external_auth_only        | tinyint(1)   | YES  |     | 0       |       |
+| receive_notifications     | tinyint(1)   | YES  |     | 1       |       |
+| description               | text         | YES  |     | NULL    |       |
+| date_entered              | datetime     | YES  |     | NULL    |       |
+| date_modified             | datetime     | YES  |     | NULL    |       |
+| modified_user_id          | char(36)     | YES  |     | NULL    |       |
+| created_by                | char(36)     | YES  |     | NULL    |       |
+| title                     | varchar(50)  | YES  |     | NULL    |       |
+| department                | varchar(50)  | YES  |     | NULL    |       |
+| phone_home                | varchar(50)  | YES  |     | NULL    |       |
+| phone_mobile              | varchar(50)  | YES  |     | NULL    |       |
+| phone_work                | varchar(50)  | YES  |     | NULL    |       |
+| phone_other               | varchar(50)  | YES  |     | NULL    |       |
+| phone_fax                 | varchar(50)  | YES  |     | NULL    |       |
+| status                    | varchar(100) | YES  |     | NULL    |       |
+| address_street            | varchar(150) | YES  |     | NULL    |       |
+| address_city              | varchar(100) | YES  |     | NULL    |       |
+| address_state             | varchar(100) | YES  |     | NULL    |       |
+| address_country           | varchar(100) | YES  |     | NULL    |       |
+| address_postalcode        | varchar(20)  | YES  |     | NULL    |       |
+| deleted                   | tinyint(1)   | YES  |     | NULL    |       |
+| portal_only               | tinyint(1)   | YES  |     | 0       |       |
+| show_on_employees         | tinyint(1)   | YES  |     | 1       |       |
+| employee_status           | varchar(100) | YES  |     | NULL    |       |
+| messenger_id              | varchar(100) | YES  |     | NULL    |       |
+| messenger_type            | varchar(100) | YES  |     | NULL    |       |
+| reports_to_id             | char(36)     | YES  |     | NULL    |       |
+| is_group                  | tinyint(1)   | YES  |     | NULL    |       |
++---------------------------+--------------+------+-----+---------+-------+
+38 rows in set (0.00 sec)
+
+
+
+mysql> desc users_cstm;
++---------------------------+---------------+------+-----+-----------------------------+-------+
+| Field                     | Type          | Null | Key | Default                     | Extra |
++---------------------------+---------------+------+-----+-----------------------------+-------+
+| id_c                      | char(36)      | NO   | PRI | NULL                        |       |
+| gangwei_leixin_c          | varchar(100)  | YES  |     | xindai_guwen                |       |
+| gonghao_c                 | varchar(255)  | YES  |     | 保存后系统自动生成          |       |
+| butie_c                   | decimal(26,6) | YES  |     | NULL                        |       |
+| currency_id               | char(36)      | YES  |     | NULL                        |       |
+| jixiao_c                  | decimal(26,6) | YES  |     | NULL                        |       |
+| gongzi_c                  | decimal(26,6) | YES  |     | NULL                        |       |
+| shengfenzheng_hao_c       | varchar(255)  | YES  |     | NULL                        |       |
+| yuang_bumen_info_id_c     | char(36)      | YES  |     | NULL                        |       |
+| yuang_fengongsi_info_id_c | char(36)      | YES  |     | NULL                        |       |
+| xiebie_c                  | varchar(100)  | YES  |     | nan                         |       |
+| zaizhi_zhuangtai_c        | varchar(100)  | YES  |     | zaizhi                      |       |
++---------------------------+---------------+------+-----+-----------------------------+-------+
+12 rows in set (0.00 sec)
+
+select a.id_c from users_cstm a, users b where a.id_c=b.id and b.deleted=0 and a.zaizhi_zhuangtai_c='zaizhi' and  a.yuang_bumen_info_id_c='ab893744-ba10-83ed-7b84-55a863cb32e0' and a.gangwei_leixin_c='bumen_jingli'
+
+| 2015070005 | aa7b25e8-a063-6d48-10f2-55b8789ceef5 |
+| 2015070004 | 44da4403-22fc-b8b9-dcf7-55b8750510b5 |
++------------+--------------------------------------+
+
+
+

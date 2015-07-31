@@ -93,7 +93,8 @@ class fangkuang_liucheng_custom_class {
         $xindai_guwen->custom_fields->retrieve();
         $yuang_bumen_info_id = $xindai_guwen->yuang_bumen_info_id_c;
         $query = "
-                select id_c from users_cstm where yuang_bumen_info_id_c='{$yuang_bumen_info_id}' and gangwei_leixin_c='{$handle_type}'
+                select a.id_c from users_cstm a, users b where a.id_c=b.id and b.deleted=0 and a.zaizhi_zhuangtai_c='zaizhi' and 
+                a.yuang_bumen_info_id_c='{$yuang_bumen_info_id}' and a.gangwei_leixin_c='{$handle_type}'
             ";
         echo $query;
         $GLOBALS['log']->info("get same bumen fenkongM ids, query:".$query);
