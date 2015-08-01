@@ -1494,4 +1494,9 @@ class MysqlManager extends DBManager
     {
       	return 'UUID()';
     }
+
+	public function next_result()
+	{
+		return '';
+	}
 }

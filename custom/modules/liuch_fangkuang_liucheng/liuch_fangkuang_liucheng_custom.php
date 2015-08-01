@@ -65,23 +65,23 @@ class fangkuang_liucheng_custom_class {
 
         $bean->dangju_created_by_id_c = $bean->created_by;
 
-        $d_t = date("Ym");
-        $query = "
-                select count('x') as r_count from liuch_fangkuang_liucheng where name like '$d_t%'
-        ";
-        echo $query;
+        $query = "CALL `fzglsys_get_next_seq`('fangkuang_liucheng')";
+
         $GLOBALS['log']->info("fangkuang_liucheng_calculate_field_class.get_liucheng_num, query:".$query);
         $result = $bean->db->query($query);
-        $row = $bean->db->fetchByAssoc($result);
-//        $GLOBALS['log']->info("calculate_filed_class.get_dangan_num, row.length:".$row.length);
-        $r_count = 0;
-        if (!empty($row)) {
-            $GLOBALS['log']->info("fangkuang_liucheng_calculate_field_class.get_liucheng_num, row is not empty.");
-            $r_count = $row['r_count'];
+
+        $next_seq = '';
+        while(($row=$bean->db->fetchByAssoc($result)) != null) {
+            if (!empty($row)) {
+                $GLOBALS['log']->info("fangkuang_liucheng_calculate_field_class.get_liucheng_num, row is not empty.");
+                $next_seq = $row['next_seq'];
+            }
         }
-        $GLOBALS['log']->info("fangkuang_liucheng_calculate_field_class.get_liucheng_num, r_count:{$r_count}");
-        $dangan_num = vsprintf("%04d",$r_count+1);
-        $bean->name = $d_t.$dangan_num;
+        $result->close();
+        $bean->db->next_result();
+
+        $GLOBALS['log']->info("fangkuang_liucheng_calculate_field_class.get_liucheng_num, next_seq:{$next_seq}");
+        $bean->name = $next_seq;
     }
 
     public function get_next_handler_id($bean, $handle_type) {
@@ -93,7 +93,7 @@ class fangkuang_liucheng_custom_class {
         $xindai_guwen->custom_fields->retrieve();
         $yuang_bumen_info_id = $xindai_guwen->yuang_bumen_info_id_c;
         $query = "
-                select a.id_c from users_cstm a, users b where a.id_c=b.id and b.deleted=0 and a.zaizhi_zhuangtai_c='zaizhi' and 
+                select a.id_c from users_cstm a, users b where a.id_c=b.id and b.deleted=0 and a.zaizhi_zhuangtai_c='zaizhi' and
                 a.yuang_bumen_info_id_c='{$yuang_bumen_info_id}' and a.gangwei_leixin_c='{$handle_type}'
             ";
         echo $query;
