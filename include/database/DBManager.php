@@ -3886,4 +3886,6 @@ protected function checkQuery($sql, $object_name = false)
      * @return string
      */
 	abstract public function getGuidSQL();
+
+	abstract public function next_result();
 }

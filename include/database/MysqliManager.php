@@ -372,4 +372,9 @@ class MysqliManager extends MysqlManager
 	{
 		return function_exists("mysqli_connect") && empty($GLOBALS['sugar_config']['mysqli_disabled']);
 	}
+
+	public function next_result()
+	{
+		return mysqli_next_result($this->database);
+	}
 }
