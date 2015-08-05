@@ -52,5 +52,3 @@ class liuch_fangkuang_liuchengViewList extends ViewList {
     }
 
 }
-
-?>
