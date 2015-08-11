@@ -35,8 +35,11 @@ class daik_jiekuangren_infoViewList extends ViewList {
         $this->lv->searchColumns = $this->searchForm->searchColumns;
 
         $filter_str = " daik_jiekuangren_info.created_by='{$current_user->id}'";
-
-
+        
+        if (is_admin($current_user) OR $current_user->gangwei_leixin_c == "fu_zongjingli" OR $current_user->gangwei_leixin_c == "zongjingli" OR $current_user->gangwei_leixin_c == "dongshizhang")
+        {
+            $filter_str = ' 1 ';
+        }
         $this->params['custom_where'] = " AND (".$filter_str. ")";
 
         if (empty($_REQUEST['search_form_only']) || $_REQUEST['search_form_only'] == false) {

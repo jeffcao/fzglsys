@@ -40,7 +40,7 @@ class liuch_fangkuang_liuchengViewList extends ViewList {
         if ($current_user->gangwei_leixin_c == "bumen_jingli"){
             $filter_str = $filter_str." OR liuch_fangkuang_liucheng_cstm.xindai_guwen_bumen_id_c='{$current_user->yuang_bumen_info_id_c}'";
         }
-        if (is_admin($current_user))
+        if (is_admin($current_user) OR $current_user->gangwei_leixin_c == "fu_zongjingli" OR $current_user->gangwei_leixin_c == "zongjingli" OR $current_user->gangwei_leixin_c == "dongshizhang")
         {
             $filter_str = ' 1 ';
         }

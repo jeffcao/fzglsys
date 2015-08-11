@@ -128,7 +128,10 @@ EOHTML;
         if ($current_user->gangwei_leixin_c == "bumen_jingli"){
             $filter_str = $filter_str." OR users_cstm.yuang_bumen_info_id_c='{$current_user->yuang_bumen_info_id_c}'";
         }
-
+        if (is_admin($current_user) OR $current_user->gangwei_leixin_c == "fu_zongjingli" OR $current_user->gangwei_leixin_c == "zongjingli" OR $current_user->gangwei_leixin_c == "dongshizhang")
+        {
+            $filter_str = ' 1 ';
+        }
         $this->params['custom_where'] = " AND (".$filter_str. ")";
 
         if(!$this->headers)
